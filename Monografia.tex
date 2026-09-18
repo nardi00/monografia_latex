@@ -1,0 +1,982 @@
+\documentclass[12pt, a4paper, oneside]{abntex2}
+
+% Pacotes
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{float}
+\usepackage{hyperref}
+% \usepackage[alf, abnt-emphasize=bf]{abntex2cite}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{indentfirst}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{footmisc}
+
+\usepackage{amsmath}
+\allowdisplaybreaks
+
+\usepackage[style=abnt]{biblatex}
+\addbibresource{referencias.bib}
+
+\interfootnotelinepenalty=10000
+
+% Configurações de página (ABNT NBR 14724)
+
+\geometry{
+  top=3cm,
+  bottom=2cm,
+  left=3cm,
+  right=2cm
+}
+
+% ---
+% Configurações de aparência dos títulos (Unificando a fonte)
+% ---
+\renewcommand{\ABNTEXchapterfont}{\rmfamily\bfseries}
+\renewcommand{\ABNTEXsectionfont}{\rmfamily\bfseries}
+\renewcommand{\ABNTEXsubsectionfont}{\rmfamily\bfseries}
+\renewcommand{\ABNTEXsubsubsectionfont}{\rmfamily\bfseries}
+
+% Opcional: Reduzir um pouco o tamanho exagerado do título do capítulo
+\renewcommand{\ABNTEXchapterfontsize}{\Large}
+
+
+% Espaçamento
+
+\setlength{\parindent}{1.25cm}
+\OnehalfSpacing
+
+
+% Configurações do hyperref
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black,
+  pdftitle={Projeto de Pesquisa - Conectividade e Spillovers de Volatilidade no Sistema Bancário Brasileiro},
+  pdfauthor={},
+  pdfsubject={Projeto de Pesquisa - Monografia I},
+  pdfkeywords={spillovers de volatilidade, risco sistêmico, sistema bancário brasileiro, Diebold-Yilmaz, teoria de redes}
+  hidelinks
+}
+
+% Identificação
+
+\titulo{Conectividade e Spillovers de Volatilidade no Sistema Bancário Brasileiro: Uma Análise de Redes via Diebold-Yilmaz}
+\autor{Guilherme Henrique De Nardi}
+\local{Osasco}
+\data{2026}
+\orientador{Diego Ferreira}
+\instituicao{%
+  Universidade Federal de São Paulo\\
+  Escola Paulista de Política, Economia e Negócios
+}
+\tipotrabalho{Projeto de Pesquisa}
+
+\preambulo{Projeto de pesquisa submetido como parte da avaliação da UC MONOGRAFIA I, do curso de graduação em Ciências Econômicas da Universidade Federal de São Paulo - Campus Osasco, sob orientação do Prof. Dr. Diego Ferreira.}
+
+% ============================================================
+\begin{document}
+
+\frenchspacing
+
+% ------------------------------------------------------------
+% Elementos pré-textuais
+% ------------------------------------------------------------
+\pretextual
+
+\imprimircapa
+
+\imprimirfolhaderosto
+
+% ---- Sumário ----
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+% ============================================================
+% Elementos textuais
+% ============================================================
+\textual
+
+% ============================================================
+\chapter{Introdução}
+\label{cap:introducao}
+% ============================================================
+
+O sistema bancário brasileiro enfrentou, entre 2017 e 2026, um período marcado por choques
+de naturezas distintas como uma pandemia global, o ciclo de aperto monetário do pós-pandemia,
+e episódios de instabilidade idiossincrática como o caso Americanas. Esses episódios oferecem
+um cenário propício para investigar como o risco se propaga entre instituições financeiras,
+e se essa propagação muda de intensidade e direção conforme a natureza do choque. Risco sistêmico refere-se à possibilidade de que o colapso ou fragilização de uma instituição
+se propague para o restante do sistema, ameaçando sua estabilidade como um todo. A literatura 
+sobre redes financeiras estabelece que a arquitetura de interconexão que confere resiliência 
+ao sistema em momentos de normalidade pode se converter em um mecanismo de amplificação dependendo
+da magnitude de um choque \parencite{acemoglu2015}. Compreender
+essa dinâmica, não apenas a magnitude mas também a evolução ao longo do tempo, é relevante 
+tanto para a literatura quanto para a formulação de política macroprudencial. 
+
+Mensurar a propagação de forma contínua e baseada em dados públicos é o objetivo central deste
+trabalho, que investiga a rede de spillovers de volatilidade entre os principais bancos 
+brasileiros ao longo do recorte 2017-2026. A pergunta que orienta a pesquisa é como a estrutura 
+da rede entre essas instituições evolui ao longo do tempo e reage a eventos macroeconômicos
+e idiossincráticos. A investigação busca não apenas identificar a existência de interdependência
+entre as instituições, mas compreender mudanças na topologia da rede com variações no grau de 
+conectividade e na importância relativa de cada instituição em diferentes contextos econômicos.
+
+A hipótese do trabalho é de que a intensidade de spillovers se eleva em períodos identificáveis 
+instabilidade financeira, como a pandemia do COVID-19, o ciclo de aperto monetário e episódios
+idiossincráticos, refletindo maior interconectividade e potencial de propagações de choques, 
+em linha com a dinâmica prevista pela literatura teórica de redes financeiras \parencite{acemoglu2015, allen2000}
+
+A abordagem adotada baseia-se no modelo de Diebold e Yilmaz (2009, 2012, 2014), que utiliza um 
+vetor autorregressivo (VAR) e a decomposição generalizada da variância dos erros de previsão 
+(GFEVD) para mensurar a interdependência entre variáveis, construindo uma matriz de spillovers 
+interpretável como a matriz de adjacência de uma rede complexa dirigida e ponderada. A variável-alvo é a 
+volatilidade, não os retornos, estimada por um estimador de amplitude (range-based) que combina 
+o componente de \textcite{rogers1991}, independente de tendência intradiária, com um termo 
+de retorno overnight, capturando o fato de que decisões do Comitê de Política Monetária e 
+resultados trimestrais são divulgados após o fechamento do pregão. A amostra é estratificada 
+por tipo de controle de capital, porte e modelo de negócio, e organizada em dois painéis 
+aninhados: um painel principal, com maior alcance temporal, e um painel de extensão que 
+incorpora o Banco Pan, cuja relação de controle com o BTG Pactual permite testar diretamente 
+se o vínculo societário entre instituições se traduz em maior comovimento de volatilidade.
+
+Embora a metodologia de Diebold-Yilmaz tenha sido amplamente aplicada a mercados financeiros 
+internacionais e a índices de ações de economias emergentes, sua aplicação ao nível de 
+instituições bancárias individuais no Brasil permanece escassa. Os estudos brasileiros de risco 
+sistêmico predominantemente dependem de dados de balanço ou de exposições interbancárias 
+sigilosas, mantidas pelo Banco Central e inacessíveis à comunidade científica, o que compromete 
+a comparabilidade dos resultados e restringe análises em escala ampla e frequência elevada. 
+Este trabalho preenche essa lacuna em três frentes. Primeiro, estratifica a amostra por tipo de 
+controle, modelo de negócio e porte, tornando a heterogeneidade institucional do sistema 
+bancário brasileiro explícita na análise de spillovers. Segundo, compara explicitamente o ranking de 
+importância sistêmica derivado dos spillovers com a segmentação prudencial do Banco Central do 
+Brasil, testando se uma metodologia baseada inteiramente em dados públicos de mercado é capaz 
+de aproximar a classificação regulatória das instituições consideradas sistemicamente relevantes.
+Terceiro, incorpora métricas de teoria de redes além dos índices direcionais de primeira ordem 
+propostos por Diebold e Yilmaz como centralidade de autovetor e PageRank, cuja formulação 
+recursiva captura a posição estrutural de cada banco na topologia de contágio e testa a 
+hipótese de vínculo societário por meio de uma regressão em painel de pares com efeitos fixos, 
+abordagem mais robusta do que comparações agregadas por categoria nominal de controle.
+
+O restante do trabalho está organizado em três capítulos. O Capítulo 2 revisa a literatura 
+sobre risco sistêmico, conectividade em redes financeiras e a evolução metodológica do 
+framework de Diebold-Yilmaz, situando as contribuições deste trabalho no debate. O Capítulo 3 
+detalha a metodologia: a base de dados e os critérios de construção dos dois painéis amostrais, 
+a estimação da volatilidade, a especificação do VAR e da GFEVD, o procedimento dinâmico via 
+TVP-VAR, a regressão diádica e os procedimentos de visualização de redes. O Capítulo 4 
+apresenta e discute os resultados, incluindo as considerações finais do trabalho.
+
+
+
+% ============================================================
+\chapter{Revisão Bibliográfica}
+\label{cap:revisao}
+% ============================================================
+
+A noção de risco sistêmico na literatura econômica remonta a trabalhos
+clássicos que destacam a fragilidade inerente das instituições financeiras.
+O modelo de corridas bancárias de \textcite{diamond1983} estabelece que
+bancos são estruturalmente vulneráveis a choques de confiança, nos quais a
+retirada simultânea de depósitos pode levar ao colapso de instituições
+solventes. Essa fragilidade não é somente individual, mas de natureza
+sistêmica, na medida em que a falência de uma instituição pode desencadear
+efeitos de contágio sobre o restante do sistema financeiro, configurando o
+caráter sistêmico do risco bancário. A instabilidade pode
+emergir de forma endógena relacionada à estrutura do próprio sistema, 
+trabalhos subsequentes como o de \textcite{allen1998} reforçam essa perspectiva.
+Embora esses modelos estabeleçam os fundamentos da fragilidade financeira,
+ainda apresentam limitações por operarem sob hipóteses simplificadoras,
+nas quais a heterogeneidade entre agentes e a complexidade das interações
+financeiras são limitadas. Como resultado, esses modelos oferecem pouca
+orientação sobre como a arquitetura das conexões financeiras influencia a
+propagação de choques em sistemas contemporâneos.
+
+A crise financeira global de 2008 representa um ponto de inflexão na pesquisa sobre
+risco sistêmico em instituições financeiras. A importância da arquitetura de rede 
+já havia sido demonstrada em \textcite{allen2000} de modo que as estruturas incompletas de 
+reivindicações interbancárias se mostram mais propensas a episódios de contágio do que 
+estruturas completas. Contudo, foi somente após o colapso de instituições de 
+importância sistêmica que a fragilidade do sistema financeiro e a topologia da rede
+financeira passaram a ocupar posição central no debate acadêmico e regulatório.
+
+Por meio de uma análise bibliométrica extensa, \textcite{silva2017}
+documentam essa virada: a literatura sobre estabilidade financeira evoluiu
+para focar na topologia das redes interbancárias,
+identificando o contágio via interconectividade como a principal fonte de
+fragilidade sistêmica contemporânea. A interconectividade cria canais para o 
+contágio e amplificação de choques no sistema financeiro, sendo este o ponto 
+principal de \textcite{glasserman2014} que a identificam como um dos principais 
+determinantes de crises financeiras recentes.
+
+A mesma arquitetura de rede que promove resiliência em tempos de normalidade é a que propaga
+contágio em momentos de estresse severo. Essa natureza dual é formalizada em 
+\textcite{acemoglu2015}. O regime de propagação depende, portanto, da magnitude do choque 
+inicial. 
+Uma rede altamente conectada atua como um mecanismo de absorção de choques para
+choques de baixa magnitude, mas se converte em mecanismo de amplificação e
+propagação sistêmica quando os choques ultrapassam um limiar crítico. Essa dinâmica de limiar
+é formalizada de maneira mais ampla pela literatura de cascatas em redes financeiras.
+Os mecanismos pelos quais as perdas se propagam em cascata é mapeado extensamente em 
+\textcite{glasserman2016},
+distinguindo canais de contágio diretos e indiretos. A 
+probabilidade e magnitude de uma cascata dependem conjuntamente da topologia de 
+rede e da distribuição de exposições, fortalecendo a percepção de que a mensuração 
+empírica de conectividade é condição necessária para a avaliação do risco sistêmico.
+
+A literatura converge na ideia de que a interconectividade é elemento central
+para a compreensão do risco sistêmico. Diverge, porém, quanto à sua mensuração
+empírica, especialmente em contextos nos quais a estrutura da rede não é diretamente
+observável. Como resultado, grande parte da literatura depende de proxies indiretas que
+aproximam imperfeitamente a topologia da rede, ou de bases granulares de acesso restrito
+mantidas por reguladores, o que compromete a comparabilidade dos resultados e restringe
+análises empíricas em escala ampla e frequência elevada.
+
+O problema da mensuração indireta encontra uma solução metodológica no spillover index, 
+proposto por \textcite{diebold2009} a partir de dados de mercado de acesso público. 
+A metodologia utiliza um modelo de vetores autorregressivos (VAR) e a decomposição da 
+variância dos erros de previsão para gerar um índice agregado de conectividade, mensurando a 
+interdependência entre ativos ou mercados financeiros. 
+Em outras palavras, o índice quantifica a parcela da variância de
+uma variável atribuível a choques nas demais, em contraposição à parcela atribuível à
+própria. Por meio da representação MA($\infty$) do VAR e da decomposição de Cholesky,
+os autores decompõem a variância do erro de previsão em parcelas de variância própria
+(\textit{own variance shares}), decorrentes de choques na própria variável, e parcelas
+de variância cruzada (\textit{cross variance shares}). O \textit{spillover index} é
+construído pela soma das contribuições de choques originados em $i$ sobre o erro de
+previsão de $j$ (para todo $i \neq j$), normalizada pela variância total do sistema.
+
+Entretanto, o \textit{spillover index} original apresentava duas limitações
+principais sendo a sensibilidade à ordem das variáveis na decomposição de variância e a
+dificuldade em identificar a origem e o destino dos choques. Para superar esses
+desafios, uma refinação da metodologia foi apresentada em \textcite{diebold2012} ao adotar 
+a Decomposição Generalizada da Variância dos Erros de Previsão (GFEVD), proposta 
+originalmente por \textcite{koop1996} e \textcite{pesaran1998}. Ao adotar a GFEVD, os autores
+eliminaram o problema inerente à ordenação das variáveis, característica da decomposição
+de Cholesky, possibilitando uma identificação invariante da topologia de transmissão de
+risco. O refinamento metodológico permitiu, ainda, a introdução do conceito de
+\textit{net spillover}, definido como a diferença entre a contribuição que uma variável
+transmite ao sistema e aquela que dela recebe, classificando cada variável como
+transmissora ou receptora líquida de volatilidade. 
+O balanço histórico de \textcite{diebold2023} consolida o modelo de conectividade dinâmica
+como a base para a análise macroprudencial, demonstrando que os \textit{spillovers} de mercado
+refletem fielmente a topologia de transmissão do risco sistêmico.
+
+A matriz de conectividade resultante da GFEVD admite, ainda, uma leitura sob a ótica 
+da teoria das redes como a matriz de adjacência de uma rede complexa,
+intuição formalizada em \textcite{diebold2014}. Diferentemente da maior parte da literatura 
+aplicada de redes financeiras, que analisa apenas a existência de conexões entre instituições, 
+a estrutura derivada da GFEVD configura um grafo direcionado e ponderado. 
+A natureza direcionada da rede captura a dinâmica de assimetria do risco financeiro, dado 
+que a contribuição de $i$ para a variância de $j$ não coincide, em geral, com a 
+contribuição inversa.
+
+Dessa estrutura, \textcite{diebold2014} derivam métricas de conectividade com
+correspondência direta nas medidas fundamentais da teoria de grafos.
+O conceito de \textit{from-degree}, que mede a conectividade total recebida pelo nó
+(equivalente ao \textit{in-degree} em teoria dos grafos), funciona como indicador de
+vulnerabilidade da variável a choques transmitidos pelos demais elementos do sistema.
+Em contrapartida, o \textit{to-degree}, equivalente ao \textit{out-degree}, mede a
+conectividade transmitida pelo nó aos demais e identifica os elementos com maior potencial
+de propagação sistêmica. O índice agregado de conectividade do sistema, por sua vez,
+sintetiza a densidade da interdependência da rede, sendo equivalente conceitualmente ao
+grau médio normalizado de um grafo ponderado.
+
+A abordagem de janelas móveis (\textit{rolling-window}), embora permita capturar a
+evolução temporal da conectividade, impõe uma limitação relevante em que os parâmetros do
+modelo são recalculados em janelas fixas e discretas, o que pode obscurecer transições
+graduais na estrutura da rede. A alternativa é estimar os parâmetros de forma contínua,
+sem a definição de uma janela fixa. 
+É o que fazem \textcite{antonakakis2020} e \textcite{chatziantoniou2021} 
+ao propor a estimação do índice de conectividade via
+modelos de parâmetros variantes no tempo (\textit{Time-Varying Parameter VAR} - TVP-VAR).
+Essa extensão metodológica preserva a interpretabilidade do
+\textit{framework} de Diebold-Yilmaz, ao mesmo tempo em que oferece uma representação
+mais contínua e sensível da dinâmica de transmissão de risco, tornando-se especialmente
+adequada para a análise de sistemas financeiros sujeitos a choques abruptos e regimes
+variantes. A escolha entre rolling-window e TVP-VAR envolve um \textit{trade-off} entre
+simplicidade interpretativa e suavidade na captura de transições de regime. A abordagem 
+de janelas móveis, embora consiga atenuar efeitos de memória longa característicos de séries de 
+volatilidade financeira não é suficiente para identificar episódios de elevação da conectividade
+associados já que data defasadamente os movimentos de acordo com o tamanho especificado da janela.
+Por esse motivo, o TVP-VAR é adotado como especificação principal neste trabalho, com a janela 
+móvel mantida apenas como comparação com a convenção da literatura de referência.
+
+A representação espectral da decomposição da variância permite também analisar os spillovers 
+no domínio da frequência. O risco sistêmico tem dinâmicas distintas. A conectividade gerada em 
+altas frequências reflete o processamento rápido de informações no curto prazo em momentos de 
+calmaria, enquanto a conectividade gerada em baixa frequências sinaliza choques persistentes e 
+mudanças estruturais nas expectativas dos agentes, sendo esse o ponto central de 
+\textcite{barunik2018}. O modelo exige um horizonte de aproximação e uma extensão amostral 
+longos para que o algoritmo de Fourier mapeie as baixas frequências com precisão. 
+Essas escolhas introduzem o risco de sofrer com \textit{overfitting} e problemas de 
+graus de liberdade, especialmente em janelas amostrais mais curtas. 
+
+Também é possível estender a abordagem para o domínio
+quantílico conforme proposto em \textcite{ando2022}. Os autores demonstraram empiricamente que 
+a transmissão de choques e o risco de contágio são fenômenos de cauda, se apresentam virtualmente
+ausentes na mediana e se expandem de forma severa em períodos de estresse. Dada a natureza assimétrica
+e não-linear da conectividade financeira, os modelos baseados na média condicional tendem a subestimar
+o potencial de contágio sistêmico em momentos de crise. A estimação depende de dados de densidade
+alta e amostras maiores, o que inviabiliza sua aplicação. A dinâmica temporal de janelas móveis
+consegue capturar a transição do sistema para a cauda uma vez que a média condicional 
+é dominada por observações extremas em momento de crise, além de ser computacionalmente acessível
+e estável.  
+
+O \textit{spillover index} foi utilizado para analisar a volatilidade dos retornos da rede de 
+instituições financeiras norte-americanas e europeias no período 2004--2014 e caracterizar a 
+dinâmica da conectividade ao longo da crise financeira de 2008 em \textcite{diebold2016}. 
+Os autores argumentam que, no período pós-2008, a transmissão de
+volatilidade se tornou mais bidirecional, com aumento expressivo da influência das
+instituições europeias sobre o mercado norte-americano. Além disso, os autores demonstram
+que, após o colapso do Lehman Brothers, a crise financeira teria adquirido caráter
+efetivamente global. O estudo evidencia o aprofundamento das conexões entre instituições
+financeiras em períodos de estresse, corroborando a interpretação de
+\textcite{acemoglu2015} de que a interconectividade que estabiliza em normalidade 
+amplifica choques sob estresse severo.
+
+Para os mercados das Américas \textcite{diebold2011} analisam empiricamente os 
+\textit{spillovers} de volatilidade entre cinco mercados de ações: EUA, México, Chile, 
+Argentina e Brasil. Os autores identificam que, embora as
+economias centrais dominem a transmissão em momentos de estresse agudo, as economias
+latino-americanas exibem fluxos de transmissão regional não desprezíveis. Para o Brasil,
+especificamente, os resultados indicam que o país não opera como receptor passivo de
+volatilidade, mas atua como \textit{hub} regional de propagação de volatilidade,
+refletindo sua centralidade econômica na América Latina. Esse achado motiva investigações
+mais aprofundadas sobre como a posição do Brasil na rede de \textit{spillovers} se
+comporta em períodos posteriores, marcados por choques idiossincráticos domésticos.
+
+O risco soberano oferece outro campo de aplicação do \textit{framework} de Diebold-Yilmaz, 
+mensurando os \textit{spillovers} de volatilidade de \textit{credit default swaps} 
+(CDS) entre economias emergentes e avançadas, foco central em \textcite{bostanci2020}.
+O estudo evidencia que a rede de spillovers é altamente integrada e que os mercados emergentes
+(incluindo o Brasil) assumiram um papel central como transmissores líquidos de volatilidade
+financeira no período pós-crise. A unidade de análise, porém, é o risco soberano agregado.
+O CDS reflete o risco de crédito do país como um todo e não a estrutura de transmissão 
+entre instituições individualmente. Permanece em aberto se essa centralidade do Brasil 
+como transmissor líquido se reproduz ou se inverte quando a rede é decomposta 
+nas instituições que a compõem. O país pode ser transmissor líquido agregado 
+enquanto, internamente, alguns bancos atuam como receptores.
+
+
+O mercado brasileiro enfrentou, no entanto, ao longo de 2019-2025, 
+uma combinação de choques de natureza distinta daquela observada nos sistemas avançados 
+analisados em \textcite{diebold2016}. Uma pandemia global, um ciclo abrupto de aperto monetário
+e episódios de instabilidade como a fraude contábil da Americanas sugerindo que a estrutura de rede de 
+\textit{spillovers} brasileira possui determinantes distintos daqueles observados nas
+economias avançadas. O mercado interbancário brasileiro
+apresenta estrutura concentrada. As primeiras evidências empíricas em \textcite{cajueiro2008} 
+de topologia do mercado interbancário brasileiro sob a ótica das redes complexas
+demonstram que o sistema exibe elevada heterogeneidade estruturada em torno de
+\textit{money centers}, em que o porte e o tipo de controle do capital determinam a
+centralidade da instituição na rede.
+
+Evidências para o caso brasileiro também sugerem que a estrutura do sistema interbancário brasileiro
+apresenta uma elevada concentração de conectividade em um número reduzido de instituições 
+de importância sistêmica. Em \textcite{silva2016}, os autores
+caracterizam a rede interbancária brasileira por meio de medidas de teoria de redes. O
+artigo documenta que o mercado interbancário brasileiro possui uma estrutura de
+\textit{core-periphery}, em que o núcleo é composto por um pequeno grupo de bancos
+grandes e altamente conectados, e a periferia, por um grande número de bancos menores
+que se conectam ao núcleo, mas raramente entre si próprios. O estudo, contudo, depende
+de dados granulares e sigilosos mantidos pelo Banco Central do Brasil, inacessíveis ao
+público e à comunidade científica.
+
+O mesmo problema de dependência de dados sigilosos aparece em \textcite{cont2013}, que
+propõem o \textit{Contagion Index}, a perda esperada do sistema condicional à inadimplência 
+de uma instituição em um período de estresse macroeconômico a partir de uma base de exposições
+cedidas pelo Banco Central do Brasil. Os achados dialogam com \textcite{silva2016} já que
+o sistema exibe topologia \textit{scale-free}, em que a maioria dos nós possui poucas conexões, 
+enquanto alguns nós, conhecidos como \textit{hubs}, concentram um grande número de conexões. 
+Sob essa topologia, a concentração da exposição e do risco sistêmico em poucos nós centrais
+favorece a propagação de perdas em cascata, com choques macroeconômicos atuando como
+mecanismo central de amplificação. A pesquisa, no entanto, tem seu mecanismo de transmissão
+modelado exclusivamente pelo balanço, ignorando o canal dos preços de mercado pelo qual a
+incerteza sobre uma instituição se transmite às demais antes que qualquer exposição materialize
+a perda. 
+
+O $\Delta$CoVaR aplicado ao caso brasileiro por \textcite{moura2024}, com dados de mercado,
+demonstra que a contribuição marginal para o risco sistêmico no Brasil está ligada ao perfil de
+tomada de risco das instituições. Ainda que o estudo evidencie empiricamente
+que a vulnerabilidade de balanços é relevante para o risco sistêmico, o método não captura
+a direcionalidade e a topologia da rede em tempo real. Embora o $\Delta$CoVaR
+identifique a magnitude do impacto potencial de uma instituição sobre o sistema, ele falha
+em mapear os canais de transmissão e o efeito cascata das interações, tornando necessária 
+uma abordagem complementar baseada em spillovers que desenhe a arquitetura das interações.
+
+Em síntese, as evidências disponíveis para o caso brasileiro partem, predominantemente,
+de dados sigilosos do Banco Central do Brasil. Essa dependência cria uma lacuna metodológica
+que exige abordagens complementares fundamentadas em dados públicos de mercado, como os
+\textit{spillovers} de volatilidade capturados pela metodologia de Diebold-Yilmaz, que
+permitam uma análise dinâmica, transparente e em alta frequência da conectividade
+sistêmica, dispensando o acesso a bases sigilosas.
+
+A lacuna de dados públicos encontra resposta parcial em \textcite{silva2025}, que visa 
+resolver investigando a conectividade através de dados de ações bancárias listadas no Ibovespa. 
+Utilizando um modelo TVP-VAR e complementando o estudo com métricas de redes complexas,
+os autores buscam entender como o contágio financeiro se propaga através da rede brasileira. 
+O estudo demonstra que a estrutura
+de transmissão de volatilidade entre bancos brasileiros é instável e sensível a choques 
+macroeconômicos e políticos, atingindo picos superiores a $50\%$ em períodos de instabilidade
+política e econômica com Bradesco, Banco do Brasil e Itaú operando como os nós centrais
+na transmissão de choques. Contudo, o estudo define seu universo amostral por critério de
+liquidez, sem estratificar as instituições, o que limita a capacidade de caracterizar como a 
+heterogeneidade institucional do sistema bancário influencia a estrutura de transmissão
+de risco.
+
+O presente trabalho propõe-se a preencher essas lacunas em três frentes. 
+Primeiro, estratifica a amostra por tipo de controle (público, privado nacional e estrangeiro), modelo de negócio (varejo, investimento, atacado e consumo) e porte, tornando a 
+heterogeneidade institucional do sistema bancário brasileiro explícita na análise de 
+\textit{spillovers}. Segundo, vai além das métricas reportadas por \textcite{silva2025} 
+ao comparar explicitamente o ranking de importância sistêmica derivado dos \textit{spillovers}
+com a segmentação prudencial de D-SIBs publicada pelo Banco Central do Brasil, testando se uma 
+metodologia baseada em dados públicos de mercado é capaz de aproximar a classificação 
+regulatória. Terceiro, incorpora métricas de redes ampliadas, \textit{eigenvector centrality}, 
+PageRank e regressão diádica, sendo esta última raramente reportada em estudos de 
+\textit{spillovers} brasileiros e particularmente adequada para testar se há 
+\textit{clustering} na rede de transmissão de risco.
+
+\chapter{Metodologia}
+\label{cap:metodologia}
+
+Esta seção apresenta as escolhas metodológicas do trabalho em três subseções. A
+Subseção~\ref{subsec:dados} descreve a base de dados, os critérios de seleção da amostra,
+a construção das séries de volatilidade e os procedimentos de tratamento dos dados. A
+Subseção~\ref{subsec:dy} apresenta a topologia de redes via Diebold-Yilmaz, incluindo a
+especificação do VAR, a identificação por decomposição generalizada da variância e os
+índices de spillover. A Subseção~\ref{subsec:redes} detalha a visualização de redes e a
+interpretação econômica das métricas de centralidade. A notação é declarada na
+Subseção~\ref{subsec:dados} e mantida ao longo de toda a seção. 
+%TODO
+%Os pacotes computacionais
+%utilizados, as versões e o código completo encontram-se no Apêndice Computacional.
+
+% ──────────────────────────────────────────────────────────────────────────────
+\section{Base de Dados}
+\label{subsec:dados}
+% ──────────────────────────────────────────────────────────────────────────────
+
+\subsubsection*{Seleção da amostra}
+
+A amostra é composta por oito instituições bancárias com ações negociadas na B3 entre
+fevereiro de 2019 e dezembro de 2025. A composição foi definida de modo a maximizar três
+dimensões de heterogeneidade relevantes para o estudo de risco sistêmico: (i)~\textit{tipo
+de controle}, abrangendo bancos privados nacionais, público federal, público estadual e
+privados estrangeiros; (ii)~\textit{perfil de negócio}, cobrindo varejo massificado, banco
+de investimento, atacado corporativo e crédito ao consumo; e (iii)~\textit{porte},
+incluindo tanto \textit{large caps} quanto \textit{mid caps}.
+
+A amostra contempla as oito instituições bancárias com ações listadas na B3 que reúnem, em
+conjunto, representatividade sistêmica e diversidade de perfis de controle e modelo de negócio.
+Itaú Unibanco (ITUB4) e Bradesco (BBDC4) figuram como os dois maiores bancos privados nacionais,
+funcionando como \textit{hubs} centrais da rede de conectividade. O Banco do Brasil (BBAS3),
+como maior instituição pública federal, captura a exposição do sistema a políticas governamentais.
+O Santander (SANB11) representa o principal canal de transmissão de choques internacionais, 
+na condição de maior banco estrangeiro do país. O BTG Pactual (BPAC11), maior banco de 
+investimento independente da América Latina, contribui com um perfil de \textit{wholesale} 
+distinto dos bancos de varejo tradicionais. O Banrisul (BRSR6), único banco público estadual 
+com liquidez suficiente para o estudo, introduz uma dimensão regional (Rio Grande do Sul) à 
+amostra. O ABC Brasil (ABCB4), por sua vez, diversifica tanto o tipo de controle 
+(privado estrangeiro) quanto o modelo de negócio (\textit{wholesale} puro). Por fim, o 
+Banco Pan (BPAN4) representa o segmento de bancos médios de varejo, com a particularidade de 
+manter relação societária com o BTG Pactual, o que pode gerar \textit{spillovers} 
+par-a-par relevantes entre as duas instituições.
+
+Três instituições com presença relevante no mercado de capitais foram deliberadamente
+excluídas. O Banco BMG (BMGB4) apresenta perfil de negócio redundante com o Banco Pan,
+ambos concentrados em crédito consignado e varejo, além de liquidez em bolsa
+materialmente inferior. A B3~S.A.\ (B3SA3) não é uma instituição bancária, mas uma
+infraestrutura de mercado; sua inclusão alteraria a natureza do estudo. BB Seguridade
+(BBSE3) e Porto Seguro (PSSA3) são seguradoras e, portanto, sua inclusão deslocaria o foco
+do sistema bancário para uma rede financeira mais ampla, comprometendo a comparabilidade
+com as Instituições Financeiras Sistemicamente Importantes Domésticas (D-SIBs) designadas
+pelo Banco Central do Brasil (BCB).
+
+O recorte temporal de cada instituição não é uma escolha discricionária, mas
+decorre diretamente do critério de liquidez descrito na Subseção~\ref{sec:tratamento-dados}
+(volume financeiro diário inferior a R\$~100 mil). Seis das oito instituições —
+ITUB4, BBDC4, BBAS3, SANB11, BRSR6 e ABCB4 — nunca ficam abaixo desse piso ao
+longo de toda a base disponível, desde 2014. As duas exceções definem as
+fronteiras efetivas da amostra. O BPAC11 só passa a negociar de forma
+continuamente líquida a partir de 18/08/2017 — antes disso, a ação, listada em
+fevereiro de 2017, ainda está em fase de formação de \textit{book}. O BPAN4, por sua vez,
+só se torna continuamente líquido a partir de 16/01/2019: no terceiro trimestre
+de 2018, por exemplo, o papel permanece abaixo do piso de liquidez em 44 dos 63
+pregões do período, com média de apenas 48 negócios diários. 
+
+Essas duas fronteiras — determinadas pelos dados, não escolhidas a priori — geram
+naturalmente dois painéis aninhados, apresentados na Tabela~\ref{tab:paineis}.
+O painel principal (N~=~7) exclui o Banco Pan e cobre o período de outubro de
+2017 a maio de 2026, alcançando 2.148 pregões ao longo de 8,7 anos — o maior
+alcance temporal possível dado o critério de liquidez das sete instituições
+restantes. O painel de extensão (N~=~8) inclui o Banco Pan e cobre janeiro de
+2019 a outubro de 2025, totalizando 1.690 pregões ao longo de 6,8 anos.
+
+\begin{table}[htb]
+\centering
+\caption{Painéis amostrais com fronteiras determinadas pelos dados}
+\label{tab:paineis}
+\begin{tabular}{lccc}
+\toprule
+Painel & Janela & Observações & Papel \\
+\midrule
+N = 7 (sem Banco Pan) & 10/2017 a 05/2026 & 2.148 & Principal \\
+N = 8 (com Banco Pan) & 01/2019 a 10/2025 & 1.690 & Extensão \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria, a partir de ComDinheiro.}
+\end{table}
+
+
+\subsection*{6.1.2 Construção das séries de volatilidade}
+
+\subsubsection*{Justificativa da variável-alvo}
+
+A variável-alvo deste estudo é a volatilidade das ações dos bancos selecionados, e não os
+retornos. Essa escolha é motivada pelo próprio objeto de análise: importância sistêmica, no
+sentido adotado pelo BCB para a designação de D-SIBs, é um conceito de segundo momento e
+refere-se à capacidade de uma instituição propagar \textit{estresse} pelo sistema
+financeiro, não apenas retornos. Spillovers de volatilidade capturam precisamente essa
+dimensão e são tipicamente maiores, mais informativos e mais robustos a mudanças de regime
+do que spillovers de retornos \parencite{diebold2009}. Ademais, a janela amostral escolhida
+(2019--2025) concentra episódios cujos efeitos se manifestaram primordialmente na
+volatilidade como COVID-19, ciclo de aperto da Selic
+em 2022 e fraude contábil da Americanas em 2023. Por fim, a presença de \textit{mid caps}
+na amostra, cujo volume de negociação é irregular, recomenda o uso de medidas
+\textit{range-based}, mais robustas ao ruído de microestrutura do que retornos diários
+\textit{close-to-close}.
+
+\subsubsection*{Estimador de Yang-Zhang}
+
+A volatilidade é mensurada pelo estimador \textit{range-based} de
+\textcite{yang2000}, que combina três componentes em uma média ponderada que minimiza a
+variância do estimador:
+
+\begin{equation}
+  \hat{\sigma}^{2}_{\mathrm{YZ}}
+    = \hat{\sigma}^{2}_{o}
+    + k\,\hat{\sigma}^{2}_{c}
+    + (1-k)\,\hat{\sigma}^{2}_{\mathrm{RS}},
+  \label{eq:yz}
+\end{equation}
+
+\noindent onde, para uma janela de $n$ dias úteis:
+
+\begin{align}
+  \hat{\sigma}^{2}_{o}
+    &= \frac{1}{n-1}\sum_{t=1}^{n}
+       \bigl[\log(O_t/C_{t-1}) - \bar{r}_o\bigr]^{2},
+  \label{eq:overnight}\\[4pt]
+  \hat{\sigma}^{2}_{c}
+    &= \frac{1}{n-1}\sum_{t=1}^{n}
+       \bigl[\log(C_t/O_t) - \bar{r}_c\bigr]^{2},
+  \label{eq:openclose}\\[4pt]
+  \hat{\sigma}^{2}_{\mathrm{RS}}
+    &= \frac{1}{n-1}\sum_{t=1}^{n}
+       \Bigl[
+         \log(H_t/C_t)\log(H_t/O_t)
+         + \log(L_t/C_t)\log(L_t/O_t)
+       \Bigr],
+  \label{eq:rs}\\[4pt]
+  k &= \frac{0{,}34}{1{,}34 + \dfrac{n+1}{n-1}}.
+  \label{eq:k}
+\end{align}
+
+\noindent Aqui $H_t$, $L_t$, $O_t$ e $C_t$ denotam os preços máximo, mínimo, de abertura
+e de fechamento no dia $t$, respectivamente. O parâmetro $k$ em~\eqref{eq:k} decorre da
+minimização analítica da variância do estimador conjunto \parencite{yang2000}. Os
+termos $\bar{r}_o = n^{-1}\sum_{t}\log(O_t/C_{t-1})$ e
+$\bar{r}_c = n^{-1}\sum_{t}\log(C_t/O_t)$ são as médias amostrais dos retornos
+\textit{overnight} e \textit{open-to-close} dentro da janela, respectivamente.
+
+A janela é fixada em $n = 21$ dias úteis, alinhando a medida ao conceito de volatilidade
+mensal. A variável efetivamente utilizada nas estimações é
+$y_t = \log\hat{\sigma}_{\mathrm{YZ},t}$, onde
+$\hat{\sigma}_{\mathrm{YZ},t} = \sqrt{\hat{\sigma}^{2}_{\mathrm{YZ},t}}$. Essa
+transformação logarítmica é padrão na literatura de spillovers \parencite{diebold2012} e
+aproxima a distribuição dos choques de um padrão gaussiano, facilitando a inferência no
+VAR.
+
+\subsubsection*{Por que Yang-Zhang e não estimadores alternativos?}
+
+O estimador de Garman-Klass ignora a variação \textit{overnight} ($C_{t-1}$ a $O_t$),
+tratando o ativo como se nada ocorresse fora do pregão. Para o sistema bancário brasileiro
+no período 2019--2025, isso é particularmente problemático já que decisões do Comitê de Política
+Monetária (Copom) são divulgadas após o fechamento do mercado, resultados trimestrais são
+publicados \textit{after-market} e dados macroeconômicos norte-americanos chegam durante a
+tarde-noite no horário de Brasília. A literatura empírica em ações brasileiras estima que
+entre 40\% e 50\% da variância total ocorre \textit{overnight}, de modo que descartar essa
+componente subestima sistematicamente a volatilidade efetiva. Adicionalmente, Garman-Klass
+assume \textit{drift} intradiário nulo, o que o torna positivamente viesado em janelas com
+tendência marcada como em março de 2020 (COVID-19) e janeiro de 2023 (Americanas). O
+estimador de Parkinson utiliza apenas os extremos ($H_t$ e $L_t$), sendo estritamente
+menos eficiente do que Garman-Klass, que incorpora $O_t$ e $C_t$.
+
+A volatilidade realizada ($RV$) intradiária exigiria dados de \textit{tick},
+indisponíveis abertamente para o período amostral completo. Mesmo com acesso a dados de
+alta frequência, medições a 5 minutos produzem viés por \textit{bid-ask bounce}, e as
+correções técnicas associadas fogem do escopo deste trabalho. A presença de \textit{mid
+caps} na amostra agrava o problema de modo que dias sem negociação contínua geram zeros artificiais
+que inflam $RV$. A abordagem GARCH(1,1) introduziria uma camada paramétrica adicional
+antes do VAR, gerando duas etapas de modelagem encadeadas que complicam a interpretação
+e a robustez, além de operar apenas com retornos \textit{close-to-close}, descartando
+a informação intradiária que torna os estimadores \textit{range-based} mais eficientes.
+
+\subsubsection*{Período amostral}
+
+O período amostral abrange de fevereiro de 2019 a dezembro de 2025. Esse recorte garante
+que todas as oito instituições já tenham concluído seus IPOs e apresentem histórico
+suficiente de negociação. Adicionalmente, o período concentra os principais episódios de
+estresse do sistema financeiro brasileiro recente, cujos efeitos sobre a volatilidade
+bancária são centrais para a análise dinâmica: a crise da COVID-19 e os \textit{circuit breakers} de março de 2020, 
+o ciclo de aperto monetário da Selic entre 2022 e 2023, a fraude contábil da Americanas (janeiro de
+2023) e o estresse fiscal do segundo semestre de 2024. A Tabela~\ref{tab:eventos}
+apresenta os principais eventos de \textit{drift} identificados na janela amostral.
+
+\begin{table}[H]
+\centering
+\caption{Principais eventos de \textit{drift} no período amostral (2019-2025)}
+\label{tab:eventos}
+\small
+\begin{tabular}{l>{\raggedright\arraybackslash}p{3.8cm}>{\raggedright\arraybackslash}p{6cm}}
+\toprule
+Período & Direção & Causa \\
+\midrule
+Mar./2020                & Negativo extremo               & \textit{Crash} COVID-19 \\
+Abr.--dez./2020          & Positivo persistente           & Recuperação pós-\textit{crash} \\
+Jan.--set./2022          & Negativo persistente           & Aperto da Selic \\
+Jan.--mar./2023          & Negativo (ITUB4, BBDC4)        & Fraude Americanas \\
+Ago.--dez./2023          & Positivo (\textit{large caps}) & Início do ciclo de corte da Selic \\
+Mai./2024 (BRSR6)        & Negativo idiossincrático       & Enchentes no Rio Grande do Sul \\
+Out.--dez./2024          & Negativo persistente           & Crise fiscal pós-pacote governamental \\
+Jan.--abr./2025          & Negativo (sistema)             & Tarifas Trump pós-posse \\
+Mai.--dez./2025          & Positivo (\textit{large caps}) & Expansão de \textit{spread} bancário \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection*{6.1.3 Tratamento dos dados}
+
+Os procedimentos de tratamento são aplicados na seguinte ordem.
+
+\subsubsection*{1.\ Extração dos dados}
+
+Os dados OHLC de todas as oito instituições foram obtidos da base ComDinheiro.
+Os preços são fornecidos já ajustados retroativamente por proventos considerando dividendos, 
+juros sobre capital próprio, bonificações, \textit{splits}, \textit{inplits} e cisões 
+(\textit{spin-offs}). A escolha por essa fonte foi motivada por duas limitações identificadas.
+Primeiro, o Banco Pan (BPAN4) deixou de ser negociado ao final de janeiro de 2026, 
+em decorrência da incorporação ao BTG Pactual, o que tornou o \textit{ticker} indisponível 
+em provedores que não mantêm o histórico de ativos descontinuados. Segundo, o ajuste automático
+de provedores como o Yahoo Finance corrige dividendos e \textit{splits} mas não cisões. A série
+de ITUB4, por exemplo, registraria uma queda de aproximadamente $-19,8\%$ decorrente
+da cisão do braço de operações de cartões do Itaú, em um movimento que não reflete volatilidade
+de mercado real. Caso não corrigido, a estimação dos \textit{spillovers} seria distorcida
+nas janelas que cobrem o período.
+
+\subsubsection*{2.\ Verificação de consistência}
+
+Antes da estimação da volatilidade, os dados OHLC são submetidos a verificações de
+consistência lógica: $H_t \geq L_t$, $H_t \geq O_t$, $H_t \geq C_t$, $L_t \leq O_t$,
+$L_t \leq C_t$ e $O_t, C_t > 0$. Violações indicam erros de digitação ou de
+\textit{parsing} no provedor de dados, que produzem valores \texttt{NaN} na estimação de
+Yang-Zhang e falham silenciosamente.
+
+\subsubsection*{3.\ Filtro de liquidez}
+
+Dias com volume de negociação inferior a 1.000 ações ou volume financeiro inferior a
+R\$\,100 mil são marcados como \texttt{NA}. Para as \textit{mid caps} ABCB4, BPAN4 e
+BRSR6, dias com volume muito reduzido produzem \textit{ranges} ($H_t - L_t$) que refletem
+o \textit{bid-ask spread} da microestrutura, e não a volatilidade efetiva do ativo.
+Observações filtradas são tratadas na etapa de imputação.
+
+\subsubsection*{4.\ Tratamento de \textit{outliers}}
+
+Retornos extremos são identificados pelo escore padronizado
+$z_t = (r_t - \bar{r})/\hat{\sigma}_r$ calculado sobre os retornos
+\textit{close-to-close}, sendo $|z_t| > 5$ o critério de sinalização. Para cada
+observação sinalizada, verifica-se: se múltiplas instituições registram retorno extremo na
+mesma data, o evento é classificado como real e mantido; se apenas uma instituição
+apresenta retorno extremo sem notícia identificável, a observação é conferida em fonte
+alternativa. Como referência, 12 e 16 de março
+de 2020 (\textit{circuit breakers} da COVID-19) e 12 de janeiro de 2023 (Americanas,
+restrito a ITUB4 e BBDC4) são eventos reais e são preservados na amostra.
+
+\subsubsection*{5.\ Estimação da volatilidade}
+
+A volatilidade Yang-Zhang é estimada conforme as
+equações~\eqref{eq:yz}--\eqref{eq:k}, com janela rolante de $n = 21$ dias úteis. Aplica-se
+um piso numérico de $10^{-8}$ antes da transformação logarítmica:
+$y_t = \log\bigl(\max(\hat{\sigma}_{\mathrm{YZ},t},\,10^{-8})\bigr)$. Os primeiros
+20 dias de cada série recebem \texttt{NA} em função da janela \textit{rolling}.
+
+\subsubsection*{6.\ Alinhamento e imputação}
+
+As oito séries de log-volatilidade são alinhadas por interseção de datas de pregão,
+formando um painel $T \times 8$. Dias em que todas as séries apresentam \texttt{NA}
+(finais de semana, feriados) são excluídos. Observações isoladas com \texttt{NA}
+decorrentes do filtro de liquidez ou de erros de provedor são imputadas por filtro de
+Kalman aplicado a um modelo ARIMA selecionado automaticamente\footnote{O filtro de Kalman
+fornece estimativas ótimas de estados não observados em um modelo de espaço de estados,
+minimizando o erro quadrático médio da predição. Neste contexto, o modelo ARIMA descreve
+a dinâmica autorregressiva da série de log-volatilidade e o filtro utiliza toda a
+informação disponível, observações passadas e futuras (\textit{smoother}) para
+imputar os valores ausentes. Para detalhes, consultar \textcite{moritz2017}.}.
+A integridade do painel é verificada ao final pela ausência de qualquer \texttt{NA}
+residual.
+
+\subsection*{6.1.4 Propriedades estatísticas}
+
+A estacionariedade de cada série de log-volatilidade é testada por meio do teste de
+Dickey-Fuller Aumentado (ADF), o teste KPSS, o teste DF-GLS, 
+o teste de Phillips-Perron e o teste de Zivot-Andrews. Séries de log-volatilidade financeira
+frequentemente exibem memória longa, de modo que tanto o ADF quanto o KPSS podem rejeitar
+suas respectivas hipóteses nulas simultaneamente \parencite{andersen2001, andersen2003, diebold2001}.
+Esse padrão de rejeição simultânea não constitui evidência de raiz unitária. A estimação por
+janela rolante também constitui uma resposta natural à não-estacionariedade de longo prazo. 
+Ao estimar o VAR sobre janelas de $W = 200$ dias, a dinâmica de memória longa e as quebras
+de regime da amostra completa são atenuadas e cada janela se aproxima de um processo estacionário
+no curto prazo.
+A presença de autocorrelação serial e heterocedasticidade
+condicional é verificada pelos testes de Ljung-Box e ARCH-LM, respectivamente.
+% Estatísticas descritivas detalhadas encontram-se no Apêndice Estatístico.
+
+% ──────────────────────────────────────────────────────────────────────────────
+\section{Topologia de Redes via Diebold-Yilmaz}
+\label{subsec:dy}
+% ──────────────────────────────────────────────────────────────────────────────
+
+\subsection*{Especificação do VAR}
+
+Seja $\mathbf{y}_t = (y_{1t}, \ldots, y_{Nt})'$ o vetor $N \times 1$ das séries de
+log-volatilidade, com $N = 8$. O modelo VAR de ordem $p$ é:
+
+\begin{equation}
+  \mathbf{y}_t
+    = \mathbf{c}
+    + \sum_{i=1}^{p} \boldsymbol{\Phi}_i\,\mathbf{y}_{t-i}
+    + \boldsymbol{\varepsilon}_t,
+  \qquad
+  \boldsymbol{\varepsilon}_t \sim (\mathbf{0},\,\boldsymbol{\Sigma}),
+  \label{eq:var}
+\end{equation}
+
+\noindent onde $\mathbf{c}$ é um vetor de constantes, $\boldsymbol{\Phi}_i$ são matrizes
+$N \times N$ de coeficientes autorregressivos e $\boldsymbol{\varepsilon}_t$ é um vetor
+de inovações com matriz de covariância $\boldsymbol{\Sigma}$. Os parâmetros são estimados
+por Mínimos Quadrados Ordinários (MQO) equação a equação, estimador implementado pelo pacote
+\texttt{ConnectednessApproach} \parencite{gabauer2022}.
+
+A especificação principal adota $p = 2$ defasagens. Essa escolha reflete dois critérios.
+Primeiro, a parcimônia: com janela rolante de $W = 200$ dias úteis, o modelo VAR$(p)$
+com $N = 8$ variáveis possui $N^2 p + N = 136$ parâmetros no total. Como a estimação
+é feita por MQO equação a equação, o parâmetro relevante para a estabilidade numérica
+não é o total do sistema, mas a razão observações/parâmetros por equação: cada uma das
+$N$ equações possui $Np + 1 = 17$ regressores, de modo que essa razão é de
+$T_w / (Np+1) = 200/17 \approx 11{,}7$ para $p=2$. Com $p = 4$, essa razão cai para
+$200/33 \approx 6{,}1$, deteriorando a estabilidade numérica da estimação. 
+Segundo, consistência com a literatura: \textcite{diebold2009} e \textcite{diebold2012} 
+adotam $p = 2$ como especificação de referência em amostras similares. 
+% A Tabela~\ref{tab:bic} apresenta o critério de informação de Schwarz (BIC) para 
+% $p \in \{1, 2, 3, 4\}$, estimado sobre o \textit{full sample}. O Apêndice de Robustez 
+% reporta a sensibilidade dos índices de spillover a diferentes valores de $p$.
+
+% TODO (Mono 2): rodar VARselect() no full sample para gerar a Tabela~\ref{tab:bic}
+% (BIC para p = 1,2,3,4) e descomentar o bloco abaixo.
+%
+% \begin{table}[H]
+% \centering
+% \caption{Critério de informação de Schwarz (BIC) por ordem de defasagem}
+% \label{tab:bic}
+% \begin{tabular}{cc}
+% \toprule
+% $p$ & BIC \\
+% \midrule
+% 1 & ... \\
+% 2 & ... \\
+% 3 & ... \\
+% 4 & ... \\
+% \bottomrule
+% \end{tabular}
+% \end{table}
+
+A condição de estabilidade do VAR exige que todas as raízes do polinômio característico
+$\det\!\bigl(\mathbf{I}_N - \boldsymbol{\Phi}_1 z - \cdots - \boldsymbol{\Phi}_p
+z^p\bigr) = 0$ encontrem-se fora do círculo unitário no plano complexo,
+equivalentemente, que os módulos dos autovalores da matriz companheira sejam estritamente
+menores que um. Essa condição garante que o VAR admita a representação de média móvel de
+ordem infinita $\mathbf{y}_t = \sum_{h=0}^{\infty} \mathbf{A}_h\,\boldsymbol{\varepsilon}_{t-h}$,
+utilizada na decomposição de variância subsequente.
+
+\subsection*{Identificação via GFEVD}
+
+A identificação dos spillovers baseia-se na \textit{Generalized Forecast Error Variance
+Decomposition} (GFEVD) de \textcite{pesaran1998}. Dado o horizonte de previsão $\tau$, a
+fração da variância do erro de previsão de $i$ atribuída a choques em $j$ é:
+
+\begin{equation}
+  \theta^{\tau}_{ij}
+    = \frac{
+        \sigma_{jj}^{-1}
+        \displaystyle\sum_{h=0}^{\tau-1}
+        \bigl(\mathbf{e}_i'\,\mathbf{A}_h\,\boldsymbol{\Sigma}\,\mathbf{e}_j\bigr)^{2}
+      }{
+        \displaystyle\sum_{h=0}^{\tau-1}
+        \mathbf{e}_i'\,\mathbf{A}_h\,\boldsymbol{\Sigma}\,\mathbf{A}_h'\,\mathbf{e}_i
+      },
+  \label{eq:gfevd}
+\end{equation}
+
+\noindent onde $\sigma_{jj}$ é o $j$-ésimo elemento diagonal de $\boldsymbol{\Sigma}$ e
+$\mathbf{e}_i$ é o $i$-ésimo vetor canônico. A identificação generalizada de Pesaran e
+Shin distingue-se da decomposição de Cholesky por não impor ordenação recursiva,
+eliminando a sensibilidade dos resultados a permutações da ordem do VAR. Como
+contrapartida, as linhas da matriz $\boldsymbol{\Theta}^{\tau} = [\theta^{\tau}_{ij}]$ não
+somam necessariamente um. Aplica-se normalização linha-a-linha:
+
+\begin{equation}
+  \tilde{\theta}^{\tau}_{ij}
+    = \frac{\theta^{\tau}_{ij}}{\displaystyle\sum_{j=1}^{N}\theta^{\tau}_{ij}},
+  \label{eq:norm}
+\end{equation}
+
+\noindent de modo que $\sum_{j=1}^{N}\tilde{\theta}^{\tau}_{ij} = 1$ e
+$\sum_{i,j=1}^{N}\tilde{\theta}^{\tau}_{ij} = N$ por construção. O horizonte é fixado em
+$\tau = 10$ dias úteis, seguindo a convenção de
+\textcite{diebold2009}, \textcite{diebold2012} e \textcite{diebold2014}.
+
+\subsection*{Índices de \textit{spillover}}
+
+A partir da matriz normalizada $\tilde{\boldsymbol{\Theta}}^{\tau}$, definem-se os índices
+de conectividade de \textcite{diebold2012}: o índice de conectividade total, os índices
+direcionais de transmissão e recepção de choques, o índice líquido por instituição e o
+índice líquido par-a-par.
+
+\begin{align}
+  \text{TCI}
+    &= \frac{1}{N}
+       \sum_{\substack{i,j=1\\i\neq j}}^{N}
+       \tilde{\theta}^{\tau}_{ij}
+       \times 100,
+  \label{eq:tci}\\[6pt]
+  \text{FROM}_i
+    &= \sum_{\substack{j=1\\j\neq i}}^{N}
+       \tilde{\theta}^{\tau}_{ij}
+       \times 100,
+  \label{eq:from}\\[6pt]
+  \text{TO}_j
+    &= \sum_{\substack{i=1\\i\neq j}}^{N}
+       \tilde{\theta}^{\tau}_{ij}
+       \times 100,
+  \label{eq:to}\\[6pt]
+  \text{NET}_i
+    &= \text{TO}_i - \text{FROM}_i,
+  \label{eq:net}\\[6pt]
+  \text{NET}_{ij}
+    &= \tilde{\theta}^{\tau}_{ji} - \tilde{\theta}^{\tau}_{ij}.
+  \label{eq:pairwise}
+\end{align}
+
+O \textit{Total Connectedness Index} (TCI) em~\eqref{eq:tci} mede a fração média da
+variância do erro de previsão de cada banco explicada por choques nos demais.
+FROM$_i$~\eqref{eq:from} quantifica a receptividade sistêmica de $i$; TO$_j$~\eqref{eq:to}
+mede a transmissão sistêmica de $j$; NET$_i$~\eqref{eq:net} classifica as instituições
+como transmissores líquidos (NET$_i > 0$) ou receptores líquidos (NET$_i < 0$);
+NET$_{ij}$~\eqref{eq:pairwise} captura a direção líquida do fluxo de risco entre cada par
+de instituições.
+
+Para além dos índices direcionais propostos por \textcite{diebold2012}, este trabalho
+incorpora um conjunto de métricas de teoria de redes, 
+centralidade de intermediação (\textit{betweenness}), centralidade de autovetor, assortatividade e
+PageRank, calculadas sobre o grafo de conectividade $G = (V, E, W)$ definido na
+Seção~\ref{subsec:redes}. Essa incorporação constitui uma contribuição adicional do
+trabalho. Enquanto a literatura de \textit{spillover} de volatilidade concentra-se nos
+índices direcionais de primeira ordem (quanto cada instituição transmite e recebe
+diretamente), as métricas de rede capturam a posição estrutural de cada banco na
+topologia de contágio, incluindo efeitos indiretos e recursivos. O caso mais ilustrativo
+é o PageRank, cuja formulação recursiva atribui a $i$ um valor elevado quando $i$ recebe 
+\textit{spillovers} de instituições que, por sua vez, também possuem PageRank elevado.
+A interpretação econômica é a de contribuição recursiva de risco, de modo que um banco 
+é sistemicamente importante não apenas pela intensidade de seus \textit{spillovers} diretos, 
+mas por estar conectado a outras instituições igualmente centrais, lógica análoga à do 
+\textit{framework} de bancos sistemicamente importantes (D-SIB) adotado pelo Banco Central 
+do Brasil. O contraste central deste trabalho é a confrontação entre o ranking de 
+importância sistêmica gerado por essas métricas de rede e a segmentação oficial de D-SIBs 
+publicada pelo BCB.
+
+\subsection*{Análise dinâmica}
+
+Os índices de \textit{spillover} são estimados em janela rolante de $W = 200$ dias úteis
+($\approx 10$ meses de negociação). Esse valor representa um equilíbrio entre a
+estabilidade numérica da estimação e a responsividade a mudanças de regime. O horizonte
+$\tau = 10$ segue a convenção da literatura de referência
+\parencite{diebold2009,diebold2012,diebold2014,demirer2018,antonakakis2020}.
+
+%O Apêndice de Robustez reporta a sensibilidade dos resultados a $p \in \{1,2,3,4\}$,
+%$W \in \{150,200,250\}$ dias úteis e $\tau \in \{5,10,20\}$ dias, além da comparação entre
+%spillovers de log-volatilidade e de retorno e da estabilidade dos rankings em
+%sub-amostras pré- e pós-pandemia.
+
+% ──────────────────────────────────────────────────────────────────────────────
+\section{Visualização de Redes}
+\label{subsec:redes}
+% ──────────────────────────────────────────────────────────────────────────────
+
+A matriz normalizada $\tilde{\boldsymbol{\Theta}}^{\tau}$ define a matriz de adjacência de um
+grafo dirigido ponderado $G = (V, E, W)$, em que $V$ representa as oito instituições, $E$
+o conjunto de arestas de transmissão de variância e $W$ os pesos $\tilde{\theta}^{\tau}_{ij}$.
+A convenção de direção é: $\tilde{\theta}^{\tau}_{ij}$ representa o fluxo de $j$ para $i$
+(o choque em $j$ explica parcela da variância do erro de previsão de $i$). Como o pacote
+\texttt{igraph} interpreta o elemento $\mathrm{mat}[i,j]$ como aresta saindo de $i$ e
+chegando em $j$, a matriz é transposta antes da construção do grafo para preservar a
+semântica econômica.
+
+Os índices definidos na Subseção~\ref{subsec:dy} são mapeados em atributos visuais do
+grafo: (i)~o tamanho do nó é proporcional ao índice TO$_i$; (ii)~a cor do nó é
+codificada pelo índice NET$_i$ por meio de uma paleta divergente, distinguindo
+transmissores líquidos de receptores líquidos; (iii)~a espessura de cada aresta é
+proporcional ao \textit{spillover} par-a-par NET$_{ij}$; e (iv)~a forma ou contorno do nó
+codifica o tipo de controle institucional.
+
+A rede DY é quase completa: com $N = 8$, há até 56 arestas dirigidas. Para fins de
+visualização exclusivamente, aplica-se um \textit{threshold} de 5\% sobre os pesos
+$\tilde{\theta}^{\tau}_{ij}$, retendo apenas as conexões mais intensas. Esse filtro não afeta
+a inferência conduzida a partir das tabelas e séries temporais dos índices DY.
+
+O grafo do \textit{full sample} é posicionado pelo algoritmo de Fruchterman-Reingold. Para
+os painéis comparativos entre subperíodos (pré-COVID, COVID-19, aperto da Selic e crise
+Americanas), as coordenadas dos nós são calculadas uma única vez sobre o \textit{full
+sample} e mantidas fixas em todos os painéis. Essa escolha é metodológica, garantindo que as
+diferenças visuais entre painéis reflitam reconfiguração da topologia da rede, e não
+reposicionamento dos nós.
+
+A representação em grafo é um instrumento heurístico e comunicativo. As escolhas de
+\textit{threshold}, algoritmo de \textit{layout} e paleta de cores afetam a percepção
+visual, mas não os coeficientes estimados. Toda a inferência sobre transmissão de risco
+entre as instituições é conduzida a partir das tabelas e das séries temporais dos índices
+DY e das métricas de centralidade definidos na Subseção~\ref{subsec:dy}.
+
+\chapter{Resultados}
+\label{cap:resultados}
+
+\postextual
+
+% ---- Referências bibliográficas ----
+
+% No final do documento, antes de \end{document}:
+% \bibliography{referencias}
+
+\printbibliography
+
+\end{document}

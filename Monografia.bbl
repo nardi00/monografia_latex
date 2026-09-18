@@ -1,0 +1,1775 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{acemoglu2015}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d849e6f8de178bfb18aa67341c9f8d38}{%
+           family={Acemoglu},
+           familyi={A\bibinitperiod},
+           given={Daron},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f265f26cb985781081b85b9fe4401795}{%
+           family={Ozdaglar},
+           familyi={O\bibinitperiod},
+           given={Asuman},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36f43dd3d18c58095e5aa6bbc89a670c}{%
+           family={{Tahbaz-Salehi}},
+           familyi={T\bibinitperiod},
+           given={Alireza},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d472b5a989368fde27e73478482fa574}
+      \strng{fullhash}{d472b5a989368fde27e73478482fa574}
+      \strng{fullhashraw}{d472b5a989368fde27e73478482fa574}
+      \strng{bibnamehash}{d472b5a989368fde27e73478482fa574}
+      \strng{authorbibnamehash}{d472b5a989368fde27e73478482fa574}
+      \strng{authornamehash}{d472b5a989368fde27e73478482fa574}
+      \strng{authorfullhash}{d472b5a989368fde27e73478482fa574}
+      \strng{authorfullhashraw}{d472b5a989368fde27e73478482fa574}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper argues that the extent of financial contagion exhibits a form of phase transition: as long as the magnitude of negative shocks affecting financial institutions are sufficiently small, a more densely connected financial network (corresponding to a more diversified pattern of interbank liabilities) enhances financial stability. However, beyond a certain point, dense interconnections serve as a mechanism for the propagation of shocks, leading to a more fragile financial system. Our results thus highlight that the same factors that contribute to resilience under certain conditions may function as significant sources of systemic risk under others. (JEL D85, E44, G21, G28, L14)}
+      \field{issn}{0002-8282}
+      \field{journaltitle}{American Economic Review}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Systemic {{Risk}} and {{Stability}} in {{Financial Networks}}}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{105}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{564\bibrangedash 608}
+      \range{pages}{45}
+      \verb{doi}
+      \verb 10.1257/aer.20130456
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\LT3X2KZJ\Acemoglu et al. - 2015 - Systemic Risk and Stability in Financial Networks.pdf
+      \endverb
+    \endentry
+    \entry{allen2000}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=86bd75c0f65033e37f051cfdb3c434c7}{%
+           family={Allen},
+           familyi={A\bibinitperiod},
+           given={Franklin},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26c60a488caeda5365c0167406c1edc8}{%
+           family={Gale},
+           familyi={G\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{efff55b49281eadec4500e4a134c42ac}
+      \strng{fullhash}{efff55b49281eadec4500e4a134c42ac}
+      \strng{fullhashraw}{efff55b49281eadec4500e4a134c42ac}
+      \strng{bibnamehash}{efff55b49281eadec4500e4a134c42ac}
+      \strng{authorbibnamehash}{efff55b49281eadec4500e4a134c42ac}
+      \strng{authornamehash}{efff55b49281eadec4500e4a134c42ac}
+      \strng{authorfullhash}{efff55b49281eadec4500e4a134c42ac}
+      \strng{authorfullhashraw}{efff55b49281eadec4500e4a134c42ac}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{jstor}
+      \field{journaltitle}{The Journal of Political Economy}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{title}{Financial {{Contagion}}}
+      \field{volume}{108}
+      \field{year}{2000}
+      \field{pages}{1\bibrangedash 33}
+      \range{pages}{33}
+      \verb{eprint}
+      \verb 3038241
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\TGDBEAHI\Allen e Gale - 2000 - Financial Contagion.pdf
+      \endverb
+    \endentry
+    \entry{allen1998}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=86bd75c0f65033e37f051cfdb3c434c7}{%
+           family={Allen},
+           familyi={A\bibinitperiod},
+           given={Franklin},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26c60a488caeda5365c0167406c1edc8}{%
+           family={Gale},
+           familyi={G\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[American Finance Association, Wiley]}%
+      }
+      \strng{namehash}{efff55b49281eadec4500e4a134c42ac}
+      \strng{fullhash}{efff55b49281eadec4500e4a134c42ac}
+      \strng{fullhashraw}{efff55b49281eadec4500e4a134c42ac}
+      \strng{bibnamehash}{efff55b49281eadec4500e4a134c42ac}
+      \strng{authorbibnamehash}{efff55b49281eadec4500e4a134c42ac}
+      \strng{authornamehash}{efff55b49281eadec4500e4a134c42ac}
+      \strng{authorfullhash}{efff55b49281eadec4500e4a134c42ac}
+      \strng{authorfullhashraw}{efff55b49281eadec4500e4a134c42ac}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Empirical evidence suggests that banking panics are related to the business cycle and are not simply the result of "sunspots." Panics occur when depositors perceive that the returns on bank assets are going to be unusually low. We develop a simple model of this. In this setting, bank runs can be first-best efficient: they allow efficient risk sharing between early and late withdrawing depositors and they allow banks to hold efficient portfolios. However, if costly runs or markets for risky assets are introduced, central bank intervention of the right kind can lead to a Pareto improvement in welfare.}
+      \field{eprinttype}{jstor}
+      \field{issn}{0022-1082}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{4}
+      \field{title}{Optimal {{Financial Crises}}}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{53}
+      \field{year}{1998}
+      \field{urldateera}{ce}
+      \field{pages}{1245\bibrangedash 1284}
+      \range{pages}{40}
+      \verb{eprint}
+      \verb 117401
+      \endverb
+    \endentry
+    \entry{andersen2001}{article}{}{}
+      \name{author}{4}{ul=4}{%
+        {{un=0,uniquepart=base,hash=09c85c9c10e1f8f0e62363a927495479}{%
+           family={Andersen},
+           familyi={A\bibinitperiod},
+           given={Torben\bibnamedelima G.},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39f8f5a428abd62057a0152546172106}{%
+           family={Bollerslev},
+           familyi={B\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15cc2e3b52b5ea2d3045be532376a348}{%
+           family={Diebold},
+           familyi={D\bibinitperiod},
+           given={Francis\bibnamedelima X.},
+           giveni={F\bibinitperiod\bibinitdelim X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45a28b786df957712b5e19ed90520aaa}{%
+           family={Ebens},
+           familyi={E\bibinitperiod},
+           given={Heiko},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cdd28a655870f423da01d1fcdda5fdaf}
+      \strng{fullhash}{cdd28a655870f423da01d1fcdda5fdaf}
+      \strng{fullhashraw}{cdd28a655870f423da01d1fcdda5fdaf}
+      \strng{bibnamehash}{cdd28a655870f423da01d1fcdda5fdaf}
+      \strng{authorbibnamehash}{cdd28a655870f423da01d1fcdda5fdaf}
+      \strng{authornamehash}{cdd28a655870f423da01d1fcdda5fdaf}
+      \strng{authorfullhash}{cdd28a655870f423da01d1fcdda5fdaf}
+      \strng{authorfullhashraw}{cdd28a655870f423da01d1fcdda5fdaf}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We examine ``realized'' daily equity return volatilities and correlations obtained from high-frequency intraday transaction prices on individual stocks in the Dow Jones Industrial Average. We find that the unconditional distributions of realized variances and covariances are highly right-skewed, while the realized logarithmic standard deviations and correlations are approximately Gaussian, as are the distributions of the returns scaled by realized standard deviations. Realized volatilities and correlations show strong temporal dependence and appear to be well described by long-memory processes. Finally, there is strong evidence that realized volatilities and correlations move together in a manner broadly consistent with latent factor structure.}
+      \field{issn}{0304-405X}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{The Distribution of Realized Stock Return Volatility}
+      \field{urlday}{12}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{61}
+      \field{year}{2001}
+      \field{urldateera}{ce}
+      \field{pages}{43\bibrangedash 76}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1016/S0304-405X(01)00055-1
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\F8MNIZZG\S0304405X01000551.html
+      \endverb
+      \keyw{Correlation,Equity markets,High-frequency data,Integrated volatility,Long memory}
+    \endentry
+    \entry{andersen2003}{article}{}{}
+      \name{author}{4}{ul=4}{%
+        {{un=0,uniquepart=base,hash=09c85c9c10e1f8f0e62363a927495479}{%
+           family={Andersen},
+           familyi={A\bibinitperiod},
+           given={Torben\bibnamedelima G.},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39f8f5a428abd62057a0152546172106}{%
+           family={Bollerslev},
+           familyi={B\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15cc2e3b52b5ea2d3045be532376a348}{%
+           family={Diebold},
+           familyi={D\bibinitperiod},
+           given={Francis\bibnamedelima X.},
+           giveni={F\bibinitperiod\bibinitdelim X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e1a168b034df2b20c2024d8976ae0157}{%
+           family={Labys},
+           familyi={L\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Wiley, Econometric Society]}%
+      }
+      \strng{namehash}{0b66d427f86ffe531c2d3ee63ee443a0}
+      \strng{fullhash}{0b66d427f86ffe531c2d3ee63ee443a0}
+      \strng{fullhashraw}{0b66d427f86ffe531c2d3ee63ee443a0}
+      \strng{bibnamehash}{0b66d427f86ffe531c2d3ee63ee443a0}
+      \strng{authorbibnamehash}{0b66d427f86ffe531c2d3ee63ee443a0}
+      \strng{authornamehash}{0b66d427f86ffe531c2d3ee63ee443a0}
+      \strng{authorfullhash}{0b66d427f86ffe531c2d3ee63ee443a0}
+      \strng{authorfullhashraw}{0b66d427f86ffe531c2d3ee63ee443a0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We provide a framework for integration of high-frequency intraday data into the measurement, modeling, and forecasting of daily and lower frequency return volatilities and return distributions. Building on the theory of continuous-time arbitrage-free price processes and the theory of quadratic variation, we develop formal links between realized volatility and the conditional covariance matrix. Next, using continuously recorded observations for the Deutschemark/Dollar and Yen/Dollar spot exchange rates, we find that forecasts from a simple long-memory Gaussian vector autoregression for the logarithmic daily realized volatilities perform admirably. Moreover, the vector autoregressive volatility forecast, coupled with a parametric lognormal-normal mixture distribution produces well-calibrated density forecasts of future returns, and correspondingly accurate quantile predictions. Our results hold promise for practical modeling and forecasting of the large covariance matrices relevant in asset pricing, asset allocation, and financial risk management applications.}
+      \field{eprinttype}{jstor}
+      \field{issn}{0012-9682}
+      \field{journaltitle}{Econometrica}
+      \field{number}{2}
+      \field{title}{Modeling and {{Forecasting Realized Volatility}}}
+      \field{urlday}{12}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{71}
+      \field{year}{2003}
+      \field{urldateera}{ce}
+      \field{pages}{579\bibrangedash 625}
+      \range{pages}{47}
+      \verb{eprint}
+      \verb 3082068
+      \endverb
+    \endentry
+    \entry{ando2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=375fde861454228231f96f7a635a9ff6}{%
+           family={Ando},
+           familyi={A\bibinitperiod},
+           given={Tomohiro},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=079a2ff66766cbab9dc78dc58813e0f3}{%
+           family={{Greenwood-Nimmo}},
+           familyi={G\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8bdf666c2b0c08aa17261fddcf67c60}{%
+           family={Shin},
+           familyi={S\bibinitperiod},
+           given={Yongcheol},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {INFORMS}%
+      }
+      \strng{namehash}{881b06e96a404de72e5638b2d102194d}
+      \strng{fullhash}{881b06e96a404de72e5638b2d102194d}
+      \strng{fullhashraw}{881b06e96a404de72e5638b2d102194d}
+      \strng{bibnamehash}{881b06e96a404de72e5638b2d102194d}
+      \strng{authorbibnamehash}{881b06e96a404de72e5638b2d102194d}
+      \strng{authornamehash}{881b06e96a404de72e5638b2d102194d}
+      \strng{authorfullhash}{881b06e96a404de72e5638b2d102194d}
+      \strng{authorfullhashraw}{881b06e96a404de72e5638b2d102194d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We develop a new technique to estimate vector autoregressions with a common factor error structure by quantile regression. We apply our technique to study credit risk spillovers among a group of 17 sovereigns and their respective financial sectors between January 2006 and December 2017. We show that idiosyncratic credit risk shocks propagate much more strongly in both tails than at the conditional mean or median. Furthermore, we develop a measure of the relative spillover intensity in the right and left tails of the conditional distribution that provides a timely aggregate measure of systemic financial fragility and that can be used for risk management and monitoring purposes.}
+      \field{journaltitle}{Management Science}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{shorttitle}{Quantile {{Connectedness}}}
+      \field{title}{Quantile {{Connectedness}}: {{Modeling Tail Behavior}} in the {{Topology}} of {{Financial Networks}}}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{68}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{2401\bibrangedash 2431}
+      \range{pages}{31}
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\XDBNV8LG\v68y2022i4p2401-2431.html
+      \endverb
+      \keyw{financial-sovereign credit risk transmission,network modeling,quantile connectedness,quantile vector autoregression with common factors,tail-dependence}
+    \endentry
+    \entry{antonakakis2020}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e36cfce47fcf4cdc229db4cd0b8260c9}{%
+           family={Antonakakis},
+           familyi={A\bibinitperiod},
+           given={Nikolaos},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=738c8462fe3c3df975dc20362a8aa14f}{%
+           family={Chatziantoniou},
+           familyi={C\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71e5b330de45ad291d8f6c2f67f28271}{%
+           family={Gabauer},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{2da70daad8a71f0496859a000b88fcf9}
+      \strng{fullhash}{2da70daad8a71f0496859a000b88fcf9}
+      \strng{fullhashraw}{2da70daad8a71f0496859a000b88fcf9}
+      \strng{bibnamehash}{2da70daad8a71f0496859a000b88fcf9}
+      \strng{authorbibnamehash}{2da70daad8a71f0496859a000b88fcf9}
+      \strng{authornamehash}{2da70daad8a71f0496859a000b88fcf9}
+      \strng{authorfullhash}{2da70daad8a71f0496859a000b88fcf9}
+      \strng{authorfullhashraw}{2da70daad8a71f0496859a000b88fcf9}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this study, we enhance the dynamic connectedness measures originally introduced by Diebold and Yılmaz (2012, 2014) with a time-varying parameter vector autoregressive model (TVP-VAR) which predicates upon a time-varying variance-covariance structure. This framework allows to capture possible changes in the underlying structure of the data in a more flexible and robust manner. Specifically, there is neither a need to arbitrarily set the rolling-window size nor a loss of observations in the calculation of the dynamic measures of connectedness, as no rolling-window analysis is involved. Given that the proposed framework rests on multivariate Kalman filters, it is less sensitive to outliers. Furthermore, we emphasise the merits of this approach by conducting Monte Carlo simulations. We put our framework into practice by investigating dynamic connectedness measures of the four most traded foreign exchange rates, comparing the TVP-VAR results to those obtained from three different rolling-window settings. Finally, we propose uncertainty measures for both TVP-VAR-based and rolling-window VAR-based dynamic connectedness measures.}
+      \field{issn}{1911-8074}
+      \field{journaltitle}{Journal of Risk and Financial Management}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{Refined {{Measures}} of {{Dynamic Connectedness}} Based on {{Time-Varying Parameter Vector Autoregressions}}}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{84}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/jrfm13040084
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\6GRD29TH\Antonakakis et al. - 2020 - Refined Measures of Dynamic Connectedness based on Time-Varying Parameter Vector Autoregressions.pdf
+      \endverb
+      \keyw{dynamic connectedness,Monte Carlo simulation,TVP-VAR}
+    \endentry
+    \entry{barunik2018}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=187859b2bb6c52ac3558d660f818ee68}{%
+           family={Baruník},
+           familyi={B\bibinitperiod},
+           given={Jozef},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8553c573d48ca0fdbbd8925cb9b20324}{%
+           family={Křehlík},
+           familyi={K\bibinitperiod},
+           given={Tomáš},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{31f07b4ee2a7e57a652f6d31f1a0e23f}
+      \strng{fullhash}{31f07b4ee2a7e57a652f6d31f1a0e23f}
+      \strng{fullhashraw}{31f07b4ee2a7e57a652f6d31f1a0e23f}
+      \strng{bibnamehash}{31f07b4ee2a7e57a652f6d31f1a0e23f}
+      \strng{authorbibnamehash}{31f07b4ee2a7e57a652f6d31f1a0e23f}
+      \strng{authornamehash}{31f07b4ee2a7e57a652f6d31f1a0e23f}
+      \strng{authorfullhash}{31f07b4ee2a7e57a652f6d31f1a0e23f}
+      \strng{authorfullhashraw}{31f07b4ee2a7e57a652f6d31f1a0e23f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose a new framework for measuring connectedness among financial variables that arise due to heterogeneous frequency responses to shocks. To estimate connectedness in short-, medium-, and long-term financial cycles, we introduce a framework based on the spectral representation of variance decompositions. In an empirical application, we document the rich time-frequency dynamics of volatility connectedness in U.S. financial institutions. Economically, periods in which connectedness is created at high frequencies are periods when stock markets seem to process information rapidly and calmly, and a shock to one asset in the system will have an impact mainly in the short term. When the connectedness is created at lower frequencies, it suggests that shocks are persistent and are being transmitted for longer periods.}
+      \field{journaltitle}{Journal of Financial Econometrics}
+      \field{langid}{english}
+      \field{number}{2}
+      \field{title}{Measuring the {{Frequency Dynamics}} of {{Financial Connectedness}} and {{Systemic Risk}}}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{16}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{271\bibrangedash 296}
+      \range{pages}{26}
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\8LIZY6DK\v16y2018i2p271-296..html
+      \endverb
+      \keyw{connectedness,frequency,spectral analysis,systemic risk}
+    \endentry
+    \entry{bostanci2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=915a269abaa74741d16ce3d6c5dea19f}{%
+           family={Bostanci},
+           familyi={B\bibinitperiod},
+           given={Gorkem},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2867990091012997efa62de25aeedf18}{%
+           family={Yilmaz},
+           familyi={Y\bibinitperiod},
+           given={Kamil},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0415c6a17e7d14094de014d6ba2d2f53}
+      \strng{fullhash}{0415c6a17e7d14094de014d6ba2d2f53}
+      \strng{fullhashraw}{0415c6a17e7d14094de014d6ba2d2f53}
+      \strng{bibnamehash}{0415c6a17e7d14094de014d6ba2d2f53}
+      \strng{authorbibnamehash}{0415c6a17e7d14094de014d6ba2d2f53}
+      \strng{authornamehash}{0415c6a17e7d14094de014d6ba2d2f53}
+      \strng{authorfullhash}{0415c6a17e7d14094de014d6ba2d2f53}
+      \strng{authorfullhashraw}{0415c6a17e7d14094de014d6ba2d2f53}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper estimates the global network structure of sovereign credit risk by applying the Diebold-Yilmaz connectedness methodology on sovereign credit default swaps (SCDSs). The level of credit risk connectedness among sovereigns, which is quite high, is comparable to the connectedness among stock markets and foreign exchange markets. In the aftermath of the recent financial crises that originated in developed countries, emerging market countries have played a crucial role in the transmission of sovereign credit risk, while developed countries and debt-ridden developing countries have played marginal roles. Secondary regressions show that both trade and capital flows are important determinants of pairwise connectedness across countries. The capital flows became increasingly important after 2013, while the effect of trade flows decreased during the crisis and did not recover afterwards.}
+      \field{journaltitle}{Journal of Banking \& Finance}
+      \field{langid}{english}
+      \field{number}{C}
+      \field{title}{How Connected Is the Global Sovereign Credit Risk Network?}
+      \field{urlday}{21}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{113}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\D698YJA2\v113y2020ics0378426620300285.html
+      \endverb
+      \keyw{Lasso,Network estimation,Sovereign credit risk,Systemic risk,Variance decomposition,Vector autoregression}
+    \endentry
+    \entry{cajueiro2008}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3332170a65e2409c84d623396d1f8641}{%
+           family={Cajueiro},
+           familyi={C\bibinitperiod},
+           given={Daniel\bibnamedelima O.},
+           giveni={D\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dbffd014d6ffac1ad9e8ba08a90c29fc}{%
+           family={Tabak},
+           familyi={T\bibinitperiod},
+           given={Benjamin\bibnamedelima M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{4b10ed57fbc16d41ea857c7902bdbe27}
+      \strng{fullhash}{4b10ed57fbc16d41ea857c7902bdbe27}
+      \strng{fullhashraw}{4b10ed57fbc16d41ea857c7902bdbe27}
+      \strng{bibnamehash}{4b10ed57fbc16d41ea857c7902bdbe27}
+      \strng{authorbibnamehash}{4b10ed57fbc16d41ea857c7902bdbe27}
+      \strng{authornamehash}{4b10ed57fbc16d41ea857c7902bdbe27}
+      \strng{authorfullhash}{4b10ed57fbc16d41ea857c7902bdbe27}
+      \strng{authorfullhashraw}{4b10ed57fbc16d41ea857c7902bdbe27}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper analyzes the Brazilian interbank network structure using a complex network-based approach. Results suggest a weak evidence of community structure, high heterogeneity of the network and that this market is characterized by money centers having exposures to many banks. Furthermore, we go beyond the structure of the network using information about the characteristics of the nodes and a non-parametric test in order to understand the role of the banks in the interbanking market.}
+      \field{issn}{0378-4371}
+      \field{journaltitle}{Physica A Statistical Mechanics and its Applications}
+      \field{month}{12}
+      \field{shorttitle}{The Role of Banks in the {{Brazilian}} Interbank Market}
+      \field{title}{The Role of Banks in the {{Brazilian}} Interbank Market: {{Does}} Bank Type Matter?}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{387}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \field{pages}{6825\bibrangedash 6836}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.physa.2008.08.031
+      \endverb
+    \endentry
+    \entry{chatziantoniou2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=738c8462fe3c3df975dc20362a8aa14f}{%
+           family={Chatziantoniou},
+           familyi={C\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71e5b330de45ad291d8f6c2f67f28271}{%
+           family={Gabauer},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b0c721e965e352feeac769d1a5fb690a}
+      \strng{fullhash}{b0c721e965e352feeac769d1a5fb690a}
+      \strng{fullhashraw}{b0c721e965e352feeac769d1a5fb690a}
+      \strng{bibnamehash}{b0c721e965e352feeac769d1a5fb690a}
+      \strng{authorbibnamehash}{b0c721e965e352feeac769d1a5fb690a}
+      \strng{authornamehash}{b0c721e965e352feeac769d1a5fb690a}
+      \strng{authorfullhash}{b0c721e965e352feeac769d1a5fb690a}
+      \strng{authorfullhashraw}{b0c721e965e352feeac769d1a5fb690a}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This study employs dynamic connectedness as a measure of financial risk synchronization considering government bond yields in 11 EMU member states. In particular, large values of the relevant index can be an indication of comparable levels of risk further implying that the common currency area consists of a financially sensible set of countries. By contrast, small connectedness values can be an indication of fragmentation whereupon certain countries are considered to be safer than others. The latter would be detrimental for the EMU as it fuels financial fragility, which practically stipulates that crises occur as a result of self-fulfilling market fears. The results are based on a daily dataset which spans between 1st September 2003 and 31st August 2018. Findings show that fragmentation was present at the height of the European sovereign debt crisis and that the interconnectedness has not yet reverted to its pre-2009 levels. In addition, core countries appear to transmit shocks to periphery countries although, occasionally, there are noteworthy disparities. Further investigating these disparities on a pairwise connectedness level -- which helps to identify sensible pairs of countries in terms of financial risk -- shows that core countries dominate this exercise, with the exception of the bilateral relation between Italy and Spain. The fact that most periphery countries of our sample are not included in these pairs raises concerns and calls for a more substantial integration.}
+      \field{issn}{1062-9769}
+      \field{journaltitle}{The Quarterly Review of Economics and Finance}
+      \field{month}{2}
+      \field{title}{{{EMU}} Risk-Synchronisation and Financial Fragility through the Prism of Dynamic Connectedness}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{79}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.qref.2020.12.003
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\4C2BIJ87\S1062976920301733.html
+      \endverb
+      \keyw{EMU,ERM II,Fragility hypothesis,Fragmentation,OCA}
+    \endentry
+    \entry{cont2013}{incollection}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4adbb1a85104895dfcc25d4e2cac8cce}{%
+           family={Cont},
+           familyi={C\bibinitperiod},
+           given={Rama},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f63086721b6ad284651420c17b4d2b69}{%
+           family={Moussa},
+           familyi={M\bibinitperiod},
+           given={Amal},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e29db21634d3a91d0f9a31df961a6e3a}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Edson\bibnamedelima B.},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=8ea36a69ddf53597f7d01602fbc47279}{%
+           family={Fouque},
+           familyi={F\bibinitperiod},
+           given={Jean-Pierre},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=ac35624798cdd7ddd647474c81fc300a}{%
+           family={Langsam},
+           familyi={L\bibinitperiod},
+           given={Joseph\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{1e2fc9df0aa27ec8618e4792249f1997}
+      \strng{fullhash}{1e2fc9df0aa27ec8618e4792249f1997}
+      \strng{fullhashraw}{1e2fc9df0aa27ec8618e4792249f1997}
+      \strng{bibnamehash}{1e2fc9df0aa27ec8618e4792249f1997}
+      \strng{authorbibnamehash}{1e2fc9df0aa27ec8618e4792249f1997}
+      \strng{authornamehash}{1e2fc9df0aa27ec8618e4792249f1997}
+      \strng{authorfullhash}{1e2fc9df0aa27ec8618e4792249f1997}
+      \strng{authorfullhashraw}{1e2fc9df0aa27ec8618e4792249f1997}
+      \strng{editorbibnamehash}{fc076a94401b16f027973b5fa2cc5196}
+      \strng{editornamehash}{fc076a94401b16f027973b5fa2cc5196}
+      \strng{editorfullhash}{fc076a94401b16f027973b5fa2cc5196}
+      \strng{editorfullhashraw}{fc076a94401b16f027973b5fa2cc5196}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a quantitative methodology for analyzing the potential for contagion and systemic risk in a network of interlinked financial institutions, using a metric for the systemic importance of institutions: the Contagion Index.}
+      \field{booktitle}{Handbook on {{Systemic Risk}}}
+      \field{edition}{1}
+      \field{isbn}{978-1-107-02343-7 978-1-139-15118-4}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{title}{Network {{Structure}} and {{Systemic Risk}} in {{Banking Systems}}}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{327\bibrangedash 368}
+      \range{pages}{42}
+      \verb{doi}
+      \verb 10.1017/CBO9781139151184.018
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\KCB3H3WB\Cont et al. - 2013 - Network Structure and Systemic Risk in Banking Systems.pdf
+      \endverb
+    \endentry
+    \entry{demirer2018}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=d3c2cc443c71254678269de10d61d61c}{%
+           family={Demirer},
+           familyi={D\bibinitperiod},
+           given={Mert},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15cc2e3b52b5ea2d3045be532376a348}{%
+           family={Diebold},
+           familyi={D\bibinitperiod},
+           given={Francis\bibnamedelima X.},
+           giveni={F\bibinitperiod\bibinitdelim X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=081694b722927cf671cd836d417ac3db}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2867990091012997efa62de25aeedf18}{%
+           family={Yilmaz},
+           familyi={Y\bibinitperiod},
+           given={Kamil},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{01033b48e49d34db843ab0957dc57127}
+      \strng{fullhash}{4cf5be621b0f505b30a8fe29d65dda5d}
+      \strng{fullhashraw}{4cf5be621b0f505b30a8fe29d65dda5d}
+      \strng{bibnamehash}{01033b48e49d34db843ab0957dc57127}
+      \strng{authorbibnamehash}{01033b48e49d34db843ab0957dc57127}
+      \strng{authornamehash}{01033b48e49d34db843ab0957dc57127}
+      \strng{authorfullhash}{4cf5be621b0f505b30a8fe29d65dda5d}
+      \strng{authorfullhashraw}{4cf5be621b0f505b30a8fe29d65dda5d}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Summary We use LASSO methods to shrink, select, and estimate the high-dimensional network linking the publicly traded subset of the world's top 150 banks, 2003--2014. We characterize static network connectedness using full-sample estimation and dynamic network connectedness using rolling-window estimation. Statically, we find that global bank equity connectedness has a strong geographic component, whereas country sovereign bond connectedness does not. Dynamically, we find that equity connectedness increases during crises, with clear peaks during the Great Financial Crisis and each wave of the subsequent European Debt Crisis, and with movements coming mostly from changes in cross-country as opposed to within-country bank linkages.}
+      \field{issn}{0883-7252, 1099-1255}
+      \field{journaltitle}{Journal of Applied Econometrics}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Estimating Global Bank Network Connectedness}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{33}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 15}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1002/jae.2585
+      \endverb
+    \endentry
+    \entry{diamond1983}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c2edd4278d86dadd9c8ddc15a5dddbec}{%
+           family={Diamond},
+           familyi={D\bibinitperiod},
+           given={Douglas\bibnamedelima W.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=12e3bc776e121d70263b47b06443578f}{%
+           family={Dybvig},
+           familyi={D\bibinitperiod},
+           given={Philip\bibnamedelima H.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{51a5cabf8f9b307185d4f68c3552ff22}
+      \strng{fullhash}{51a5cabf8f9b307185d4f68c3552ff22}
+      \strng{fullhashraw}{51a5cabf8f9b307185d4f68c3552ff22}
+      \strng{bibnamehash}{51a5cabf8f9b307185d4f68c3552ff22}
+      \strng{authorbibnamehash}{51a5cabf8f9b307185d4f68c3552ff22}
+      \strng{authornamehash}{51a5cabf8f9b307185d4f68c3552ff22}
+      \strng{authorfullhash}{51a5cabf8f9b307185d4f68c3552ff22}
+      \strng{authorfullhashraw}{51a5cabf8f9b307185d4f68c3552ff22}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article develops a model which shows that bank deposit contracts can provide allocations superior to those of exchange markets, offering an explanation of how banks subject to runs can attract deposits. Investors face privately observed risks which lead to a demand for liquidity. Traditional demand deposit contracts which provide liquidity have multiple equilibria, one of which is a bank run. Bank runs in the model cause real economic damage, rather than simply reflecting other problems. Contracts which can prevent runs are studied, and the analysis shows that there are circumstances when government provision of deposit insurance can produce superior contracts.{$<$}br{$><$}small{$>$}(This abstract was borrowed from another version of this item.){$<$}/small{$>$}}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{langid}{english}
+      \field{number}{3}
+      \field{title}{Bank {{Runs}}, {{Deposit Insurance}}, and {{Liquidity}}}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{91}
+      \field{year}{1983}
+      \field{urldateera}{ce}
+      \field{pages}{401\bibrangedash 419}
+      \range{pages}{19}
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\NH4BX29I\v91y1983i3p401-19.html
+      \endverb
+    \endentry
+    \entry{diebold2001}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=15cc2e3b52b5ea2d3045be532376a348}{%
+           family={Diebold},
+           familyi={D\bibinitperiod},
+           given={Francis\bibnamedelima X.},
+           giveni={F\bibinitperiod\bibinitdelim X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=59b33d139abbbde8a5474edc906bd604}{%
+           family={Inoue},
+           familyi={I\bibinitperiod},
+           given={Atsushi},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{682b99390acbb5d6cdfbc3e286320184}
+      \strng{fullhash}{682b99390acbb5d6cdfbc3e286320184}
+      \strng{fullhashraw}{682b99390acbb5d6cdfbc3e286320184}
+      \strng{bibnamehash}{682b99390acbb5d6cdfbc3e286320184}
+      \strng{authorbibnamehash}{682b99390acbb5d6cdfbc3e286320184}
+      \strng{authornamehash}{682b99390acbb5d6cdfbc3e286320184}
+      \strng{authorfullhash}{682b99390acbb5d6cdfbc3e286320184}
+      \strng{authorfullhashraw}{682b99390acbb5d6cdfbc3e286320184}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The theoretical and empirical econometric literatures on long memory and regime switching have evolved largely independently, as the phenomena appear distinct. We argue, in contrast, that they are intimately related, and we substantiate our claim in several environments, including a simple mixture model, Engle and Smith's (Rev. Econom. Statist. 81 (1999) 553--574) stochastic permanent break model, and Hamilton's (Econometrica 57 (1989) 357--384) Markov-switching model. In particular, we show analytically that stochastic regime switching is easily confused with long memory, even asymptotically, so long as only a ``small'' amount of regime switching occurs, in a sense that we make precise. A Monte Carlo analysis supports the relevance of the theory and produces additional insights.}
+      \field{issn}{0304-4076}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{month}{11}
+      \field{number}{1}
+      \field{series}{Forecasting and Empirical Methods in Finance and Macroeconomics}
+      \field{title}{Long Memory and Regime Switching}
+      \field{urlday}{12}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{105}
+      \field{year}{2001}
+      \field{urldateera}{ce}
+      \field{pages}{131\bibrangedash 159}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1016/S0304-4076(01)00073-2
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\pc\\Zotero\\storage\\36HHNZHE\\Diebold e Inoue - 2001 - Long memory and regime switching.pdf;C\:\\Users\\pc\\Zotero\\storage\\3G5DJWD2\\S0304407601000732.html
+      \endverb
+      \keyw{Fractional integration,Markov-switching model,Mixture model,Regime switching,Stochastic permanent break (STOPBREAK) model,Structural change}
+    \endentry
+    \entry{diebold2012}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=15cc2e3b52b5ea2d3045be532376a348}{%
+           family={Diebold},
+           familyi={D\bibinitperiod},
+           given={Francis\bibnamedelima X.},
+           giveni={F\bibinitperiod\bibinitdelim X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2867990091012997efa62de25aeedf18}{%
+           family={Yilmaz},
+           familyi={Y\bibinitperiod},
+           given={Kamil},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{fullhash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{fullhashraw}{2df5466f9046bf47f875bfa03da32776}
+      \strng{bibnamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorbibnamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authornamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorfullhash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorfullhashraw}{2df5466f9046bf47f875bfa03da32776}
+      \field{extraname}{1}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Using a generalized vector autoregressive framework in which forecast-error variance decompositions are invariant to the variable ordering, we propose measures of both the total and directional volatility spillovers. We use our methods to characterize daily volatility spillovers across US stock, bond, foreign exchange and commodities markets, from January 1999 to January 2010. We show that despite significant volatility fluctuations in all four markets during the sample, cross-market volatility spillovers were quite limited until the global financial crisis, which began in 2007. As the crisis intensified, so too did the volatility spillovers, with particularly important spillovers from the stock market to other markets taking place after the collapse of the Lehman Brothers in September 2008.}
+      \field{issn}{0169-2070}
+      \field{journaltitle}{International Journal of Forecasting}
+      \field{month}{1}
+      \field{number}{1}
+      \field{series}{Special {{Section}} 1: {{The Predictability}} of {{Financial Markets}}}
+      \field{shorttitle}{Better to Give than to Receive}
+      \field{title}{Better to Give than to Receive: {{Predictive}} Directional Measurement of Volatility Spillovers}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{28}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \field{pages}{57\bibrangedash 66}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.ijforecast.2011.02.006
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\3P4AJY9F\S016920701100032X.html
+      \endverb
+      \keyw{Asset market,Asset return,Contagion,Financial crisis,Market linkage,Stock market,Variance decomposition,Vector autoregression}
+    \endentry
+    \entry{diebold2011}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=15cc2e3b52b5ea2d3045be532376a348}{%
+           family={Diebold},
+           familyi={D\bibinitperiod},
+           given={Francis\bibnamedelima X.},
+           giveni={F\bibinitperiod\bibinitdelim X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2867990091012997efa62de25aeedf18}{%
+           family={Yilmaz},
+           familyi={Y\bibinitperiod},
+           given={Kamil},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{fullhash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{fullhashraw}{2df5466f9046bf47f875bfa03da32776}
+      \strng{bibnamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorbibnamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authornamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorfullhash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorfullhashraw}{2df5466f9046bf47f875bfa03da32776}
+      \field{extraname}{2}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Using a recently-developed measure of financial market spillovers, we provide an empirical analysis of return and volatility spillovers among five equity markets in the Americas: Argentina, Brazil, Chile, Mexico and the U.S. The results indicate that both return and volatility spillovers vary widely. Return spillovers, however, tend to evolve gradually, whereas volatility spillovers display clear bursts that often correspond closely to economic events.}
+      \field{langid}{english}
+      \field{title}{Equity {{Market Spillovers}} in the {{Americas}}}
+      \field{year}{2011}
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\3BIQCYFU\Diebold e Yilmaz - 2011 - Equity Market Spillovers in the Americas.pdf
+      \endverb
+    \endentry
+    \entry{diebold2009}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=15cc2e3b52b5ea2d3045be532376a348}{%
+           family={Diebold},
+           familyi={D\bibinitperiod},
+           given={Francis\bibnamedelima X.},
+           giveni={F\bibinitperiod\bibinitdelim X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2867990091012997efa62de25aeedf18}{%
+           family={Yilmaz},
+           familyi={Y\bibinitperiod},
+           given={Kamil},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{fullhash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{fullhashraw}{2df5466f9046bf47f875bfa03da32776}
+      \strng{bibnamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorbibnamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authornamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorfullhash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorfullhashraw}{2df5466f9046bf47f875bfa03da32776}
+      \field{extraname}{3}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We provide a simple and intuitive measure of interdependence of asset returns and/or volatilities. In particular, we formulate and examine precise and separate measures of "return spillovers" and "volatility spillovers". Our framework facilitates study of both non-crisis and crisis episodes, including trends and bursts in spillovers; both turn out to be empirically important. In particular, in an analysis of 19 global equity markets from the early 1990s to the present, we find striking evidence of divergent behaviour in the dynamics of return spillovers vs. volatility spillovers: return spillovers display a gently increasing trend but no bursts, whereas volatility spillovers display no trend but clear bursts. Copyright ©{} The Author(s). Journal compilation ©{} Royal Economic Society 2009.}
+      \field{journaltitle}{Economic Journal}
+      \field{month}{1}
+      \field{title}{Measuring {{Financial Asset Return}} and {{Volatility Spillovers}}, {{With Application}} to {{Global Equity Markets}}}
+      \field{volume}{119}
+      \field{year}{2009}
+      \field{pages}{158\bibrangedash 171}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1111/j.1468-0297.2008.02208.x
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\4MD3L8PC\Diebold e Yilmaz - 2009 - Measuring Financial Asset Return and Volatility Spillovers, With Application to Global Equity Market.pdf
+      \endverb
+    \endentry
+    \entry{diebold2014}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=15cc2e3b52b5ea2d3045be532376a348}{%
+           family={Diebold},
+           familyi={D\bibinitperiod},
+           given={Francis\bibnamedelima X.},
+           giveni={F\bibinitperiod\bibinitdelim X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2867990091012997efa62de25aeedf18}{%
+           family={Yilmaz},
+           familyi={Y\bibinitperiod},
+           given={Kamil},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{fullhash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{fullhashraw}{2df5466f9046bf47f875bfa03da32776}
+      \strng{bibnamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorbibnamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authornamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorfullhash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorfullhashraw}{2df5466f9046bf47f875bfa03da32776}
+      \field{extraname}{4}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We propose several connectedness measures built from pieces of variance decompositions, and we argue that they provide natural and insightful measures of connectedness. We also show that variance decompositions define weighted, directed networks, so that our connectedness measures are intimately related to key measures of connectedness used in the network literature. Building on these insights, we track daily time-varying connectedness of major US financial institutions' stock return volatilities in recent years, with emphasis on the financial crisis of 2007--2008.}
+      \field{issn}{0304-4076}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{month}{9}
+      \field{number}{1}
+      \field{series}{Causality, {{Prediction}}, and {{Specification Analysis}}: {{Recent Advances}} and {{Future Directions}}}
+      \field{shorttitle}{On the Network Topology of Variance Decompositions}
+      \field{title}{On the Network Topology of Variance Decompositions: {{Measuring}} the Connectedness of Financial Firms}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{182}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \field{pages}{119\bibrangedash 134}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.jeconom.2014.04.012
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\7DYA67L7\S0304407614000712.html
+      \endverb
+      \keyw{Asset markets,Credit risk,Degree distribution,Market risk,Portfolio allocation,Risk management,Risk measurement,Systemic risk}
+    \endentry
+    \entry{diebold2023}{misc}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=15cc2e3b52b5ea2d3045be532376a348}{%
+           family={Diebold},
+           familyi={D\bibinitperiod},
+           given={Francis\bibnamedelima X.},
+           giveni={F\bibinitperiod\bibinitdelim X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2867990091012997efa62de25aeedf18}{%
+           family={Yilmaz},
+           familyi={Y\bibinitperiod},
+           given={Kamil},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{fullhash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{fullhashraw}{2df5466f9046bf47f875bfa03da32776}
+      \strng{bibnamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorbibnamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authornamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorfullhash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorfullhashraw}{2df5466f9046bf47f875bfa03da32776}
+      \field{extraname}{5}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We offer retrospective and prospective assessments of the Diebold-Yilmaz connectedness research program, combined with personal recollections of its development. Its centerpiece in many respects is Diebold and Yilmaz (2014), around which our discussion is organized.}
+      \field{eprintclass}{econ.EM}
+      \field{eprinttype}{arXiv}
+      \field{month}{1}
+      \field{number}{arXiv:2211.04184}
+      \field{title}{On the {{Past}}, {{Present}}, and {{Future}} of the {{Diebold-Yilmaz Approach}} to {{Dynamic Network Connectedness}}}
+      \field{urlday}{20}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2211.04184
+      \endverb
+      \verb{eprint}
+      \verb 2211.04184
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\pc\\Zotero\\storage\\WL9NID2F\\Diebold e Yilmaz - 2023 - On the Past, Present, and Future of the Diebold-Yilmaz Approach to Dynamic Network Connectedness.pdf;C\:\\Users\\pc\\Zotero\\storage\\75TUZQWZ\\2211.html
+      \endverb
+      \keyw{Economics - Econometrics,Quantitative Finance - General Finance}
+    \endentry
+    \entry{diebold2016}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=15cc2e3b52b5ea2d3045be532376a348}{%
+           family={Diebold},
+           familyi={D\bibinitperiod},
+           given={Francis\bibnamedelima X.},
+           giveni={F\bibinitperiod\bibinitdelim X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2867990091012997efa62de25aeedf18}{%
+           family={Yilmaz},
+           familyi={Y\bibinitperiod},
+           given={Kamil},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{fullhash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{fullhashraw}{2df5466f9046bf47f875bfa03da32776}
+      \strng{bibnamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorbibnamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authornamehash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorfullhash}{2df5466f9046bf47f875bfa03da32776}
+      \strng{authorfullhashraw}{2df5466f9046bf47f875bfa03da32776}
+      \field{extraname}{6}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We characterize equity return volatility connectedness in the network of major American and European financial institutions, 2004--2014. Our methods enable precise characterization of the timing and evolution of key aspects of the financial crisis. First, we find that during 2007--2008 the direction of connectedness was clearly from the United States to Europe, but that connectedness became bidirectional starting in late 2008. Second, we find an unprecedented surge in directional connectedness from European to U.S. financial institutions in June 2011, consistent with massive deterioration in the health of EU financial institutions. Third, we identify particular institutions that played disproportionately important roles in generating connectedness during the U.S. and the European crises.}
+      \field{journaltitle}{Journal of Financial Econometrics}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{shorttitle}{Trans-{{Atlantic Equity Volatility Connectedness}}}
+      \field{title}{Trans-{{Atlantic Equity Volatility Connectedness}}: {{U}}.{{S}}. and {{European Financial Institutions}}, 2004--2014}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{14}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{81\bibrangedash 127}
+      \range{pages}{47}
+      \keyw{network connectedness,systemic risk,systemically important financial institutions,variance decomposition,vector autoregression}
+    \endentry
+    \entry{gabauer2022}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=71e5b330de45ad291d8f6c2f67f28271}{%
+           family={Gabauer},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Comprehensive R Archive Network}%
+      }
+      \strng{namehash}{71e5b330de45ad291d8f6c2f67f28271}
+      \strng{fullhash}{71e5b330de45ad291d8f6c2f67f28271}
+      \strng{fullhashraw}{71e5b330de45ad291d8f6c2f67f28271}
+      \strng{bibnamehash}{71e5b330de45ad291d8f6c2f67f28271}
+      \strng{authorbibnamehash}{71e5b330de45ad291d8f6c2f67f28271}
+      \strng{authornamehash}{71e5b330de45ad291d8f6c2f67f28271}
+      \strng{authorfullhash}{71e5b330de45ad291d8f6c2f67f28271}
+      \strng{authorfullhashraw}{71e5b330de45ad291d8f6c2f67f28271}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The estimation of static and dynamic connectedness measures is created in a modular and user-friendly way. Besides, the time domain connectedness approaches, this package further allows to estimate the frequency connectedness approach, the joint spillover index and the extended joint connectedness approach. In addition, all connectedness frameworks can be based upon orthogonalized and generalized VAR, QVAR, LASSO VAR, Ridge VAR, Elastic Net VAR and TVP-VAR models. Furthermore, the package includes the conditional, decomposed and partial connectedness measures as well as the pairwise connectedness index, influence index and corrected total connectedness index. Finally, a battery of datasets are available allowing to replicate a variety of connectedness papers.}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{shorttitle}{{{ConnectednessApproach}}}
+      \field{title}{{{ConnectednessApproach}}: {{Connectedness Approach}}}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{1.0.4}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.32614/CRAN.package.ConnectednessApproach
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\UP4MPLP8\Gabauer - 2022 - ConnectednessApproach Connectedness Approach.pdf
+      \endverb
+    \endentry
+    \entry{glasserman2016}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ad8512135fae00796ff8f92716d977c9}{%
+           family={Glasserman},
+           familyi={G\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=66c3f18c997a846a4cdf426fd2057756}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={H.\bibnamedelimi Peyton},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{eb26383f635280a1272896e46b3bc619}
+      \strng{fullhash}{eb26383f635280a1272896e46b3bc619}
+      \strng{fullhashraw}{eb26383f635280a1272896e46b3bc619}
+      \strng{bibnamehash}{eb26383f635280a1272896e46b3bc619}
+      \strng{authorbibnamehash}{eb26383f635280a1272896e46b3bc619}
+      \strng{authornamehash}{eb26383f635280a1272896e46b3bc619}
+      \strng{authorfullhash}{eb26383f635280a1272896e46b3bc619}
+      \strng{authorfullhashraw}{eb26383f635280a1272896e46b3bc619}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The recent financial crisis has prompted much new research on the interconnectedness of the modern financial system and the extent to which it contributes to systemic fragility. Network connections diversify firms' risk exposures, but they also create channels through which shocks can spread by contagion. We review the extensive literature on this issue, with the focus on how network structure interacts with other key variables such as leverage, size, common exposures, and short-term funding. We discuss various metrics that have been proposed for evaluating the susceptibility of the system to contagion and suggest directions for future research.}
+      \field{issn}{0022-0515}
+      \field{journaltitle}{Journal of Economic Literature}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{Contagion in {{Financial Networks}}}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{54}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{779\bibrangedash 831}
+      \range{pages}{53}
+      \verb{doi}
+      \verb 10.1257/jel.20151228
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\EXTPG8KP\Glasserman e Young - 2016 - Contagion in Financial Networks.pdf
+      \endverb
+      \keyw{Actuarial Studies Pension Funds,Banks; Depository Institutions; Micro Finance Institutions; Mortgages,Depository Institutions,Financial Crises,Financial Institutions and Services: Government Policy and Regulation,Financial Instruments,Financial Markets and the Macroeconomy,Institutional Investors Financial Institutions and Services: Government Policy and Regulation,Insurance Companies,Insurance; Insurance Companies; Actuarial Studies,Micro Finance Institutions,Mortgages Insurance,Network Formation and Analysis: Theory,Network Formation and Analysis: Theory Financial Markets and the Macroeconomy Financial Crises Banks,Non-bank Financial Institutions,Pension Funds; Non-bank Financial Institutions; Financial Instruments; Institutional Investors}
+    \endentry
+    \entry{glasserman2014}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ad8512135fae00796ff8f92716d977c9}{%
+           family={Glasserman},
+           familyi={G\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=66c3f18c997a846a4cdf426fd2057756}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={H.\bibnamedelimi Peyton},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{eb26383f635280a1272896e46b3bc619}
+      \strng{fullhash}{eb26383f635280a1272896e46b3bc619}
+      \strng{fullhashraw}{eb26383f635280a1272896e46b3bc619}
+      \strng{bibnamehash}{eb26383f635280a1272896e46b3bc619}
+      \strng{authorbibnamehash}{eb26383f635280a1272896e46b3bc619}
+      \strng{authornamehash}{eb26383f635280a1272896e46b3bc619}
+      \strng{authorfullhash}{eb26383f635280a1272896e46b3bc619}
+      \strng{authorfullhashraw}{eb26383f635280a1272896e46b3bc619}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Interconnections among financial institutions create potential channels for contagion and amplification of shocks to the financial system. We estimate the extent to which interconnections increase expected losses and defaults under a wide range of shock distributions. In contrast to most work on financial networks, we assume only minimal information about network structure and rely instead on information about the individual institutions that are the nodes of the network. The key nodelevel quantities are asset size, leverage, and a financial connectivity measure given by the fraction of a financial institution's liabilities held by other financial institutions. We combine these measures to derive explicit bounds on the potential magnitude of network effects on contagion and loss amplification. Spillover effects are most significant when node sizes are heterogeneous and the originating node is highly leveraged and has high financial connectivity. Our results also highlight the importance of mechanisms that go beyond simple spillover effects to magnify shocks; these include bankruptcy costs, and mark-to-market losses resulting from credit quality deterioration or a loss of confidence. We illustrate the results with data on the European banking system.}
+      \field{langid}{english}
+      \field{title}{How {{Likely}} Is {{Contagion}} in {{Financial Networks}}?}
+      \field{year}{2014}
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\R6SIXKV4\Glasserman e Young - 2014 - How Likely is Contagion in Financial Networks.pdf
+      \endverb
+    \endentry
+    \entry{koop1996}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d0dcf74a093eaf9aa1d1b58954d78300}{%
+           family={Koop},
+           familyi={K\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e084562d58d4fc52d4929a75d0f1b87b}{%
+           family={Pesaran},
+           familyi={P\bibinitperiod},
+           given={M.\bibnamedelimi Hashem},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=59c9a882256bfb68935315d5b7352b9f}{%
+           family={Potter},
+           familyi={P\bibinitperiod},
+           given={Simon\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5d4c4b68e6c44c30a0b0a3fcf4924490}
+      \strng{fullhash}{5d4c4b68e6c44c30a0b0a3fcf4924490}
+      \strng{fullhashraw}{5d4c4b68e6c44c30a0b0a3fcf4924490}
+      \strng{bibnamehash}{5d4c4b68e6c44c30a0b0a3fcf4924490}
+      \strng{authorbibnamehash}{5d4c4b68e6c44c30a0b0a3fcf4924490}
+      \strng{authornamehash}{5d4c4b68e6c44c30a0b0a3fcf4924490}
+      \strng{authorfullhash}{5d4c4b68e6c44c30a0b0a3fcf4924490}
+      \strng{authorfullhashraw}{5d4c4b68e6c44c30a0b0a3fcf4924490}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a unified approach to impulse response analysis which can be used for both linear and nonlinear multivariate models. After discussing the advantages and disadvantages of traditional impulse response functions for nonlinear models, we introduce the concept of a generalized impulse response function which, we argue, is applicable to both linear and nonlinear models. We develop measures of shock persistence and asymmetric effects of shocks derived from the generalized impulse response function. We illustrate the use of these measures for a nonlinear bivariate model of US output and the unemployment rate.}
+      \field{issn}{0304-4076}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{month}{9}
+      \field{number}{1}
+      \field{title}{Impulse Response Analysis in Nonlinear Multivariate Models}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{74}
+      \field{year}{1996}
+      \field{urldateera}{ce}
+      \field{pages}{119\bibrangedash 147}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1016/0304-4076(95)01753-4
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\XDJVNBKM\0304407695017534.html
+      \endverb
+      \keyw{Impulse response functions,Nonlinear vector autoregressions,Persistence,Threshold autoregressive models}
+    \endentry
+    \entry{moritz2017}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=25d83d389fa47be9aa682ee006ac1369}{%
+           family={Moritz},
+           familyi={M\bibinitperiod},
+           given={Steffen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ca6443b5520b0ae6a8d332663600621}{%
+           family={{Bartz-Beielstein}},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1227742859804c7a1cb49fb023093b16}
+      \strng{fullhash}{1227742859804c7a1cb49fb023093b16}
+      \strng{fullhashraw}{1227742859804c7a1cb49fb023093b16}
+      \strng{bibnamehash}{1227742859804c7a1cb49fb023093b16}
+      \strng{authorbibnamehash}{1227742859804c7a1cb49fb023093b16}
+      \strng{authornamehash}{1227742859804c7a1cb49fb023093b16}
+      \strng{authorfullhash}{1227742859804c7a1cb49fb023093b16}
+      \strng{authorfullhashraw}{1227742859804c7a1cb49fb023093b16}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{2073-4859}
+      \field{journaltitle}{The R Journal}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{shorttitle}{{{imputeTS}}}
+      \field{title}{{{imputeTS}}: {{Time Series Missing Value Imputation}} in {{R}}}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{9}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{207}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.32614/RJ-2017-009
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\VJRJFRXE\Moritz e Bartz-Beielstein - 2017 - imputeTS Time Series Missing Value Imputation in R.pdf
+      \endverb
+    \endentry
+    \entry{moura2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=262451f5018b4e6da91ec8cf96cedb7c}{%
+           family={Moura},
+           familyi={M\bibinitperiod},
+           given={Bruna\bibnamedelimb Gonçalves\bibnamedelima Fonseca},
+           giveni={B\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01dbff4e775b187364dcbbdfd942bf5d}{%
+           family={Ferreira},
+           familyi={F\bibinitperiod},
+           given={Bruno\bibnamedelima Pérez},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=107131ac6a82b1f8b26f6b8b8855fda5}{%
+           family={Corrêa},
+           familyi={C\bibinitperiod},
+           given={Ana\bibnamedelimb Carolina\bibnamedelima Costa},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{7f2409ca2f6cc3cb5e139e7a0117c135}
+      \strng{fullhash}{7f2409ca2f6cc3cb5e139e7a0117c135}
+      \strng{fullhashraw}{7f2409ca2f6cc3cb5e139e7a0117c135}
+      \strng{bibnamehash}{7f2409ca2f6cc3cb5e139e7a0117c135}
+      \strng{authorbibnamehash}{7f2409ca2f6cc3cb5e139e7a0117c135}
+      \strng{authornamehash}{7f2409ca2f6cc3cb5e139e7a0117c135}
+      \strng{authorfullhash}{7f2409ca2f6cc3cb5e139e7a0117c135}
+      \strng{authorfullhashraw}{7f2409ca2f6cc3cb5e139e7a0117c135}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This study analyzes the marginal contribution of Brazilian banks to the systemic risk. The objective is to identify whether banks that share common characteristics similarly contribute to systemic financial shocks. First, the risk assumed by a sample of listed banks is measured from the accounting, market, and regulatory perspectives. Sample banks were segregated using an unsupervised clustering model. The results were compared with the methodology currently used by the Central Bank of Brazil to segment the banking institutions. Finally, we evaluate the banking groups' marginal contribution to systemic financial risk using {$\Delta$}CoVaR. These results suggest that institutions that share similar characteristics in relation to their risk profiles behave similarly during times of greater market stress. Notably, size, geographic diversification, and liquidity were common attributes among banks contributing significantly to systemic risk during financial crises. This study advances the field of banking finance by introducing an analytical framework that goes beyond the traditional focus on bank balance sheet size, aligning with international standards for evaluating the systemic importance of financial institutions.}
+      \field{journaltitle}{The Quarterly Review of Economics and Finance}
+      \field{langid}{english}
+      \field{number}{C}
+      \field{title}{Brazilian Banks Risk-Taking and Systemic Risk}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{98}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\NEZWR7VK\v98y2024ics1062976924001194.html
+      \endverb
+      \keyw{Banking risk financial regulation,Banking risk-taking,Risk measures in banks,Systemic financial risk}
+    \endentry
+    \entry{pesaran1998}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=487ad2e837d0d8c49704db0f8dbbc94d}{%
+           family={Pesaran},
+           familyi={P\bibinitperiod},
+           given={H.Hashem},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8bdf666c2b0c08aa17261fddcf67c60}{%
+           family={Shin},
+           familyi={S\bibinitperiod},
+           given={Yongcheol},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b53b8ac9f46209ebc3ffbc9b38eaae4e}
+      \strng{fullhash}{b53b8ac9f46209ebc3ffbc9b38eaae4e}
+      \strng{fullhashraw}{b53b8ac9f46209ebc3ffbc9b38eaae4e}
+      \strng{bibnamehash}{b53b8ac9f46209ebc3ffbc9b38eaae4e}
+      \strng{authorbibnamehash}{b53b8ac9f46209ebc3ffbc9b38eaae4e}
+      \strng{authornamehash}{b53b8ac9f46209ebc3ffbc9b38eaae4e}
+      \strng{authorfullhash}{b53b8ac9f46209ebc3ffbc9b38eaae4e}
+      \strng{authorfullhashraw}{b53b8ac9f46209ebc3ffbc9b38eaae4e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Building on Koop, Pesaran and Potter (1996), we propose the `generalized' impulse response analysis for unrestricted vector autoregressive (VAR) and cointegrated VAR models. Unlike the traditional impulse response analysis, our approach does not require orthogonalization of shocks and is invariant to the ordering of the variables in the VAR. The approach is also used in the construction of order-invariant forecast error variance decompositions.}
+      \field{issn}{01651765}
+      \field{journaltitle}{Economics Letters}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Generalized Impulse Response Analysis in Linear Multivariate Models}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{58}
+      \field{year}{1998}
+      \field{urldateera}{ce}
+      \field{pages}{17\bibrangedash 29}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/S0165-1765(97)00214-0
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\LKY4JVGY\Pesaran e Shin - 1998 - Generalized impulse response analysis in linear multivariate models.pdf
+      \endverb
+    \endentry
+    \entry{rogers1991}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=59e81ab5f62166747d2d31966612496a}{%
+           family={Rogers},
+           familyi={R\bibinitperiod},
+           given={L.\bibnamedelimi C.\bibnamedelimi G.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e33b901a6047fc7ef88c0801d8c936ee}{%
+           family={Satchell},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{f2c762855f359abdb8b86e4610e91815}
+      \strng{fullhash}{f2c762855f359abdb8b86e4610e91815}
+      \strng{fullhashraw}{f2c762855f359abdb8b86e4610e91815}
+      \strng{bibnamehash}{f2c762855f359abdb8b86e4610e91815}
+      \strng{authorbibnamehash}{f2c762855f359abdb8b86e4610e91815}
+      \strng{authornamehash}{f2c762855f359abdb8b86e4610e91815}
+      \strng{authorfullhash}{f2c762855f359abdb8b86e4610e91815}
+      \strng{authorfullhashraw}{f2c762855f359abdb8b86e4610e91815}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The log of the price of a share is commonly modelled as a Brownian motion with drift, {$\sigma$} Bt + ct, where the constants c and {$\sigma$} are unknown. In order to use the Black-Scholes option pricing formula, one needs an estimate of {$\sigma$}, though not of c. In this paper, we propose a new estimator of {$\sigma$} based on the high, low, and closing prices in a day's trading. This estimator has the merit of being unbiased whatever the drift c. In common with other estimators of {$\sigma$}, the approximation of the true high and low values of the drifting Brownian motion by the high and low values of a random walk introduces error, often quite a serious error. We shall show how a simple correction can overcome this error almost completely.}
+      \field{eprinttype}{jstor}
+      \field{issn}{1050-5164}
+      \field{journaltitle}{The Annals of Applied Probability}
+      \field{number}{4}
+      \field{title}{Estimating {{Variance From High}}, {{Low}} and {{Closing Prices}}}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{1}
+      \field{year}{1991}
+      \field{urldateera}{ce}
+      \field{pages}{504\bibrangedash 512}
+      \range{pages}{9}
+      \verb{eprint}
+      \verb 2959703
+      \endverb
+    \endentry
+    \entry{silva2025}{article}{}{}
+      \name{author}{4}{ul=2}{%
+        {{un=0,uniquepart=base,hash=c6f97a6f6916d70bd6ee97e7ae70198c}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Mairton\bibnamedelima Nogueira},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3b34a2e0fdd1fc45e3a1fbc9bd22e7c8}{%
+           family={Passos},
+           familyi={P\bibinitperiod},
+           given={Marcelo\bibnamedelimb De\bibnamedelima Oliveira},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7c12984766d63f1ffc388533a6dd82cb}{%
+           family={Tessmann},
+           familyi={T\bibinitperiod},
+           given={Mathias\bibnamedelima Schneid},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f17f55cbfc8fb97442af403cbd7e6b41}{%
+           family={Uhr},
+           familyi={U\bibinitperiod},
+           given={Daniel\bibnamedelimb De\bibnamedelimb Abreu\bibnamedelima Pereira},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer \& Society for Computational Economics}%
+      }
+      \strng{namehash}{35c038240a0b96204cbd7ef5a5a178cc}
+      \strng{fullhash}{a298acd4b10643ba5b08da7e4e2e897c}
+      \strng{fullhashraw}{a298acd4b10643ba5b08da7e4e2e897c}
+      \strng{bibnamehash}{35c038240a0b96204cbd7ef5a5a178cc}
+      \strng{authorbibnamehash}{35c038240a0b96204cbd7ef5a5a178cc}
+      \strng{authornamehash}{35c038240a0b96204cbd7ef5a5a178cc}
+      \strng{authorfullhash}{a298acd4b10643ba5b08da7e4e2e897c}
+      \strng{authorfullhashraw}{a298acd4b10643ba5b08da7e4e2e897c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper investigates the dynamic connectivity and potential contagion risk among bank stocks listed on the Brazilian stock exchange (Ibovespa) between 2009 and 2022. Using a Time-Varying Parameter Vector Autoregressive (TVP-VAR) model, we measure dynamic connectivity in the frequency domain, complemented by complex network metrics to analyze the interrelationships among banks. Our findings highlight that connectivity levels ranged from 20 to over 50\%, with peaks coinciding with major economic and political events, such as the COVID-19 pandemic and the Brazilian financial crisis in 2014--2016. Short-term volatility spillovers were the most prevalent, but the pandemic caused a noticeable shift toward long-term volatility connections. The results reveal Banco Bradesco, Banco do Brasil, and Itaú-Unibanco as primary net transmitters of shocks. At the same time, Banco Pan and Santander were identified as the main receivers of market volatility. These insights are valuable for policymakers and investors in understanding the dynamics of systemic risk within the Brazilian banking sector and how external shocks propagate across the network. The study also provides a methodological contribution by combining TVP-VAR models with network science to capture the structure and evolution of financial contagion in an emerging market context.}
+      \field{journaltitle}{Computational Economics}
+      \field{langid}{english}
+      \field{number}{2}
+      \field{title}{Dynamic {{Connectivity}} and {{Contagion Risk Among Bank Stocks}} in {{Brazil}}}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{66}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \field{pages}{1513\bibrangedash 1543}
+      \range{pages}{31}
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\2LX2FBK4\v66y2025i2d10.1007_s10614-024-10740-z.html
+      \endverb
+      \keyw{Banking network,Contagion risk,Dynamic connectivity,Financial network,Ibovespa,TVP-VAR model}
+    \endentry
+    \entry{silva2016}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c7a63ba27188fe1fc078450dd56d36b3}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Thiago\bibnamedelima Christiano},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bdd4abece924ceac22f1d394c83d16de}{%
+           family={De\bibnamedelima Souza},
+           familyi={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Sergio\bibnamedelimb Rubens\bibnamedelima Stancato},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c42811110e8a78e201bf19188bf7b16}{%
+           family={Tabak},
+           familyi={T\bibinitperiod},
+           given={Benjamin\bibnamedelima Miranda},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{38f664c1c9000edad4521d543175777e}
+      \strng{fullhash}{38f664c1c9000edad4521d543175777e}
+      \strng{fullhashraw}{38f664c1c9000edad4521d543175777e}
+      \strng{bibnamehash}{38f664c1c9000edad4521d543175777e}
+      \strng{authorbibnamehash}{38f664c1c9000edad4521d543175777e}
+      \strng{authornamehash}{38f664c1c9000edad4521d543175777e}
+      \strng{authorfullhash}{38f664c1c9000edad4521d543175777e}
+      \strng{authorfullhashraw}{38f664c1c9000edad4521d543175777e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Working Papers should not be reported as representing the views of the Banco Central do Brasil. The views expressed in the papers are those of the author(s) and not necessarily reflect those of the Banco Central do Brasil.}
+      \field{issn}{15660141}
+      \field{journaltitle}{Emerging Markets Review}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{title}{Network Structure Analysis of the {{Brazilian}} Interbank Market}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{26}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{130\bibrangedash 152}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1016/j.ememar.2015.12.004
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\P6FNAQH7\Silva et al. - 2016 - Network structure analysis of the Brazilian interbank market.pdf
+      \endverb
+    \endentry
+    \entry{silva2017}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3bb542db8e5a043b03ae1dbc14c031c5}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Walmir},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae130ec4c56f5130b4e9417715fbf607}{%
+           family={Kimura},
+           familyi={K\bibinitperiod},
+           given={Herbert},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae1a2caf4170ac8dfc3e942e4eeb143d}{%
+           family={Sobreiro},
+           familyi={S\bibinitperiod},
+           given={Vinicius\bibnamedelima Amorim},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{90be5f9d19a35abc11ac7ce3d6073cb8}
+      \strng{fullhash}{90be5f9d19a35abc11ac7ce3d6073cb8}
+      \strng{fullhashraw}{90be5f9d19a35abc11ac7ce3d6073cb8}
+      \strng{bibnamehash}{90be5f9d19a35abc11ac7ce3d6073cb8}
+      \strng{authorbibnamehash}{90be5f9d19a35abc11ac7ce3d6073cb8}
+      \strng{authornamehash}{90be5f9d19a35abc11ac7ce3d6073cb8}
+      \strng{authorfullhash}{90be5f9d19a35abc11ac7ce3d6073cb8}
+      \strng{authorfullhashraw}{90be5f9d19a35abc11ac7ce3d6073cb8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This article presents an analysis of the literature on systemic financial risk. To that end, we analyze and classify 266 articles that were published no later than September 2016 in the databases Scopus and Web of Knowledge; these articles were identified using the keywords ``systemic risk'', ``financial stability'', ``financial'', ``measure'', ``indicator'', and ``index''. They were evaluated based on 10 categories, namely, type of study, type of approach, object of study, method, spatial scope, temporal scope, context, focus, type of data used, and results. The analysis and classification of this literature made it possible to identify the remaining gaps in the literature on systemic risk; this contributes to a future research agenda on the topic. Moreover, the most influential articles in this field of research and the articles that compose the mainstream research on systemic financial risk were identified.}
+      \field{issn}{1572-3089}
+      \field{journaltitle}{Journal of Financial Stability}
+      \field{month}{2}
+      \field{shorttitle}{An Analysis of the Literature on Systemic Financial Risk}
+      \field{title}{An Analysis of the Literature on Systemic Financial Risk: {{A}} Survey}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{28}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{91\bibrangedash 114}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1016/j.jfs.2016.12.004
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\J3AXNQ3N\S1572308916302285.html
+      \endverb
+      \keyw{Bibliometry,Financial,Financial stability,Measure,Systemic risk}
+    \endentry
+    \entry{yang2000}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b016d716a469b1129b1ce2ea63f78681}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Dennis},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08c1e9a58399d68669c800dc1ee6607b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{22fc15b32401813d66b54e5c8434662d}
+      \strng{fullhash}{22fc15b32401813d66b54e5c8434662d}
+      \strng{fullhashraw}{22fc15b32401813d66b54e5c8434662d}
+      \strng{bibnamehash}{22fc15b32401813d66b54e5c8434662d}
+      \strng{authorbibnamehash}{22fc15b32401813d66b54e5c8434662d}
+      \strng{authornamehash}{22fc15b32401813d66b54e5c8434662d}
+      \strng{authorfullhash}{22fc15b32401813d66b54e5c8434662d}
+      \strng{authorfullhashraw}{22fc15b32401813d66b54e5c8434662d}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a new volatility estimator based on multiple periods of high, low, open, and close prices in a historical time series. The new estimator has the following nice properties: it is (a) unbiased in the continuous limit, (b) independent of the drift, (c) consistent in dealing with opening price jumps. Furthermore, it has the smallest variance among all estimators with similar properties. The improvement of accuracy over the classical close-to-close estimator is dramatic for real-life time series. Copyright 2000 by University of Chicago Press.}
+      \field{journaltitle}{The Journal of Business}
+      \field{number}{3}
+      \field{title}{Drift-{{Independent Volatility Estimation Based}} on {{High}}, {{Low}}, {{Open}}, and {{Close Prices}}}
+      \field{urlday}{7}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{73}
+      \field{year}{2000}
+      \field{urldateera}{ce}
+      \field{pages}{477\bibrangedash 91}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1086/209650
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\MX7KMBLL\RePEcucpjnlbusv73y2000i3p477-91.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
