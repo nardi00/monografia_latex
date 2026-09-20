@@ -2,19 +2,19 @@
 \babel@toc {brazil}{}\relax 
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{3}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdu^^c3^^a7^^c3^^a3o}}{3}{chapter.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Revisão Bibliográfica}}{5}{chapter.2}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Revis^^c3^^a3o Bibliogr^^c3^^a1fica}}{5}{chapter.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Metodologia}}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Base de Dados}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Topologia de Redes via Diebold-Yilmaz}{16}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Visualização de Redes}{19}{section.3.3}%
+\contentsline {section}{\numberline {3.2}Topologia de Redes via Diebold-Yilmaz}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Visualiza^^c3^^a7^^c3^^a3o de Redes}{22}{section.3.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados}}{21}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados}}{24}{chapter.4}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{22}{section*.26}%
+\contentsline {chapter}{Refer\^encias}{25}{section*.29}%
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 

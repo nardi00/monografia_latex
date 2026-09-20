@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bcf:controlfile version="3.11" bltxversion="3.21" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+<bcf:controlfile version="3.11" bltxversion="3.22" xmlns:bcf="https://sourceforge.net/projects/biblatex">
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -2530,38 +2530,48 @@
     <bcf:citekey order="62" intorder="1">silva2025</bcf:citekey>
     <bcf:citekey order="63" intorder="1">silva2025</bcf:citekey>
     <bcf:citekey order="64" intorder="1">silva2025</bcf:citekey>
-    <bcf:citekey order="65" intorder="1">diebold2009</bcf:citekey>
-    <bcf:citekey order="66" intorder="1">yang2000</bcf:citekey>
-    <bcf:citekey order="67" intorder="1">yang2000</bcf:citekey>
-    <bcf:citekey order="68" intorder="1">yang2000</bcf:citekey>
+    <bcf:citekey order="65" intorder="1">btgpactual2021</bcf:citekey>
+    <bcf:citekey order="66" intorder="1">diebold2009</bcf:citekey>
+    <bcf:citekey order="67" intorder="1">rogers1991</bcf:citekey>
+    <bcf:citekey order="68" intorder="1">rogers1991</bcf:citekey>
     <bcf:citekey order="69" intorder="1">diebold2012</bcf:citekey>
-    <bcf:citekey order="70" intorder="1">moritz2017</bcf:citekey>
-    <bcf:citekey order="71" intorder="1">moritz2017</bcf:citekey>
-    <bcf:citekey order="72" intorder="1">andersen2001</bcf:citekey>
-    <bcf:citekey order="72" intorder="2">andersen2003</bcf:citekey>
-    <bcf:citekey order="72" intorder="3">diebold2001</bcf:citekey>
-    <bcf:citekey order="73" intorder="1">gabauer2022</bcf:citekey>
-    <bcf:citekey order="74" intorder="1">diebold2009</bcf:citekey>
-    <bcf:citekey order="75" intorder="1">diebold2009</bcf:citekey>
-    <bcf:citekey order="76" intorder="1">diebold2012</bcf:citekey>
-    <bcf:citekey order="77" intorder="1">diebold2012</bcf:citekey>
-    <bcf:citekey order="78" intorder="1">pesaran1998</bcf:citekey>
-    <bcf:citekey order="79" intorder="1">pesaran1998</bcf:citekey>
-    <bcf:citekey order="80" intorder="1">diebold2009</bcf:citekey>
-    <bcf:citekey order="81" intorder="1">diebold2009</bcf:citekey>
-    <bcf:citekey order="82" intorder="1">diebold2012</bcf:citekey>
-    <bcf:citekey order="83" intorder="1">diebold2012</bcf:citekey>
-    <bcf:citekey order="84" intorder="1">diebold2014</bcf:citekey>
-    <bcf:citekey order="85" intorder="1">diebold2014</bcf:citekey>
+    <bcf:citekey order="70" intorder="1">diebold2012</bcf:citekey>
+    <bcf:citekey order="71" intorder="1">diebold2014</bcf:citekey>
+    <bcf:citekey order="72" intorder="1">diebold2014</bcf:citekey>
+    <bcf:citekey order="73" intorder="1">yang2000</bcf:citekey>
+    <bcf:citekey order="74" intorder="1">diebold2012</bcf:citekey>
+    <bcf:citekey order="75" intorder="1">diebold2012</bcf:citekey>
+    <bcf:citekey order="76" intorder="1">diebold2014</bcf:citekey>
+    <bcf:citekey order="77" intorder="1">diebold2014</bcf:citekey>
+    <bcf:citekey order="78" intorder="1">demirer2018</bcf:citekey>
+    <bcf:citekey order="79" intorder="1">demirer2018</bcf:citekey>
+    <bcf:citekey order="80" intorder="1">moritz2017</bcf:citekey>
+    <bcf:citekey order="81" intorder="1">moritz2017</bcf:citekey>
+    <bcf:citekey order="82" intorder="1">andersen2001</bcf:citekey>
+    <bcf:citekey order="82" intorder="2">andersen2003</bcf:citekey>
+    <bcf:citekey order="82" intorder="3">diebold2001</bcf:citekey>
+    <bcf:citekey order="83" intorder="1">gabauer2022</bcf:citekey>
+    <bcf:citekey order="84" intorder="1">diebold2009</bcf:citekey>
+    <bcf:citekey order="85" intorder="1">diebold2009</bcf:citekey>
     <bcf:citekey order="86" intorder="1">diebold2012</bcf:citekey>
     <bcf:citekey order="87" intorder="1">diebold2012</bcf:citekey>
-    <bcf:citekey order="88" intorder="1">diebold2012</bcf:citekey>
-    <bcf:citekey order="89" intorder="1">diebold2012</bcf:citekey>
+    <bcf:citekey order="88" intorder="1">pesaran1998</bcf:citekey>
+    <bcf:citekey order="89" intorder="1">pesaran1998</bcf:citekey>
     <bcf:citekey order="90" intorder="1">diebold2009</bcf:citekey>
-    <bcf:citekey order="90" intorder="2">diebold2012</bcf:citekey>
-    <bcf:citekey order="90" intorder="3">diebold2014</bcf:citekey>
-    <bcf:citekey order="90" intorder="4">demirer2018</bcf:citekey>
-    <bcf:citekey order="90" intorder="5">antonakakis2020</bcf:citekey>
+    <bcf:citekey order="91" intorder="1">diebold2009</bcf:citekey>
+    <bcf:citekey order="92" intorder="1">diebold2012</bcf:citekey>
+    <bcf:citekey order="93" intorder="1">diebold2012</bcf:citekey>
+    <bcf:citekey order="94" intorder="1">diebold2014</bcf:citekey>
+    <bcf:citekey order="95" intorder="1">diebold2014</bcf:citekey>
+    <bcf:citekey order="96" intorder="1">diebold2012</bcf:citekey>
+    <bcf:citekey order="97" intorder="1">diebold2012</bcf:citekey>
+    <bcf:citekey order="98" intorder="1">diebold2012</bcf:citekey>
+    <bcf:citekey order="99" intorder="1">diebold2012</bcf:citekey>
+    <bcf:citekey order="100" intorder="1">diebold2009</bcf:citekey>
+    <bcf:citekey order="100" intorder="2">diebold2012</bcf:citekey>
+    <bcf:citekey order="100" intorder="3">diebold2014</bcf:citekey>
+    <bcf:citekey order="100" intorder="4">demirer2018</bcf:citekey>
+    <bcf:citekey order="100" intorder="5">antonakakis2020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

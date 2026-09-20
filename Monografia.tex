@@ -176,7 +176,7 @@ framework de Diebold-Yilmaz, situando as contribuições deste trabalho no debat
 detalha a metodologia: a base de dados e os critérios de construção dos dois painéis amostrais, 
 a estimação da volatilidade, a especificação do VAR e da GFEVD, o procedimento dinâmico via 
 TVP-VAR, a regressão diádica e os procedimentos de visualização de redes. O Capítulo 4 
-apresenta e discute os resultados, incluindo as considerações finais do trabalho.
+apresenta e discute os resultados, incluindo as considerações finais do trabalho.   
 
 
 
@@ -505,23 +505,22 @@ pelo Banco Central do Brasil (BCB).
 
 O recorte temporal de cada instituição não é uma escolha discricionária, mas
 decorre diretamente do critério de liquidez descrito na Subseção~\ref{sec:tratamento-dados}
-(volume financeiro diário inferior a R\$~100 mil). Seis das oito instituições —
-ITUB4, BBDC4, BBAS3, SANB11, BRSR6 e ABCB4 — nunca ficam abaixo desse piso ao
+(volume financeiro diário inferior a R\$~100 mil). Seis das oito instituições -
+ITUB4, BBDC4, BBAS3, SANB11, BRSR6 e ABCB4 - nunca ficam abaixo desse piso ao
 longo de toda a base disponível, desde 2014. As duas exceções definem as
 fronteiras efetivas da amostra. O BPAC11 só passa a negociar de forma
-continuamente líquida a partir de 18/08/2017 — antes disso, a ação, listada em
+continuamente líquida a partir de 18/08/2017 - antes disso, a ação, listada em
 fevereiro de 2017, ainda está em fase de formação de \textit{book}. O BPAN4, por sua vez,
 só se torna continuamente líquido a partir de 16/01/2019: no terceiro trimestre
 de 2018, por exemplo, o papel permanece abaixo do piso de liquidez em 44 dos 63
 pregões do período, com média de apenas 48 negócios diários. 
 
-Essas duas fronteiras — determinadas pelos dados, não escolhidas a priori — geram
+Essas duas fronteiras, determinadas pelos dados, geram
 naturalmente dois painéis aninhados, apresentados na Tabela~\ref{tab:paineis}.
 O painel principal (N~=~7) exclui o Banco Pan e cobre o período de outubro de
-2017 a maio de 2026, alcançando 2.148 pregões ao longo de 8,7 anos — o maior
-alcance temporal possível dado o critério de liquidez das sete instituições
+2017 a maio de 2026, o maior alcance temporal possível dado o critério de liquidez das sete instituições
 restantes. O painel de extensão (N~=~8) inclui o Banco Pan e cobre janeiro de
-2019 a outubro de 2025, totalizando 1.690 pregões ao longo de 6,8 anos.
+2019 a outubro de 2025.
 
 \begin{table}[htb]
 \centering
@@ -535,8 +534,150 @@ N = 7 (sem Banco Pan) & 10/2017 a 05/2026 & 2.148 & Principal \\
 N = 8 (com Banco Pan) & 01/2019 a 10/2025 & 1.690 & Extensão \\
 \bottomrule
 \end{tabular}
-\legend{Fonte: elaboração própria, a partir de ComDinheiro.}
+% \legend{Fonte: elaboração própria, a partir de ComDinheiro.}
 \end{table}
+
+\subsubsection*{O vínculo societário BTG-Pan}
+A hipótese de que o vínculo societário produz co-movimento de volatilidade
+não pode ser testada no painel principal, pela razão evidente de que nele não há nenhum par de instituições ligadas por
+controle. Recorre-se, por isso, ao painel de oito instituições, único em que o par BTG e Banco Pan está presente. A
+restrição não decorre de escolha metodológica, e sim do fato de que, no sistema bancário brasileiro listado, esse é o único
+vínculo dessa natureza disponível no período.
+
+A Tabela~\ref{tab:diadica-par} apresenta os coeficientes da regressão diádica
+com indicadoras por par específico (Equação~\ref{eq:diadica}), estimada em
+corte único sobre o painel de extensão. Dois resultados se destacam. O par que
+compartilha vínculo de controle efetivo — BTG e Pan — apresenta o maior
+coeficiente da tabela (+5,95 pontos percentuais, $p < 0{,}0001$), e o par
+classificado apenas sob a etiqueta nominal de "privado estrangeiro" — ABC
+Brasil e Santander, duas instituições sem qualquer proximidade de porte ou
+modelo de negócio — apresenta o único coeficiente negativo (--2,17 pontos
+percentuais, $p = 0{,}014$). O padrão contraria uma hipótese puramente
+categórica: compartilhar um rótulo de classificação não produz, por si só,
+conectividade adicional, e pode até estar associado a menos.
+
+A leitura não se resume, porém, a "vínculo societário organiza a rede,
+categoria nominal não". O par Itaú e Bradesco — os dois maiores bancos
+privados nacionais da amostra, sem qualquer vínculo de controle entre si —
+também apresenta coeficiente elevado (+5,81 pontos percentuais,
+$p < 0{,}0001$), estatisticamente indistinguível do par BTG--Pan. Como a
+regressão já controla separadamente pelo efeito de ambos serem instituições
+de grande porte (+4,14 pontos percentuais, $p < 0{,}0001$), o coeficiente de
+Itaú--Bradesco representa um comovimento adicional, específico do par, que
+não é explicado nem pela propensão geral de cada banco a transmitir e receber
+risco, nem pelo porte. Duas explicações são compatíveis com os dados: a
+primeira é o vínculo de controle societário testado nesta subseção; a segunda
+é a proximidade de modelo de negócio e de exposição a choques regulatórios e
+macroeconômicos comuns aos dois maiores bancos de varejo do país — mecanismo
+distinto, mas igualmente capaz de gerar comovimento além do que porte e
+propensão geral já explicam. Os dados aqui disponíveis não permitem
+distinguir entre as duas hipóteses para o par Itaú--Bradesco, na ausência de
+um vínculo de controle a testar. O achado central da subseção permanece: o
+mecanismo de controle societário é suficiente para gerar comovimento da
+mesma magnitude que a maior proximidade de porte e modelo de negócio da
+amostra — mas não é o único mecanismo capaz de fazê-lo.
+
+\begin{table}[htb]
+\centering
+\caption{Regressão diádica com indicadoras por par específico (painel de extensão, corte único)}
+\label{tab:diadica-par}
+\begin{tabular}{lrrr}
+\toprule
+Indicadora & Coeficiente (p.p.) & $t$ & $p$ \\
+\midrule
+Bradesco e Itaú (privados nacionais)        & 5,81 &  8,13 & $<0{,}0001$ \\
+BTG e Pan (vínculo societário)              & 5,95 &  7,46 & $<0{,}0001$ \\
+Banco do Brasil e Banrisul (estatais)       & 0,79 &  1,65 & 0,108 \\
+ABC Brasil e Santander ("estrangeiros")     & --2,17 & --2,59 & 0,014 \\
+Ambos de grande porte                       & 4,14 &  5,51 & $<0{,}0001$ \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. Erros-padrão clusterizados por par não-dirigido.
+Todas as regressões incluem efeitos fixos de emissor e de receptor.}
+\end{table}
+
+A robustez desse resultado não depende de um único corte amostral. A
+Tabela~\ref{tab:diadica-temporal} reestima a mesma regressão a cada mês,
+totalizando 84 cortes ao longo do painel de extensão, e resume a série de
+coeficientes resultante pela média, pela proporção de meses com sinal
+positivo e por um teste $t$ da média contra zero. O par BTG--Pan mantém sinal
+positivo em 77 dos 84 cortes (91,7\%), com média de 5,32 pontos percentuais
+($t = 13{,}30$); o par Itaú--Bradesco e a indicadora de porte mantêm sinal
+positivo em todos os 84 cortes; o par ABC Brasil--Santander mantém sinal
+negativo na grande maioria deles (apenas 19 de 84 positivos). A evidência
+não repousa, portanto, sobre o resultado pontual de uma única estimação, mas
+sobre a repetição do padrão de sinal ao longo de sete anos de dados mensais.
+
+\begin{table}[htb]
+\centering
+\caption{Regressão diádica por par específico — extensão temporal (84 cortes mensais)}
+\label{tab:diadica-temporal}
+\begin{tabular}{lrrrr}
+\toprule
+Indicadora & Média (p.p.) & Sinal positivo & $t$ & $p$ \\
+\midrule
+Bradesco e Itaú (privados nacionais)        & 6,21 & 84/84 & 19,42 & $<0{,}0001$ \\
+BTG e Pan (vínculo societário)              & 5,32 & 77/84 & 13,30 & $<0{,}0001$ \\
+Banco do Brasil e Banrisul (estatais)       & 0,81 & 51/84 &  3,81 & 0,0003 \\
+ABC Brasil e Santander ("estrangeiros")     & --1,17 & 19/84 & --5,92 & $<0{,}0001$ \\
+Ambos de grande porte                       & 3,60 & 84/84 & 23,19 & $<0{,}0001$ \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. Teste $t$ da média dos 84 coeficientes mensais contra zero.}
+\end{table}
+
+A Figura~\ref{fig:coef-btgpan-tempo} mostra a evolução do coeficiente do par
+BTG--Pan ao longo do tempo, e não apenas sua média. A série atinge seu valor
+máximo em 2022 (9,71 pontos percentuais em média anual), um ano após o BTG
+Pactual assumir o controle pleno do Banco Pan, em maio de 2021, ao adquirir a
+totalidade da participação até então detida pela Caixa Econômica Federal e
+encerrar o controle compartilhado que mantinha desde 2011
+\parencite{btgpactual2021}\footnote{Fonte a confirmar/ajustar conforme a norma de citação adotada.}.
+O intervalo de um ano entre a consolidação do controle e o pico do coeficiente
+é compatível com uma reprecificação gradual do vínculo entre as duas
+instituições pelo mercado, e não com um efeito instantâneo. Após o pico, o
+coeficiente cai de forma contínua até 2024 (1,24 ponto percentual, o mínimo da
+série), voltando a subir em 2025 (2,47 pontos percentuais) — movimento que
+coincide com o anúncio de incorporação total do Pan pelo BTG, em outubro de
+2025.
+
+A conclusão da subseção decorre desse mesmo anúncio. Até 13/10/2025, os
+retornos diários do Pan e do BTG apresentam correlação moderada, em torno de
+0,39 a 0,43 em janelas comparáveis antes e depois do anúncio. Essa correlação
+do período pós-anúncio tomado como um todo, contudo, mistura duas fases
+distintas do processo: as semanas iniciais, em que a conclusão do negócio
+ainda dependia de aprovações societárias e regulatórias, e as semanas finais,
+em que a relação de troca fixa entre os papéis (0,2128 \textit{unit} do BTG
+por ação do Pan) já era essencialmente certa. A correlação móvel de curto
+prazo revela essa transição: nos últimos 10, 30 e 60 pregões de negociação do
+Pan antes da deslistagem, a correlação converge para 0,96, 0,97 e 0,97,
+respectivamente — consistente com o mecanismo de arbitragem esperado quando a
+conclusão da fusão se torna praticamente certa. Não foi possível identificar,
+entre os comunicados ao mercado disponíveis, um fato relevante específico na
+data exata em que essa convergência se inicia (28/10/2025, identificada por
+correlação móvel de curta janela), que antecede em cerca de seis semanas a
+aprovação em assembleia geral (09/12/2025); os marcos formais do processo
+documentados publicamente ocorrem majoritariamente depois dessa data.
+
+Esse fato cumpre dois papéis na subseção. Primeiro, explica por que o painel
+de extensão se encerra em 13/10/2025: com a correlação entre os dois papéis
+convergindo para próximo de 1 ao final do processo, as duas séries deixam de
+ser distinguíveis para fins de decomposição de variância, e a estimação do
+VAR se tornaria numericamente degenerada se estendida além desse ponto.
+Segundo, e mais importante, confirma o mecanismo por trás do resultado da
+subseção: se o vínculo de controle societário aproxima o comportamento de
+duas ações, o vínculo mais forte possível — a fusão completa — deveria
+aproximá-las ao limite. Foi exatamente o que se observou. O mesmo fato que
+obriga o encerramento do painel de extensão é o que confirma, ao final do
+processo, o resultado que a subseção buscou estabelecer com efeitos fixos e
+dados mensais ao longo de sete anos.
+
+O resultado desta subseção não é levado ao painel principal de sete
+instituições porque o vínculo societário se encerrou no mundo real com a
+incorporação — não porque a amostra foi delimitada para excluí-lo. Em
+contrapartida, é o painel principal que permite alcançar o regime de
+conectividade elevada de 2026 (Subseção~\ref{sec:amostra}), fora do alcance
+do painel de extensão.
 
 
 \subsection*{6.1.2 Construção das séries de volatilidade}
@@ -559,56 +700,41 @@ na amostra, cujo volume de negociação é irregular, recomenda o uso de medidas
 
 \subsubsection*{Estimador de Yang-Zhang}
 
-A volatilidade é mensurada pelo estimador \textit{range-based} de
-\textcite{yang2000}, que combina três componentes em uma média ponderada que minimiza a
-variância do estimador:
+A volatilidade é mensurada por um estimador \textit{range-based} de um único dia, 
+sem sobreposição entre observações consecutivas, que combina o componente
+de \textcite{rogers1991}, independente de drift intradiário, com um termo de retorno \textit{overnight}:
 
 \begin{equation}
-  \hat{\sigma}^{2}_{\mathrm{YZ}}
-    = \hat{\sigma}^{2}_{o}
-    + k\,\hat{\sigma}^{2}_{c}
-    + (1-k)\,\hat{\sigma}^{2}_{\mathrm{RS}},
-  \label{eq:yz}
+    \hat{\sigma}^2_t = \hat{o}^2_t + \widehat{RS}_t,
+    \label{eq:rs-overnight}
+\end{equation}
+onde
+\begin{equation}
+    \hat{o}^2_t = \left[\log\!\left(\frac{O_t}{C_{t-1}}\right)\right]^2,
+    \label{eq:overnight}
+\end{equation}
+\begin{equation}
+    \widehat{RS}_t = \log\!\left(\frac{H_t}{C_t}\right)\log\!\left(\frac{H_t}{O_t}\right)
+    + \log\!\left(\frac{L_t}{C_t}\right)\log\!\left(\frac{L_t}{O_t}\right).
+    \label{eq:rogers-satchell}
 \end{equation}
 
-\noindent onde, para uma janela de $n$ dias úteis:
-
-\begin{align}
-  \hat{\sigma}^{2}_{o}
-    &= \frac{1}{n-1}\sum_{t=1}^{n}
-       \bigl[\log(O_t/C_{t-1}) - \bar{r}_o\bigr]^{2},
-  \label{eq:overnight}\\[4pt]
-  \hat{\sigma}^{2}_{c}
-    &= \frac{1}{n-1}\sum_{t=1}^{n}
-       \bigl[\log(C_t/O_t) - \bar{r}_c\bigr]^{2},
-  \label{eq:openclose}\\[4pt]
-  \hat{\sigma}^{2}_{\mathrm{RS}}
-    &= \frac{1}{n-1}\sum_{t=1}^{n}
-       \Bigl[
-         \log(H_t/C_t)\log(H_t/O_t)
-         + \log(L_t/C_t)\log(L_t/O_t)
-       \Bigr],
-  \label{eq:rs}\\[4pt]
-  k &= \frac{0{,}34}{1{,}34 + \dfrac{n+1}{n-1}}.
-  \label{eq:k}
-\end{align}
-
 \noindent Aqui $H_t$, $L_t$, $O_t$ e $C_t$ denotam os preços máximo, mínimo, de abertura
-e de fechamento no dia $t$, respectivamente. O parâmetro $k$ em~\eqref{eq:k} decorre da
-minimização analítica da variância do estimador conjunto \parencite{yang2000}. Os
-termos $\bar{r}_o = n^{-1}\sum_{t}\log(O_t/C_{t-1})$ e
-$\bar{r}_c = n^{-1}\sum_{t}\log(C_t/O_t)$ são as médias amostrais dos retornos
-\textit{overnight} e \textit{open-to-close} dentro da janela, respectivamente.
+e de fechamento no dia $t$, respectivamente, e $C_{t-1}$ o preço de fechamento do pregão anterior. Diferentemente de estimadores de amplitude baseados em
+janela móvel de $n$ dias, as Equações~\ref{eq:rs-overnight}--\ref{eq:rogers-satchell}
+produzem uma estimativa de variância por pregão, sem exigir médias amostrais
+calculadas sobre uma janela: cada observação é independente das demais,
+eliminando por construção qualquer sobreposição de dados entre estimativas
+consecutivas. A variável efetivamente utilizada nas estimações é
+$y_t = \log\!\left(\max\!\left(\hat{\sigma}_t \sqrt{252},\ 10^{-8}\right)\right)$,
+onde $\hat{\sigma}_t = \sqrt{\hat{\sigma}^2_t}$ é anualizado pela convenção de
+252 pregões por ano, seguindo a mesma prática de anualização adotada por
+\textcite{diebold2012} e \textcite{diebold2014}, e o piso numérico evita
+indeterminação logarítmica nos raros pregões de variância estimada nula. A
+transformação logarítmica aproxima a distribuição dos choques de um padrão
+gaussiano, facilitando a inferência no VAR.
 
-A janela é fixada em $n = 21$ dias úteis, alinhando a medida ao conceito de volatilidade
-mensal. A variável efetivamente utilizada nas estimações é
-$y_t = \log\hat{\sigma}_{\mathrm{YZ},t}$, onde
-$\hat{\sigma}_{\mathrm{YZ},t} = \sqrt{\hat{\sigma}^{2}_{\mathrm{YZ},t}}$. Essa
-transformação logarítmica é padrão na literatura de spillovers \parencite{diebold2012} e
-aproxima a distribuição dos choques de um padrão gaussiano, facilitando a inferência no
-VAR.
-
-\subsubsection*{Por que Yang-Zhang e não estimadores alternativos?}
+\subsubsection*{Por que Rogers-Satchell e não estimadores alternativos?}
 
 O estimador de Garman-Klass ignora a variação \textit{overnight} ($C_{t-1}$ a $O_t$),
 tratando o ativo como se nada ocorresse fora do pregão. Para o sistema bancário brasileiro
@@ -632,6 +758,31 @@ que inflam $RV$. A abordagem GARCH(1,1) introduziria uma camada paramétrica adi
 antes do VAR, gerando duas etapas de modelagem encadeadas que complicam a interpretação
 e a robustez, além de operar apenas com retornos \textit{close-to-close}, descartando
 a informação intradiária que torna os estimadores \textit{range-based} mais eficientes.
+
+A escolha inicial desse trabalhou recaiu sobre o estimador de Yang e Zhang \parencite{yang2000},
+que combina os mesmos componentes de \textit{drift} independente e retorno \textit{overnight}
+em uma janela móvel de $n$ dias. Essa escolha, no entanto, não resiste ao diagnóstico dos resíduos. 
+A janela de $n = 21$ dias, recalculada a cada pregão, faz com que observações consecutivas
+compartilhem $n-1$ dos $n$ dias da janela, essa estrutura induz autocorrelação na série de 
+log-volatilidade e não reflete a dinâmica econômica real, a diferença passa a ser o dia que entra
+e o dia que sai da janela a cada atualização. Essa autocorrelação se propaga
+diretamente para os resíduos do VAR estimado sobre a série, violando a
+hipótese de ruído branco que sustenta a validade da decomposição de variância
+subsequente, os critérios de seleção de defasagem
+chegam a cair de forma descontínua no número de defasagens correspondente ao
+tamanho da janela, sinal de que o modelo está simplesmente reconhecendo a
+memória embutida no estimador e não capturando dinâmica genuína dos dados.
+
+A sobreposição, contudo, é autoinflingida pela escolha de uma janela de múltiplos dias. 
+Para \textcite{diebold2012}, \textcite{diebold2014} e \textcite{demirer2018}, os autores 
+empregam estimadores de amplitude de um único dia e a janela não é utilizada em suas 
+aplicações de referência do \textit{framework} de conectividade. A
+substituição por Rogers-Satchell com termo \textit{overnight} preserva os dois
+pilares da escolha original, a cobertura do risco \textit{overnight} e a
+independência em relação ao \textit{drift}, sem herdar a estrutura de médias
+móveis induzida pela janela e sem exigir os primeiros $n-1$ pregões de cada
+série como aquecimento. Os testes de estacionariedade  
+são conduzidos sobre a série resultante dessa substituição.
 
 \subsubsection*{Período amostral}
 
