@@ -11,10 +11,10 @@
 \contentsline {section}{\numberline {3.2}Topologia de Redes via Diebold-Yilmaz}{19}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Visualiza^^c3^^a7^^c3^^a3o de Redes}{22}{section.3.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados}}{24}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados}}{23}{chapter.4}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{25}{section*.29}%
+\contentsline {chapter}{Refer\^encias}{24}{section*.29}%
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 

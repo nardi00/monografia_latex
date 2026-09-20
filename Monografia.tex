@@ -680,7 +680,7 @@ conectividade elevada de 2026 (Subseção~\ref{sec:amostra}), fora do alcance
 do painel de extensão.
 
 
-\subsection*{6.1.2 Construção das séries de volatilidade}
+\subsection*{Construção das séries de volatilidade}
 
 \subsubsection*{Justificativa da variável-alvo}
 
@@ -698,7 +698,7 @@ na amostra, cujo volume de negociação é irregular, recomenda o uso de medidas
 \textit{range-based}, mais robustas ao ruído de microestrutura do que retornos diários
 \textit{close-to-close}.
 
-\subsubsection*{Estimador de Yang-Zhang}
+\subsubsection*{Estimador Rogers-Satchell}
 
 A volatilidade é mensurada por um estimador \textit{range-based} de um único dia, 
 sem sobreposição entre observações consecutivas, que combina o componente
@@ -817,7 +817,7 @@ Mai.--dez./2025          & Positivo (\textit{large caps}) & Expansão de \textit
 \end{tabular}
 \end{table}
 
-\subsection*{6.1.3 Tratamento dos dados}
+\subsection*{Tratamento dos dados}
 
 Os procedimentos de tratamento são aplicados na seguinte ordem.
 
@@ -846,7 +846,7 @@ Yang-Zhang e falham silenciosamente.
 
 \subsubsection*{3.\ Filtro de liquidez}
 
-Dias com volume de negociação inferior a 1.000 ações ou volume financeiro inferior a
+Dias com volume financeiro inferior a
 R\$\,100 mil são marcados como \texttt{NA}. Para as \textit{mid caps} ABCB4, BPAN4 e
 BRSR6, dias com volume muito reduzido produzem \textit{ranges} ($H_t - L_t$) que refletem
 o \textit{bid-ask spread} da microestrutura, e não a volatilidade efetiva do ativo.
@@ -866,11 +866,10 @@ restrito a ITUB4 e BBDC4) são eventos reais e são preservados na amostra.
 
 \subsubsection*{5.\ Estimação da volatilidade}
 
-A volatilidade Yang-Zhang é estimada conforme as
-equações~\eqref{eq:yz}--\eqref{eq:k}, com janela rolante de $n = 21$ dias úteis. Aplica-se
+A volatilidade Rogers-Satchell é estimada conforme a
+equação~\eqref{eq:rogers-satchell}. Aplica-se
 um piso numérico de $10^{-8}$ antes da transformação logarítmica:
-$y_t = \log\bigl(\max(\hat{\sigma}_{\mathrm{YZ},t},\,10^{-8})\bigr)$. Os primeiros
-20 dias de cada série recebem \texttt{NA} em função da janela \textit{rolling}.
+$y_t = \log\bigl(\max(\hat{\sigma}_{\mathrm{YZ},t},\,10^{-8})\bigr)$.
 
 \subsubsection*{6.\ Alinhamento e imputação}
 
@@ -887,7 +886,7 @@ imputar os valores ausentes. Para detalhes, consultar \textcite{moritz2017}.}.
 A integridade do painel é verificada ao final pela ausência de qualquer \texttt{NA}
 residual.
 
-\subsection*{6.1.4 Propriedades estatísticas}
+\subsection*{Propriedades estatísticas}
 
 A estacionariedade de cada série de log-volatilidade é testada por meio do teste de
 Dickey-Fuller Aumentado (ADF), o teste KPSS, o teste DF-GLS, 
@@ -919,7 +918,7 @@ log-volatilidade, com $N = 8$. O modelo VAR de ordem $p$ é:
     + \sum_{i=1}^{p} \boldsymbol{\Phi}_i\,\mathbf{y}_{t-i}
     + \boldsymbol{\varepsilon}_t,
   \qquad
-  \boldsymbol{\varepsilon}_t \sim (\mathbf{0},\,\boldsymbol{\Sigma}),
+  \boldsymbol{\varepsilon}_t \sim (\mathbf{0},\,\ boldsymbol{\Sigma}),
   \label{eq:var}
 \end{equation}
 
