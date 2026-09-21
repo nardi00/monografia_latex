@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bcf:controlfile version="3.11" bltxversion="3.22" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+<bcf:controlfile version="3.11" bltxversion="3.21" xmlns:bcf="https://sourceforge.net/projects/biblatex">
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -2567,11 +2567,13 @@
     <bcf:citekey order="97" intorder="1">diebold2012</bcf:citekey>
     <bcf:citekey order="98" intorder="1">diebold2012</bcf:citekey>
     <bcf:citekey order="99" intorder="1">diebold2012</bcf:citekey>
-    <bcf:citekey order="100" intorder="1">diebold2009</bcf:citekey>
-    <bcf:citekey order="100" intorder="2">diebold2012</bcf:citekey>
-    <bcf:citekey order="100" intorder="3">diebold2014</bcf:citekey>
-    <bcf:citekey order="100" intorder="4">demirer2018</bcf:citekey>
-    <bcf:citekey order="100" intorder="5">antonakakis2020</bcf:citekey>
+    <bcf:citekey order="100" intorder="1">primiceri2005</bcf:citekey>
+    <bcf:citekey order="101" intorder="1">delnegro2015</bcf:citekey>
+    <bcf:citekey order="102" intorder="1">koopkorobilis2013</bcf:citekey>
+    <bcf:citekey order="103" intorder="1">antonakakis2020</bcf:citekey>
+    <bcf:citekey order="104" intorder="1">antonakakis2020</bcf:citekey>
+    <bcf:citekey order="105" intorder="1">chatziantoniou2021</bcf:citekey>
+    <bcf:citekey order="106" intorder="1">chatziantoniou2021</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

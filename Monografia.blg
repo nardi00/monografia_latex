@@ -1,18 +1,21 @@
-[0] Config.pm:329> INFO - This is Biber 2.22
-[0] Config.pm:332> INFO - Logfile is 'Monografia.blg'
-[43] biber:342> INFO - === Sun Sep 20, 2026, 17:45:57
-[54] Biber.pm:421> INFO - Reading 'Monografia.bcf'
-[116] Biber.pm:1002> INFO - Found 34 citekeys in bib section 0
-[129] Biber.pm:4487> INFO - Processing section 0
-[135] Biber.pm:4680> INFO - Looking for bibtex file 'referencias.bib' for section 0
-[137] bibtex.pm:1713> INFO - LaTeX decoding ...
-[182] bibtex.pm:1519> INFO - Found BibTeX data source 'referencias.bib'
-[358] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[359] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[359] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'pt-BR'
-[359] Biber.pm:4313> INFO - No sort tailoring available for locale 'pt-BR'
-[382] bbl.pm:676> INFO - Writing 'Monografia.bbl' with encoding 'UTF-8'
-[400] bbl.pm:779> INFO - Output to Monografia.bbl
-[401] Biber.pm:132> WARN - ISBN '978-1-107-02343-7 978-1-139-15118-4' in entry 'cont2013' is invalid - run biber with '--validate_datamodel' for details.
-[401] Biber.pm:132> WARN - I didn't find a database entry for 'btgpactual2021' (section 0)
-[401] Biber.pm:134> INFO - WARNINGS: 2
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'Monografia.blg'
+[81] biber-MSWIN64:342> INFO - === 
+[114] Biber.pm:421> INFO - Reading 'Monografia.bcf'
+[208] Biber.pm:1002> INFO - Found 37 citekeys in bib section 0
+[218] Biber.pm:4487> INFO - Processing section 0
+[226] Biber.pm:4678> INFO - Looking for bibtex file 'referencias.bib' for section 0
+[280] bibtex.pm:1713> INFO - LaTeX decoding ...
+[343] bibtex.pm:1519> INFO - Found BibTeX data source 'referencias.bib'
+[515] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[516] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[516] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'pt-BR'
+[516] Biber.pm:4313> INFO - No sort tailoring available for locale 'pt-BR'
+[542] bbl.pm:676> INFO - Writing 'Monografia.bbl' with encoding 'UTF-8'
+[565] bbl.pm:779> INFO - Output to Monografia.bbl
+[565] Biber.pm:132> WARN - ISBN '978-1-107-02343-7 978-1-139-15118-4' in entry 'cont2013' is invalid - run biber with '--validate_datamodel' for details.
+[566] Biber.pm:132> WARN - I didn't find a database entry for 'btgpactual2021' (section 0)
+[566] Biber.pm:132> WARN - I didn't find a database entry for 'primiceri2005' (section 0)
+[566] Biber.pm:132> WARN - I didn't find a database entry for 'delnegro2015' (section 0)
+[566] Biber.pm:132> WARN - I didn't find a database entry for 'koopkorobilis2013' (section 0)
+[566] Biber.pm:134> INFO - WARNINGS: 5

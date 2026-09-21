@@ -504,8 +504,7 @@ com as Instituições Financeiras Sistemicamente Importantes Domésticas (D-SIBs
 pelo Banco Central do Brasil (BCB).
 
 O recorte temporal de cada instituição não é uma escolha discricionária, mas
-decorre diretamente do critério de liquidez descrito na Subseção~\ref{sec:tratamento-dados}
-(volume financeiro diário inferior a R\$~100 mil). Seis das oito instituições -
+decorre diretamente do critério de liquidez de um volume financeiro diário inferior a R\$~100 mil. Seis das oito instituições -
 ITUB4, BBDC4, BBAS3, SANB11, BRSR6 e ABCB4 - nunca ficam abaixo desse piso ao
 longo de toda a base disponível, desde 2014. As duas exceções definem as
 fronteiras efetivas da amostra. O BPAC11 só passa a negociar de forma
@@ -547,35 +546,35 @@ vínculo dessa natureza disponível no período.
 A Tabela~\ref{tab:diadica-par} apresenta os coeficientes da regressão diádica
 com indicadoras por par específico (Equação~\ref{eq:diadica}), estimada em
 corte único sobre o painel de extensão. Dois resultados se destacam. O par que
-compartilha vínculo de controle efetivo — BTG e Pan — apresenta o maior
-coeficiente da tabela (+5,95 pontos percentuais, $p < 0{,}0001$), e o par
-classificado apenas sob a etiqueta nominal de "privado estrangeiro" — ABC
-Brasil e Santander, duas instituições sem qualquer proximidade de porte ou
-modelo de negócio — apresenta o único coeficiente negativo (--2,17 pontos
-percentuais, $p = 0{,}014$). O padrão contraria uma hipótese puramente
-categórica: compartilhar um rótulo de classificação não produz, por si só,
-conectividade adicional, e pode até estar associado a menos.
+compartilha vínculo de controle efetivo, BTG e Pan, apresenta o segundo maior
+coeficiente da tabela (+5,94 pontos percentuais, $p < 0{,}0001$), e o par
+classificado apenas sob a etiqueta nominal de "privado estrangeiro" (ABC
+Brasil e Santander), duas instituições sem qualquer proximidade de porte ou
+modelo de negócio apresenta o único coeficiente negativo (--2,29 pontos
+percentuais, $p = 0{,}011$). Esse padrão contraria a hipótese puramente categórica
+de que compartilhar um rotulo de classificação produz, por si só, conectividade 
+adicional, e pode até estar associado a menos. 
 
-A leitura não se resume, porém, a "vínculo societário organiza a rede,
-categoria nominal não". O par Itaú e Bradesco — os dois maiores bancos
-privados nacionais da amostra, sem qualquer vínculo de controle entre si —
-também apresenta coeficiente elevado (+5,81 pontos percentuais,
-$p < 0{,}0001$), estatisticamente indistinguível do par BTG--Pan. Como a
+A leitura não se resume, porém, a ideia de que vínculo societário organiza a rede,
+categoria nominal não. O par Itaú e Bradesco, os dois maiores bancos
+privados nacionais da amostra e sem qualquer vínculo de controle entre si,
+também apresenta coeficiente elevado (+6,24 pontos percentuais,
+$p < 0{,}0001$). Como a
 regressão já controla separadamente pelo efeito de ambos serem instituições
-de grande porte (+4,14 pontos percentuais, $p < 0{,}0001$), o coeficiente de
+de grande porte (+4,10 pontos percentuais, $p < 0{,}0001$), o coeficiente de
 Itaú--Bradesco representa um comovimento adicional, específico do par, que
 não é explicado nem pela propensão geral de cada banco a transmitir e receber
-risco, nem pelo porte. Duas explicações são compatíveis com os dados: a
-primeira é o vínculo de controle societário testado nesta subseção; a segunda
-é a proximidade de modelo de negócio e de exposição a choques regulatórios e
-macroeconômicos comuns aos dois maiores bancos de varejo do país — mecanismo
-distinto, mas igualmente capaz de gerar comovimento além do que porte e
+risco, nem pelo porte. Duas explicações são compatíveis com os dados sendo a
+primeira em relação ao vínculo de controle societário testado nesta subseção e a segunda
+sobre a proximidade de modelo de negócio e de exposição a choques regulatórios e
+macroeconômicos comuns aos dois maiores bancos de varejo do país, mecanismo
+distinto mas igualmente capaz de gerar comovimento além do que porte e
 propensão geral já explicam. Os dados aqui disponíveis não permitem
 distinguir entre as duas hipóteses para o par Itaú--Bradesco, na ausência de
-um vínculo de controle a testar. O achado central da subseção permanece: o
+um vínculo de controle a testar. O achado central da subseção permanece. O
 mecanismo de controle societário é suficiente para gerar comovimento da
 mesma magnitude que a maior proximidade de porte e modelo de negócio da
-amostra — mas não é o único mecanismo capaz de fazê-lo.
+amostra, mas não é o único mecanismo capaz de fazê-lo.
 
 \begin{table}[htb]
 \centering
@@ -585,28 +584,27 @@ amostra — mas não é o único mecanismo capaz de fazê-lo.
 \toprule
 Indicadora & Coeficiente (p.p.) & $t$ & $p$ \\
 \midrule
-Bradesco e Itaú (privados nacionais)        & 5,81 &  8,13 & $<0{,}0001$ \\
-BTG e Pan (vínculo societário)              & 5,95 &  7,46 & $<0{,}0001$ \\
-Banco do Brasil e Banrisul (estatais)       & 0,79 &  1,65 & 0,108 \\
-ABC Brasil e Santander ("estrangeiros")     & --2,17 & --2,59 & 0,014 \\
-Ambos de grande porte                       & 4,14 &  5,51 & $<0{,}0001$ \\
+Bradesco e Itaú (privados nacionais)        & 6,24 &  8,44 & $<0{,}0001$ \\
+BTG e Pan (vínculo societário)              & 5,94 &  7,24 & $<0{,}0001$ \\
+Banco do Brasil e Banrisul (estatais)       & 0,47 &  0,93 & 0,361 \\
+ABC Brasil e Santander ("estrangeiros")     & --2,29 & --2,67 & 0,011 \\
+Ambos de grande porte                       & 4,10 &  5,34 & $<0{,}0001$ \\
 \bottomrule
 \end{tabular}
-\legend{Fonte: elaboração própria. Erros-padrão clusterizados por par não-dirigido.
-Todas as regressões incluem efeitos fixos de emissor e de receptor.}
+\legend{Fonte: elaboração própria.}
 \end{table}
 
 A robustez desse resultado não depende de um único corte amostral. A
 Tabela~\ref{tab:diadica-temporal} reestima a mesma regressão a cada mês,
-totalizando 84 cortes ao longo do painel de extensão, e resume a série de
+totalizando 82 cortes ao longo do painel de extensão, e resume a série de
 coeficientes resultante pela média, pela proporção de meses com sinal
 positivo e por um teste $t$ da média contra zero. O par BTG--Pan mantém sinal
-positivo em 77 dos 84 cortes (91,7\%), com média de 5,32 pontos percentuais
-($t = 13{,}30$); o par Itaú--Bradesco e a indicadora de porte mantêm sinal
-positivo em todos os 84 cortes; o par ABC Brasil--Santander mantém sinal
-negativo na grande maioria deles (apenas 19 de 84 positivos). A evidência
+positivo em 74 dos 82 cortes (90\%), com média de 5,26 pontos percentuais
+($t = 12{,}8$); o par Itaú--Bradesco e a indicadora de porte mantêm sinal
+positivo em todos os 82 cortes; o par ABC Brasil--Santander mantém sinal
+negativo na grande maioria deles (apenas 17 de 82 positivos). A evidência
 não repousa, portanto, sobre o resultado pontual de uma única estimação, mas
-sobre a repetição do padrão de sinal ao longo de sete anos de dados mensais.
+sobre a repetição do padrão de sinal ao longo de quase sete anos de dados mensais.
 
 \begin{table}[htb]
 \centering
@@ -616,19 +614,19 @@ sobre a repetição do padrão de sinal ao longo de sete anos de dados mensais.
 \toprule
 Indicadora & Média (p.p.) & Sinal positivo & $t$ & $p$ \\
 \midrule
-Bradesco e Itaú (privados nacionais)        & 6,21 & 84/84 & 19,42 & $<0{,}0001$ \\
-BTG e Pan (vínculo societário)              & 5,32 & 77/84 & 13,30 & $<0{,}0001$ \\
-Banco do Brasil e Banrisul (estatais)       & 0,81 & 51/84 &  3,81 & 0,0003 \\
-ABC Brasil e Santander ("estrangeiros")     & --1,17 & 19/84 & --5,92 & $<0{,}0001$ \\
-Ambos de grande porte                       & 3,60 & 84/84 & 23,19 & $<0{,}0001$ \\
+Bradesco e Itaú (privados nacionais)        & 6,44 & 82/82 & 19,66 & $<0{,}0001$ \\
+BTG e Pan (vínculo societário)              & 5,26 & 74/82 & 12,8 & $<0{,}0001$ \\
+Banco do Brasil e Banrisul (estatais)       & 0,68 & 49/82 &  3,29 & 0,0015 \\
+ABC Brasil e Santander ("estrangeiros")     & --1,21 & 17/82 & --5,98 & $<0{,}0001$ \\
+Ambos de grande porte                       & 3,51 & 82/82 & 22,95 & $<0{,}0001$ \\
 \bottomrule
 \end{tabular}
-\legend{Fonte: elaboração própria. Teste $t$ da média dos 84 coeficientes mensais contra zero.}
+\legend{Fonte: elaboração própria.}
 \end{table}
 
 A Figura~\ref{fig:coef-btgpan-tempo} mostra a evolução do coeficiente do par
 BTG--Pan ao longo do tempo, e não apenas sua média. A série atinge seu valor
-máximo em 2022 (9,71 pontos percentuais em média anual), um ano após o BTG
+máximo em 2022 (9,52 pontos percentuais em média anual), um ano após o BTG
 Pactual assumir o controle pleno do Banco Pan, em maio de 2021, ao adquirir a
 totalidade da participação até então detida pela Caixa Econômica Federal e
 encerrar o controle compartilhado que mantinha desde 2011
@@ -636,10 +634,18 @@ encerrar o controle compartilhado que mantinha desde 2011
 O intervalo de um ano entre a consolidação do controle e o pico do coeficiente
 é compatível com uma reprecificação gradual do vínculo entre as duas
 instituições pelo mercado, e não com um efeito instantâneo. Após o pico, o
-coeficiente cai de forma contínua até 2024 (1,24 ponto percentual, o mínimo da
-série), voltando a subir em 2025 (2,47 pontos percentuais) — movimento que
+coeficiente cai de forma contínua até 2024 (1,19 ponto percentual, o mínimo da
+série), voltando a subir em 2025 (1,77 pontos percentuais) em um movimento que
 coincide com o anúncio de incorporação total do Pan pelo BTG, em outubro de
 2025.
+
+\begin{figure}[htb]
+  \centering
+  \caption{Coeficiente da regressão diádica: BTG-Pan}
+  \label{fig:coef-btgpan-tempo}
+  \includegraphics[width=\textwidth]{figuras/coef_btgpan_temporal.png}
+  \legend{Fonte: elaboração própria.}
+\end{figure}
 
 A conclusão da subseção decorre desse mesmo anúncio. Até 13/10/2025, os
 retornos diários do Pan e do BTG apresentam correlação moderada, em torno de
@@ -651,12 +657,12 @@ em que a relação de troca fixa entre os papéis (0,2128 \textit{unit} do BTG
 por ação do Pan) já era essencialmente certa. A correlação móvel de curto
 prazo revela essa transição: nos últimos 10, 30 e 60 pregões de negociação do
 Pan antes da deslistagem, a correlação converge para 0,96, 0,97 e 0,97,
-respectivamente — consistente com o mecanismo de arbitragem esperado quando a
+respectivamente. Esse movimento é consistente com o mecanismo de arbitragem esperado quando a
 conclusão da fusão se torna praticamente certa. Não foi possível identificar,
 entre os comunicados ao mercado disponíveis, um fato relevante específico na
 data exata em que essa convergência se inicia (28/10/2025, identificada por
 correlação móvel de curta janela), que antecede em cerca de seis semanas a
-aprovação em assembleia geral (09/12/2025); os marcos formais do processo
+aprovação em assembleia geral (09/12/2025), os marcos formais do processo
 documentados publicamente ocorrem majoritariamente depois dessa data.
 
 Esse fato cumpre dois papéis na subseção. Primeiro, explica por que o painel
@@ -664,20 +670,17 @@ de extensão se encerra em 13/10/2025: com a correlação entre os dois papéis
 convergindo para próximo de 1 ao final do processo, as duas séries deixam de
 ser distinguíveis para fins de decomposição de variância, e a estimação do
 VAR se tornaria numericamente degenerada se estendida além desse ponto.
-Segundo, e mais importante, confirma o mecanismo por trás do resultado da
-subseção: se o vínculo de controle societário aproxima o comportamento de
-duas ações, o vínculo mais forte possível — a fusão completa — deveria
-aproximá-las ao limite. Foi exatamente o que se observou. O mesmo fato que
-obriga o encerramento do painel de extensão é o que confirma, ao final do
-processo, o resultado que a subseção buscou estabelecer com efeitos fixos e
-dados mensais ao longo de sete anos.
+Segundo, e mais importante, confirma que se o vínculo de controle societário 
+aproxima o comportamento de duas ações, a fusão completa deveria
+aproximá-las ao limite já que é o vinculo societário mais forte possível. 
+Foi exatamente o que se observou. O resultado que a 
+subseção buscou estabelecer com efeitos fixos e dados mensais ao longo de 
+sete anos é confirmado através desse fato. 
 
 O resultado desta subseção não é levado ao painel principal de sete
 instituições porque o vínculo societário se encerrou no mundo real com a
-incorporação — não porque a amostra foi delimitada para excluí-lo. Em
-contrapartida, é o painel principal que permite alcançar o regime de
-conectividade elevada de 2026 (Subseção~\ref{sec:amostra}), fora do alcance
-do painel de extensão.
+incorporação. Em contrapartida, é o painel principal que permite alcançar o 
+regime de conectividade elevada de 2026, fora do alcance do painel de extensão.
 
 
 \subsection*{Construção das séries de volatilidade}
@@ -866,8 +869,8 @@ restrito a ITUB4 e BBDC4) são eventos reais e são preservados na amostra.
 
 \subsubsection*{5.\ Estimação da volatilidade}
 
-A volatilidade Rogers-Satchell é estimada conforme a
-equação~\eqref{eq:rogers-satchell}. Aplica-se
+A volatilidade Rogers-Satchell é estimada conforme as
+equações~\ref{eq:rs-overnight}--\ref{eq:rogers-satchell}. Aplica-se
 um piso numérico de $10^{-8}$ antes da transformação logarítmica:
 $y_t = \log\bigl(\max(\hat{\sigma}_{\mathrm{YZ},t},\,10^{-8})\bigr)$.
 
@@ -1065,13 +1068,166 @@ do Brasil. O contraste central deste trabalho é a confrontação entre o rankin
 importância sistêmica gerado por essas métricas de rede e a segmentação oficial de D-SIBs 
 publicada pelo BCB.
 
-\subsection*{Análise dinâmica}
+\subsubsection*{Especificação dinâmica: TVP-VAR com fatores de esquecimento}
+\label{sec:tvpvar}
 
-Os índices de \textit{spillover} são estimados em janela rolante de $W = 200$ dias úteis
-($\approx 10$ meses de negociação). Esse valor representa um equilíbrio entre a
-estabilidade numérica da estimação e a responsividade a mudanças de regime. O horizonte
-$\tau = 10$ segue a convenção da literatura de referência
-\parencite{diebold2009,diebold2012,diebold2014,demirer2018,antonakakis2020}.
+A especificação dinâmica principal deste trabalho estima os coeficientes do
+VAR e a covariância dos choques como variantes no tempo, em vez de
+recalculá-los em janelas móveis fixas e discretas. Nessa última abordagem, o índice de conectividade estimado em uma data $t$
+reflete uma média retrospectiva sobre os $W$ dias anteriores, de modo que o
+pico de conectividade de um episódio de crise é datado na borda direita da
+janela, quando esta está mais preenchida por observações do episódio e
+não na data em que o episódio de fato ocorre.
+
+Seja $z_t = (y_{t-1}', \dots, y_{t-p}', 1)'$ o vetor de regressores no
+instante $t$ e $Z_t = I_N \otimes z_t'$. O modelo~\eqref{eq:var} é reescrito
+em forma de espaço de estados, com o vetor de coeficientes $\beta_t$
+(dimensão $N(Np+1)$, correspondente ao empilhamento de $\Phi_1, \dots,
+\Phi_p, c$ de todas as equações) evoluindo como um passeio aleatório:
+\begin{align}
+    y_t &= Z_t \beta_t + \varepsilon_t, \quad \varepsilon_t \sim N(0, \Sigma_t), \label{eq:obs} \\
+    \beta_t &= \beta_{t-1} + u_t, \quad u_t \sim N(0, Q_t). \label{eq:estado}
+\end{align}
+A estimação exata de \eqref{eq:obs}--\eqref{eq:estado} por métodos bayesianos
+completos, como em \textcite{primiceri2005} e no corrigendum de
+\textcite{delnegro2015}, exige amostragem MCMC (algoritmo de Carter-Kohn)
+recomputada a cada iteração, sendo computacionalmente inviável para um estado de
+dimensão $N(Np+1)$ superior a cem, como é o caso deste trabalho, e originalmente
+concebida para sistemas de poucas variáveis. A alternativa adotada, proposta
+por \textcite{koopkorobilis2013} e aplicada ao contexto de conectividade por
+\textcite{antonakakis2020} e \textcite{chatziantoniou2021}, substitui a
+covariância de estado $Q_t$ e a covariância dos choques $\Sigma_t$ por
+estimativas recursivas governadas por dois fatores de esquecimento, $\kappa_1$
+e $\kappa_2$, dispensando a amostragem MCMC.
+
+O fator $\kappa_1$ governa a velocidade de deriva dos coeficientes. Em vez de
+estimar $Q_t$ diretamente, impõe-se $Q_t = (\kappa_1^{-1} - 1)\, P_{t-1|t-1}$,
+onde $P_{t|t}$ é a covariância do estado no filtro de Kalman. Essa imposição
+faz a etapa de predição do filtro colapsar em:
+\begin{equation}
+    P_{t|t-1} = P_{t-1|t-1} + Q_t = \frac{1}{\kappa_1} P_{t-1|t-1}.
+    \label{eq:kappa1}
+\end{equation}
+Com $\kappa_1 = 1$, tem-se $Q_t = 0$, os coeficientes não se movem e o
+modelo colapsa no VAR de parâmetros constantes da especificação estática.
+Com $\kappa_1 < 1$, a covariância do estado é inflada a cada período,
+abrindo espaço para deriva: uma observação de $j$ períodos atrás entra com
+peso $\kappa_1^j$ na estimativa filtrada de $\beta_t$, de modo que a amostra
+efetiva de memória do filtro é da ordem de $(1-\kappa_1)^{-1}$ observações.
+
+O fator $\kappa_2$ governa a velocidade de adaptação da covariância dos
+choques, atualizada por média móvel exponencial dos resíduos do próprio
+filtro:
+\begin{equation}
+    \Sigma_t = \kappa_2\, \Sigma_{t-1} + (1-\kappa_2)\, \hat{\varepsilon}_t \hat{\varepsilon}_t',
+    \quad \hat{\varepsilon}_t = y_t - Z_t \beta_{t|t}.
+    \label{eq:kappa2}
+\end{equation}
+Como a conectividade em cada instante $t$ é computada a partir de
+$\beta_{t|t}$ e $\Sigma_t$, é $\kappa_2$ que determina a velocidade de reação
+do índice a um episódio de estresse; $\kappa_1$, por sua vez, diz respeito à
+estrutura de propagação, não à intensidade dos choques que se propagam.
+
+A seleção de $(\kappa_1, \kappa_2)$ é conduzida por
+verossimilhança preditiva fora da amostra, deixando os próprios dados
+escolherem o par. O filtro de Kalman produz, a cada instante $t$ e
+condicional à informação disponível até $t-1$, a densidade preditiva
+\begin{equation}
+    y_t \mid \mathcal{I}_{t-1} \sim N\!\left(Z_t \beta_{t|t-1},\ F_t\right),
+    \quad F_t = Z_t P_{t|t-1} Z_t' + \Sigma_{t-1},
+    \label{eq:preditiva}
+\end{equation}
+avaliada no valor efetivamente observado, cuja log-verossimilhança no
+instante $t$ é
+\begin{equation}
+    \ell_t(\kappa_1, \kappa_2) = -\frac{1}{2}
+    \left[N \log(2\pi) + \log|F_t| + e_t' F_t^{-1} e_t\right],
+    \quad e_t = y_t - Z_t \beta_{t|t-1}.
+    \label{eq:loglik}
+\end{equation}
+Como $e_t$ é construído com $\beta_{t|t-1}$, os coeficientes antes de o
+filtro observar $y_t$, a penalização por excesso de flexibilidade é
+automática e um $\kappa_1$ baixo permite que os coeficientes persigam ruído,
+e coeficientes que perseguem ruído preveem pior um passo à frente,
+reduzindo $\ell_t$.
+
+O procedimento de seleção segue quatro etapas. Primeiro, define-se uma grade
+$\kappa_1 \in \{0{,}94;\ 0{,}96;\ 0{,}98;\ 0{,}99;\ 0{,}995;\ 1{,}00\}$ e
+$\kappa_2 \in \{0{,}94;\ 0{,}96;\ 0{,}99\}$, incluindo valores baixos mesmo
+sabendo, a priori, que tendem a perder. É a distância entre eles e o
+vencedor que sustenta a robustez da escolha. Segundo, estima-se um VAR($p$)
+por MQO nas primeiras $t_0 = 200$ observações, usando as estimativas
+resultantes como $\beta_0$, $P_0$ (a covariância dos coeficientes) e $\Sigma_0$
+(a covariância dos resíduos) para inicializar o filtro. Terceiro, o filtro é
+executado, para cada par da grade, ao longo da amostra completa, acumulando
+$\ell_t$ apenas para $t > t_0$ — o que torna o critério genuinamente fora da
+amostra, já que o período de inicialização não entra na soma
+$\mathcal{L}(\kappa_1, \kappa_2) = \sum_{t > t_0} \ell_t(\kappa_1, \kappa_2)$.
+Quarto, as somas são convertidas em pesos posteriores por
+\begin{equation}
+    w(\kappa) \propto \exp\!\left\{\mathcal{L}(\kappa) - \max_{\kappa'} \mathcal{L}(\kappa')\right\},
+    \label{eq:pesos}
+\end{equation}
+normalizados para somar um, com a subtração do máximo antes da exponenciação
+evitando estouro numérico. O par vencedor é aquele de maior peso posterior,
+restrito a $\kappa_1 < 1$: o pacote \texttt{ConnectednessApproach} exige esse
+parâmetro estritamente menor que um, já que $\kappa_1 = 1$ corresponde, por
+definição, ao caso degenerado de coeficientes constantes. Os resultados
+completos da grade são reportados no Capítulo~\ref{cap:resultados}.
+
+\subsubsection*{Regressão diádica}
+\label{sec:regressao-diadica}
+
+A hipótese de que o tipo de controle institucional organiza a topologia da
+rede (testada, na especificação original deste trabalho, por
+assortatividade nominal sobre o grafo completo) não se sustenta como
+formulada. A assortatividade nominal compara a fração de ligações que
+ocorrem dentro de categorias com a fração esperada sob distribuição
+aleatória, dadas as marginais. Em um grafo com apenas $N=8$ nós e categorias
+de tamanho reduzido, essa fração é mecanicamente pequena mesmo quando a
+categoria não organiza nada, de modo que a estatística tende a um valor
+negativo por construção, um viés que a normalização usual da estatística,
+válida assintoticamente para grafos grandes, não corrige em amostras desse
+tamanho. Mais relevante ainda é que sem ponderação pelos pesos $\tilde{\theta}_{ij}^\tau$,
+a estatística conta cada aresta do grafo completo como igual às demais, de
+modo que seu valor depende apenas dos tamanhos dos grupos de cada categoria,
+não da intensidade real de \textit{spillover} entre os bancos.
+
+A alternativa adotada é um método de dados diádicos, no espírito de um
+modelo gravitacional onde a unidade de observação deixa de ser o banco e passa a
+ser o par ordenado $(i,j)$, $i \neq j$. A matriz $\tilde{\Theta}^\tau$ tem
+$N(N-1)$ elementos fora da diagonal, cada um deles uma observação quanto o
+banco $j$ explica da variância do erro de previsão do banco $i$. Estima-se,
+por Mínimos Quadrados Ordinários,
+\begin{equation}
+    100\, \tilde{\theta}_{ij}^\tau = \mu + \alpha_j + \gamma_i
+    + \beta\, D_{ij}^{\text{ctrl}} + \delta\, D_{ij}^{\text{porte}} + \varepsilon_{ij},
+    \quad i \neq j,
+    \label{eq:diadica}
+\end{equation}
+em que $\alpha_j$ é um efeito fixo de emissor, $\gamma_i$ um efeito fixo de
+receptor, $D_{ij}^{\text{ctrl}}$ vale um quando $i$ e $j$ compartilham o
+mesmo tipo de controle institucional e $D_{ij}^{\text{porte}}$ vale um
+quando ambos são instituições de grande porte. Os efeitos fixos absorvem
+toda a propensão geral de cada banco a transmitir ($\alpha_j$) ou a receber
+($\gamma_i$) risco de qualquer contraparte; o que resta em
+$\tilde{\theta}_{ij}^\tau$ depois de descontados esses efeitos é o que
+aquele par específico tem de particular, já que $D_{ij}^{\text{ctrl}}$
+e $D_{ij}^{\text{porte}}$ são propriedades da combinação $(i,j)$, não de
+nenhum dos dois bancos isoladamente, e portanto não são absorvidas pelos
+efeitos fixos. Os erros-padrão são clusterizados por par não dirigido, já
+que $\tilde{\theta}_{ij}^\tau$ e $\tilde{\theta}_{ji}^\tau$ nascem da mesma
+relação bilateral e seus resíduos não são independentes entre si.
+
+A Equação~\eqref{eq:diadica} é estimada tanto sobre o corte único do full
+sample estático quanto, para o par de instituições ligadas por controle
+societário efetivo presente no painel de extensão, sobre uma sequência de
+cortes mensais extraídos da própria estimação TVP-VAR, o que permite avaliar
+se o sinal do efeito se repete ao longo do tempo e não apenas em uma
+estimativa pontual. Os resultados de ambas as estimações, incluindo a
+substituição de $D_{ij}^{\text{ctrl}}$ por indicadoras específicas para cada
+par que compartilha categoria, são apresentados no
+Capítulo~\ref{cap:resultados}.
 
 %O Apêndice de Robustez reporta a sensibilidade dos resultados a $p \in \{1,2,3,4\}$,
 %$W \in \{150,200,250\}$ dias úteis e $\tau \in \{5,10,20\}$ dias, além da comparação entre

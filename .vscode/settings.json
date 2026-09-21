@@ -11,7 +11,7 @@
         },
         {
             "name": "biber",
-            "command": "/opt/homebrew/bin/biber",
+            "command": "biber",
             "args": [
                 "%DOCFILE%"
             ]
