@@ -1281,6 +1281,56 @@
       \verb C:\Users\pc\Zotero\storage\R6SIXKV4\Glasserman e Young - 2014 - How Likely is Contagion in Financial Networks.pdf
       \endverb
     \endentry
+    \entry{koop2013}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d0dcf74a093eaf9aa1d1b58954d78300}{%
+           family={Koop},
+           familyi={K\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd4149e8563416d3bb8fec9cebc4a328}{%
+           family={Korobilis},
+           familyi={K\bibinitperiod},
+           given={Dimitris},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ce2fd2db1ee1218b16747559ed96f4bc}
+      \strng{fullhash}{ce2fd2db1ee1218b16747559ed96f4bc}
+      \strng{fullhashraw}{ce2fd2db1ee1218b16747559ed96f4bc}
+      \strng{bibnamehash}{ce2fd2db1ee1218b16747559ed96f4bc}
+      \strng{authorbibnamehash}{ce2fd2db1ee1218b16747559ed96f4bc}
+      \strng{authornamehash}{ce2fd2db1ee1218b16747559ed96f4bc}
+      \strng{authorfullhash}{ce2fd2db1ee1218b16747559ed96f4bc}
+      \strng{authorfullhashraw}{ce2fd2db1ee1218b16747559ed96f4bc}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{03044076}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{2}
+      \field{title}{Large Time-Varying Parameter {{VARs}}}
+      \field{urlday}{21}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{177}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{185\bibrangedash 198}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.jeconom.2013.04.007
+      \endverb
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\G5PDD376\Koop e Korobilis - 2013 - Large time-varying parameter VARs.pdf
+      \endverb
+    \endentry
     \entry{koop1996}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=d0dcf74a093eaf9aa1d1b58954d78300}{%
@@ -1442,6 +1492,57 @@
       \endverb
       \keyw{Banking risk financial regulation,Banking risk-taking,Risk measures in banks,Systemic financial risk}
     \endentry
+    \entry{negro2015}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e4974a91a1900509b6453fb5e9628460}{%
+           family={Negro},
+           familyi={N\bibinitperiod},
+           given={Marco\bibnamedelima Del},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d533d65d91921db24144b1e6ebc00070}{%
+           family={Primiceri},
+           familyi={P\bibinitperiod},
+           given={Giorgio\bibnamedelima E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Review of Economic Studies Ltd}%
+      }
+      \strng{namehash}{d43adff7e9e7506736e9438bcdbad51e}
+      \strng{fullhash}{d43adff7e9e7506736e9438bcdbad51e}
+      \strng{fullhashraw}{d43adff7e9e7506736e9438bcdbad51e}
+      \strng{bibnamehash}{d43adff7e9e7506736e9438bcdbad51e}
+      \strng{authorbibnamehash}{d43adff7e9e7506736e9438bcdbad51e}
+      \strng{authornamehash}{d43adff7e9e7506736e9438bcdbad51e}
+      \strng{authorfullhash}{d43adff7e9e7506736e9438bcdbad51e}
+      \strng{authorfullhashraw}{d43adff7e9e7506736e9438bcdbad51e}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This note shows how to apply the procedure of Kim et al. (1998) to the estimation of VAR, DSGE, factor, and unobserved components models with stochastic volatility. In particular, it revisits the estimation algorithm of the time-varying VAR model of Primiceri (2005). The main difference of the new algorithm is the ordering of the various MCMC steps, with each individual step remaining the same.}
+      \field{journaltitle}{The Review of Economic Studies}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{shorttitle}{Time {{Varying Structural Vector Autoregressions}} and {{Monetary Policy}}}
+      \field{title}{Time {{Varying Structural Vector Autoregressions}} and {{Monetary Policy}}: {{A Corrigendum}}}
+      \field{urlday}{21}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{82}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{1342\bibrangedash 1345}
+      \range{pages}{4}
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\LKS7S3QP\v82y2015i4p1342-1345..html
+      \endverb
+      \keyw{Bayesian Methods,Time-varying Volatility}
+    \endentry
     \entry{pesaran1998}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=487ad2e837d0d8c49704db0f8dbbc94d}{%
@@ -1491,6 +1592,49 @@
       \endverb
       \verb{file}
       \verb C:\Users\pc\Zotero\storage\LKY4JVGY\Pesaran e Shin - 1998 - Generalized impulse response analysis in linear multivariate models.pdf
+      \endverb
+    \endentry
+    \entry{primiceri2005}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d533d65d91921db24144b1e6ebc00070}{%
+           family={Primiceri},
+           familyi={P\bibinitperiod},
+           given={Giorgio\bibnamedelima E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Review of Economic Studies Ltd}%
+      }
+      \strng{namehash}{d533d65d91921db24144b1e6ebc00070}
+      \strng{fullhash}{d533d65d91921db24144b1e6ebc00070}
+      \strng{fullhashraw}{d533d65d91921db24144b1e6ebc00070}
+      \strng{bibnamehash}{d533d65d91921db24144b1e6ebc00070}
+      \strng{authorbibnamehash}{d533d65d91921db24144b1e6ebc00070}
+      \strng{authornamehash}{d533d65d91921db24144b1e6ebc00070}
+      \strng{authorfullhash}{d533d65d91921db24144b1e6ebc00070}
+      \strng{authorfullhashraw}{d533d65d91921db24144b1e6ebc00070}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Monetary policy and the private sector behaviour of the U.S. economy are modelled as a time varying structural vector autoregression, where the sources of time variation are both the coefficients and the variance covariance matrix of the innovations. The paper develops a new, simple modelling strategy for the law of motion of the variance covariance matrix and proposes an efficient Markov chain Monte Carlo algorithm for the model likelihood/posterior numerical evaluation. The main empirical conclusions are: (1) both systematic and non-systematic monetary policy have changed during the last 40 years---in particular, systematic responses of the interest rate to inflation and unemployment exhibit a trend toward a more aggressive behaviour, despite remarkable oscillations; (2) this has had a negligible effect on the rest of the economy. The role played by exogenous non-policy shocks seems more important than interest rate policy in explaining the high inflation and unemployment episodes in recent U.S. economic history. Copyright 2005, Wiley-Blackwell.}
+      \field{journaltitle}{The Review of Economic Studies}
+      \field{langid}{english}
+      \field{number}{3}
+      \field{title}{Time {{Varying Structural Vector Autoregressions}} and {{Monetary Policy}}}
+      \field{urlday}{21}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{72}
+      \field{year}{2005}
+      \field{urldateera}{ce}
+      \field{pages}{821\bibrangedash 852}
+      \range{pages}{32}
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\XL6M2JG5\v72y2005i3p821-852.html
       \endverb
     \endentry
     \entry{rogers1991}{article}{}{}
@@ -1770,10 +1914,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{btgpactual2021}
-  \missing{delnegro2015}
-  \missing{koopkorobilis2013}
-  \missing{primiceri2005}
 \endrefsection
 \endinput
 
