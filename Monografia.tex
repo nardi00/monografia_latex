@@ -164,14 +164,15 @@ a comparabilidade dos resultados e restringe análises em escala ampla e frequê
 Este trabalho preenche essa lacuna em três frentes. Primeiro, estratifica a amostra por tipo de 
 controle, modelo de negócio e porte, tornando a heterogeneidade institucional do sistema 
 bancário brasileiro explícita na análise de spillovers. Segundo, compara explicitamente o ranking de 
-importância sistêmica derivado dos spillovers com a segmentação prudencial do Banco Central do 
-Brasil, testando se uma metodologia baseada inteiramente em dados públicos de mercado é capaz 
-de aproximar a classificação regulatória das instituições consideradas sistemicamente relevantes.
-Terceiro, incorpora métricas de teoria de redes além dos índices direcionais de primeira ordem 
-propostos por Diebold e Yilmaz como centralidade de autovetor e PageRank, cuja formulação 
-recursiva captura a posição estrutural de cada banco na topologia de contágio e testa a 
-hipótese de vínculo societário por meio de uma regressão em painel de pares com efeitos fixos, 
-abordagem mais robusta do que comparações agregadas por categoria nominal de controle.
+transmissão (TO$_i$, Equação~\ref{eq:to}) derivado dos \textit{spillovers} com a
+segmentação prudencial do Banco Central do Brasil, testando se uma
+metodologia baseada inteiramente em dados públicos de mercado é capaz de
+aproximar a classificação regulatória das instituições consideradas
+sistemicamente relevantes.
+Terceiro, testa se atributos compartilhados por pares de instituições como vínculo de controle societário,
+tipo de controle e porte organizam a topologia de rede por meio de uma regressão diádica com efeitos
+fixos de emissor e receptor, abordagem mais robusta do que comparações agregadas por categoria nominal
+de controle.
 
 O restante do trabalho está organizado em três capítulos. O Capítulo 2 revisa a literatura 
 sobre risco sistêmico, conectividade em redes financeiras e a evolução metodológica do 
@@ -373,8 +374,8 @@ nas instituições que a compõem. O país pode ser transmissor líquido agregad
 enquanto, internamente, alguns bancos atuam como receptores.
 
 
-O mercado brasileiro enfrentou, no entanto, ao longo de 2019-2025, 
-uma combinação de choques de natureza distinta daquela observada nos sistemas avançados 
+No entanto, a combinação de choques observados ao longo de 2017-2026 têm uma natureza distinta 
+daquela observada nos sistemas avançados 
 analisados em \textcite{diebold2016}. Uma pandemia global, um ciclo abrupto de aperto monetário
 e episódios de instabilidade como a fraude contábil da Americanas sugerindo que a estrutura de rede de 
 \textit{spillovers} brasileira possui determinantes distintos daqueles observados nas
@@ -442,13 +443,14 @@ O presente trabalho propõe-se a preencher essas lacunas em três frentes.
 Primeiro, estratifica a amostra por tipo de controle (público, privado nacional e estrangeiro), modelo de negócio (varejo, investimento, atacado e consumo) e porte, tornando a 
 heterogeneidade institucional do sistema bancário brasileiro explícita na análise de 
 \textit{spillovers}. Segundo, vai além das métricas reportadas por \textcite{silva2025} 
-ao comparar explicitamente o ranking de importância sistêmica derivado dos \textit{spillovers}
-com a segmentação prudencial de D-SIBs publicada pelo Banco Central do Brasil, testando se uma 
+ao comparar explicitamente o ranking de trasmissão sistêmica (TO$_i$) derivado dos \textit{spillovers}
+com a segmentação prudencial de D-SIBs publicada pelo Banco Central do Brasil \parencite{cmn4553_2017}, testando se uma 
 metodologia baseada em dados públicos de mercado é capaz de aproximar a classificação 
-regulatória. Terceiro, incorpora métricas de redes ampliadas, \textit{eigenvector centrality}, 
-PageRank e regressão diádica, sendo esta última raramente reportada em estudos de 
-\textit{spillovers} brasileiros e particularmente adequada para testar se há 
-\textit{clustering} na rede de transmissão de risco.
+regulatória. Terceiro, testa se atributos compartilhados pelos pares de instituições
+organizam a topologia da rede, por meio de uma regressão diádica com
+efeitos fixos de emissor e de receptor (Subseção~\ref{sec:regressao-diadica}),
+abordagem raramente reportada em estudos de \textit{spillovers} bancários
+brasileiros.
 
 \chapter{Metodologia}
 \label{cap:metodologia}
@@ -775,7 +777,7 @@ compartilhem $n-1$ dos $n$ dias da janela, essa estrutura induz autocorrelação
 log-volatilidade e não reflete a dinâmica econômica real, a diferença passa a ser o dia que entra
 e o dia que sai da janela a cada atualização. Essa autocorrelação se propaga
 diretamente para os resíduos do VAR estimado sobre a série, violando a
-hipótese de ruído branco que sustenta a validade da decomposição de variância
+hipótese de ruído branco que sustenta avalidade da decomposição de variância
 subsequente, os critérios de seleção de defasagem
 chegam a cair de forma descontínua no número de defasagens correspondente ao
 tamanho da janela, sinal de que o modelo está simplesmente reconhecendo a
@@ -1085,9 +1087,20 @@ A interpretação econômica é a de contribuição recursiva de risco, de modo 
 é sistemicamente importante não apenas pela intensidade de seus \textit{spillovers} diretos, 
 mas por estar conectado a outras instituições igualmente centrais, lógica análoga à do 
 \textit{framework} de bancos sistemicamente importantes (D-SIB) adotado pelo Banco Central 
-do Brasil. O contraste central deste trabalho é a confrontação entre o ranking de 
-importância sistêmica gerado por essas métricas de rede e a segmentação oficial de D-SIBs 
-publicada pelo BCB.
+do Brasil. O contraste central deste trabalho é a confrontação entre o ranking de
+transmissão sistêmica (TO$_i$, Equação~\ref{eq:to}) e a segmentação
+prudencial do Banco Central do Brasil. A Resolução CMN nº 4.553/2017
+\parencite{cmn4553_2017} estabelece a segmentação das instituições
+financeiras em cinco segmentos (S1 a S5) conforme porte e atividade
+internacional; a Resolução CMN nº 4.958/2021, art. 8º, §2º
+\parencite{cmn4958_2021}, condiciona a exigência do Adicional de Importância
+Sistêmica de Capital Principal (ACP$_{\text{Sistêmico}}$) às instituições
+enquadradas no S1, tornando o S1 o critério normativo brasileiro
+funcionalmente equivalente à designação de D-SIB adotada em outras
+jurisdições. As métricas de centralidade de autovetor e PageRank,
+calculadas na direção de entrada, capturam uma dimensão distinta de
+receptividade recursiva a choques de bancos já centrais e são reportadas
+como complementares, não como critério do confronto regulatório.
 
 \subsubsection*{Especificação dinâmica: TVP-VAR com fatores de esquecimento}
 \label{sec:tvpvar}
