@@ -533,7 +533,7 @@ restantes. O painel de extensão (N~=~8) inclui o Banco Pan e cobre janeiro de
 \toprule
 Painel & Janela & Observações & Papel \\
 \midrule
-N = 7 (sem Banco Pan) & 10/2017 a 05/2026 & 2.148 & Principal \\
+N = 7 (sem Banco Pan) & 10/2017 a 09/2026 & 2.234 & Principal \\
 N = 8 (com Banco Pan) & 01/2019 a 10/2025 & 1.690 & Extensão \\
 \bottomrule
 \end{tabular}
@@ -744,6 +744,46 @@ indeterminação logarítmica nos raros pregões de variância estimada nula. A
 transformação logarítmica aproxima a distribuição dos choques de um padrão
 gaussiano, facilitando a inferência no VAR.
 
+\begin{table}[htb]
+\centering
+\caption{Pregões tratados como ausentes por $\hat{\sigma}^2_t < 10^{-8}$}
+\label{tab:variancia-nula}
+\begin{tabular}{lcc}
+\toprule
+Instituição & Painel N = 7 & Painel N = 8 \\
+\midrule
+ITUB4  & 0 & 0 \\
+BBDC4  & 0 & 0 \\
+BBAS3  & 1 & 1 \\
+SANB11 & 3 & 2 \\
+BPAC11 & 1 & 1 \\
+BRSR6  & 3 & 3 \\
+ABCB4  & 6 & 4 \\
+BPAN4  & -- & 2 \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. Inclui variâncias negativas, produto de ruído numérico.}
+\end{table}
+
+A independência em relação ao \textit{drift} significa que o estimador não
+confunde tendência com volatilidade, ou seja, se o preço apenas sobe ou apenas desce
+ao longo do dia, o movimento é lido como tendência e não como oscilação.  
+Num dia que abre no fechamento da véspera e na máxima
+e cai até fechar na mínima, $O_t = C_{t-1}$ anula o termo \textit{overnight}
+(Equação~\ref{eq:overnight}), $H_t = O_t$ anula o primeiro produto de
+\eqref{eq:rogers-satchell} e $L_t = C_t$ anula o segundo, resultando em
+$\hat{\sigma}^2_t = 0$ embora o papel tenha caído vários pontos percentuais.
+Como a variável é o logaritmo da volatilidade, tais
+pregões geram valores em torno de $-11$ (média próxima de $-1{,}4$), a mais
+de 14 desvios-padrão da média, que distorcem o VAR e elevam a curtose em
+excesso de algumas séries. Por isso, todo pregão com
+$\hat{\sigma}^2_t < 10^{-8}$ é tratado como ausente e imputado pelo filtro de
+Kalman (item~6 do protocolo de tratamento). A regra é pouco intrusiva:
+nenhuma instituição perde mais de seis pregões, cerca de 0,3\% da amostra
+(Tabela~\ref{tab:variancia-nula}).
+
+
+
 \subsubsection*{Por que Rogers-Satchell e não estimadores alternativos?}
 
 O estimador de Garman-Klass ignora a variação \textit{overnight} ($C_{t-1}$ a $O_t$),
@@ -751,9 +791,11 @@ tratando o ativo como se nada ocorresse fora do pregão. Para o sistema bancári
 no período isso é particularmente problemático já que decisões do Comitê de Política
 Monetária (Copom) são divulgadas após o fechamento do mercado, resultados trimestrais são
 publicados \textit{after-market} e dados macroeconômicos norte-americanos chegam durante a
-tarde-noite no horário de Brasília. A literatura empírica em ações brasileiras estima que
-entre 40\% e 50\% da variância total ocorre \textit{overnight}, de modo que descartar essa
-componente subestima sistematicamente a volatilidade efetiva. Adicionalmente, Garman-Klass
+tarde-noite no horário de Brasília. No painel principal, o termo \textit{overnight}
+(Equação~\ref{eq:overnight}) responde por 16\% (ABC Brasil) a 34\% (Banco do
+Brasil) da soma de $\hat{\sigma}^2_t$ ao longo da amostra, conforme a
+instituição, de modo que descartar essa componente subestimaria
+sistematicamente a volatilidade efetiva. Adicionalmente, Garman-Klass
 assume \textit{drift} intradiário nulo, o que o torna positivamente viesado em janelas com
 tendência marcada como em março de 2020 (COVID-19) e janeiro de 2023 (Americanas). O
 estimador de Parkinson utiliza apenas os extremos ($H_t$ e $L_t$), sendo estritamente
@@ -769,7 +811,7 @@ antes do VAR, gerando duas etapas de modelagem encadeadas que complicam a interp
 e a robustez, além de operar apenas com retornos \textit{close-to-close}, descartando
 a informação intradiária que torna os estimadores \textit{range-based} mais eficientes.
 
-A escolha inicial desse trabalhou recaiu sobre o estimador de Yang e Zhang \parencite{yang2000},
+A escolha inicial desse trabalho recaiu sobre o estimador de \textcite{yang2000},
 que combina os mesmos componentes de \textit{drift} independente e retorno \textit{overnight}
 em uma janela móvel de $n$ dias. Essa escolha, no entanto, não resiste ao diagnóstico dos resíduos. 
 A janela de $n = 21$ dias, recalculada a cada pregão, faz com que observações consecutivas
@@ -783,7 +825,7 @@ chegam a cair de forma descontínua no número de defasagens correspondente ao
 tamanho da janela, sinal de que o modelo está simplesmente reconhecendo a
 memória embutida no estimador e não capturando dinâmica genuína dos dados.
 
-A sobreposição, contudo, é autoinflingida pela escolha de uma janela de múltiplos dias. 
+A sobreposição, contudo, é autoinfligida pela escolha de uma janela de múltiplos dias. 
 Para \textcite{diebold2012}, \textcite{diebold2014} e \textcite{demirer2018}, os autores 
 empregam estimadores de amplitude de um único dia e a janela não é utilizada em suas 
 aplicações de referência do \textit{framework} de conectividade. A
@@ -856,8 +898,8 @@ nas janelas que cobrem o período.
 Antes da estimação da volatilidade, os dados OHLC são submetidos a verificações de
 consistência lógica: $H_t \geq L_t$, $H_t \geq O_t$, $H_t \geq C_t$, $L_t \leq O_t$,
 $L_t \leq C_t$ e $O_t, C_t > 0$. Violações indicam erros de digitação ou de
-\textit{parsing} no provedor de dados, que produzem valores \texttt{NaN} na estimação de
-Yang-Zhang e falham silenciosamente.
+\textit{parsing} no provedor de dados, que produziriam valores inválidos (\texttt{NaN}) no cálculo dos
+logaritmos do estimador
 
 \subsubsection*{3.\ Filtro de liquidez}
 
@@ -882,14 +924,21 @@ restrito a ITUB4 e BBDC4) são eventos reais e são preservados na amostra.
 \subsubsection*{5.\ Estimação da volatilidade}
 
 A volatilidade Rogers-Satchell é estimada conforme as
-equações~\ref{eq:rs-overnight}--\ref{eq:rogers-satchell}. Aplica-se
-um piso numérico de $10^{-8}$ antes da transformação logarítmica:
-$y_t = \log\bigl(\max(\hat{\sigma}_{\mathrm{t}},\,10^{-8})\bigr)$.
+equações~\ref{eq:rs-overnight}--\ref{eq:rogers-satchell} e anualizada, de modo
+que $y_t = \log\bigl(\max(\hat{\sigma}_t\sqrt{252},\,10^{-8})\bigr)$, com
+$\hat{\sigma}_t = \sqrt{\hat{\sigma}^2_t}$. Todo pregão com
+$\hat{\sigma}^2_t < 10^{-8}$ é tratado como ausente e segue para a imputação
+da etapa~6: o pregão que anda numa única direção recebe variância zero do
+estimador, como explicado na descrição do estimador, acima. No painel
+principal, a regra remove de zero (ITUB4 e BBDC4) a seis pregões (ABCB4) por
+instituição, no máximo 0,3\% da amostra (Tabela~\ref{tab:variancia-nula}). O
+piso de $10^{-8}$ da fórmula permanece como salvaguarda numérica e, depois da
+regra, não é acionado.
 
 \subsubsection*{6.\ Alinhamento e imputação}
 
-As oito séries de log-volatilidade são alinhadas por interseção de datas de pregão,
-formando um painel $T \times 7$ (ou $T \times 7$ no caso do painel de extensão). Dias em que todas as séries apresentam \texttt{NA}
+As séries de log-volatilidade são alinhadas por data de pregão, 
+formando um painel $T \times 7$ e $T \times 8$ no caso do painel de extensão. Dias em que todas as séries apresentam \texttt{NA}
 (finais de semana, feriados) são excluídos. Observações isoladas com \texttt{NA}
 decorrentes do filtro de liquidez ou de erros de provedor são imputadas por filtro de
 Kalman aplicado a um modelo ARIMA selecionado automaticamente\footnote{O filtro de Kalman
@@ -943,7 +992,7 @@ testes de Ljung-Box e ARCH-LM, respectivamente.
 \subsection*{Especificação do VAR}
 
 Seja $\mathbf{y}_t = (y_{1t}, \ldots, y_{Nt})'$ o vetor $N \times 1$ das séries de
-log-volatilidade, com $N = 8$. O modelo VAR de ordem $p$ é:
+log-volatilidade, com $N = 7$ no painel principal e $N=8$ no painel de extensão. O modelo VAR de ordem $p$ é:
 
 \begin{equation}
   \mathbf{y}_t
