@@ -221,7 +221,7 @@ para focar na topologia das redes interbancárias,
 identificando o contágio via interconectividade como a principal fonte de
 fragilidade sistêmica contemporânea. A interconectividade cria canais para o 
 contágio e amplificação de choques no sistema financeiro, sendo este o ponto 
-principal de \textcite{glasserman2014} que a identificam como um dos principais 
+principal de \textcite{glasserman2015} que a identificam como um dos principais 
 determinantes de crises financeiras recentes.
 
 A mesma arquitetura de rede que promove resiliência em tempos de normalidade é a que propaga
@@ -467,7 +467,7 @@ interpretação econômica das métricas de centralidade.
 %utilizados, as versões e o código completo encontram-se no Apêndice Computacional.
 
 % ──────────────────────────────────────────────────────────────────────────────
-\section{Base de Dados}
+\section{Base de Dados} 
 \label{subsec:dados}
 % ──────────────────────────────────────────────────────────────────────────────
 
@@ -508,15 +508,17 @@ com as Instituições Financeiras Sistemicamente Importantes Domésticas (D-SIBs
 pelo Banco Central do Brasil (BCB).
 
 O recorte temporal de cada instituição não é uma escolha discricionária, mas
-decorre diretamente do critério de liquidez de um volume financeiro diário inferior a R\$~100 mil. Seis das oito instituições -
+decorre diretamente do critério de liquidez de um volume financeiro diário inferior a R\$~100 mil. 
+Seis das oito instituições -
 ITUB4, BBDC4, BBAS3, SANB11, BRSR6 e ABCB4 - nunca ficam abaixo desse piso ao
 longo de toda a base disponível, desde 2014. As duas exceções definem as
 fronteiras efetivas da amostra. O BPAC11 só passa a negociar de forma
 continuamente líquida a partir de 18/08/2017 - antes disso, a ação, listada em
 fevereiro de 2017, ainda está em fase de formação de \textit{book}. O BPAN4, por sua vez,
-só se torna continuamente líquido a partir de 16/01/2019: no terceiro trimestre
+só se torna continuamente líquido a partir de 16/01/2019. No terceiro trimestre
 de 2018, por exemplo, o papel permanece abaixo do piso de liquidez em 44 dos 63
-pregões do período, com média de apenas 48 negócios diários. 
+pregões do período, com média de apenas 48 negócios diários. O painel de extensão começa em 01/01/2019 e o único pregão abaixo do piso,
+15/01/2019, é imputado.
 
 Essas duas fronteiras, determinadas pelos dados, geram
 naturalmente dois painéis aninhados, apresentados na Tabela~\ref{tab:paineis}.
@@ -534,7 +536,7 @@ restantes. O painel de extensão (N~=~8) inclui o Banco Pan e cobre janeiro de
 Painel & Janela & Observações & Papel \\
 \midrule
 N = 7 (sem Banco Pan) & 10/2017 a 09/2026 & 2.234 & Principal \\
-N = 8 (com Banco Pan) & 01/2019 a 10/2025 & 1.690 & Extensão \\
+N = 8 (com Banco Pan) & 01/2019 a 10/2025 & 1.689 & Extensão \\
 \bottomrule
 \end{tabular}
 % \legend{Fonte: elaboração própria, a partir de ComDinheiro.}
@@ -888,10 +890,16 @@ Primeiro, o Banco Pan (BPAN4) deixou de ser negociado ao final de janeiro de 202
 em decorrência da incorporação ao BTG Pactual, o que tornou o \textit{ticker} indisponível 
 em provedores que não mantêm o histórico de ativos descontinuados. Segundo, o ajuste automático
 de provedores como o Yahoo Finance corrige dividendos e \textit{splits} mas não cisões. A série
-de ITUB4, por exemplo, registraria uma queda de aproximadamente $-19,8\%$ decorrente
-da cisão do braço de operações de cartões do Itaú, em um movimento que não reflete volatilidade
-de mercado real. Caso não corrigido, a estimação dos \textit{spillovers} seria distorcida
-nas janelas que cobrem o período.
+de ITUB4, por exemplo, registraria uma queda de aproximadamente $-18\%$ em 04/10/2021 
+decorrente da incorporação da XPart, veículo que
+detinha a participação do Itaú na XP Inc., pela XP, com a entrega de BDRs da
+XP aos acionistas do Itaú, em um movimento que não reflete volatilidade
+de mercado real\footnote{ITAÚ UNIBANCO HOLDING S.A. \textit{Fato Relevante:
+aprovada a incorporação da XPart pela XP Inc. em 01.10.2021}. São Paulo, 2
+out. 2021. Disponível em:
+\url{https://www.prnewswire.com/news-releases/fato-relevante-aprovada-a-incorporacao-da-xpart-pela-xp-inc-em-01-10-2021-814119261.html}.
+Acesso em: 15/10/2026.}. Caso não corrigido, o movimento entraria no estimador como um termo
+\textit{overnight} de magnitude desproporcional, uma observação espúria.
 
 \subsubsection*{2.\ Verificação de consistência}
 
@@ -965,23 +973,43 @@ ComDinheiro: dias em que o papel fechou exatamente na máxima do pregão
 duas colunas diverge na décima casa decimal, disparando a comparação
 estrita como se fosse uma inconsistência real. Após a introdução de uma
 tolerância numérica de $10^{-6}$ nenhuma violação genuína de consistência OHLC
-permanece em nenhuma das oito séries. O filtro de liquidez, por sua vez, afeta uma fração
-mínima da amostra, concentrada nos primeiros pregões de negociação do
-Banco Pan, o ativo de menor liquidez da amostra. Os números completos do
+permanece em nenhuma das oito séries. O filtro de liquidez, por sua vez, afeta um único pregão, o do Banco Pan em
+15/01/2019 (volume de R\$~72 mil e 67 negócios); nenhum pregão do painel
+principal é filtrado. Os números completos do
 pré-tratamento, por painel, são reportados no Capítulo~\ref{cap:resultados}.
 
 
 \subsection*{Propriedades estatísticas}
 
-A estacionariedade de cada série de log-volatilidade é testada por meio do teste de
-Dickey-Fuller Aumentado (ADF), o teste KPSS, o teste DF-GLS, 
-o teste de Phillips-Perron e o teste de Zivot-Andrews. Séries de log-volatilidade financeira
-frequentemente exibem memória longa, de modo que tanto o ADF quanto o KPSS podem rejeitar
-suas respectivas hipóteses nulas simultaneamente \parencite{andersen2001, andersen2003, diebold2001}.
-Esse padrão de rejeição simultânea não constitui evidência de raiz unitária. A estimação por
-janela rolante também constitui uma resposta natural à não-estacionariedade de longo prazo. 
-A presença de autocorrelação serial e heterocedasticidade condicional é verificada pelos 
-testes de Ljung-Box e ARCH-LM, respectivamente.
+A estacionariedade de cada série de log-volatilidade é testada por meio do
+teste de Dickey-Fuller Aumentado (ADF), do teste KPSS, do teste DF-GLS, do
+teste de Phillips-Perron e do teste de Zivot-Andrews, aplicados ao painel já
+imputado pelo filtro de Kalman, o mesmo que entra no VAR. Em todas as séries,
+o ADF rejeita a raiz unitária e o KPSS rejeita a estacionariedade
+(Capítulo~\ref{cap:resultados}). Esse padrão é típico de séries de
+log-volatilidade, que frequentemente exibem memória longa
+\parencite{andersen2001, andersen2003, diebold2001}.
+
+Para caracterizar essa memória, estima-se o parâmetro de integração
+fracionária $d$ de cada série pelo estimador de
+\textcite{geweke1983}.
+No painel principal, $\hat{d}$ situa-se entre 0,45 e 0,6 com
+erro-padrão de cerca de 0,11.
+
+Valores de $d$ entre 0 e 1 indicam que a série não é nem $I(0)$ nem $I(1)$.
+É por isso que o ADF e o KPSS rejeitam ao mesmo tempo. O primeiro tem a
+raiz unitária como hipótese nula e o segundo, a estacionariedade, e nenhum dos
+dois contempla o caso intermediário. Com $\hat{d}$ em torno de 0,5, as séries
+estão na fronteira entre o regime estacionário ($d<0{,}5$) e o
+não estacionário com reversão à média ($0{,}5 \le d < 1$).
+
+Por esse motivo, as séries não são diferenciadas. Um VAR em níveis é uma
+aproximação de memória curta a um processo de memória longa, prática padrão
+na literatura de conectividade Diebold-Yilmaz; diferenciar a série eliminaria
+a persistência que o índice busca medir.
+
+A presença de autocorrelação serial e de heterocedasticidade condicional é
+verificada pelos testes de Ljung-Box e ARCH-LM, respectivamente.
 % Estatísticas descritivas detalhadas encontram-se no Apêndice Estatístico.
 
 % ──────────────────────────────────────────────────────────────────────────────
@@ -1122,21 +1150,34 @@ como transmissores líquidos (NET$_i > 0$) ou receptores líquidos (NET$_i < 0$)
 NET$_{ij}$~\eqref{eq:pairwise} captura a direção líquida do fluxo de risco entre cada par
 de instituições.
 
+No entanto, o nível do TCI tem um limite de interpretação. Ele não é comparável
+entre estudos com número diferente de instituições. O índice mede quanto da
+variância de cada banco vem dos demais e, com mais instituições no sistema,
+cada banco passa a ter mais fontes de choque externo e a parcela que vem dele
+mesmo encolhe, de modo que o índice sobe apenas porque $N$ aumentou, sem que
+haja mais contágio. Nos dados deste trabalho, o TCI da amostra completa,
+estimado sobre subconjuntos aleatórios de 2, 4, 6 e 7 bancos do painel
+principal, é em média de 18\%, 38\%, 49\% e 53\%, respectivamente.
+Por isso, o nível do TCI deste trabalho não é comparado ao de outros
+estudos. Por isso, o nível do TCI deste trabalho não é comparado ao de outros estudos,
+inclusive ao de \textcite{silva2025}, que trabalha com 14 bancos. Comparam-se
+a convenção de estimação (TVP-VAR) e a dinâmica do índice ao longo do tempo,
+isto é, em que períodos ele se eleva. Pela mesma
+razão, o nível também não é comparável entre os dois painéis deste trabalho
+($N=7$ e $N=8$).
+
 Para além dos índices direcionais propostos por \textcite{diebold2012}, este trabalho
 incorpora um conjunto de métricas de teoria de redes, centralidade de autovetor e
 PageRank, calculadas sobre o grafo de conectividade $G = (V, E, W)$ definido na
 Seção~\ref{subsec:redes}. Essa incorporação constitui uma contribuição adicional do
-trabalho. Enquanto a literatura de \textit{spillover} de volatilidade concentra-se nos
-índices direcionais de primeira ordem (quanto cada instituição transmite e recebe
-diretamente), as métricas de rede capturam a posição estrutural de cada banco na
-topologia de contágio, incluindo efeitos indiretos e recursivos. O caso mais ilustrativo
-é o PageRank, cuja formulação recursiva atribui a $i$ um valor elevado quando $i$ recebe 
-\textit{spillovers} de instituições que, por sua vez, também possuem PageRank elevado.
-A interpretação econômica é a de contribuição recursiva de risco, de modo que um banco 
-é sistemicamente importante não apenas pela intensidade de seus \textit{spillovers} diretos, 
-mas por estar conectado a outras instituições igualmente centrais, lógica análoga à do 
-\textit{framework} de bancos sistemicamente importantes (D-SIB) adotado pelo Banco Central 
-do Brasil. O contraste central deste trabalho é a confrontação entre o ranking de
+trabalho. Com $N=7$ e um grafo em que todos os nós se ligam a todos,
+porém, essas medidas coincidem com os índices de primeira ordem. A ordenação
+dos bancos pelo PageRank é idêntica à ordenação por FROM$_i$ e, no grafo
+invertido, à ordenação por TO$_j$ (correlação de postos de Spearman igual a 1
+nos quatro casos, o mesmo valendo para a centralidade de autovetor). Trata-se
+de um resultado sobre o limite dessas medidas em redes pequenas e densas onde elas
+não acrescentam informação aos índices direcionais e são reportadas apenas
+como verificação. O contraste central deste trabalho é a confrontação entre o ranking de
 transmissão sistêmica (TO$_i$, Equação~\ref{eq:to}) e a segmentação
 prudencial do Banco Central do Brasil. A Resolução CMN nº 4.553/2017
 \parencite{cmn4553_2017} estabelece a segmentação das instituições
@@ -1253,9 +1294,22 @@ Quarto, as somas são convertidas em pesos posteriores por
 \end{equation}
 normalizados para somar um, com a subtração do máximo antes da exponenciação
 evitando estouro numérico. O par vencedor é aquele de maior peso posterior,
-restrito a $\kappa_1 < 1$: o pacote \texttt{ConnectednessApproach} exige esse
+restrito a $\kappa_1 < 1$. O pacote \texttt{ConnectednessApproach} exige esse
 parâmetro estritamente menor que um, já que $\kappa_1 = 1$ corresponde, por
-definição, ao caso degenerado de coeficientes constantes. Os resultados
+definição, ao caso degenerado de coeficientes constantes. O procedimento de seleção e a 
+estimação final diferem em dois pontos. Primeiro em relação ao
+filtro, de maneira que a verossimilhança é calculada com uma implementação própria do filtro
+de Kalman, com intercepto e com $\Sigma_t$ atualizada pelo resíduo posterior
+aos coeficientes, enquanto o pacote \texttt{ConnectednessApproach} centra as
+séries na média, não tem intercepto e atualiza $\Sigma_t$ pelo erro de
+previsão. Segundo, a seleção parte de um VAR(2) estimado nas
+primeiras $t_0 = 200$ observações, e o \textit{prior} do modelo final usa a
+amostra completa, de modo que os primeiros períodos incorporam informação
+posterior a eles. Nenhuma das diferenças altera a conclusão. O par vencedor
+concentra peso posterior praticamente unitário, e o índice médio varia cerca
+de um ponto percentual entre os dois pares de maior verossimilhança
+(Apêndice~\ref{ap:robustez}). O par selecionado é, por isso, adotado na
+estimação final. Os resultados
 completos da grade são reportados no Capítulo~\ref{cap:resultados}.
 
 \subsubsection*{Regressão diádica}
@@ -1284,23 +1338,21 @@ banco $j$ explica da variância do erro de previsão do banco $i$. Estima-se,
 por Mínimos Quadrados Ordinários,
 \begin{equation}
     100\, \tilde{\theta}_{ij}^\tau = \mu + \alpha_j + \gamma_i
-    + \beta\, D_{ij}^{\text{ctrl}} + \delta\, D_{ij}^{\text{porte}} + \varepsilon_{ij},
+    + \beta\, D_{ij}^{\text{ctrl}} + \lambda\, D_{ij}^{\text{vinc}}
+    + \delta\, D_{ij}^{\text{porte}} + \varepsilon_{ij},
     \quad i \neq j,
     \label{eq:diadica}
 \end{equation}
-em que $\alpha_j$ é um efeito fixo de emissor, $\gamma_i$ um efeito fixo de
-receptor, $D_{ij}^{\text{ctrl}}$ vale um quando $i$ e $j$ compartilham o
-mesmo tipo de controle institucional e $D_{ij}^{\text{porte}}$ vale um
-quando ambos são instituições de grande porte. Os efeitos fixos absorvem
-toda a propensão geral de cada banco a transmitir ($\alpha_j$) ou a receber
-($\gamma_i$) risco de qualquer contraparte; o que resta em
-$\tilde{\theta}_{ij}^\tau$ depois de descontados esses efeitos é o que
-aquele par específico tem de particular, já que $D_{ij}^{\text{ctrl}}$
-e $D_{ij}^{\text{porte}}$ são propriedades da combinação $(i,j)$, não de
-nenhum dos dois bancos isoladamente, e portanto não são absorvidas pelos
-efeitos fixos. Os erros-padrão são clusterizados por par não dirigido, já
-que $\tilde{\theta}_{ij}^\tau$ e $\tilde{\theta}_{ji}^\tau$ nascem da mesma
-relação bilateral e seus resíduos não são independentes entre si.
+em que $\alpha_j$ e $\gamma_i$ são os efeitos fixos de emissor e de receptor.
+A indicadora $D_{ij}^{\text{ctrl}}$ assume valor um quando os dois bancos do
+par têm a mesma natureza de controle, estatal ou privada. O vínculo
+societário é tratado separadamente, pela indicadora $D_{ij}^{\text{vinc}}$,
+igual a um para o único par da amostra ligado por controle acionário, BTG
+Pactual e Banco Pan, presente apenas no painel de extensão. $D_{ij}^{\text{porte}}$
+vale um quando ambos são instituições de grande porte. A separação distingue
+duas hipóteses que uma classificação única por categoria confundiria, a de que
+instituições de mesma natureza de controle compartilham volatilidade e a de que
+instituições com o mesmo controlador o fazem.
 
 A Equação~\eqref{eq:diadica} é estimada tanto sobre o corte único do full
 sample estático quanto, para o par de instituições ligadas por controle
@@ -1323,7 +1375,7 @@ Capítulo~\ref{cap:resultados}.
 % ──────────────────────────────────────────────────────────────────────────────
 
 A matriz normalizada $\tilde{\boldsymbol{\Theta}}^{\tau}$ define a matriz de adjacência de um
-grafo dirigido ponderado $G = (V, E, W)$, em que $V$ representa as oito instituições, $E$
+grafo dirigido ponderado $G = (V, E, W)$, em que $V$ representa as  $N$ instituições, $E$
 o conjunto de arestas de transmissão de variância e $W$ os pesos $\tilde{\theta}^{\tau}_{ij}$.
 A convenção de direção é: $\tilde{\theta}^{\tau}_{ij}$ representa o fluxo de $j$ para $i$
 (o choque em $j$ explica parcela da variância do erro de previsão de $i$). Como o pacote
@@ -1339,13 +1391,15 @@ direção líquida do fluxo de risco entre os dois bancos, apontando do banco qu
 transmite mais para o que transmite menos naquele par específico
 (Equação~\ref{eq:pairwise}).
 
-A rede DY é quase completa: com $N = 8$, há até 56 arestas dirigidas nas métricas de 
-centralidade calculadas sobre o grafo completo. 
+A rede DY é quase completa: com $N$, há até $N(N-1)$ arestas dirigidas (42 no painel principal e 56 no de extensão) 
+nas métricas de centralidade calculadas sobre o grafo completo. 
 Para fins de visualização exclusivamente, adota-se uma representação colapsada onde cada par
 não dirigido $(i,j)$ é
 reduzido a uma única aresta líquida, cuja direção é dada pelo sinal de
-$\text{NET}_{ij}$ (Equação~\ref{eq:pairwise}) reduzindo o grafo bruto de até 56 arestas dirigidas para
-no máximo $N(N-1)/2 = 28$ arestas líquidas. Sobre esse grafo colapsado,
+$\text{NET}_{ij}$ (Equação~\ref{eq:pairwise}). O grafo passa a ter
+no máximo $N(N-1)/2$ arestas líquidas (21 e 28, respectivamente). Sobre esse
+grafo colapsado, retêm-se apenas os pares cuja intensidade é de pelo menos 5\%
+da intensidade do par mais forte observado naquela rede. Sobre esse grafo colapsado,
 retêm-se apenas os pares cuja intensidade é de pelo menos 5\% da intensidade
 do par mais forte observado naquela rede. Esse filtro afeta
 exclusivamente a visualização e não a inferência conduzida a partir das
@@ -1367,6 +1421,296 @@ DY e das métricas de centralidade definidos na Subseção~\ref{subsec:dy}.
 
 \chapter{Resultados}
 \label{cap:resultados}
+
+\section{Pré-tratamento dos dados}
+\label{sec:res-pretratamento}
+
+O painel principal reúne 2.234 pregões por instituição, de 02/10/2017 a
+30/09/2026. O primeiro não tem fechamento anterior e, portanto, volatilidade
+estimada, de modo que o painel final tem 2.233 observações para as sete
+instituições (15.631 valores). A verificação de consistência do OHLC, com
+tolerância de $10^{-6}$, e o filtro de liquidez não removem nenhum pregão. A
+regra de variância nula descrita na Metodologia trata 14 valores como
+ausentes (0,09\%), no máximo seis por instituição, e esses são os únicos
+valores imputados pelo filtro de Kalman (Tabela~\ref{tab:pretratamento}).
+
+Os retornos extremos ($|z|>5$) somam 53 observações em 24 datas. Trinta e
+sete delas, em oito datas de março e abril de 2020, ocorrem em duas ou mais
+instituições no mesmo dia e são classificadas como eventos sistêmicos. As 16
+restantes são casos isolados, com data e origem do evento na
+Tabela~\ref{tab:outliers}. Nenhuma é removida ou winsorizada.
+
+\begin{table}[htb]
+\centering
+\caption{Pré-tratamento por instituição (painel principal, N = 7)}
+\label{tab:pretratamento}
+\begin{tabular}{lccccc}
+\toprule
+Instituição & Abaixo do piso & Variância nula & Imputados & $|z|>5$ & Isolados \\
+\midrule
+ITUB4  & 0 & 0 & 0 &  4 & 0 \\
+BBDC4  & 0 & 0 & 0 &  8 & 3 \\
+BBAS3  & 0 & 1 & 1 & 11 & 3 \\
+SANB11 & 0 & 3 & 3 &  7 & 1 \\
+BPAC11 & 0 & 1 & 1 & 10 & 5 \\
+BRSR6  & 0 & 3 & 3 &  8 & 4 \\
+ABCB4  & 0 & 6 & 6 &  5 & 0 \\
+\midrule
+Total  & 0 & 14 & 14 & 53 & 16 \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. Painel de extensão (N = 8): [a acrescentar].}
+\end{table}
+
+\begin{table}[htb]
+\centering
+\caption{Retornos extremos isolados ($|z|>5$ em uma única instituição)}
+\label{tab:outliers}
+\small
+\begin{tabular}{llrp{6cm}l}
+\toprule
+Banco & Data & Retorno (\%) & Evento (fonte) & Tratamento \\
+\midrule
+BRSR6  & 04/10/2017 & $-11{,}51$ & [fonte] & Mantido \\
+BRSR6  & 08/10/2018 &  $11{,}06$ & [fonte] & Mantido \\
+BPAC11 & 23/08/2019 & $-16{,}48$ & [fonte] & Mantido \\
+BPAC11 & 26/08/2019 & $-20{,}43$ & [fonte] & Mantido \\
+BPAC11 & 27/08/2019 &  $16{,}02$ & [fonte] & Mantido \\
+BRSR6  & 10/03/2020 &  $13{,}98$ & [fonte] & Mantido \\
+BPAC11 & 11/03/2020 & $-14{,}34$ & [fonte] & Mantido \\
+BPAC11 & 23/03/2020 & $-13{,}89$ & [fonte] & Mantido \\
+BBAS3  & 24/04/2020 & $-14{,}35$ & [fonte] & Mantido \\
+BBAS3  & 22/02/2021 & $-12{,}38$ & [fonte] & Mantido \\
+BBDC4  & 09/11/2022 & $-19{,}10$ & [fonte] & Mantido \\
+BBDC4  & 07/02/2024 & $-17{,}32$ & [fonte] & Mantido \\
+BBDC4  & 08/05/2025 &  $14{,}53$ & [fonte] & Mantido \\
+BBAS3  & 16/05/2025 & $-13{,}57$ & [fonte] & Mantido \\
+BRSR6  & 14/04/2026 & $-11{,}83$ & [fonte] & Mantido \\
+SANB11 & 31/07/2026 &  $12{,}53$ & [fonte] & Mantido \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. Retorno logarítmico diário, em pontos percentuais.}
+\end{table}
+
+\section{Propriedades das séries}
+\label{sec:res-propriedades}
+
+Após a regra de variância nula, a curtose em excesso da log-volatilidade
+situa-se entre 1,8 e 4,2, e o menor valor de cada série está, no máximo, a 7,5
+desvios-padrão da média, o de BPAC11 (Tabela~\ref{tab:descritivas}).
+
+\begin{table}[htb]
+\centering
+\caption{Estatísticas descritivas da log-volatilidade anualizada (N = 7)}
+\label{tab:descritivas}
+\begin{tabular}{lrrrrrr}
+\toprule
+Instituição & Média & DP & Mín. & Máx. & Assimetria & Curtose \\
+\midrule
+ITUB4  & $-1{,}43$ & 0,46 & $-3{,}18$ & 1,03 &  0,37 & 1,77 \\
+BBDC4  & $-1{,}34$ & 0,45 & $-2{,}93$ & 1,28 &  0,59 & 2,25 \\
+BBAS3  & $-1{,}38$ & 0,51 & $-3{,}58$ & 1,37 &  0,50 & 2,07 \\
+SANB11 & $-1{,}36$ & 0,48 & $-3{,}76$ & 1,23 &  0,18 & 2,42 \\
+BPAC11 & $-1{,}09$ & 0,51 & $-4{,}90$ & 1,64 &  0,01 & 3,75 \\
+BRSR6  & $-1{,}33$ & 0,48 & $-4{,}50$ & 0,86 & $-0{,}34$ & 4,16 \\
+ABCB4  & $-1{,}39$ & 0,54 & $-4{,}73$ & 1,05 & $-0{,}67$ & 3,87 \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. Curtose em excesso.}
+\end{table}
+
+O ADF, o DF-GLS, o Phillips-Perron e o Zivot-Andrews rejeitam a raiz unitária
+nas sete séries, e o KPSS rejeita a estacionariedade nas sete
+(Tabela~\ref{tab:testes}). O Ljung-Box e o ARCH-LM rejeitam a ausência de
+autocorrelação e de heterocedasticidade condicional ($p<0{,}0001$ em todas).
+O parâmetro de integração fracionária fica entre 0,47 (BPAC11) e 0,60 (BBAS3),
+com erro-padrão assintótico de 0,107. Cada estimativa difere de zero (estatística
+de 4,4 a 5,6) e de um (3,8 a 4,9), e todas estão a menos de um erro-padrão de
+0,5, isto é, na fronteira entre a memória longa estacionária ($d<0{,}5$) e a
+não estacionária ($d\geq0{,}5$). As séries não são, portanto, nem $I(0)$ nem
+$I(1)$, o que reconcilia a rejeição simultânea do ADF e do KPSS e justifica a
+estimação do VAR em níveis (Subseção~\ref{sec:estacionariedade}).
+
+\begin{table}[htb]
+\centering
+\caption{Testes de estacionariedade e parâmetro de memória longa (N = 7)}
+\label{tab:testes}
+\small
+\begin{tabular}{lcccccc}
+\toprule
+Instituição & ADF & KPSS ($p$) & DF-GLS & PP & ZA & $\hat{d}$ \\
+\midrule
+ITUB4  & $-17{,}74$ & $<0{,}01$ & $-10{,}00$ & $-31{,}69$ & $-12{,}32$ & 0,495 \\
+BBDC4  & $-19{,}31$ & $<0{,}01$ &  $-5{,}88$ & $-33{,}65$ & $-13{,}17$ & 0,528 \\
+BBAS3  & $-17{,}82$ & $<0{,}01$ &  $-2{,}40$ & $-30{,}60$ & $-12{,}16$ & 0,599 \\
+SANB11 & $-19{,}74$ & $<0{,}01$ &  $-9{,}31$ & $-34{,}01$ & $-13{,}23$ & 0,483 \\
+BPAC11 & $-19{,}26$ & $<0{,}01$ & $-10{,}48$ & $-34{,}37$ & $-13{,}23$ & 0,474 \\
+BRSR6  & $-22{,}88$ & $<0{,}01$ & $-12{,}37$ & $-37{,}15$ & $-14{,}61$ & 0,539 \\
+ABCB4  & $-20{,}97$ & $<0{,}01$ &  $-9{,}76$ & $-35{,}40$ & $-15{,}57$ & 0,589 \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. Valores críticos a 5\%: ADF $-2{,}86$; DF-GLS
+$-1{,}94$; PP $-2{,}86$; ZA $-5{,}08$. O KPSS reporta o limite inferior do
+$p$-valor. Erro-padrão assintótico de $\hat{d}$: 0,107.}
+\end{table}
+
+A ordem do VAR é $p=2$ pelo critério de Schwarz (BIC de $-13{,}536$), com
+margem de apenas 0,002 sobre $p=1$; o AIC escolheria $p=6$ e o HQ, $p=3$. O
+VAR é estável (módulo máximo das raízes de 0,828), e o Apêndice~\ref{ap:robustez}
+mostra que o ranking dos bancos não depende de $p$.
+
+\section{Seleção dos fatores de esquecimento}
+\label{sec:res-kappa}
+
+A Tabela~\ref{tab:grade-kappa} reporta a log-verossimilhança preditiva de
+cada par $(\kappa_1,\kappa_2)$. O par selecionado é $(0{,}995;\ 0{,}99)$, com
+peso posterior igual a 1. A folga é grande: o segundo melhor par, $(1{,}00;\
+0{,}99)$, que corresponde a coeficientes constantes, fica 121,5 pontos abaixo,
+e o melhor par estimável pelo pacote entre os demais, $(0{,}99;\ 0{,}99)$,
+219,1 pontos abaixo. A variação temporal dos coeficientes melhora, portanto,
+a previsão um passo à frente, ainda que $\kappa_1=0{,}995$ implique uma memória
+de cerca de 200 observações, bem mais lenta que a da covariância ($\kappa_2=0{,}99$,
+cerca de 100 observações).
+
+[\textbf{Se a grade estendida mantiver o vencedor:} O ótimo é interior nas
+duas dimensões da grade.] [\textbf{Se não estender:} O ótimo é interior em
+$\kappa_1$, mas está no limite superior da grade em $\kappa_2$, de modo que
+um valor maior de $\kappa_2$ poderia ajustar melhor.]
+
+\begin{table}[htb]
+\centering
+\caption{Log-verossimilhança preditiva por par $(\kappa_1,\kappa_2)$}
+\label{tab:grade-kappa}
+\begin{tabular}{lccc}
+\toprule
+ & $\kappa_2=0{,}94$ & $\kappa_2=0{,}96$ & $\kappa_2=0{,}99$ \\
+\midrule
+$\kappa_1=0{,}94$  & $-19.080$ & $-15.885$ & $-12.370$ \\
+$\kappa_1=0{,}96$  & $-13.830$ & $-11.723$ &  $-9.321$ \\
+$\kappa_1=0{,}98$  &  $-9.929$ &  $-8.671$ &  $-7.163$ \\
+$\kappa_1=0{,}99$  &  $-8.445$ &  $-7.528$ &  $-6.410$ \\
+$\kappa_1=0{,}995$ &  $-7.890$ &  $-7.125$ & $\mathbf{-6.191}$ \\
+$\kappa_1=1{,}00$  &  $-7.694$ &  $-7.060$ &  $-6.312$ \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. Soma de $\ell_t$ para $t>t_0=200$. Em negrito,
+o par selecionado.}
+\end{table}
+
+\section{Conectividade estática do painel principal}
+\label{sec:res-estatica}
+
+Com $p=2$ e $\tau=10$, o índice de conectividade total da amostra completa é
+de 52,9\%. Como o nível do índice depende do número de instituições, não é
+comparado ao de outros estudos (Seção~\ref{subsec:dy}).
+
+A Tabela~\ref{tab:dy} reúne TO, FROM e NET e o confronto com a segmentação do
+Banco Central, ordenado pelo TO. Os cinco primeiros do ranking de transmissão
+são exatamente os cinco bancos do S1; o ABC Brasil (S3) vem em sexto e o
+Banrisul (S2), em sétimo. O Itaú é o maior transmissor líquido ($+19{,}3$),
+seguido por Bradesco ($+8{,}9$) e Banco do Brasil ($+2{,}8$). Santander e BTG,
+ambos do S1, são receptores líquidos ($-2{,}0$ e $-5{,}0$), e os maiores
+receptores são Banrisul ($-14{,}9$) e ABC Brasil ($-9{,}2$). O TO varia de 28,6 a
+81,0 e o FROM, de 43,4 a 61,7: o ranking é determinado pela transmissão. O par
+mais intenso é Itaú-Bradesco: 18,5\% da variância do Itaú vem do Bradesco e
+19,7\% da do Bradesco vem do Itaú. O Itaú é o maior transmissor líquido nas 13
+especificações de robustez, e o Banrisul, o maior receptor em 12 delas
+(Apêndice~\ref{ap:robustez}).
+
+\begin{table}[htb]
+\centering
+\caption{Conectividade direcional e segmentação prudencial (painel principal)}
+\label{tab:dy}
+\begin{tabular}{lrrrcc}
+\toprule
+Instituição & TO & FROM & NET & Segmento BCB & Posto (TO) \\
+\midrule
+ITUB4  & 80,96 & 61,70 &  19,26 & S1 & 1 \\
+BBDC4  & 69,34 & 60,47 &   8,87 & S1 & 2 \\
+BBAS3  & 59,52 & 56,67 &   2,84 & S1 & 3 \\
+SANB11 & 52,32 & 54,34 & $-2{,}01$ & S1 & 4 \\
+BPAC11 & 42,43 & 47,40 & $-4{,}96$ & S1 & 5 \\
+ABCB4  & 36,85 & 46,00 & $-9{,}15$ & S3 & 6 \\
+BRSR6  & 28,59 & 43,44 & $-14{,}85$ & S2 & 7 \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. Segmentos conforme a Resolução CMN nº 4.553/2017.}
+\end{table}
+
+As métricas recursivas ordenam os bancos como o FROM [e o TO no grafo
+invertido; correlação de postos de Spearman igual a 1, a confirmar com o
+\texttt{spearman\_centralidade.csv}], como discutido na Metodologia.
+
+\section{Conectividade dinâmica}
+\label{sec:res-dinamica}
+
+A Figura~\ref{fig:tci-tvpvar} mostra o TCI do TVP-VAR. [As primeiras 200
+observações, usadas como treino, não são mostradas: o \textit{prior} usa a
+amostra completa, e o índice inicial coincide com o estático.] Entre 2019 e
+fevereiro de 2020, o índice oscila em torno de 43,1\%, com mínimo de 32,9\% em
+13/02/2020. A pandemia inaugura um regime distinto: o TCI vai de 46,0\% em
+06/03/2020 para 53,1\% em 09/03, 63,8\% em 12/03 e 68,2\% em 13/03, e supera
+70\% a partir de 24/03. Ele não volta a cair em seguida: de abril de 2020 a
+meados de março de 2021 permanece entre 70,8\% e 74,9\% (média de 73,2\%), com
+máximo de 74,9\% em 16/06/2020, cerca de 30 pontos percentuais acima do nível
+anterior. O declínio é gradual, com o índice abaixo de 60\% só em 10/08/2021 e
+abaixo de 50\% em 20/05/2022, e a mínima de 33,7\% em 20/02/2024.
+
+Os demais episódios são de outra ordem. O início do aperto monetário, em
+17/03/2021, não coincide com uma elevação: o TCI está em 72,1\% nessa data e
+desce para 60,7\% em junho. O episódio Americanas é precedido por uma subida
+que começa antes dele: o índice vai de 38,1\% em 30/09/2022 a 53,0\% em
+20/12/2022 e está em 51,0\% em 12/01/2023. Em outubro de 2024, o TCI está em
+47,9\%, a mesma faixa dos 15 meses seguintes (média de 48,1\%), depois de ter
+subido de 33,7\% em fevereiro do mesmo ano. A única elevação posterior à
+pandemia com magnitude comparável é a de 2026: o índice parte de 43,3\% em
+27/02, atinge 58,7\% em 10/04, permanece acima de 55\% até 31/07 e termina a
+amostra em 53,3\%. A média de abril a julho (56,8\%) supera em cerca de 9
+pontos percentuais a de 2025 (48,0\%), mas fica 16 pontos abaixo do pico de
+2020. A hipótese de elevação em períodos de instabilidade se sustenta, assim,
+com clareza para a pandemia e, em menor grau, para 2022--2023 e 2026, mas não
+para o aperto da Selic nem para o estresse fiscal de 2024.
+
+\begin{figure}[htb]
+  \centering
+  \caption{Índice de conectividade total: TVP-VAR}
+  \label{fig:tci-tvpvar}
+  \includegraphics[width=\textwidth]{figuras/tci_tvpvar.png}
+  \legend{Fonte: elaboração própria. $\kappa_1=0{,}995$, $\kappa_2=0{,}99$, $\tau=10$.
+  Linhas tracejadas: eventos da Tabela~\ref{tab:eventos}.}
+\end{figure}
+
+% As seções 6 (regressão diádica) e 7 (vínculo BTG--Pan) dependem dos dois painéis.
+% Considerações finais ao fim do capítulo.
+
+\appendix
+\chapter{Janela rolante}
+\label{ap:janela}
+
+A Figura~\ref{fig:janelas} compara o TCI estimado por janela rolante com
+$W=150$, 200 e 250. O pico do período da pandemia é datado em 30/09/2020
+(77,9\%), 16/10/2020 (76,8\%) e 08/02/2021 (75,8\%), respectivamente, ou
+seja, desloca-se 131 dias com a largura da janela, enquanto o do TVP-VAR é de
+16/06/2020. O índice cai de 6,3 a 6,9 pontos percentuais nos 20 pregões em
+torno das datas em que o colapso de março sai de cada janela (27/10/2020,
+12/01/2021 e 26/03/2021), e passa a menos de 60\% em 06/01/2021, 22/03/2021 e
+12/05/2021, contra 10/08/2021 no TVP-VAR. O nível e a dispersão são parecidos
+(TCI médio de 44,1\%, 44,0\% e 44,2\%; desvio-padrão de 12,9 a 13,7), e as séries
+são correlacionadas (0,95 entre 150 e 200, 0,90 entre 150 e 250 e 0,96 entre
+200 e 250), mas o degrau acompanha $W$, e não o evento. O episódio de 2026 também
+depende de $W$: o máximo é de 58,3\% em 28/09/2026 com $W=150$, de 51,8\% em
+24/07/2026 com $W=200$ e de 48,1\% em 30/09/2026 com $W=250$. Por isso a
+janela rolante não é usada como especificação principal.
+
+\begin{figure}[htb]
+  \centering
+  \caption{Índice de conectividade total por janela rolante}
+  \label{fig:janelas}
+  \includegraphics[width=\textwidth]{figuras/tci_comparacao_janelas.png}
+  \legend{Fonte: elaboração própria. Linhas verticais: data em que o colapso de
+  março de 2020 sai de cada janela.}
+\end{figure}
+
 
 \postextual
 

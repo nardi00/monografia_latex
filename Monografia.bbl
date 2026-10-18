@@ -499,9 +499,9 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper estimates the global network structure of sovereign credit risk by applying the Diebold-Yilmaz connectedness methodology on sovereign credit default swaps (SCDSs). The level of credit risk connectedness among sovereigns, which is quite high, is comparable to the connectedness among stock markets and foreign exchange markets. In the aftermath of the recent financial crises that originated in developed countries, emerging market countries have played a crucial role in the transmission of sovereign credit risk, while developed countries and debt-ridden developing countries have played marginal roles. Secondary regressions show that both trade and capital flows are important determinants of pairwise connectedness across countries. The capital flows became increasingly important after 2013, while the effect of trade flows decreased during the crisis and did not recover afterwards.}
+      \field{eid}{105761}
       \field{journaltitle}{Journal of Banking \& Finance}
       \field{langid}{english}
-      \field{number}{C}
       \field{title}{How Connected Is the Global Sovereign Credit Risk Network?}
       \field{urlday}{21}
       \field{urlmonth}{5}
@@ -509,6 +509,9 @@
       \field{volume}{113}
       \field{year}{2020}
       \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1016/j.jbankfin.2020.105761
+      \endverb
       \verb{file}
       \verb C:\Users\pc\Zotero\storage\D698YJA2\v113y2020ics0378426620300285.html
       \endverb
@@ -614,6 +617,56 @@
       \endverb
       \keyw{EMU,ERM II,Fragility hypothesis,Fragmentation,OCA}
     \endentry
+    \entry{cmn4958_2021}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ee1ca42f1440bcde7fe8362ad6eb84a6}{%
+           family={{Conselho Monetário Nacional}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \strng{fullhash}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \strng{fullhashraw}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \strng{bibnamehash}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \strng{authorbibnamehash}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \strng{authornamehash}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \strng{authorfullhash}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \strng{authorfullhashraw}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Resolução {{CMN}} N{$^\circ$} 4.958, de 21 de Outubro de 2021}
+      \field{year}{2021}
+    \endentry
+    \entry{cmn4553_2017}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ee1ca42f1440bcde7fe8362ad6eb84a6}{%
+           family={{Conselho Monetário Nacional}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \strng{fullhash}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \strng{fullhashraw}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \strng{bibnamehash}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \strng{authorbibnamehash}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \strng{authornamehash}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \strng{authorfullhash}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \strng{authorfullhashraw}{ee1ca42f1440bcde7fe8362ad6eb84a6}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{Resolução {{CMN}} Nº 4.553, de 30 de Janeiro de 2017}
+      \field{year}{2017}
+    \endentry
     \entry{cont2013}{incollection}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=4adbb1a85104895dfcc25d4e2cac8cce}{%
@@ -688,6 +741,57 @@
       \verb{file}
       \verb C:\Users\pc\Zotero\storage\KCB3H3WB\Cont et al. - 2013 - Network Structure and Systemic Risk in Banking Systems.pdf
       \endverb
+    \endentry
+    \entry{negro2015}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2cf2948663a5816bb8784c6a27146226}{%
+           family={Del\bibnamedelima Negro},
+           familyi={D\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d533d65d91921db24144b1e6ebc00070}{%
+           family={Primiceri},
+           familyi={P\bibinitperiod},
+           given={Giorgio\bibnamedelima E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Review of Economic Studies Ltd}%
+      }
+      \strng{namehash}{33c29c61e19631b2605ce6255bc5ad73}
+      \strng{fullhash}{33c29c61e19631b2605ce6255bc5ad73}
+      \strng{fullhashraw}{33c29c61e19631b2605ce6255bc5ad73}
+      \strng{bibnamehash}{33c29c61e19631b2605ce6255bc5ad73}
+      \strng{authorbibnamehash}{33c29c61e19631b2605ce6255bc5ad73}
+      \strng{authornamehash}{33c29c61e19631b2605ce6255bc5ad73}
+      \strng{authorfullhash}{33c29c61e19631b2605ce6255bc5ad73}
+      \strng{authorfullhashraw}{33c29c61e19631b2605ce6255bc5ad73}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This note shows how to apply the procedure of Kim et al. (1998) to the estimation of VAR, DSGE, factor, and unobserved components models with stochastic volatility. In particular, it revisits the estimation algorithm of the time-varying VAR model of Primiceri (2005). The main difference of the new algorithm is the ordering of the various MCMC steps, with each individual step remaining the same.}
+      \field{journaltitle}{The Review of Economic Studies}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{shorttitle}{Time {{Varying Structural Vector Autoregressions}} and {{Monetary Policy}}}
+      \field{title}{Time {{Varying Structural Vector Autoregressions}} and {{Monetary Policy}}: {{A Corrigendum}}}
+      \field{urlday}{21}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{82}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{1342\bibrangedash 1345}
+      \range{pages}{4}
+      \verb{file}
+      \verb C:\Users\pc\Zotero\storage\LKS7S3QP\v82y2015i4p1342-1345..html
+      \endverb
+      \keyw{Bayesian Methods,Time-varying Volatility}
     \endentry
     \entry{demirer2018}{article}{}{}
       \name{author}{4}{}{%
@@ -919,6 +1023,9 @@
            giveni={K\bibinitperiod},
            givenun=0}}%
       }
+      \list{publisher}{1}{%
+        {Central Bank of Chile}%
+      }
       \strng{namehash}{2df5466f9046bf47f875bfa03da32776}
       \strng{fullhash}{2df5466f9046bf47f875bfa03da32776}
       \strng{fullhashraw}{2df5466f9046bf47f875bfa03da32776}
@@ -934,12 +1041,20 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Using a recently-developed measure of financial market spillovers, we provide an empirical analysis of return and volatility spillovers among five equity markets in the Americas: Argentina, Brazil, Chile, Mexico and the U.S. The results indicate that both return and volatility spillovers vary widely. Return spillovers, however, tend to evolve gradually, whereas volatility spillovers display clear bursts that often correspond closely to economic events.}
+      \field{abstract}{Using a recently-developed measure of financial market spillovers, we provide an empirical analysis of return and volatility spillovers among five equity markets in the Americas: Argentina, Brazil, Chile, Mexico and the U.S. The results indicate that both return and volatility spillovers vary widely. Return spillovers, however, tend to evolve gradually, whereas volatility spillovers display clear bursts that often correspond closely to economic events.{$<$}br{$><$}small{$>$}(This abstract was borrowed from another version of this item.){$<$}/small{$>$}}
+      \field{journaltitle}{Central Banking, Analysis, and Economic Policies Book Series}
       \field{langid}{english}
       \field{title}{Equity {{Market Spillovers}} in the {{Americas}}}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{15}
       \field{year}{2011}
+      \field{urldateera}{ce}
+      \field{pages}{199\bibrangedash 214}
+      \range{pages}{16}
       \verb{file}
-      \verb C:\Users\pc\Zotero\storage\3BIQCYFU\Diebold e Yilmaz - 2011 - Equity Market Spillovers in the Americas.pdf
+      \verb C:\Users\pc\Zotero\storage\S8JSKRNG\v15c07pp000-000.html
       \endverb
     \endentry
     \entry{diebold2009}{article}{}{}
@@ -1190,6 +1305,57 @@
       \verb C:\Users\pc\Zotero\storage\UP4MPLP8\Gabauer - 2022 - ConnectednessApproach Connectedness Approach.pdf
       \endverb
     \endentry
+    \entry{geweke1983}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=73fa8bd1fc6234dda333ed7be4d87999}{%
+           family={Geweke},
+           familyi={G\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f531580ade059e25628da1c494b9c05a}{%
+           family={{Porter-Hudak}},
+           familyi={P\bibinitperiod},
+           given={Susan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Ltd}%
+      }
+      \strng{namehash}{f99025ca8583f56971b41f10eadd0e13}
+      \strng{fullhash}{f99025ca8583f56971b41f10eadd0e13}
+      \strng{fullhashraw}{f99025ca8583f56971b41f10eadd0e13}
+      \strng{bibnamehash}{f99025ca8583f56971b41f10eadd0e13}
+      \strng{authorbibnamehash}{f99025ca8583f56971b41f10eadd0e13}
+      \strng{authornamehash}{f99025ca8583f56971b41f10eadd0e13}
+      \strng{authorfullhash}{f99025ca8583f56971b41f10eadd0e13}
+      \strng{authorfullhashraw}{f99025ca8583f56971b41f10eadd0e13}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract. The definitions of fractional Gaussian noise and integrated (or fractionally differenced) series are generalized, and it is shown that the two concepts are equivalent. A new estimator of t...}
+      \field{issn}{1467-9892}
+      \field{journaltitle}{Journal of Time Series Analysis}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{4}
+      \field{title}{The {{Estimation}} and {{Application}} of {{Long Memory Time Series Models}}}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{4}
+      \field{year}{1983}
+      \field{urldateera}{ce}
+      \field{pages}{221\bibrangedash 238}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1111/j.1467-9892.1983.tb00371.x
+      \endverb
+    \endentry
     \entry{glasserman2016}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=ad8512135fae00796ff8f92716d977c9}{%
@@ -1243,7 +1409,7 @@
       \endverb
       \keyw{Actuarial Studies Pension Funds,Banks; Depository Institutions; Micro Finance Institutions; Mortgages,Depository Institutions,Financial Crises,Financial Institutions and Services: Government Policy and Regulation,Financial Instruments,Financial Markets and the Macroeconomy,Institutional Investors Financial Institutions and Services: Government Policy and Regulation,Insurance Companies,Insurance; Insurance Companies; Actuarial Studies,Micro Finance Institutions,Mortgages Insurance,Network Formation and Analysis: Theory,Network Formation and Analysis: Theory Financial Markets and the Macroeconomy Financial Crises Banks,Non-bank Financial Institutions,Pension Funds; Non-bank Financial Institutions; Financial Instruments; Institutional Investors}
     \endentry
-    \entry{glasserman2014}{article}{}{}
+    \entry{glasserman2015}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=ad8512135fae00796ff8f92716d977c9}{%
            family={Glasserman},
@@ -1273,13 +1439,26 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Interconnections among financial institutions create potential channels for contagion and amplification of shocks to the financial system. We estimate the extent to which interconnections increase expected losses and defaults under a wide range of shock distributions. In contrast to most work on financial networks, we assume only minimal information about network structure and rely instead on information about the individual institutions that are the nodes of the network. The key nodelevel quantities are asset size, leverage, and a financial connectivity measure given by the fraction of a financial institution's liabilities held by other financial institutions. We combine these measures to derive explicit bounds on the potential magnitude of network effects on contagion and loss amplification. Spillover effects are most significant when node sizes are heterogeneous and the originating node is highly leveraged and has high financial connectivity. Our results also highlight the importance of mechanisms that go beyond simple spillover effects to magnify shocks; these include bankruptcy costs, and mark-to-market losses resulting from credit quality deterioration or a loss of confidence. We illustrate the results with data on the European banking system.}
-      \field{langid}{english}
-      \field{title}{How {{Likely}} Is {{Contagion}} in {{Financial Networks}}?}
-      \field{year}{2014}
-      \verb{file}
-      \verb C:\Users\pc\Zotero\storage\R6SIXKV4\Glasserman e Young - 2014 - How Likely is Contagion in Financial Networks.pdf
+      \field{abstract}{Interconnections among financial institutions create potential channels for contagion and amplification of shocks to the financial system. We estimate the extent to which interconnections increase expected losses and defaults under a wide range of shock distributions. In contrast to most work on financial networks, we assume only minimal information about network structure and rely instead on information about the individual institutions that are the nodes of the network. The key node-level quantities are asset size, leverage, and a financial connectivity measure given by the fraction of a financial institution's liabilities held by other financial institutions. We combine these measures to derive explicit bounds on the potential magnitude of network effects on contagion and loss amplification. Spillover effects are most significant when node sizes are heterogeneous and the originating node is highly leveraged and has high financial connectivity. Our results also highlight the importance of mechanisms that go beyond simple spillover effects to magnify shocks; these include bankruptcy costs, and mark-to-market losses resulting from credit quality deterioration or a loss of confidence. We illustrate the results with data on the European banking system.}
+      \field{issn}{0378-4266}
+      \field{journaltitle}{Journal of Banking \& Finance}
+      \field{month}{1}
+      \field{title}{How Likely Is Contagion in Financial Networks?}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{50}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{383\bibrangedash 399}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/j.jbankfin.2014.02.006
       \endverb
+      \verb{file}
+      \verb C\:\\Users\\pc\\Zotero\\storage\\A6HUEK8X\\Glasserman e Young - 2015 - How likely is contagion in financial networks.pdf;C\:\\Users\\pc\\Zotero\\storage\\JL95FC2J\\S0378426614000600.html
+      \endverb
+      \keyw{Contagion,Financial network,Systemic risk}
     \endentry
     \entry{koop2013}{article}{}{}
       \name{author}{2}{}{%
@@ -1477,6 +1656,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This study analyzes the marginal contribution of Brazilian banks to the systemic risk. The objective is to identify whether banks that share common characteristics similarly contribute to systemic financial shocks. First, the risk assumed by a sample of listed banks is measured from the accounting, market, and regulatory perspectives. Sample banks were segregated using an unsupervised clustering model. The results were compared with the methodology currently used by the Central Bank of Brazil to segment the banking institutions. Finally, we evaluate the banking groups' marginal contribution to systemic financial risk using {$\Delta$}CoVaR. These results suggest that institutions that share similar characteristics in relation to their risk profiles behave similarly during times of greater market stress. Notably, size, geographic diversification, and liquidity were common attributes among banks contributing significantly to systemic risk during financial crises. This study advances the field of banking finance by introducing an analytical framework that goes beyond the traditional focus on bank balance sheet size, aligning with international standards for evaluating the systemic importance of financial institutions.}
+      \field{eid}{101913}
       \field{journaltitle}{The Quarterly Review of Economics and Finance}
       \field{langid}{english}
       \field{number}{C}
@@ -1487,61 +1667,13 @@
       \field{volume}{98}
       \field{year}{2024}
       \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1016/j.qref.2024.101913
+      \endverb
       \verb{file}
       \verb C:\Users\pc\Zotero\storage\NEZWR7VK\v98y2024ics1062976924001194.html
       \endverb
       \keyw{Banking risk financial regulation,Banking risk-taking,Risk measures in banks,Systemic financial risk}
-    \endentry
-    \entry{negro2015}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=e4974a91a1900509b6453fb5e9628460}{%
-           family={Negro},
-           familyi={N\bibinitperiod},
-           given={Marco\bibnamedelima Del},
-           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d533d65d91921db24144b1e6ebc00070}{%
-           family={Primiceri},
-           familyi={P\bibinitperiod},
-           given={Giorgio\bibnamedelima E.},
-           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Review of Economic Studies Ltd}%
-      }
-      \strng{namehash}{d43adff7e9e7506736e9438bcdbad51e}
-      \strng{fullhash}{d43adff7e9e7506736e9438bcdbad51e}
-      \strng{fullhashraw}{d43adff7e9e7506736e9438bcdbad51e}
-      \strng{bibnamehash}{d43adff7e9e7506736e9438bcdbad51e}
-      \strng{authorbibnamehash}{d43adff7e9e7506736e9438bcdbad51e}
-      \strng{authornamehash}{d43adff7e9e7506736e9438bcdbad51e}
-      \strng{authorfullhash}{d43adff7e9e7506736e9438bcdbad51e}
-      \strng{authorfullhashraw}{d43adff7e9e7506736e9438bcdbad51e}
-      \field{sortinit}{N}
-      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{This note shows how to apply the procedure of Kim et al. (1998) to the estimation of VAR, DSGE, factor, and unobserved components models with stochastic volatility. In particular, it revisits the estimation algorithm of the time-varying VAR model of Primiceri (2005). The main difference of the new algorithm is the ordering of the various MCMC steps, with each individual step remaining the same.}
-      \field{journaltitle}{The Review of Economic Studies}
-      \field{langid}{english}
-      \field{number}{4}
-      \field{shorttitle}{Time {{Varying Structural Vector Autoregressions}} and {{Monetary Policy}}}
-      \field{title}{Time {{Varying Structural Vector Autoregressions}} and {{Monetary Policy}}: {{A Corrigendum}}}
-      \field{urlday}{21}
-      \field{urlmonth}{9}
-      \field{urlyear}{2026}
-      \field{volume}{82}
-      \field{year}{2015}
-      \field{urldateera}{ce}
-      \field{pages}{1342\bibrangedash 1345}
-      \range{pages}{4}
-      \verb{file}
-      \verb C:\Users\pc\Zotero\storage\LKS7S3QP\v82y2015i4p1342-1345..html
-      \endverb
-      \keyw{Bayesian Methods,Time-varying Volatility}
     \endentry
     \entry{pesaran1998}{article}{}{}
       \name{author}{2}{}{%
@@ -1914,8 +2046,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{cmn4553_2017}
-  \missing{cmn4958_2021}
 \endrefsection
 \endinput
 
