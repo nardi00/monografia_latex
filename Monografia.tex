@@ -3,6 +3,7 @@
 % Pacotes
 
 \usepackage[utf8]{inputenc}
+\usepackage{longtable}
 \usepackage[T1]{fontenc}
 \usepackage[brazil]{babel}
 \usepackage{times}
@@ -81,7 +82,7 @@
   Universidade Federal de São Paulo\\
   Escola Paulista de Política, Economia e Negócios
 }
-\tipotrabalho{Projeto de Pesquisa}
+\tipotrabalho{Monografia}
 
 \preambulo{Monografia apresentada ao Departamento de
 Economia da Universidade Federal de São Paulo
@@ -169,7 +170,7 @@ segmentação prudencial do Banco Central do Brasil, testando se uma
 metodologia baseada inteiramente em dados públicos de mercado é capaz de
 aproximar a classificação regulatória das instituições consideradas
 sistemicamente relevantes.
-Terceiro, testa se atributos compartilhados por pares de instituições como vínculo de controle societário,
+Terceiro, testa se atributos compartilhados por pares de instituições, como vínculo de controle societário,
 tipo de controle e porte organizam a topologia de rede por meio de uma regressão diádica com efeitos
 fixos de emissor e receptor, abordagem mais robusta do que comparações agregadas por categoria nominal
 de controle.
@@ -443,8 +444,8 @@ O presente trabalho propõe-se a preencher essas lacunas em três frentes.
 Primeiro, estratifica a amostra por tipo de controle (público, privado nacional e estrangeiro), modelo de negócio (varejo, investimento, atacado e consumo) e porte, tornando a 
 heterogeneidade institucional do sistema bancário brasileiro explícita na análise de 
 \textit{spillovers}. Segundo, vai além das métricas reportadas por \textcite{silva2025} 
-ao comparar explicitamente o ranking de trasmissão sistêmica (TO$_i$) derivado dos \textit{spillovers}
-com a segmentação prudencial de D-SIBs publicada pelo Banco Central do Brasil \parencite{cmn4553_2017}, testando se uma 
+ao comparar explicitamente o ranking de transmissão sistêmica (TO$_i$) derivado dos \textit{spillovers}
+com a segmentação prudencial do sistema financeiro \parencite{cmn4553_2017}, testando se uma 
 metodologia baseada em dados públicos de mercado é capaz de aproximar a classificação 
 regulatória. Terceiro, testa se atributos compartilhados pelos pares de instituições
 organizam a topologia da rede, por meio de uma regressão diádica com
@@ -473,8 +474,8 @@ interpretação econômica das métricas de centralidade.
 
 \subsubsection*{Seleção da amostra}
 
-A amostra é composta por oito instituições bancárias com ações negociadas na B3 entre
-2017 e 2026. A composição foi definida de modo a maximizar três
+A amostra reúne oito instituições bancárias com ações negociadas na B3, organizadas em dois
+painéis aninhados (Tabela~\ref{tab:paineis}) que cobrem, entre si, o período de 2017 a 2026. A composição foi definida de modo a maximizar três
 dimensões de heterogeneidade relevantes para o estudo de risco sistêmico: (i)~\textit{tipo
 de controle}, abrangendo bancos privados nacionais, público federal, público estadual e
 privados estrangeiros; (ii)~\textit{perfil de negócio}, cobrindo varejo massificado, banco
@@ -504,8 +505,8 @@ materialmente inferior. A B3~S.A.\ (B3SA3) não é uma instituição bancária, 
 infraestrutura de mercado; sua inclusão alteraria a natureza do estudo. BB Seguridade
 (BBSE3) e Porto Seguro (PSSA3) são seguradoras e, portanto, sua inclusão deslocaria o foco
 do sistema bancário para uma rede financeira mais ampla, comprometendo a comparabilidade
-com as Instituições Financeiras Sistemicamente Importantes Domésticas (D-SIBs) designadas
-pelo Banco Central do Brasil (BCB).
+com o enquadramento no S1 da segmentação prudencial do Banco Central do Brasil (BCB),
+aplicável às instituições financeiras.
 
 O recorte temporal de cada instituição não é uma escolha discricionária, mas
 decorre diretamente do critério de liquidez de um volume financeiro diário inferior a R\$~100 mil. 
@@ -522,9 +523,8 @@ pregões do período, com média de apenas 48 negócios diários. O painel de ex
 
 Essas duas fronteiras, determinadas pelos dados, geram
 naturalmente dois painéis aninhados, apresentados na Tabela~\ref{tab:paineis}.
-O painel principal (N~=~7) exclui o Banco Pan e cobre o período de outubro de
-2017 a maio de 2026, o maior alcance temporal possível dado o critério de liquidez das sete instituições
-restantes. O painel de extensão (N~=~8) inclui o Banco Pan e cobre janeiro de
+O painel principal (N~=~7) exclui o Banco Pan e cobre de outubro de 2017, primeiro trimestre
+completo após a fronteira de liquidez do BTG Pactual, a setembro de 2026. O painel de extensão (N~=~8) inclui o Banco Pan e cobre janeiro de
 2019 a outubro de 2025.
 
 \begin{table}[htb]
@@ -535,164 +535,21 @@ restantes. O painel de extensão (N~=~8) inclui o Banco Pan e cobre janeiro de
 \toprule
 Painel & Janela & Observações & Papel \\
 \midrule
-N = 7 (sem Banco Pan) & 10/2017 a 09/2026 & 2.234 & Principal \\
+N = 7 (sem Banco Pan) & 10/2017 a 09/2026 & 2.233 & Principal \\
 N = 8 (com Banco Pan) & 01/2019 a 10/2025 & 1.689 & Extensão \\
 \bottomrule
 \end{tabular}
-% \legend{Fonte: elaboração própria, a partir de ComDinheiro.}
+\legend{Fonte: elaboração própria, a partir de ComDinheiro. Observações: pregões com
+volatilidade estimada; o primeiro pregão de cada janela, sem fechamento anterior, não entra.}
 \end{table}
 
-\subsubsection*{O vínculo societário BTG-Pan}
-A hipótese de que o vínculo societário produz co-movimento de volatilidade
-não pode ser testada no painel principal, pela razão evidente de que nele não há nenhum par de instituições ligadas por
-controle. Recorre-se, por isso, ao painel de oito instituições, único em que o par BTG e Banco Pan está presente. A
-restrição não decorre de escolha metodológica, e sim do fato de que, no sistema bancário brasileiro listado, esse é o único
-vínculo dessa natureza disponível no período.
+O painel de extensão não é dispensável. A hipótese de que o vínculo de controle societário
+produz comovimento de volatilidade só pode ser testada em uma amostra que contenha ao menos
+um par de instituições ligadas por controle e, no sistema bancário brasileiro com ações em
+bolsa, esse par existe com BTG Pactual e Banco Pan, e apenas até outubro de 2025.
+O painel de extensão é, assim, o único recorte em que essa pergunta pode ser formulada
+(Seção~\ref{sec:btg-pan}).
 
-A Tabela~\ref{tab:diadica-par} apresenta os coeficientes da regressão diádica
-com indicadoras por par específico (Equação~\ref{eq:diadica}), estimada em
-corte único sobre o painel de extensão. Dois resultados se destacam. O par que
-compartilha vínculo de controle efetivo, BTG e Pan, apresenta o segundo maior
-coeficiente da tabela (+5,94 pontos percentuais, $p < 0{,}0001$), e o par
-classificado apenas sob a etiqueta nominal de "privado estrangeiro" (ABC
-Brasil e Santander), duas instituições sem qualquer proximidade de porte ou
-modelo de negócio apresenta o único coeficiente negativo (--2,29 pontos
-percentuais, $p = 0{,}011$). Esse padrão contraria a hipótese puramente categórica
-de que compartilhar um rotulo de classificação produz, por si só, conectividade 
-adicional, e pode até estar associado a menos. 
-
-A leitura não se resume, porém, a ideia de que vínculo societário organiza a rede,
-categoria nominal não. O par Itaú e Bradesco, os dois maiores bancos
-privados nacionais da amostra e sem qualquer vínculo de controle entre si,
-também apresenta coeficiente elevado (+6,24 pontos percentuais,
-$p < 0{,}0001$). Como a
-regressão já controla separadamente pelo efeito de ambos serem instituições
-de grande porte (+4,10 pontos percentuais, $p < 0{,}0001$), o coeficiente de
-Itaú--Bradesco representa um comovimento adicional, específico do par, que
-não é explicado nem pela propensão geral de cada banco a transmitir e receber
-risco, nem pelo porte. Duas explicações são compatíveis com os dados sendo a
-primeira em relação ao vínculo de controle societário testado nesta subseção e a segunda
-sobre a proximidade de modelo de negócio e de exposição a choques regulatórios e
-macroeconômicos comuns aos dois maiores bancos de varejo do país, mecanismo
-distinto mas igualmente capaz de gerar comovimento além do que porte e
-propensão geral já explicam. Os dados aqui disponíveis não permitem
-distinguir entre as duas hipóteses para o par Itaú--Bradesco, na ausência de
-um vínculo de controle a testar. O achado central da subseção permanece. O
-mecanismo de controle societário é suficiente para gerar comovimento da
-mesma magnitude que a maior proximidade de porte e modelo de negócio da
-amostra, mas não é o único mecanismo capaz de fazê-lo.
-
-\begin{table}[htb]
-\centering
-\caption{Regressão diádica com indicadoras por par específico (painel de extensão, corte único)}
-\label{tab:diadica-par}
-\begin{tabular}{lrrr}
-\toprule
-Indicadora & Coeficiente (p.p.) & $t$ & $p$ \\
-\midrule
-Bradesco e Itaú (privados nacionais)        & 6,24 &  8,44 & $<0{,}0001$ \\
-BTG e Pan (vínculo societário)              & 5,94 &  7,24 & $<0{,}0001$ \\
-Banco do Brasil e Banrisul (estatais)       & 0,47 &  0,93 & 0,361 \\
-ABC Brasil e Santander ("estrangeiros")     & --2,29 & --2,67 & 0,011 \\
-Ambos de grande porte                       & 4,10 &  5,34 & $<0{,}0001$ \\
-\bottomrule
-\end{tabular}
-\legend{Fonte: elaboração própria.}
-\end{table}
-
-A robustez desse resultado não depende de um único corte amostral. A
-Tabela~\ref{tab:diadica-temporal} reestima a mesma regressão a cada mês,
-totalizando 82 cortes ao longo do painel de extensão, e resume a série de
-coeficientes resultante pela média, pela proporção de meses com sinal
-positivo e por um teste $t$ da média contra zero. O par BTG--Pan mantém sinal
-positivo em 74 dos 82 cortes (90\%), com média de 5,26 pontos percentuais
-($t = 12{,}8$); o par Itaú--Bradesco e a indicadora de porte mantêm sinal
-positivo em todos os 82 cortes; o par ABC Brasil--Santander mantém sinal
-negativo na grande maioria deles (apenas 17 de 82 positivos). A evidência
-não repousa, portanto, sobre o resultado pontual de uma única estimação, mas
-sobre a repetição do padrão de sinal ao longo de quase sete anos de dados mensais.
-
-\begin{table}[htb]
-\centering  
-\caption{Regressão diádica por par específico - extensão temporal (82 cortes mensais)}  
-\label{tab:diadica-temporal}
-\begin{tabular}{lrrrr}
-\toprule
-Indicadora & Média (p.p.) & Sinal positivo & $t$ & $p$ \\
-\midrule
-Bradesco e Itaú (privados nacionais)        & 6,44 & 82/82 & 19,66 & $<0{,}0001$ \\
-BTG e Pan (vínculo societário)              & 5,26 & 74/82 & 12,8 & $<0{,}0001$ \\
-Banco do Brasil e Banrisul (estatais)       & 0,68 & 49/82 &  3,29 & 0,0015 \\
-ABC Brasil e Santander ("estrangeiros")     & --1,21 & 17/82 & --5,98 & $<0{,}0001$ \\
-Ambos de grande porte                       & 3,51 & 82/82 & 22,95 & $<0{,}0001$ \\
-\bottomrule
-\end{tabular}
-\legend{Fonte: elaboração própria.}
-\end{table}
-
-A Figura~\ref{fig:coef-btgpan-tempo} mostra a evolução do coeficiente do par
-BTG--Pan ao longo do tempo, e não apenas sua média. A série atinge seu valor
-máximo em 2022 (9,52 pontos percentuais em média anual), um ano após o BTG
-Pactual assumir o controle pleno do Banco Pan, em maio de 2021, ao adquirir a
-totalidade da participação até então detida pela Caixa Econômica Federal e
-encerrar o controle compartilhado que mantinha desde 2011
-\footnote{BANCO PAN. \textit{Nossa História}. Relações com Investidores,
-2021. Disponível em:
-\url{https://ri.bancopan.com.br/show.aspx?idCanal=98FuehC2XKrWRMgsqA5Tpw==&linguagem=pt}.
-Acesso em: 21/09/2026.}
-O intervalo de um ano entre a consolidação do controle e o pico do coeficiente
-é compatível com uma reprecificação gradual do vínculo entre as duas
-instituições pelo mercado, e não com um efeito instantâneo. Após o pico, o
-coeficiente cai de forma contínua até 2024 (1,19 ponto percentual, o mínimo da
-série), voltando a subir em 2025 (1,77 pontos percentuais) em um movimento que
-coincide com o anúncio de incorporação total do Pan pelo BTG, em outubro de
-2025.
-
-\begin{figure}[htb]
-  \centering
-  \caption{Coeficiente da regressão diádica: BTG-Pan}
-  \label{fig:coef-btgpan-tempo}
-  \includegraphics[width=\textwidth]{figuras/coef_btgpan_temporal.png}
-  \legend{Fonte: elaboração própria.}
-\end{figure}
-
-A conclusão da subseção decorre desse mesmo anúncio. Até 13/10/2025, os
-retornos diários do Pan e do BTG apresentam correlação moderada, em torno de
-0,39 a 0,43 em janelas comparáveis antes e depois do anúncio. Essa correlação
-do período pós-anúncio tomado como um todo, contudo, mistura duas fases
-distintas do processo: as semanas iniciais, em que a conclusão do negócio
-ainda dependia de aprovações societárias e regulatórias, e as semanas finais,
-em que a relação de troca fixa entre os papéis (0,2128 \textit{unit} do BTG
-por ação do Pan) já era essencialmente certa. A correlação móvel de curto
-prazo revela essa transição: nos últimos 10, 30 e 60 pregões de negociação do
-Pan antes da deslistagem, a correlação converge para 0,96, 0,97 e 0,97,
-respectivamente. Esse movimento é consistente com o mecanismo de arbitragem esperado quando a
-conclusão da fusão se torna praticamente certa. Não foi possível identificar,
-entre os comunicados ao mercado disponíveis, um fato relevante específico na
-data exata em que essa convergência se inicia (28/10/2025, identificada por
-correlação móvel de curta janela), que antecede em cerca de seis semanas a
-aprovação em assembleia geral (09/12/2025), os marcos formais do processo
-documentados publicamente ocorrem majoritariamente depois dessa data.
-
-Esse fato cumpre dois papéis na subseção. Primeiro, explica por que o painel
-de extensão se encerra em 13/10/2025: com a correlação entre os dois papéis
-convergindo para próximo de 1 ao final do processo, as duas séries deixam de
-ser distinguíveis para fins de decomposição de variância, e a estimação do
-VAR se tornaria numericamente degenerada se estendida além desse ponto.
-Segundo, e mais importante, confirma que se o vínculo de controle societário 
-aproxima o comportamento de duas ações, a fusão completa deveria
-aproximá-las ao limite já que é o vinculo societário mais forte possível. 
-Foi exatamente o que se observou. O resultado que a 
-subseção buscou estabelecer com efeitos fixos e dados mensais ao longo de 
-sete anos é confirmado através desse fato. 
-
-O resultado desta subseção não é levado ao painel principal de sete
-instituições porque o vínculo societário se encerrou no mundo real com a
-incorporação. Em contrapartida, é o painel principal que permite alcançar o 
-regime de conectividade elevada de 2026, fora do alcance do painel de extensão.
-
-
-\subsection*{Construção das séries de volatilidade}
 
 \subsubsection*{Justificativa da variável-alvo}
 
@@ -821,7 +678,7 @@ compartilhem $n-1$ dos $n$ dias da janela, essa estrutura induz autocorrelação
 log-volatilidade e não reflete a dinâmica econômica real, a diferença passa a ser o dia que entra
 e o dia que sai da janela a cada atualização. Essa autocorrelação se propaga
 diretamente para os resíduos do VAR estimado sobre a série, violando a
-hipótese de ruído branco que sustenta avalidade da decomposição de variância
+hipótese de ruído branco que sustenta a validade da decomposição de variância
 subsequente, os critérios de seleção de defasagem
 chegam a cair de forma descontínua no número de defasagens correspondente ao
 tamanho da janela, sinal de que o modelo está simplesmente reconhecendo a
@@ -848,33 +705,7 @@ março de 2020, o ciclo de aperto monetário da Selic iniciado em março de
 2021, a fraude contábil da Americanas (janeiro de 2023), o estresse fiscal
 do segundo semestre de 2024 e, no painel principal, o regime de
 conectividade elevada observado no primeiro semestre de 2026.
-A Tabela~\ref{tab:eventos} apresenta os
-principais eventos de \textit{drift} identificados na janela amostral.
 
-\begin{table}[H]
-\centering
-\caption{Principais eventos de \textit{drift} na janela amostral}
-\label{tab:eventos}
-\small
-\begin{tabular}{l>{\raggedright\arraybackslash}p{3.8cm}>{\raggedright\arraybackslash}p{6cm}}
-\toprule
-Período & Direção & Causa \\
-\midrule
-Mar./2020                & Negativo extremo               & \textit{Crash} COVID-19 \\
-Abr.--dez./2020          & Positivo persistente           & Recuperação pós-\textit{crash} \\
-Jan.--set./2022          & Negativo persistente           & Aperto da Selic \\
-Jan.--mar./2023          & Negativo (ITUB4, BBDC4)        & Fraude Americanas \\
-Ago.--dez./2023          & Positivo (\textit{large caps}) & Início do ciclo de corte da Selic \\
-Mai./2024 (BRSR6)        & Negativo idiossincrático       & Enchentes no Rio Grande do Sul \\
-Out.--dez./2024          & Negativo persistente           & Crise fiscal pós-pacote governamental \\
-Jan.--abr./2025          & Negativo (sistema)             & Tarifas Trump pós-posse \\
-Mai.--dez./2025          & Positivo (\textit{large caps}) & Expansão de \textit{spread} bancário \\
-Jan.--mai./2026\footnotemark & Positivo persistente & [causa a confirmar] \\
-\bottomrule
-\end{tabular}
-\end{table}
-\footnotetext{Episódio identificável apenas no painel principal. O
-painel de extensão, limitado a outubro de 2025, não o alcança.}
 
 \subsection*{Tratamento dos dados}
 
@@ -907,7 +738,7 @@ Antes da estimação da volatilidade, os dados OHLC são submetidos a verificaç
 consistência lógica: $H_t \geq L_t$, $H_t \geq O_t$, $H_t \geq C_t$, $L_t \leq O_t$,
 $L_t \leq C_t$ e $O_t, C_t > 0$. Violações indicam erros de digitação ou de
 \textit{parsing} no provedor de dados, que produziriam valores inválidos (\texttt{NaN}) no cálculo dos
-logaritmos do estimador
+logaritmos do estimador.
 
 \subsubsection*{3.\ Filtro de liquidez}
 
@@ -926,8 +757,10 @@ observação sinalizada, verifica-se: se múltiplas instituições registram ret
 mesma data, o evento é classificado como real e mantido; se apenas uma instituição
 apresenta retorno extremo sem notícia identificável, a observação é conferida em fonte
 alternativa. Como referência, 12 e 16 de março
-de 2020 (\textit{circuit breakers} da COVID-19) e 12 de janeiro de 2023 (Americanas,
-restrito a ITUB4 e BBDC4) são eventos reais e são preservados na amostra.
+de 2020 (\textit{circuit breakers} da COVID-19) são eventos reais e são preservados na amostra.
+Nenhum retorno sinalizado é removido ou winsorizado: todos permanecem na amostra, e a revisão
+serve apenas para documentar a origem de cada caso isolado
+(Tabela~\ref{tab:outliers}, Capítulo~\ref{cap:resultados}).
 
 \subsubsection*{5.\ Estimação da volatilidade}
 
@@ -948,7 +781,7 @@ regra, não é acionado.
 As séries de log-volatilidade são alinhadas por data de pregão, 
 formando um painel $T \times 7$ e $T \times 8$ no caso do painel de extensão. Dias em que todas as séries apresentam \texttt{NA}
 (finais de semana, feriados) são excluídos. Observações isoladas com \texttt{NA}
-decorrentes do filtro de liquidez ou de erros de provedor são imputadas por filtro de
+decorrentes do filtro de liquidez, da regra de variância nula ou de erros de provedor são imputadas por filtro de
 Kalman aplicado a um modelo ARIMA selecionado automaticamente\footnote{O filtro de Kalman
 fornece estimativas ótimas de estados não observados em um modelo de espaço de estados,
 minimizando o erro quadrático médio da predição. Neste contexto, o modelo ARIMA descreve
@@ -974,8 +807,9 @@ duas colunas diverge na décima casa decimal, disparando a comparação
 estrita como se fosse uma inconsistência real. Após a introdução de uma
 tolerância numérica de $10^{-6}$ nenhuma violação genuína de consistência OHLC
 permanece em nenhuma das oito séries. O filtro de liquidez, por sua vez, afeta um único pregão, o do Banco Pan em
-15/01/2019 (volume de R\$~72 mil e 67 negócios); nenhum pregão do painel
-principal é filtrado. Os números completos do
+15/01/2019 (volume de R\$~72 mil e 67 negócios). Nenhum pregão do painel
+principal é filtrado e no painel de extensão, esse pregão e o seguinte, que fica sem
+fechamento anterior, são imputados. Os números completos do
 pré-tratamento, por painel, são reportados no Capítulo~\ref{cap:resultados}.
 
 
@@ -993,8 +827,8 @@ log-volatilidade, que frequentemente exibem memória longa
 Para caracterizar essa memória, estima-se o parâmetro de integração
 fracionária $d$ de cada série pelo estimador de
 \textcite{geweke1983}.
-No painel principal, $\hat{d}$ situa-se entre 0,45 e 0,6 com
-erro-padrão de cerca de 0,11.
+No painel principal, $\hat{d}$ situa-se entre 0,47 e 0,60, com erro-padrão assintótico de
+0,107. No de extensão, entre 0,53 e 0,68, com erro-padrão de 0,116.
 
 Valores de $d$ entre 0 e 1 indicam que a série não é nem $I(0)$ nem $I(1)$.
 É por isso que o ADF e o KPSS rejeitam ao mesmo tempo. O primeiro tem a
@@ -1158,8 +992,7 @@ mesmo encolhe, de modo que o índice sobe apenas porque $N$ aumentou, sem que
 haja mais contágio. Nos dados deste trabalho, o TCI da amostra completa,
 estimado sobre subconjuntos aleatórios de 2, 4, 6 e 7 bancos do painel
 principal, é em média de 18\%, 38\%, 49\% e 53\%, respectivamente.
-Por isso, o nível do TCI deste trabalho não é comparado ao de outros
-estudos. Por isso, o nível do TCI deste trabalho não é comparado ao de outros estudos,
+Por isso, o nível do TCI deste trabalho não é comparado ao de outros estudos,
 inclusive ao de \textcite{silva2025}, que trabalha com 14 bancos. Comparam-se
 a convenção de estimação (TVP-VAR) e a dinâmica do índice ao longo do tempo,
 isto é, em que períodos ele se eleva. Pela mesma
@@ -1170,7 +1003,7 @@ Para além dos índices direcionais propostos por \textcite{diebold2012}, este t
 incorpora um conjunto de métricas de teoria de redes, centralidade de autovetor e
 PageRank, calculadas sobre o grafo de conectividade $G = (V, E, W)$ definido na
 Seção~\ref{subsec:redes}. Essa incorporação constitui uma contribuição adicional do
-trabalho. Com $N=7$ e um grafo em que todos os nós se ligam a todos,
+trabalho. Com poucos nós ($N=7$ e $N = 8$) e um grafo em que todos os nós se ligam a todos,
 porém, essas medidas coincidem com os índices de primeira ordem. A ordenação
 dos bancos pelo PageRank é idêntica à ordenação por FROM$_i$ e, no grafo
 invertido, à ordenação por TO$_j$ (correlação de postos de Spearman igual a 1
@@ -1320,7 +1153,7 @@ rede (testada, na especificação original deste trabalho, por
 assortatividade nominal sobre o grafo completo) não se sustenta como
 formulada. A assortatividade nominal compara a fração de ligações que
 ocorrem dentro de categorias com a fração esperada sob distribuição
-aleatória, dadas as marginais. Em um grafo com apenas $N=8$ nós e categorias
+aleatória, dadas as marginais. Em um grafo com poucos nós e categorias
 de tamanho reduzido, essa fração é mecanicamente pequena mesmo quando a
 categoria não organiza nada, de modo que a estatística tende a um valor
 negativo por construção, um viés que a normalização usual da estatística,
@@ -1352,7 +1185,11 @@ Pactual e Banco Pan, presente apenas no painel de extensão. $D_{ij}^{\text{port
 vale um quando ambos são instituições de grande porte. A separação distingue
 duas hipóteses que uma classificação única por categoria confundiria, a de que
 instituições de mesma natureza de controle compartilham volatilidade e a de que
-instituições com o mesmo controlador o fazem.
+instituições com o mesmo controlador o fazem. Como a amostra tem apenas dois bancos estatais, 
+Banco do Brasil e Banrisul, e os efeitos
+fixos absorvem qualquer atributo de um banco isolado, a variação que identifica $\beta$
+provém exclusivamente desse par. Com um atributo binário, a indicadora de mesma natureza
+equivale, a menos dos efeitos fixos, à de ambos estatais.
 
 A Equação~\eqref{eq:diadica} é estimada tanto sobre o corte único do full
 sample estático quanto, para o par de instituições ligadas por controle
@@ -1397,9 +1234,7 @@ Para fins de visualização exclusivamente, adota-se uma representação colapsa
 não dirigido $(i,j)$ é
 reduzido a uma única aresta líquida, cuja direção é dada pelo sinal de
 $\text{NET}_{ij}$ (Equação~\ref{eq:pairwise}). O grafo passa a ter
-no máximo $N(N-1)/2$ arestas líquidas (21 e 28, respectivamente). Sobre esse
-grafo colapsado, retêm-se apenas os pares cuja intensidade é de pelo menos 5\%
-da intensidade do par mais forte observado naquela rede. Sobre esse grafo colapsado,
+no máximo $N(N-1)/2$ arestas líquidas (21 e 28, respectivamente). Sobre esse grafo colapsado,
 retêm-se apenas os pares cuja intensidade é de pelo menos 5\% da intensidade
 do par mais forte observado naquela rede. Esse filtro afeta
 exclusivamente a visualização e não a inferência conduzida a partir das
@@ -1419,94 +1254,145 @@ visual, mas não os coeficientes estimados. Toda a inferência sobre transmissã
 entre as instituições é conduzida a partir das tabelas e das séries temporais dos índices
 DY e das métricas de centralidade definidos na Subseção~\ref{subsec:dy}.
 
+% ==============================================================================
+% CAPÍTULO 4 — RESULTADOS E APÊNDICES
+% Substitui, no .tex, tudo o que vai de \chapter{Resultados} até o fim dos
+% apêndices (antes de \postextual). Remove também, da Metodologia, a subseção
+% "O vínculo societário BTG-Pan" (agora na Seção 4.7).
+% ==============================================================================
+
 \chapter{Resultados}
 \label{cap:resultados}
 
+% ------------------------------------------------------------------------------
 \section{Pré-tratamento dos dados}
 \label{sec:res-pretratamento}
+% ------------------------------------------------------------------------------
 
 O painel principal reúne 2.234 pregões por instituição, de 02/10/2017 a
-30/09/2026. O primeiro não tem fechamento anterior e, portanto, volatilidade
-estimada, de modo que o painel final tem 2.233 observações para as sete
-instituições (15.631 valores). A verificação de consistência do OHLC, com
-tolerância de $10^{-6}$, e o filtro de liquidez não removem nenhum pregão. A
-regra de variância nula descrita na Metodologia trata 14 valores como
-ausentes (0,09\%), no máximo seis por instituição, e esses são os únicos
-valores imputados pelo filtro de Kalman (Tabela~\ref{tab:pretratamento}).
+30/09/2026, e o painel de extensão, 1.690, de 02/01/2019 a 13/10/2025. O
+primeiro pregão de cada janela não tem fechamento anterior e, portanto,
+volatilidade estimada, de modo que os painéis finais têm 2.233 e 1.689
+observações (15.631 e 13.512 valores). A verificação de consistência do OHLC,
+com tolerância de $10^{-6}$, não encontra violação em nenhuma série. O filtro
+de liquidez remove um único pregão, o do Banco Pan em 15/01/2019, e nenhum no
+painel principal. A regra de variância nula trata como ausentes 14 valores no
+painel principal (0,09\%) e 13 no de extensão (0,10\%), no máximo seis por
+instituição. Esses valores, mais os dois que o filtro de liquidez torna
+ausentes no painel de extensão (o pregão de 15/01/2019 e o seguinte, que fica
+sem fechamento anterior), são os únicos imputados pelo filtro de Kalman: 14 no
+painel principal e 15 no de extensão (0,09\% e 0,11\%;
+Tabela~\ref{tab:pretratamento}).
 
-Os retornos extremos ($|z|>5$) somam 53 observações em 24 datas. Trinta e
-sete delas, em oito datas de março e abril de 2020, ocorrem em duas ou mais
-instituições no mesmo dia e são classificadas como eventos sistêmicos. As 16
-restantes são casos isolados, com data e origem do evento na
-Tabela~\ref{tab:outliers}. Nenhuma é removida ou winsorizada.
+Os retornos extremos ($|z|>5$) somam 53 observações em cada painel, em 24
+datas no principal e em 20 no de extensão. 37 e 41 delas,
+respectivamente, em oito datas de março e abril de 2020 (as mesmas nos dois
+painéis), ocorrem em duas ou mais instituições no mesmo dia e são
+classificadas como eventos sistêmicos. As demais, 16 e 12, são casos isolados,
+listados nas Tabelas~\ref{tab:outliers-a} e~\ref{tab:outliers-b}. Para 17 dos 18 casos distintos há fonte datada
+que registra o evento ou o contexto do dia. Para BPAC11 em 23/03/2020 a causa não foi identificada. Nenhuma observação é removida ou winsorizada.
 
-\begin{table}[htb]
+\begin{table}[H]
 \centering
-\caption{Pré-tratamento por instituição (painel principal, N = 7)}
+\caption{Pré-tratamento por instituição e por painel}
 \label{tab:pretratamento}
 \begin{tabular}{lccccc}
 \toprule
 Instituição & Abaixo do piso & Variância nula & Imputados & $|z|>5$ & Isolados \\
 \midrule
-ITUB4  & 0 & 0 & 0 &  4 & 0 \\
-BBDC4  & 0 & 0 & 0 &  8 & 3 \\
-BBAS3  & 0 & 1 & 1 & 11 & 3 \\
-SANB11 & 0 & 3 & 3 &  7 & 1 \\
-BPAC11 & 0 & 1 & 1 & 10 & 5 \\
-BRSR6  & 0 & 3 & 3 &  8 & 4 \\
-ABCB4  & 0 & 6 & 6 &  5 & 0 \\
-\midrule
+\multicolumn{6}{l}{\textit{Painel principal (N = 7)}} \\
+ITUB4  & 0 &  0 &  0 &  4 &  0 \\
+BBDC4  & 0 &  0 &  0 &  8 &  3 \\
+BBAS3  & 0 &  1 &  1 & 11 &  3 \\
+SANB11 & 0 &  3 &  3 &  7 &  1 \\
+BPAC11 & 0 &  1 &  1 & 10 &  5 \\
+BRSR6  & 0 &  3 &  3 &  8 &  4 \\
+ABCB4  & 0 &  6 &  6 &  5 &  0 \\
 Total  & 0 & 14 & 14 & 53 & 16 \\
-\bottomrule
-\end{tabular}
-\legend{Fonte: elaboração própria. Painel de extensão (N = 8): [a acrescentar].}
-\end{table}
-
-\begin{table}[htb]
-\centering
-\caption{Retornos extremos isolados ($|z|>5$ em uma única instituição)}
-\label{tab:outliers}
-\small
-\begin{tabular}{llrp{6cm}l}
-\toprule
-Banco & Data & Retorno (\%) & Evento (fonte) & Tratamento \\
 \midrule
-BRSR6  & 04/10/2017 & $-11{,}51$ & [fonte] & Mantido \\
-BRSR6  & 08/10/2018 &  $11{,}06$ & [fonte] & Mantido \\
-BPAC11 & 23/08/2019 & $-16{,}48$ & [fonte] & Mantido \\
-BPAC11 & 26/08/2019 & $-20{,}43$ & [fonte] & Mantido \\
-BPAC11 & 27/08/2019 &  $16{,}02$ & [fonte] & Mantido \\
-BRSR6  & 10/03/2020 &  $13{,}98$ & [fonte] & Mantido \\
-BPAC11 & 11/03/2020 & $-14{,}34$ & [fonte] & Mantido \\
-BPAC11 & 23/03/2020 & $-13{,}89$ & [fonte] & Mantido \\
-BBAS3  & 24/04/2020 & $-14{,}35$ & [fonte] & Mantido \\
-BBAS3  & 22/02/2021 & $-12{,}38$ & [fonte] & Mantido \\
-BBDC4  & 09/11/2022 & $-19{,}10$ & [fonte] & Mantido \\
-BBDC4  & 07/02/2024 & $-17{,}32$ & [fonte] & Mantido \\
-BBDC4  & 08/05/2025 &  $14{,}53$ & [fonte] & Mantido \\
-BBAS3  & 16/05/2025 & $-13{,}57$ & [fonte] & Mantido \\
-BRSR6  & 14/04/2026 & $-11{,}83$ & [fonte] & Mantido \\
-SANB11 & 31/07/2026 &  $12{,}53$ & [fonte] & Mantido \\
+\multicolumn{6}{l}{\textit{Painel de extensão (N = 8)}} \\
+ITUB4  & 0 &  0 &  0 &  4 &  0 \\
+BBDC4  & 0 &  0 &  0 &  8 &  3 \\
+BBAS3  & 0 &  1 &  1 & 11 &  3 \\
+SANB11 & 0 &  2 &  2 &  6 &  0 \\
+BPAC11 & 0 &  1 &  1 &  8 &  3 \\
+BRSR6  & 0 &  3 &  3 &  5 &  1 \\
+ABCB4  & 0 &  4 &  4 &  5 &  0 \\
+BPAN4  & 1 &  2 &  4 &  6 &  2 \\
+Total  & 1 & 13 & 15 & 53 & 12 \\
 \bottomrule
 \end{tabular}
-\legend{Fonte: elaboração própria. Retorno logarítmico diário, em pontos percentuais.}
+\legend{Fonte: elaboração própria. Em BPAN4, os quatro valores imputados são os
+dois de variância nula, o pregão de 15/01/2019, filtrado por liquidez, e o
+seguinte, sem fechamento anterior.}
 \end{table}
 
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Retornos extremos isolados ($|z|>5$ em uma única instituição), 2017--2020}
+\label{tab:outliers-a}
+\begin{tabular}{llrcp{6.8cm}}
+\toprule
+Banco & Data & Retorno (\%) & Painéis & Evento (fonte) \\
+\midrule
+BRSR6 & 04/10/2017 & $-11{,}51$ & 7 & Fato relevante do governo do RS anuncia a venda de parte das ações do Banrisul; as preferenciais caem mais de 10\% no dia \parencite{extraclasse2017, tribunapr2018} \\
+BRSR6 & 08/10/2018 & $11{,}06$ & 7 & Pregão seguinte ao primeiro turno das eleições; o Ibovespa sobe 4,57\% e as estatais lideram a alta (a fonte não cita o Banrisul) \parencite{seudinheiro2018} \\
+BPAN4 & 22/05/2019 & $20{,}96$ & 8 & Anúncio de plano de conta digital e relatório da Empiricus recomendando a compra; a ação fecha em alta de 23,3\% \parencite{seudinheiro2019pan} \\
+BPAC11 & 23/08/2019 & $-16{,}48$ & 7 e 8 & Banco é alvo da 64ª fase da Lava Jato (busca e apreensão); as \textit{units} caem 15,2\% \parencite{moneytimes20190823} \\
+BPAC11 & 26/08/2019 & $-20{,}43$ & 7 e 8 & Reportagem do site O Antagonista sobre suposto esquema de lavagem de dinheiro no banco; as \textit{units} caem 18,5\% \parencite{seudinheiro20190826} \\
+BPAC11 & 27/08/2019 & $16{,}02$ & 7 e 8 & Recuperação parcial após queda de 31\% nos dois pregões anteriores \parencite{moneytimes20190827} \\
+BRSR6 & 10/03/2020 & $13{,}98$ & 7 e 8 & Recuperação do Ibovespa (+7,14\%) após a queda de 12,19\% de 09/03 \parencite{suno20200311, infomoney2020cb} \\
+BPAC11 & 11/03/2020 & $-14{,}34$ & 7 & OMS caracteriza a COVID-19 como pandemia; o Ibovespa cai 7,64\% e a B3 aciona o \textit{circuit breaker} \parencite{moneytimes20200311} \\
+BPAC11 & 23/03/2020 & $-13{,}89$ & 7 & Causa não identificada \\
+BBAS3 & 24/04/2020 & $-14{,}35$ & 7 e 8 & Demissão do ministro Sergio Moro; o Ibovespa cai 5,45\% e o BBAS3, 13,4\% \parencite{moneytimes20200424} \\
+BPAN4 & 03/06/2020 & $19{,}09$ & 8 & Comunicado de 02/06/2020: o BTG informa a compra de 4,75 milhões de preferenciais (30,35\% das PN e 41,52\% do capital total); a ação já subira 15,7\% em 02/06 \parencite{pan2020comunicado} \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. Retorno logarítmico diário, em pontos percentuais. Todos os casos permanecem na amostra. Um mesmo retorno pode ser sinalizado em um painel e não no outro, porque o escore $z$ usa a média e o desvio-padrão da janela de cada painel. Continua na Tabela~\ref{tab:outliers-b}.}
+\end{table}
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Retornos extremos isolados ($|z|>5$ em uma única instituição), 2021--2026}
+\label{tab:outliers-b}
+\begin{tabular}{llrcp{6.8cm}}
+\toprule
+Banco & Data & Retorno (\%) & Painéis & Evento (fonte) \\
+\midrule
+BBAS3 & 22/02/2021 & $-12{,}38$ & 7 e 8 & A troca do comando da Petrobras pelo governo gera temor de interferência em estatais; o BBAS3 cai 11,65\% \parencite{moneytimes20210222} \\
+BBDC4 & 09/11/2022 & $-19{,}10$ & 7 e 8 & Resultado do 3T22 (lucro de R\$~5,2 bilhões, queda de 22,8\%); maior queda diária da ação em 24 anos \parencite{infomoney20221109} \\
+BBDC4 & 07/02/2024 & $-17{,}32$ & 7 e 8 & Resultado do 4T23 abaixo do esperado e \textit{guidance} de 2024; a preferencial cai 15,7\% \parencite{moneytimes20240207} \\
+BBDC4 & 08/05/2025 & $14{,}53$ & 7 e 8 & Resultado do 1T25 (lucro recorrente de R\$~5,9 bilhões, alta de 39\%); a ação sobe cerca de 15\% \parencite{moneytimes20250507, nord2025} \\
+BBAS3 & 16/05/2025 & $-13{,}57$ & 7 e 8 & Resultado do 1T25 (lucro ajustado cai 20,7\%) e suspensão de parte do \textit{guidance}; a ação cai 12,7\% \parencite{moneytimes20250515, folhape2025} \\
+BRSR6 & 14/04/2026 & $-11{,}83$ & 7 & BTG Pactual e UBS BB rebaixam a recomendação para venda; a ação cai 11,2\% \parencite{financenews20260414} \\
+SANB11 & 31/07/2026 & $12{,}53$ & 7 & O Santander Espanha anuncia oferta voluntária de permuta com prêmio de 15\%; as \textit{units} sobem cerca de 13\% \parencite{investing20260731} \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. Continuação da Tabela~\ref{tab:outliers-a}.}
+\end{table}
+
+% ------------------------------------------------------------------------------
 \section{Propriedades das séries}
 \label{sec:res-propriedades}
+% ------------------------------------------------------------------------------
 
 Após a regra de variância nula, a curtose em excesso da log-volatilidade
-situa-se entre 1,8 e 4,2, e o menor valor de cada série está, no máximo, a 7,5
-desvios-padrão da média, o de BPAC11 (Tabela~\ref{tab:descritivas}).
+situa-se entre 1,8 e 4,2 nos dois painéis, e o menor valor de cada série está,
+no máximo, a 7,5 desvios-padrão da média no painel principal (BPAC11) e a 6,1
+no de extensão (BRSR6 e ABCB4; Tabela~\ref{tab:descritivas}).
 
-\begin{table}[htb]
+\begin{table}[H]
 \centering
-\caption{Estatísticas descritivas da log-volatilidade anualizada (N = 7)}
+\caption{Estatísticas descritivas da log-volatilidade anualizada}
 \label{tab:descritivas}
+\small
 \begin{tabular}{lrrrrrr}
 \toprule
 Instituição & Média & DP & Mín. & Máx. & Assimetria & Curtose \\
 \midrule
+\multicolumn{7}{l}{\textit{Painel principal (N = 7)}} \\
 ITUB4  & $-1{,}43$ & 0,46 & $-3{,}18$ & 1,03 &  0,37 & 1,77 \\
 BBDC4  & $-1{,}34$ & 0,45 & $-2{,}93$ & 1,28 &  0,59 & 2,25 \\
 BBAS3  & $-1{,}38$ & 0,51 & $-3{,}58$ & 1,37 &  0,50 & 2,07 \\
@@ -1514,32 +1400,46 @@ SANB11 & $-1{,}36$ & 0,48 & $-3{,}76$ & 1,23 &  0,18 & 2,42 \\
 BPAC11 & $-1{,}09$ & 0,51 & $-4{,}90$ & 1,64 &  0,01 & 3,75 \\
 BRSR6  & $-1{,}33$ & 0,48 & $-4{,}50$ & 0,86 & $-0{,}34$ & 4,16 \\
 ABCB4  & $-1{,}39$ & 0,54 & $-4{,}73$ & 1,05 & $-0{,}67$ & 3,87 \\
+\midrule
+\multicolumn{7}{l}{\textit{Painel de extensão (N = 8)}} \\
+ITUB4  & $-1{,}42$ & 0,47 & $-3{,}18$ & 1,03 &  0,43 & 1,80 \\
+BBDC4  & $-1{,}34$ & 0,46 & $-2{,}93$ & 1,28 &  0,67 & 2,37 \\
+BBAS3  & $-1{,}40$ & 0,51 & $-3{,}58$ & 1,37 &  0,64 & 2,22 \\
+SANB11 & $-1{,}37$ & 0,48 & $-3{,}55$ & 1,23 &  0,30 & 2,26 \\
+BPAC11 & $-1{,}05$ & 0,50 & $-3{,}13$ & 1,64 &  0,46 & 2,15 \\
+BRSR6  & $-1{,}36$ & 0,46 & $-4{,}17$ & 0,86 &  0,07 & 3,24 \\
+ABCB4  & $-1{,}36$ & 0,55 & $-4{,}73$ & 1,05 & $-0{,}68$ & 4,21 \\
+BPAN4  & $-0{,}86$ & 0,54 & $-3{,}74$ & 1,44 & $-0{,}02$ & 1,74 \\
 \bottomrule
 \end{tabular}
 \legend{Fonte: elaboração própria. Curtose em excesso.}
 \end{table}
 
 O ADF, o DF-GLS, o Phillips-Perron e o Zivot-Andrews rejeitam a raiz unitária
-nas sete séries, e o KPSS rejeita a estacionariedade nas sete
+nas 15 séries dos dois painéis, e o KPSS rejeita a estacionariedade nas 15
 (Tabela~\ref{tab:testes}). O Ljung-Box e o ARCH-LM rejeitam a ausência de
 autocorrelação e de heterocedasticidade condicional ($p<0{,}0001$ em todas).
-O parâmetro de integração fracionária fica entre 0,47 (BPAC11) e 0,60 (BBAS3),
-com erro-padrão assintótico de 0,107. Cada estimativa difere de zero (estatística
-de 4,4 a 5,6) e de um (3,8 a 4,9), e todas estão a menos de um erro-padrão de
-0,5, isto é, na fronteira entre a memória longa estacionária ($d<0{,}5$) e a
-não estacionária ($d\geq0{,}5$). As séries não são, portanto, nem $I(0)$ nem
-$I(1)$, o que reconcilia a rejeição simultânea do ADF e do KPSS e justifica a
-estimação do VAR em níveis (Subseção~\ref{sec:estacionariedade}).
+O parâmetro de integração fracionária fica entre 0,47 (BPAC11) e 0,60 (BBAS3)
+no painel principal, com erro-padrão assintótico de 0,107, e entre 0,53 e 0,68
+no de extensão, com erro-padrão de 0,116. No painel principal, cada estimativa
+difere de zero (estatística de 4,4 a 5,6) e de um (3,8 a 4,9), e todas estão a
+menos de um erro-padrão de 0,5; no de extensão, as estimativas diferem de zero
+(4,6 a 5,9) e de um (2,8 a 4,0) e estão a menos de 1,6 erro-padrão de 0,5. As
+séries estão, portanto, na fronteira entre a memória longa estacionária
+($d<0{,}5$) e a não estacionária ($d\geq0{,}5$), sem serem nem $I(0)$ nem
+$I(1)$. Isso reconcilia a rejeição simultânea do ADF e do KPSS e justifica a
+estimação do VAR em níveis (Capítulo~\ref{cap:metodologia}).
 
-\begin{table}[htb]
+\begin{table}[H]
 \centering
-\caption{Testes de estacionariedade e parâmetro de memória longa (N = 7)}
+\caption{Testes de estacionariedade e parâmetro de memória longa}
 \label{tab:testes}
 \small
 \begin{tabular}{lcccccc}
 \toprule
 Instituição & ADF & KPSS ($p$) & DF-GLS & PP & ZA & $\hat{d}$ \\
 \midrule
+\multicolumn{7}{l}{\textit{Painel principal (N = 7), erro-padrão de $\hat{d}$: 0,107}} \\
 ITUB4  & $-17{,}74$ & $<0{,}01$ & $-10{,}00$ & $-31{,}69$ & $-12{,}32$ & 0,495 \\
 BBDC4  & $-19{,}31$ & $<0{,}01$ &  $-5{,}88$ & $-33{,}65$ & $-13{,}17$ & 0,528 \\
 BBAS3  & $-17{,}82$ & $<0{,}01$ &  $-2{,}40$ & $-30{,}60$ & $-12{,}16$ & 0,599 \\
@@ -1547,39 +1447,53 @@ SANB11 & $-19{,}74$ & $<0{,}01$ &  $-9{,}31$ & $-34{,}01$ & $-13{,}23$ & 0,483 \
 BPAC11 & $-19{,}26$ & $<0{,}01$ & $-10{,}48$ & $-34{,}37$ & $-13{,}23$ & 0,474 \\
 BRSR6  & $-22{,}88$ & $<0{,}01$ & $-12{,}37$ & $-37{,}15$ & $-14{,}61$ & 0,539 \\
 ABCB4  & $-20{,}97$ & $<0{,}01$ &  $-9{,}76$ & $-35{,}40$ & $-15{,}57$ & 0,589 \\
+\midrule
+\multicolumn{7}{l}{\textit{Painel de extensão (N = 8), erro-padrão de $\hat{d}$: 0,116}} \\
+ITUB4  & $-14{,}68$ & $<0{,}01$ &  $-7{,}72$ & $-26{,}41$ & $-12{,}06$ & 0,623 \\
+BBDC4  & $-15{,}95$ & $<0{,}01$ &  $-9{,}38$ & $-27{,}89$ & $-11{,}91$ & 0,607 \\
+BBAS3  & $-14{,}47$ & $<0{,}01$ &  $-6{,}69$ & $-24{,}90$ & $-10{,}24$ & 0,679 \\
+SANB11 & $-16{,}29$ & $<0{,}01$ &  $-6{,}62$ & $-28{,}00$ & $-12{,}08$ & 0,533 \\
+BPAC11 & $-15{,}08$ & $<0{,}01$ &  $-7{,}57$ & $-26{,}88$ & $-10{,}88$ & 0,677 \\
+BRSR6  & $-19{,}33$ & $<0{,}01$ &  $-4{,}09$ & $-31{,}30$ & $-13{,}09$ & 0,533 \\
+ABCB4  & $-17{,}62$ & $<0{,}01$ &  $-8{,}97$ & $-29{,}51$ & $-13{,}20$ & 0,667 \\
+BPAN4  & $-15{,}38$ & $<0{,}01$ &  $-6{,}82$ & $-27{,}13$ & $-12{,}01$ & 0,602 \\
 \bottomrule
 \end{tabular}
 \legend{Fonte: elaboração própria. Valores críticos a 5\%: ADF $-2{,}86$; DF-GLS
 $-1{,}94$; PP $-2{,}86$; ZA $-5{,}08$. O KPSS reporta o limite inferior do
-$p$-valor. Erro-padrão assintótico de $\hat{d}$: 0,107.}
+$p$-valor.}
 \end{table}
 
-A ordem do VAR é $p=2$ pelo critério de Schwarz (BIC de $-13{,}536$), com
-margem de apenas 0,002 sobre $p=1$; o AIC escolheria $p=6$ e o HQ, $p=3$. O
-VAR é estável (módulo máximo das raízes de 0,828), e o Apêndice~\ref{ap:robustez}
-mostra que o ranking dos bancos não depende de $p$.
+A ordem do VAR é $p=2$ pela convenção da literatura. No painel principal, o
+critério de Schwarz (BIC de $-13{,}536$) também a seleciona, com margem de
+apenas 0,002 sobre $p=1$; o AIC escolheria $p=6$ e o HQ, $p=3$. No painel de
+extensão, o BIC escolheria $p=1$ ($-15{,}588$, contra $-15{,}517$ para $p=2$),
+o HQ seleciona $p=2$ e o AIC, $p=5$. O VAR é estável nos dois painéis (módulo
+máximo das raízes de 0,828 e 0,865), e o Apêndice~\ref{ap:robustez} mostra que
+o ranking dos bancos não depende de $p$.
 
+% ------------------------------------------------------------------------------
 \section{Seleção dos fatores de esquecimento}
 \label{sec:res-kappa}
+% ------------------------------------------------------------------------------
 
-A Tabela~\ref{tab:grade-kappa} reporta a log-verossimilhança preditiva de
-cada par $(\kappa_1,\kappa_2)$. O par selecionado é $(0{,}995;\ 0{,}99)$, com
-peso posterior igual a 1. A folga é grande: o segundo melhor par, $(1{,}00;\
-0{,}99)$, que corresponde a coeficientes constantes, fica 121,5 pontos abaixo,
-e o melhor par estimável pelo pacote entre os demais, $(0{,}99;\ 0{,}99)$,
-219,1 pontos abaixo. A variação temporal dos coeficientes melhora, portanto,
-a previsão um passo à frente, ainda que $\kappa_1=0{,}995$ implique uma memória
-de cerca de 200 observações, bem mais lenta que a da covariância ($\kappa_2=0{,}99$,
-cerca de 100 observações).
+A Tabela~\ref{tab:grade-kappa} reporta a log-verossimilhança preditiva de cada
+par $(\kappa_1,\kappa_2)$ no painel principal. O par selecionado é
+$(0{,}995;\ 0{,}99)$, com peso posterior igual a 1, e é o mesmo no painel de
+extensão. A folga é grande: o segundo melhor par, $(1{,}00;\ 0{,}99)$, que
+corresponde a coeficientes constantes, fica 121,5 pontos abaixo no painel
+principal e 148,2 no de extensão, e o melhor par estimável pelo pacote entre os
+demais, $(0{,}99;\ 0{,}99)$, 219,1 e 209,6 pontos abaixo. A variação temporal
+dos coeficientes melhora, portanto, a previsão um passo à frente, ainda que
+$\kappa_1=0{,}995$ implique uma memória de cerca de 200 observações, bem mais
+lenta que a da covariância ($\kappa_2=0{,}99$, cerca de 100 observações). O
+ótimo é interior em $\kappa_1$, mas está no limite superior da grade em
+$\kappa_2$ nos dois painéis, de modo que um valor maior de $\kappa_2$ poderia
+ajustar melhor; essa é uma limitação da grade adotada.
 
-[\textbf{Se a grade estendida mantiver o vencedor:} O ótimo é interior nas
-duas dimensões da grade.] [\textbf{Se não estender:} O ótimo é interior em
-$\kappa_1$, mas está no limite superior da grade em $\kappa_2$, de modo que
-um valor maior de $\kappa_2$ poderia ajustar melhor.]
-
-\begin{table}[htb]
+\begin{table}[H]
 \centering
-\caption{Log-verossimilhança preditiva por par $(\kappa_1,\kappa_2)$}
+\caption{Log-verossimilhança preditiva por par $(\kappa_1,\kappa_2)$ (painel principal)}
 \label{tab:grade-kappa}
 \begin{tabular}{lccc}
 \toprule
@@ -1594,97 +1508,640 @@ $\kappa_1=1{,}00$  &  $-7.694$ &  $-7.060$ &  $-6.312$ \\
 \bottomrule
 \end{tabular}
 \legend{Fonte: elaboração própria. Soma de $\ell_t$ para $t>t_0=200$. Em negrito,
-o par selecionado.}
+o par selecionado. Painel de extensão: mesmo vencedor, com log-verossimilhança de
+$-5.271$.}
 \end{table}
 
-\section{Conectividade estática do painel principal}
+% ------------------------------------------------------------------------------
+\section{Conectividade estática}
 \label{sec:res-estatica}
+% ------------------------------------------------------------------------------
 
 Com $p=2$ e $\tau=10$, o índice de conectividade total da amostra completa é
-de 52,9\%. Como o nível do índice depende do número de instituições, não é
-comparado ao de outros estudos (Seção~\ref{subsec:dy}).
+de 52,9\% no painel principal e de 55,7\% no de extensão. Como o nível do
+índice depende do número de instituições, não é comparado ao de outros estudos
+nem entre os painéis (Capítulo~\ref{cap:metodologia}).
 
 A Tabela~\ref{tab:dy} reúne TO, FROM e NET e o confronto com a segmentação do
-Banco Central, ordenado pelo TO. Os cinco primeiros do ranking de transmissão
-são exatamente os cinco bancos do S1; o ABC Brasil (S3) vem em sexto e o
-Banrisul (S2), em sétimo. O Itaú é o maior transmissor líquido ($+19{,}3$),
+Banco Central, ordenado pelo TO. No painel principal, os cinco primeiros do
+ranking de transmissão são exatamente os cinco bancos do S1; o ABC Brasil vem em
+sexto e o Banrisul, em sétimo. O Itaú é o maior transmissor líquido ($+19{,}3$),
 seguido por Bradesco ($+8{,}9$) e Banco do Brasil ($+2{,}8$). Santander e BTG,
 ambos do S1, são receptores líquidos ($-2{,}0$ e $-5{,}0$), e os maiores
 receptores são Banrisul ($-14{,}9$) e ABC Brasil ($-9{,}2$). O TO varia de 28,6 a
 81,0 e o FROM, de 43,4 a 61,7: o ranking é determinado pela transmissão. O par
 mais intenso é Itaú-Bradesco: 18,5\% da variância do Itaú vem do Bradesco e
-19,7\% da do Bradesco vem do Itaú. O Itaú é o maior transmissor líquido nas 13
-especificações de robustez, e o Banrisul, o maior receptor em 12 delas
-(Apêndice~\ref{ap:robustez}).
+19,7\% da do Bradesco vem do Itaú.
 
-\begin{table}[htb]
+No painel de extensão, os cinco primeiros do ranking são de novo os cinco do S1,
+e todos são transmissores líquidos (Itaú $+18{,}4$, BTG $+5{,}1$, Bradesco
+$+4{,}8$, Santander $+3{,}6$ e Banco do Brasil $+1{,}8$); os receptores são
+Banrisul ($-18{,}4$), ABC Brasil ($-9{,}5$) e Pan ($-5{,}8$). A posição do BTG
+muda entre os painéis, de receptor líquido (NET de $-5{,}0$ e TO de 42,4) a
+transmissor líquido (NET de $+5{,}1$ e TO de 61,2); a diferença acompanha a de
+período e a inclusão do Pan e é mais uma razão para não comparar níveis entre
+painéis. Na matriz do painel de extensão, 10,7\% da variância do Pan vem do BTG,
+e 8,4\% da do BTG vem do Pan.
+
+Nos dois painéis, a ordenação dos bancos pelo PageRank e pela centralidade de
+autovetor é idêntica à ordenação pelo FROM, como discutido na Metodologia. O
+Itaú é o maior transmissor líquido nas 13 especificações de robustez de cada
+painel, e o Banrisul, o maior receptor em 12 delas no painel principal e em 11
+no de extensão (Apêndice~\ref{ap:robustez}).
+
+\begin{table}[H]
 \centering
-\caption{Conectividade direcional e segmentação prudencial (painel principal)}
+\caption{Conectividade direcional e segmentação prudencial}
 \label{tab:dy}
+\small
 \begin{tabular}{lrrrcc}
 \toprule
-Instituição & TO & FROM & NET & Segmento BCB & Posto (TO) \\
+Instituição & TO & FROM & NET & No S1 & Posto (TO) \\
 \midrule
-ITUB4  & 80,96 & 61,70 &  19,26 & S1 & 1 \\
-BBDC4  & 69,34 & 60,47 &   8,87 & S1 & 2 \\
-BBAS3  & 59,52 & 56,67 &   2,84 & S1 & 3 \\
-SANB11 & 52,32 & 54,34 & $-2{,}01$ & S1 & 4 \\
-BPAC11 & 42,43 & 47,40 & $-4{,}96$ & S1 & 5 \\
-ABCB4  & 36,85 & 46,00 & $-9{,}15$ & S3 & 6 \\
-BRSR6  & 28,59 & 43,44 & $-14{,}85$ & S2 & 7 \\
+\multicolumn{6}{l}{\textit{Painel principal (N = 7), TCI de 52,86\%}} \\
+ITUB4  & 80,96 & 61,70 &    19,26 & sim & 1 \\
+BBDC4  & 69,34 & 60,47 &     8,87 & sim & 2 \\
+BBAS3  & 59,52 & 56,67 &     2,84 & sim & 3 \\
+SANB11 & 52,32 & 54,34 & $-2{,}01$ & sim & 4 \\
+BPAC11 & 42,43 & 47,40 & $-4{,}96$ & sim & 5 \\
+ABCB4  & 36,85 & 46,00 & $-9{,}15$ & não & 6 \\
+BRSR6  & 28,59 & 43,44 & $-14{,}85$ & não & 7 \\
+\midrule
+\multicolumn{6}{l}{\textit{Painel de extensão (N = 8), TCI de 55,71\%}} \\
+ITUB4  & 83,36 & 64,93 &    18,43 & sim & 1 \\
+BBDC4  & 67,67 & 62,85 &     4,81 & sim & 2 \\
+BBAS3  & 62,72 & 60,95 &     1,77 & sim & 3 \\
+SANB11 & 61,77 & 58,19 &     3,58 & sim & 4 \\
+BPAC11 & 61,20 & 56,13 &     5,06 & sim & 5 \\
+ABCB4  & 40,68 & 50,14 & $-9{,}46$ & não & 6 \\
+BPAN4  & 38,04 & 43,81 & $-5{,}77$ & não & 7 \\
+BRSR6  & 30,23 & 48,65 & $-18{,}42$ & não & 8 \\
 \bottomrule
 \end{tabular}
-\legend{Fonte: elaboração própria. Segmentos conforme a Resolução CMN nº 4.553/2017.}
+\legend{Fonte: elaboração própria. Enquadramento no S1 conforme a Resolução CMN
+nº 4.553/2017.}
 \end{table}
 
-As métricas recursivas ordenam os bancos como o FROM [e o TO no grafo
-invertido; correlação de postos de Spearman igual a 1, a confirmar com o
-\texttt{spearman\_centralidade.csv}], como discutido na Metodologia.
-
+% ------------------------------------------------------------------------------
 \section{Conectividade dinâmica}
 \label{sec:res-dinamica}
+% ------------------------------------------------------------------------------
 
-A Figura~\ref{fig:tci-tvpvar} mostra o TCI do TVP-VAR. [As primeiras 200
-observações, usadas como treino, não são mostradas: o \textit{prior} usa a
-amostra completa, e o índice inicial coincide com o estático.] Entre 2019 e
-fevereiro de 2020, o índice oscila em torno de 43,1\%, com mínimo de 32,9\% em
-13/02/2020. A pandemia inaugura um regime distinto: o TCI vai de 46,0\% em
-06/03/2020 para 53,1\% em 09/03, 63,8\% em 12/03 e 68,2\% em 13/03, e supera
-70\% a partir de 24/03. Ele não volta a cair em seguida: de abril de 2020 a
-meados de março de 2021 permanece entre 70,8\% e 74,9\% (média de 73,2\%), com
-máximo de 74,9\% em 16/06/2020, cerca de 30 pontos percentuais acima do nível
-anterior. O declínio é gradual, com o índice abaixo de 60\% só em 10/08/2021 e
-abaixo de 50\% em 20/05/2022, e a mínima de 33,7\% em 20/02/2024.
+A Figura~\ref{fig:tci-tvpvar} mostra o TCI do TVP-VAR do painel principal, e a
+Tabela~\ref{tab:eventos} reúne os eventos do período, com data e fonte. A
+série completa é exibida, mas as primeiras 200 observações, até 27/07/2018,
+usadas como treino na seleção dos fatores, devem ser lidas com cautela: o
+\textit{prior} usa a amostra completa, e o índice inicial (52,9\%) coincide com
+o estático. Entre 2019 e fevereiro de 2020, o índice oscila em torno de 43,1\%,
+com mínimo de 32,9\% em 13/02/2020. A pandemia inaugura um regime distinto: o TCI
+vai de 46,0\% em 06/03/2020 para 53,1\% em 09/03, 63,8\% em 12/03 e 68,2\% em
+13/03, e supera 70\% a partir de 24/03. Ele não volta a cair em seguida: de abril
+de 2020 a meados de março de 2021 permanece entre 70,8\% e 74,9\% (média de
+73,2\%), com máximo de 74,9\% em 16/06/2020, cerca de 30 pontos percentuais
+acima do nível anterior. O declínio é gradual, com o índice abaixo de 60\% só em
+10/08/2021 e abaixo de 50\% em 20/05/2022, e a mínima de 33,7\% em 20/02/2024.
 
-Os demais episódios são de outra ordem. O início do aperto monetário, em
-17/03/2021, não coincide com uma elevação: o TCI está em 72,1\% nessa data e
-desce para 60,7\% em junho. O episódio Americanas é precedido por uma subida
-que começa antes dele: o índice vai de 38,1\% em 30/09/2022 a 53,0\% em
-20/12/2022 e está em 51,0\% em 12/01/2023. Em outubro de 2024, o TCI está em
-47,9\%, a mesma faixa dos 15 meses seguintes (média de 48,1\%), depois de ter
-subido de 33,7\% em fevereiro do mesmo ano. A única elevação posterior à
-pandemia com magnitude comparável é a de 2026: o índice parte de 43,3\% em
-27/02, atinge 58,7\% em 10/04, permanece acima de 55\% até 31/07 e termina a
-amostra em 53,3\%. A média de abril a julho (56,8\%) supera em cerca de 9
-pontos percentuais a de 2025 (48,0\%), mas fica 16 pontos abaixo do pico de
-2020. A hipótese de elevação em períodos de instabilidade se sustenta, assim,
-com clareza para a pandemia e, em menor grau, para 2022--2023 e 2026, mas não
-para o aperto da Selic nem para o estresse fiscal de 2024.
+Os demais episódios da Tabela~\ref{tab:eventos} são de outra ordem. O início do
+aperto monetário, em 17/03/2021, não coincide com uma elevação: o TCI está em
+72,1\% nessa data e desce para 60,7\% em junho. A divulgação das inconsistências
+contábeis da Americanas, em 11/01/2023, é precedida por uma subida: o índice vai
+de 38,1\% em 30/09/2022 a 53,0\% em 20/12/2022 e está em 50,9\% na data do fato
+relevante e em 50,5\% vinte pregões depois. O anúncio do pacote fiscal, em
+27/11/2024, também não produz salto: o TCI está em 47,5\% nessa data, na mesma
+faixa dos 15 meses seguintes (média de 48,1\% de outubro de 2024 a dezembro de
+2025), depois de ter subido de 33,7\% em fevereiro do mesmo ano.
 
-\begin{figure}[htb]
+Em 2026, o índice parte de 43,3\% em 27/02, sobe em degrau de 53,7\% para 57,5\%
+em 08/04, atinge 58,7\% em 10/04 e permanece acima de 55\% até 31/07; recua para
+53,2\% em agosto e 52,5\% em setembro e termina a amostra em 53,3\%. Comparam-se
+três níveis: a média de 2025 (48,0\%), a de abril e maio de 2026 (56,5\%) e o
+platô da pandemia (73,2\%). A elevação de 2026 sobre 2025 é de 8,5 pontos
+percentuais, contra 30,1 da pandemia sobre o nível anterior (73,2\% contra
+43,1\%), isto é, cerca de 28\% dela, e o pico de 2026 fica 16 pontos abaixo do de
+2020. Por isso a elevação de 2026 é descrita como elevação da conectividade no
+fim da amostra, e não como um regime no mesmo plano da pandemia. A causa não foi
+identificada: não foi localizada fonte que registre, na data do degrau, evento
+que a explique. A hipótese de elevação em períodos de instabilidade se sustenta,
+assim, com clareza para a pandemia e apenas em parte para 2022--2023; a elevação
+de 2026 é menor e sem causa identificada, e a hipótese não se sustenta para o
+aperto da Selic nem para o pacote fiscal de 2024.
+
+\begin{table}[H]
+\centering
+\caption{Cronologia de eventos do período e nível do TCI}
+\label{tab:eventos}
+\small
+\begin{tabular}{lp{5.4cm}cp{3.2cm}}
+\toprule
+Data & Evento & TCI ($-20$ / 0 / $+20$) & Fonte \\
+\midrule
+11/03/2020 & A OMS caracteriza a COVID-19 como pandemia
+  & 32,9 / 57,4 / 72,5 & \parencite{who2020} \\
+17/03/2021 & O Copom eleva a Selic de 2,00\% para 2,75\% a.a., primeira alta desde 2015
+  & 71,1 / 72,1 / 67,7 & \parencite{reuters2021copom} \\
+11/01/2023 & A Americanas divulga inconsistências contábeis estimadas em R\$~20
+  bilhões; as ações caem mais de 70\% em 12/01
+  & 50,7 / 50,9 / 50,5 & \parencite{americanas2023, poder3602023} \\
+27/11/2024 & O governo anuncia pacote de contenção de gastos (R\$~70 bilhões em dois
+  anos) e isenção do IR até R\$~5 mil; o dólar ultrapassa R\$~6,00 pela primeira
+  vez em 28/11 e fecha a R\$~5,98
+  & 50,4 / 47,5 / 47,0 & \parencite{dgabc2024, sul212024} \\
+13/10/2025 & O BTG Pactual divulga, à noite, fato relevante com a proposta de
+  incorporação das ações do Banco Pan & -- & \parencite{btg2025} \\
+09/12/2025 & Os acionistas do Pan aprovam a incorporação em assembleia
+  & -- & \parencite{moneytimes2025} \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. TCI do TVP-VAR do painel principal, 20 pregões
+antes, na data e 20 pregões depois. A elevação de abril de 2026 não consta da
+tabela porque sua causa não foi identificada.}
+\end{table}
+
+\begin{figure}[H]
   \centering
-  \caption{Índice de conectividade total: TVP-VAR}
+  \caption{Índice de conectividade total: TVP-VAR (painel principal)}
   \label{fig:tci-tvpvar}
   \includegraphics[width=\textwidth]{figuras/tci_tvpvar.png}
   \legend{Fonte: elaboração própria. $\kappa_1=0{,}995$, $\kappa_2=0{,}99$, $\tau=10$.
   Linhas tracejadas: eventos da Tabela~\ref{tab:eventos}.}
 \end{figure}
 
-% As seções 6 (regressão diádica) e 7 (vínculo BTG--Pan) dependem dos dois painéis.
-% Considerações finais ao fim do capítulo.
+% ------------------------------------------------------------------------------
+\section{Regressão diádica}
+\label{sec:res-diadica}
+% ------------------------------------------------------------------------------
+
+A Tabela~\ref{tab:diadica-agregada} apresenta a regressão da
+Equação~\eqref{eq:diadica} sobre a matriz da amostra completa. No painel
+principal, a indicadora de mesma natureza de controle (estatal ou privada) tem
+coeficiente de 1,43 ponto percentual ($p=0{,}021$), e a de ambos de grande porte,
+de 3,29 ($p=0{,}046$). No painel de extensão, os coeficientes são de 0,80
+($p=0{,}041$) e 3,92 ($p=0{,}002$), e o vínculo societário BTG--Pan soma 5,92
+pontos percentuais ($p<0{,}001$) além do que natureza de controle e porte
+explicam. Como a amostra tem apenas dois bancos estatais, a indicadora de
+natureza de controle é identificada exclusivamente pelo par Banco do Brasil e
+Banrisul. A Tabela~\ref{tab:diadica-par} separa o efeito de pares específicos: o
+par Itaú-Bradesco troca 6,00 (painel principal) e 5,34 (extensão) pontos
+percentuais a mais de variância do que a propensão geral de cada banco prevê
+($p<0{,}001$), o par Banco do Brasil-Banrisul, 2,20 ($p=0{,}029$) e 1,13
+($p=0{,}075$), e o par ABC Brasil-Santander, $-1{,}33$ ($p=0{,}42$) e $-1{,}22$
+($p=0{,}23$). Com os pares incluídos, o efeito de ambos de grande porte é de 2,29
+($p=0{,}14$) no painel principal e de 3,10 ($p=0{,}004$) no de extensão. O
+resultado de corte único tem baixa precisão, porque cada indicadora de par se
+apoia em duas observações.
+
+\begin{table}[H]
+\centering
+\caption{Regressão diádica, corte único: indicadoras agregadas}
+\label{tab:diadica-agregada}
+\small
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{N = 7} & \multicolumn{2}{c}{N = 8} \\
+Indicadora & Coef. (EP) & $p$ & Coef. (EP) & $p$ \\
+\midrule
+Mesma natureza de controle     & 1,43 (0,58) & 0,021 & 0,80 (0,38) & 0,041 \\
+Ambos de grande porte          & 3,29 (1,57) & 0,046 & 3,92 (1,15) & 0,002 \\
+Vínculo societário (BTG e Pan) & --          & --    & 5,92 (1,17) & $<0{,}001$ \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. Efeitos fixos de emissor e de receptor;
+erros-padrão clusterizados por par não dirigido.}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Regressão diádica, corte único: indicadoras por par específico}
+\label{tab:diadica-par}
+\small
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{N = 7} & \multicolumn{2}{c}{N = 8} \\
+Indicadora & Coef. (EP) & $p$ & Coef. (EP) & $p$ \\
+\midrule
+Itaú e Bradesco            & 6,00 (1,15) & $<0{,}001$ & 5,34 (0,85) & $<0{,}001$ \\
+Banco do Brasil e Banrisul & 2,20 (0,95) & 0,029 & 1,13 (0,62) & 0,075 \\
+ABC Brasil e Santander     & $-1{,}33$ (1,64) & 0,425 & $-1{,}22$ (0,99) & 0,227 \\
+BTG e Pan                  & --          & --    & 5,46 (0,94) & $<0{,}001$ \\
+Ambos de grande porte      & 2,29 (1,49) & 0,138 & 3,10 (1,01) & 0,004 \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria.}
+\end{table}
+
+A Tabela~\ref{tab:diadica-temporal} reestima a regressão ao fim de cada mês, com a
+matriz do TVP-VAR (108 cortes no painel principal e 82 no de extensão). No painel
+principal, o par Itaú-Bradesco tem sinal positivo em todos os cortes (média de
+6,68 pontos percentuais), o par Banco do Brasil-Banrisul em 82 de 108 (média de
+1,99), a indicadora de ambos de grande porte em 93 de 108 (média de 2,25), e o par
+ABC Brasil-Santander é negativo em 78 de 108 (média de $-1{,}08$). No painel de
+extensão, os mesmos sinais aparecem: Itaú-Bradesco e ambos de grande porte
+positivos em todos os 82 cortes (médias de 5,94 e 2,94), BTG--Pan em 76 de 82
+(4,89), Banco do Brasil-Banrisul em 52 de 82 (1,27) e ABC Brasil-Santander
+negativo em 61 de 82 ($-0{,}87$). Os coeficientes de meses vizinhos são quase iguais, porque o TVP-VAR é suave; o teste
+$t$ da média, que trata os cortes como independentes, superestima a evidência e é
+reportado apenas como referência. A evidência principal é a proporção de cortes com
+o mesmo sinal.
+
+\begin{table}[H]
+\centering
+\caption{Regressão diádica por par específico: cortes mensais do TVP-VAR}
+\label{tab:diadica-temporal}
+\small
+\begin{tabular}{lccc}
+\toprule
+Indicadora & Média & Positivos & $t$ \\
+\midrule
+\multicolumn{4}{l}{\textit{Painel principal (N = 7), 108 cortes}} \\
+Itaú e Bradesco            & 6,68 & 108/108 & 19,95 \\
+Banco do Brasil e Banrisul & 1,99 &  82/108 &  8,74 \\
+ABC Brasil e Santander     & $-1{,}08$ & 30/108 & $-5{,}43$ \\
+Ambos de grande porte      & 2,25 &  93/108 & 10,32 \\
+\midrule
+\multicolumn{4}{l}{\textit{Painel de extensão (N = 8), 82 cortes}} \\
+Itaú e Bradesco            & 5,94 &  82/82 & 19,62 \\
+BTG e Pan                  & 4,89 &  76/82 & 12,77 \\
+Banco do Brasil e Banrisul & 1,27 &  52/82 &  5,27 \\
+ABC Brasil e Santander     & $-0{,}87$ & 21/82 & $-4{,}30$ \\
+Ambos de grande porte      & 2,94 &  82/82 & 22,32 \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. $t$ da média dos coeficientes mensais contra zero,
+sem correção de autocorrelação.}
+\end{table}
+
+Três padrões se repetem nos dois painéis. Primeiro, os dois maiores bancos
+privados trocam mais risco entre si do que o porte e a propensão geral de cada um
+explicam, sem que haja vínculo de controle entre eles; o mecanismo compatível é a
+proximidade de modelo de negócio e de exposição a choques comuns. Segundo, os dois
+bancos estatais também têm coeficiente positivo, em magnitude menor e com
+evidência mais frágil no painel de extensão ($p=0{,}075$ no corte único e 52 de 82
+cortes positivos). Terceiro, o par classificado sob a etiqueta nominal de privado
+estrangeiro, ABC Brasil e Santander, não apresenta conectividade adicional: o
+coeficiente é negativo na média e na maior parte dos cortes, mas não se distingue
+de zero no corte único. Compartilhar um rótulo de classificação não produz, por si só,
+comovimento. O vínculo BTG--Pan é tratado na Seção~\ref{sec:btg-pan}.
+
+% ------------------------------------------------------------------------------
+\section{O vínculo societário BTG--Pan}
+\label{sec:btg-pan}
+% ------------------------------------------------------------------------------
+ 
+A hipótese de que o vínculo de controle societário produz comovimento de
+volatilidade além do que a propensão geral de cada banco prevê não pode ser
+testada no painel principal, pela razão evidente de que nele não há nenhum par de
+instituições ligadas por controle. Recorre-se, por isso, ao painel de extensão,
+único em que o par BTG Pactual e Banco Pan está presente. A restrição não decorre
+de escolha metodológica, e sim do fato de que, no sistema bancário brasileiro
+listado, esse é o único vínculo dessa natureza disponível no período.
+ 
+No corte único (Tabela~\ref{tab:diadica-par}), o par BTG--Pan tem o maior
+coeficiente da tabela, 5,46 pontos percentuais ($p<0{,}001$), seguido de perto
+pelo par Itaú-Bradesco (5,34). Na especificação agregada
+(Tabela~\ref{tab:diadica-agregada}), a indicadora de vínculo soma 5,92 pontos
+percentuais além do que a natureza de controle e o porte explicam. O par
+classificado apenas sob a etiqueta nominal de privado estrangeiro, ABC Brasil e
+Santander, duas instituições sem proximidade de porte ou de modelo de negócio, não
+se distingue de zero ($-1{,}22$; $p=0{,}23$). A leitura não se resume, porém, a
+vínculo societário organiza a rede e categoria nominal não. O par Itaú-Bradesco,
+os dois maiores bancos privados nacionais e sem vínculo de controle entre si,
+também tem coeficiente elevado, e a diferença para o do par BTG--Pan, de 0,12
+ponto percentual, é pequena frente aos erros-padrão (0,94 e 0,85). Como a regressão
+já controla pelo efeito de ambos serem instituições de grande porte (3,10 ponto
+percentual, $p=0{,}004$), o coeficiente de Itaú-Bradesco representa um comovimento
+adicional, específico do par, que não é explicado nem pela propensão geral de cada
+banco a transmitir e receber risco, nem pelo porte. Duas explicações são
+compatíveis com os dados: o vínculo de controle societário, no caso do par
+BTG--Pan, e a proximidade de modelo de negócio e de exposição a choques
+regulatórios e macroeconômicos comuns aos dois maiores bancos de varejo do país,
+no caso do par Itaú-Bradesco, mecanismos distintos mas igualmente capazes de gerar
+comovimento além do que porte e propensão geral já explicam. Os dados não permitem
+distinguir entre as duas hipóteses para o par Itaú-Bradesco, na ausência de um
+vínculo de controle a testar. O achado central permanece: o controle societário é
+suficiente para gerar comovimento da mesma ordem de grandeza que a maior
+proximidade de porte e de modelo de negócio da amostra, mas não é o único
+mecanismo capaz de fazê-lo.
+ 
+A robustez do resultado não depende de um único corte (Tabela~\ref{tab:diadica-temporal}).
+O coeficiente do par BTG--Pan é positivo em 76 dos 82 cortes mensais (93\%), com
+média de 4,89 pontos percentuais ($t$ de 12,77). Os seis
+cortes negativos estão entre agosto de 2023 e abril de 2025 (agosto e setembro de
+2023, março de 2024 e fevereiro a abril de 2025).
+ 
+A Figura~\ref{fig:coef-btgpan-tempo} e as Tabelas~\ref{tab:btgpan-anual} e~\ref{tab:btgpan-regime}
+mostram a evolução do coeficiente. O BTG Pactual assumiu o controle pleno do Banco Pan em maio de
+2021, ao adquirir a totalidade da participação até então detida pela Caixa Econômica Federal e
+encerrar o controle compartilhado que mantinha desde 2011
+\footnote{BANCO PAN. \textit{Nossa História}. Relações com Investidores,
+2021. Disponível em:
+\url{https://ri.bancopan.com.br/show.aspx?idCanal=98FuehC2XKrWRMgsqA5Tpw==&linguagem=pt}.
+Acesso em: 21/09/2026.}.
+Em junho de 2020, o BTG já detinha 41,52\% do capital total do Pan (50,81\% das ordinárias e 30,35\%
+das preferenciais), sem mudança no controle nem no acordo de acionistas \parencite{pan2020comunicado}.
+Sob controle compartilhado (janeiro de 2019 a abril de 2021), o coeficiente é positivo nos 28
+cortes, com média de 6,31 pontos percentuais. Sob controle integral (maio de 2021 a outubro de
+2025), a média é de 4,14, mas a série se divide em dois períodos: de maio de 2021 a dezembro de
+2022, a média é de 8,52, com máximo de 13,65 em 30/06/2022; de janeiro de 2023 a outubro de 2025,
+é de 1,57, e os seis cortes negativos da amostra, todos nesse período, ficam entre agosto de 2023
+e abril de 2025. O comovimento específico do par é, assim, menor de 2023 em diante, justamente
+quando o BTG tem o controle integral há mais tempo, o oposto do que o mecanismo proposto sugeriria,
+e é maior em 2021--2022 sob o mesmo controle. A trajetória não segue, portanto, a cronologia do
+controle. O resultado de média, que é robusto (coeficiente positivo em 76 dos 82 cortes), sustenta
+a conclusão da seção; a variação no tempo fica como achado em aberto, e nenhuma explicação para
+ela é proposta aqui, porque não foi testada. Dentro de 2025, o coeficiente vai de $-1{,}07$ em 31/03
+a 3,27 no último corte, em 13/10/2025; como a amostra termina nesse pregão, antes de o BTG divulgar,
+na noite do mesmo dia, o fato relevante da proposta de incorporação \parencite{btg2025}, o painel
+não permite observar o que ocorre depois.
+ 
+\begin{table}[H]
+\centering
+\caption{Coeficiente BTG--Pan: média anual dos cortes mensais}
+\label{tab:btgpan-anual}
+\begin{tabular}{lcc}
+\toprule
+Ano & Coeficiente médio (p.p.) & Cortes \\
+\midrule
+2019 & 6,98 & 12 \\
+2020 & 5,45 & 12 \\
+2021 & 6,94 & 12 \\
+2022 & 9,57 & 12 \\
+2023 & 2,06 & 12 \\
+2024 & 1,50 & 12 \\
+2025 & 1,07 & 10 \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. A média de 2019 inclui nove cortes do período
+de treino do filtro.}
+\end{table}
+ 
+\begin{table}[H]
+\centering
+\caption{Coeficiente BTG--Pan por regime de controle do BTG sobre o Pan}
+\label{tab:btgpan-regime}
+\small
+\begin{tabular}{p{6.4cm}cccc}
+\toprule
+Período & Cortes & Média (p.p.) & Mínimo & Positivos \\
+\midrule
+Controle compartilhado (jan/2019 a abr/2021) & 28 & 6,31 & 3,42 & 28/28 \\
+Controle integral (mai/2021 a out/2025)      & 54 & 4,14 & $-1{,}07$ & 48/54 \\
+\quad mai/2021 a dez/2022                    & 20 & 8,52 & 5,01 & 20/20 \\
+\quad jan/2023 a out/2025                    & 34 & 1,57 & $-1{,}07$ & 28/34 \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. O controle integral começa em maio de 2021, com a compra da
+participação da Caixa. Os 28 cortes do primeiro período incluem os nove do período de treino do
+filtro; sem eles, a média é de 6,20 (19 cortes).}
+\end{table}
+ 
+\begin{figure}[H]
+  \centering
+  \caption{Coeficiente da regressão diádica: BTG--Pan}
+  \label{fig:coef-btgpan-tempo}
+  \includegraphics[width=\textwidth]{figuras/coef_btgpan_temporal.png}
+  \legend{Fonte: elaboração própria. Coeficiente por corte mensal, com efeitos
+  fixos de emissor e de receptor.}
+\end{figure}
+ 
+O desfecho de outubro de 2025 traz uma evidência adicional, de outra natureza. O fato
+relevante do BTG com a proposta de incorporação é de 13/10/2025, à noite
+\parencite{btg2025}. No pregão seguinte, 14/10, o Pan sobe 26,5\% (retorno logarítmico de
+23,5\%) e o BTG cai 1,9\%, e a razão entre os preços de fechamento de BPAN4 e BPAC11 passa de
+0,163 para 0,210, a 1,4\% da relação de troca de 0,2128 \textit{unit} do BTG por ação preferencial
+do Pan. Daí até 23/01/2026, a razão fica, em média, a 0,05\% dessa relação e a menos de 2\% dela em
+68 dos 69 pregões. O mercado tratou, portanto, a operação como certa desde o primeiro pregão
+posterior à divulgação.
+ 
+A correlação dos retornos diários confirma o diagnóstico. Ela é de 0,39 nos 69 pregões anteriores
+ao anúncio e de 0,43 nos 69 posteriores, mas de 0,97 quando se exclui o dia 14/10, em que o salto do
+Pan não tem contrapartida no BTG; nos nove pregões entre 15/10 e 27/10, é de 0,95. A correlação móvel
+de 10 pregões reflete esse dia, e não um evento posterior: é negativa (entre $-0{,}28$ e $-0{,}11$)
+enquanto o dia 14/10 está na janela e salta de $-0{,}25$ em 27/10 para 0,94 em 28/10, dia em que ele a
+deixa. A série de 30 pregões da Figura~\ref{fig:corr-btgpan} tem o mesmo comportamento, com o salto em
+26/11. As datas de 28/10 e 26/11 são, portanto, artefatos da janela móvel, o mesmo efeito que desloca o
+pico da pandemia no Apêndice~\ref{ap:janela}. Nos últimos 10, 20, 30, 40, 50 e 60 pregões disponíveis
+(até 23/01/2026, perto da deslistagem), a correlação é de 0,96, 0,95, 0,97, 0,98, 0,98 e 0,97.
+ 
+\begin{figure}[H]
+  \centering
+  \caption{Correlação móvel de retornos: BPAN4 e BPAC11}
+  \label{fig:corr-btgpan}
+  \includegraphics[width=\textwidth]{figuras/corr_bpan4_bpac11_rolling.png}
+  \legend{Fonte: elaboração própria. Janela de 30 dias. Linha tracejada: 14/10/2025,
+  primeiro pregão após o fato relevante de 13/10/2025. O salto de 26/11 é o dia em que o
+  pregão de 14/10 deixa a janela.}
+\end{figure}
+ 
+A operação cumpre dois papéis na seção. Primeiro, explica por que o painel de extensão se
+encerra em 13/10/2025. Desde o primeiro pregão posterior à proposta, o preço do Pan fica preso à
+relação de troca e a correlação com o BTG passa a 0,97, de modo que as duas séries deixam de ser
+distinguíveis para fins de decomposição de variância, e a decomposição entre elas deixaria de ser
+informativa se estendida além desse ponto. Segundo, a convergência é compatível com a arbitragem sob
+relação de troca fixa, que decorre dos termos da operação anunciada. Ela mostra que o mercado tratou a
+fusão como certa desde o primeiro pregão, mas não distingue o efeito do vínculo de controle do efeito
+dessa arbitragem e não resolve a variação do coeficiente ao longo do tempo, que permanece em aberto.
+ 
+O resultado desta seção não é levado ao painel principal de sete instituições
+porque o vínculo societário se encerrou no mundo real com a incorporação. Em
+contrapartida, é o painel principal que permite alcançar a elevação da conectividade de
+2026, fora do alcance do painel de extensão.
+
+% ------------------------------------------------------------------------------
+\section{Considerações finais}
+\label{sec:consideracoes}
+% ------------------------------------------------------------------------------
+
+Este trabalho mediu a rede de spillovers de volatilidade entre os principais
+bancos brasileiros listados, em sete instituições de 2017 a 2026 (painel
+principal) e em oito de 2019 a outubro de 2025 (painel de extensão), a partir de um
+estimador de volatilidade de um dia (Rogers-Satchell com termo \textit{overnight}),
+do VAR com decomposição generalizada da variância e de um TVP-VAR com fatores de
+esquecimento selecionados por verossimilhança preditiva.
+
+A conectividade é alta e varia ao longo do tempo. O TCI estático é de 52,9\% no
+painel principal e de 55,7\% no de extensão. No TVP-VAR, o índice passa de uma média
+de 43,1\% antes da pandemia para um patamar de cerca de 73\% que se mantém de abril
+de 2020 a março de 2021, desce gradualmente até 33,7\% em fevereiro de 2024 e volta a
+subir em 2026, em uma elevação de 8,5 pontos percentuais sobre a média de 2025 (até
+58,7\% em abril), cerca de 28\% da elevação da pandemia e sem causa identificada. A
+hipótese de elevação em períodos de instabilidade se sustenta com clareza para a
+pandemia e apenas em parte para 2022--2023, mas não para o aperto da Selic nem para
+o pacote fiscal de 2024. A janela rolante data o pico da pandemia
+entre 30/09/2020 e 08/02/2021, conforme a largura da janela, contra 16/06/2020 no
+TVP-VAR, o que justifica a escolha do segundo.
+
+A estrutura é heterogênea. O ranking de transmissão (TO) coloca os cinco bancos do
+S1 nas cinco primeiras posições nos dois painéis; o Itaú é o maior transmissor
+líquido em todas as 13 especificações de robustez de cada painel, e o Banrisul, o
+maior receptor líquido na maioria delas. No painel principal, Santander e BTG, do S1,
+são receptores líquidos, o que mostra que o S1, definido por porte e atividade
+internacional, aproxima o ranking de transmissão, mas não o reproduz. A regressão
+diádica mostra que o par Itaú-Bradesco troca mais risco do que o porte e a propensão
+de cada banco explicam, que o par Banco do Brasil-Banrisul também o faz, em menor
+magnitude, e que a etiqueta nominal de controle estrangeiro não produz conectividade
+adicional. No painel de extensão, o par BTG--Pan, ligado por controle societário, tem
+coeficiente positivo em 76 dos 82 cortes mensais e magnitude semelhante à do par
+Itaú-Bradesco; a convergência dos dois papéis ao fim do processo de incorporação
+confirma o mecanismo.
+
+Os resultados têm limites. O nível do TCI depende do número de instituições (17,6\%,
+37,8\%, 48,6\% e 52,9\% com 2, 4, 6 e 7 bancos) e por isso não é comparado ao de outros
+estudos nem entre os painéis. As métricas de centralidade recursiva ordenam os bancos
+como o FROM e não acrescentam informação nesta amostra. O \textit{prior} do TVP-VAR
+final usa a amostra completa, e a seleção dos fatores usa os 200 primeiros pregões
+como treino; o ótimo de $\kappa_2$ está no limite da grade. A indicadora de mesma
+natureza de controle é identificada apenas pelo par Banco do Brasil-Banrisul. O VAR
+em níveis é uma aproximação de memória curta a séries de memória longa ($\hat{d}$
+entre 0,47 e 0,68). Os resultados descrevem associações, não causas: a elevação de 2026 não tem
+causa identificada, e a data de início da convergência entre BPAN4 e
+BPAC11 não coincide com um fato relevante identificado.
+
+Duas extensões seguem naturalmente. A primeira é ampliar a amostra, com mais
+instituições e dados não públicos, para testar se a heterogeneidade por controle e
+por porte se mantém quando há mais pares do mesmo tipo e mais de um vínculo
+societário. A segunda é estimar o modelo no domínio da frequência e nos quantis,
+extensões da literatura descartadas aqui por exigirem amostras e horizontes maiores,
+para verificar se a transmissão nas caudas segue a mesma hierarquia.
+
+% ==============================================================================
+% APÊNDICES
+% ==============================================================================
 
 \appendix
+
 \chapter{Janela rolante}
+\label{ap:janela}
+
+A Figura~\ref{fig:janelas} compara o TCI do painel principal estimado por janela
+rolante com $W=150$, 200 e 250. O pico do período da pandemia é datado em
+30/09/2020 (77,9\%), 16/10/2020 (76,8\%) e 08/02/2021 (75,8\%), respectivamente, ou
+seja, desloca-se 131 dias com a largura da janela, enquanto o do TVP-VAR é de
+16/06/2020. O índice cai de 6,3 a 6,9 pontos percentuais nos 20 pregões em torno
+das datas em que o colapso de março sai de cada janela (27/10/2020, 12/01/2021 e
+26/03/2021), e passa a menos de 60\% em 06/01/2021, 22/03/2021 e 12/05/2021, contra
+10/08/2021 no TVP-VAR. O nível e a dispersão são parecidos (TCI médio de 44,1\%,
+44,0\% e 44,2\%; desvio-padrão de 12,9 a 13,7), e as séries são correlacionadas
+(0,95 entre 150 e 200, 0,90 entre 150 e 250 e 0,96 entre 200 e 250), mas o degrau
+acompanha $W$, e não o evento. No painel de extensão, os valores são análogos (TCI
+médio de 45,1\%, 45,3\% e 46,0\%; correlações de 0,95, 0,90 e 0,96). O episódio de
+2026 também depende de $W$: o máximo é de 58,3\% em 28/09/2026 com $W=150$, de 51,8\%
+em 24/07/2026 com $W=200$ e de 48,1\% em 30/09/2026 com $W=250$. Por isso a janela
+rolante não é usada como especificação principal.
+
+\begin{figure}[H]
+  \centering
+  \caption{Índice de conectividade total por janela rolante (painel principal)}
+  \label{fig:janelas}
+  \includegraphics[width=\textwidth]{figuras/tci_comparacao_janelas.png}
+  \legend{Fonte: elaboração própria. Linhas verticais: data em que o colapso de
+  março de 2020 sai de cada janela.}
+\end{figure}
+
+\chapter{Robustez}
+\label{ap:robustez}
+
+A Tabela~\ref{tab:robustez} reporta o TCI sob variações do número de defasagens, do
+horizonte da decomposição, dos fatores de esquecimento e da subamostra. O nível do
+índice varia com a especificação: cai com $p$ (de 53,9\% a 49,3\% no painel principal e
+de 57,4\% a 50,4\% no de extensão, entre $p=1$ e $p=4$) e sobe com o horizonte. A
+identidade dos extremos, porém, não depende dela. O Itaú é o maior transmissor líquido
+nas 13 especificações de cada painel. O Banrisul é o maior receptor líquido em 12 delas
+no painel principal e em 11 no de extensão; as exceções são o ABC Brasil na segunda
+metade da amostra, nos dois painéis, e o Pan na primeira metade, no painel de
+extensão.
+
+A sensibilidade aos fatores de esquecimento é avaliada no par selecionado,
+$(\kappa_1, \kappa_2) = (0{,}995;\ 0{,}99)$, e nos pares vizinhos na grade,
+$(0{,}99;\ 0{,}99)$ e $(0{,}995;\ 0{,}96)$. A escolha dos vizinhos segue um critério
+de proximidade na grade, e não a ordenação por peso posterior, uma vez que, fora dos
+dois primeiros pares, todos os pesos são numericamente nulos. O TCI médio varia, em
+relação ao par selecionado, 0,9 e 0,4 ponto percentual no painel principal e 0,4 e 0,6
+no de extensão.
+
+\begin{table}[H]
+\centering
+\caption{TCI por especificação}
+\label{tab:robustez}
+\small
+\begin{tabular}{llcc}
+\toprule
+Variação & Especificação & Principal & Extensão \\
+\midrule
+Defasagens ($\tau=10$) & $p=1$ & 53,85 & 57,43 \\
+                       & $p=2$ & 52,86 & 55,71 \\
+                       & $p=3$ & 51,05 & 53,13 \\
+                       & $p=4$ & 49,33 & 50,44 \\
+\midrule
+Horizonte ($p=2$) & $\tau=5$  & 50,17 & 51,72 \\
+                  & $\tau=10$ & 52,86 & 55,71 \\
+                  & $\tau=15$ & 53,24 & 56,54 \\
+                  & $\tau=20$ & 53,30 & 56,73 \\
+\midrule
+Fatores (TCI médio do TVP-VAR) & $(0{,}995;\ 0{,}99)$ & 50,44 & 52,83 \\
+                               & $(0{,}99;\ 0{,}99)$  & 49,55 & 52,40 \\
+                               & $(0{,}995;\ 0{,}96)$ & 50,07 & 52,20 \\
+\midrule
+Subamostra & Primeira metade & 56,60 & 60,91 \\
+           & Segunda metade  & 39,19 & 38,09 \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. Subamostras: 03/10/2017 a 11/04/2022 e 12/04/2022
+a 30/09/2026 (painel principal); 03/01/2019 a 27/05/2022 e 30/05/2022 a 13/10/2025
+(painel de extensão).}
+\end{table}
+\label{ap:robustez}
+ 
+A Tabela~\ref{tab:robustez} reporta o TCI sob variações do número de defasagens, do
+horizonte da decomposição, dos fatores de esquecimento e da subamostra. O nível do
+índice varia com a especificação: cai com $p$ (de 53,9\% a 49,3\% no painel principal e
+de 57,4\% a 50,4\% no de extensão, entre $p=1$ e $p=4$) e sobe com o horizonte. A
+identidade dos extremos, porém, não depende dela. O Itaú é o maior transmissor líquido
+nas 13 especificações de cada painel. O Banrisul é o maior receptor líquido em 12 delas
+no painel principal e em 11 no de extensão; as exceções são o ABC Brasil na segunda
+metade da amostra, nos dois painéis, e o Pan na primeira metade, no painel de
+extensão.
+ 
+A sensibilidade aos fatores de esquecimento é avaliada no par selecionado,
+$(\kappa_1, \kappa_2) = (0{,}995;\ 0{,}99)$, e nos pares vizinhos na grade,
+$(0{,}99;\ 0{,}99)$ e $(0{,}995;\ 0{,}96)$. A escolha dos vizinhos segue um critério
+de proximidade na grade, e não a ordenação por peso posterior, uma vez que, fora dos
+dois primeiros pares, todos os pesos são numericamente nulos. O TCI médio varia, em
+relação ao par selecionado, 0,9 e 0,4 ponto percentual no painel principal e 0,4 e 0,6
+no de extensão.
+ 
+\begin{table}[htb]
+\centering
+\caption{TCI por especificação}
+\label{tab:robustez}
+\small
+\begin{tabular}{llcc}
+\toprule
+Variação & Especificação & Principal & Extensão \\
+\midrule
+Defasagens ($\tau=10$) & $p=1$ & 53,85 & 57,43 \\
+                       & $p=2$ & 52,86 & 55,71 \\
+                       & $p=3$ & 51,05 & 53,13 \\
+                       & $p=4$ & 49,33 & 50,44 \\
+\midrule
+Horizonte ($p=2$) & $\tau=5$  & 50,17 & 51,72 \\
+                  & $\tau=10$ & 52,86 & 55,71 \\
+                  & $\tau=15$ & 53,24 & 56,54 \\
+                  & $\tau=20$ & 53,30 & 56,73 \\
+\midrule
+Fatores (TCI médio do TVP-VAR) & $(0{,}995;\ 0{,}99)$ & 50,44 & 52,83 \\
+                               & $(0{,}99;\ 0{,}99)$  & 49,55 & 52,40 \\
+                               & $(0{,}995;\ 0{,}96)$ & 50,07 & 52,20 \\
+\midrule
+Subamostra & Primeira metade & 56,60 & 60,91 \\
+           & Segunda metade  & 39,19 & 38,09 \\
+\bottomrule
+\end{tabular}
+\legend{Fonte: elaboração própria. Subamostras: 03/10/2017 a 11/04/2022 e 12/04/2022
+a 30/09/2026 (painel principal); 03/01/2019 a 27/05/2022 e 30/05/2022 a 13/10/2025
+(painel de extensão).}
+\end{table}
+\label{cap:resultados}
+
 \label{ap:janela}
 
 A Figura~\ref{fig:janelas} compara o TCI estimado por janela rolante com

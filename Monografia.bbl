@@ -173,6 +173,43 @@
       \verb 117401
       \endverb
     \endentry
+    \entry{americanas2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=900ad234ef27e796de2ad454325fe9b0}{%
+           family={{Americanas S.A.}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{900ad234ef27e796de2ad454325fe9b0}
+      \strng{fullhash}{900ad234ef27e796de2ad454325fe9b0}
+      \strng{fullhashraw}{900ad234ef27e796de2ad454325fe9b0}
+      \strng{bibnamehash}{900ad234ef27e796de2ad454325fe9b0}
+      \strng{authorbibnamehash}{900ad234ef27e796de2ad454325fe9b0}
+      \strng{authornamehash}{900ad234ef27e796de2ad454325fe9b0}
+      \strng{authorfullhash}{900ad234ef27e796de2ad454325fe9b0}
+      \strng{authorfullhashraw}{900ad234ef27e796de2ad454325fe9b0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{langid}{brazilian}
+      \field{month}{1}
+      \field{title}{Fato Relevante: questões contábeis e alterações na administração}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://static.poder360.com.br/2023/01/fato-relevante-americanas-11-jan-2023.pdf
+      \endverb
+      \verb{url}
+      \verb https://static.poder360.com.br/2023/01/fato-relevante-americanas-11-jan-2023.pdf
+      \endverb
+    \endentry
     \entry{andersen2001}{article}{}{}
       \name{author}{4}{ul=4}{%
         {{un=0,uniquepart=base,hash=09c85c9c10e1f8f0e62363a927495479}{%
@@ -415,6 +452,80 @@
       \verb C:\Users\pc\Zotero\storage\6GRD29TH\Antonakakis et al. - 2020 - Refined Measures of Dynamic Connectedness based on Time-Varying Parameter Vector Autoregressions.pdf
       \endverb
       \keyw{dynamic connectedness,Monte Carlo simulation,TVP-VAR}
+    \endentry
+    \entry{btg2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5ccfd142660cebd28b7693def8aafcfd}{%
+           family={{Banco BTG Pactual S.A.}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ccfd142660cebd28b7693def8aafcfd}
+      \strng{fullhash}{5ccfd142660cebd28b7693def8aafcfd}
+      \strng{fullhashraw}{5ccfd142660cebd28b7693def8aafcfd}
+      \strng{bibnamehash}{5ccfd142660cebd28b7693def8aafcfd}
+      \strng{authorbibnamehash}{5ccfd142660cebd28b7693def8aafcfd}
+      \strng{authornamehash}{5ccfd142660cebd28b7693def8aafcfd}
+      \strng{authorfullhash}{5ccfd142660cebd28b7693def8aafcfd}
+      \strng{authorfullhashraw}{5ccfd142660cebd28b7693def8aafcfd}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{langid}{brazilian}
+      \field{month}{10}
+      \field{title}{Fato Relevante}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://static.poder360.com.br/2025/10/fato-relevante-btg-pactual.pdf
+      \endverb
+      \verb{url}
+      \verb https://static.poder360.com.br/2025/10/fato-relevante-btg-pactual.pdf
+      \endverb
+    \endentry
+    \entry{pan2020comunicado}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=979724d6f8aea95ff69768139b4e5672}{%
+           family={{Banco Pan S.A.}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{979724d6f8aea95ff69768139b4e5672}
+      \strng{fullhash}{979724d6f8aea95ff69768139b4e5672}
+      \strng{fullhashraw}{979724d6f8aea95ff69768139b4e5672}
+      \strng{bibnamehash}{979724d6f8aea95ff69768139b4e5672}
+      \strng{authorbibnamehash}{979724d6f8aea95ff69768139b4e5672}
+      \strng{authornamehash}{979724d6f8aea95ff69768139b4e5672}
+      \strng{authorfullhash}{979724d6f8aea95ff69768139b4e5672}
+      \strng{authorfullhashraw}{979724d6f8aea95ff69768139b4e5672}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{2}
+      \field{langid}{brazilian}
+      \field{month}{6}
+      \field{title}{Comunicado ao Mercado: aquisição de participação acionária relevante pelo BTG Pactual}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ri.bancopan.com.br/Download.aspx?Arquivo=IdSYH3stGt2dNtzje4/Ctw==
+      \endverb
+      \verb{url}
+      \verb https://ri.bancopan.com.br/Download.aspx?Arquivo=IdSYH3stGt2dNtzje4/Ctw==
+      \endverb
     \endentry
     \entry{barunik2018}{article}{}{}
       \name{author}{2}{}{%
@@ -853,6 +964,43 @@
       \verb 10.1002/jae.2585
       \endverb
     \endentry
+    \entry{dgabc2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=64e561b2d2f3cd4fc863ec4c2b884a9e}{%
+           family={{DGABC}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{64e561b2d2f3cd4fc863ec4c2b884a9e}
+      \strng{fullhash}{64e561b2d2f3cd4fc863ec4c2b884a9e}
+      \strng{fullhashraw}{64e561b2d2f3cd4fc863ec4c2b884a9e}
+      \strng{bibnamehash}{64e561b2d2f3cd4fc863ec4c2b884a9e}
+      \strng{authorbibnamehash}{64e561b2d2f3cd4fc863ec4c2b884a9e}
+      \strng{authornamehash}{64e561b2d2f3cd4fc863ec4c2b884a9e}
+      \strng{authorfullhash}{64e561b2d2f3cd4fc863ec4c2b884a9e}
+      \strng{authorfullhashraw}{64e561b2d2f3cd4fc863ec4c2b884a9e}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{27}
+      \field{langid}{brazilian}
+      \field{month}{11}
+      \field{title}{Haddad anuncia pacote de corte de R\$ 70 bi e isenção de IR até R\$ 5 mil}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.dgabc.com.br/Noticia/4178656/haddad-anuncia-pacote-de-corte-de-r-70-bi-e-isencao-de-ir-ate-r-5-mil-dolar-dispara
+      \endverb
+      \verb{url}
+      \verb https://www.dgabc.com.br/Noticia/4178656/haddad-anuncia-pacote-de-corte-de-r-70-bi-e-isencao-de-ir-ate-r-5-mil-dolar-dispara
+      \endverb
+    \endentry
     \entry{diamond1983}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=c2edd4278d86dadd9c8ddc15a5dddbec}{%
@@ -1260,6 +1408,113 @@
       \range{pages}{47}
       \keyw{network connectedness,systemic risk,systemically important financial institutions,variance decomposition,vector autoregression}
     \endentry
+    \entry{extraclasse2017}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=027608e7096c178daa9ce6eb5ce0bbc6}{%
+           family={{Extra Classe}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{027608e7096c178daa9ce6eb5ce0bbc6}
+      \strng{fullhash}{027608e7096c178daa9ce6eb5ce0bbc6}
+      \strng{fullhashraw}{027608e7096c178daa9ce6eb5ce0bbc6}
+      \strng{bibnamehash}{027608e7096c178daa9ce6eb5ce0bbc6}
+      \strng{authorbibnamehash}{027608e7096c178daa9ce6eb5ce0bbc6}
+      \strng{authornamehash}{027608e7096c178daa9ce6eb5ce0bbc6}
+      \strng{authorfullhash}{027608e7096c178daa9ce6eb5ce0bbc6}
+      \strng{authorfullhashraw}{027608e7096c178daa9ce6eb5ce0bbc6}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{brazilian}
+      \field{title}{Mais uma aventura do governo Sartori}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.extraclasse.org.br/?p=30912
+      \endverb
+      \verb{url}
+      \verb https://www.extraclasse.org.br/?p=30912
+      \endverb
+    \endentry
+    \entry{financenews20260414}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=231c0e882ee75e89f01d909fee36ec99}{%
+           family={{Finance News}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{231c0e882ee75e89f01d909fee36ec99}
+      \strng{fullhash}{231c0e882ee75e89f01d909fee36ec99}
+      \strng{fullhashraw}{231c0e882ee75e89f01d909fee36ec99}
+      \strng{bibnamehash}{231c0e882ee75e89f01d909fee36ec99}
+      \strng{authorbibnamehash}{231c0e882ee75e89f01d909fee36ec99}
+      \strng{authornamehash}{231c0e882ee75e89f01d909fee36ec99}
+      \strng{authorfullhash}{231c0e882ee75e89f01d909fee36ec99}
+      \strng{authorfullhashraw}{231c0e882ee75e89f01d909fee36ec99}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{14}
+      \field{langid}{brazilian}
+      \field{month}{4}
+      \field{title}{Entenda a queda das ações do Banrisul (BRSR6) nesta terça, 14}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://financenews.com.br/2026/04/entenda-a-queda-das-acoes-do-banrisul-brsr6-nesta-terca-14/
+      \endverb
+      \verb{url}
+      \verb https://financenews.com.br/2026/04/entenda-a-queda-das-acoes-do-banrisul-brsr6-nesta-terca-14/
+      \endverb
+    \endentry
+    \entry{folhape2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0068cc66e5de6032234bff51a46f4cc9}{%
+           family={{Folha de Pernambuco}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{0068cc66e5de6032234bff51a46f4cc9}
+      \strng{fullhash}{0068cc66e5de6032234bff51a46f4cc9}
+      \strng{fullhashraw}{0068cc66e5de6032234bff51a46f4cc9}
+      \strng{bibnamehash}{0068cc66e5de6032234bff51a46f4cc9}
+      \strng{authorbibnamehash}{0068cc66e5de6032234bff51a46f4cc9}
+      \strng{authornamehash}{0068cc66e5de6032234bff51a46f4cc9}
+      \strng{authorfullhash}{0068cc66e5de6032234bff51a46f4cc9}
+      \strng{authorfullhashraw}{0068cc66e5de6032234bff51a46f4cc9}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{brazilian}
+      \field{title}{Ações do Banco do Brasil despencam em 12\%}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.folhape.com.br/economia/acoes-do-banco-do-brasil-despencam-em-12/412242/
+      \endverb
+      \verb{url}
+      \verb https://www.folhape.com.br/economia/acoes-do-banco-do-brasil-despencam-em-12/412242/
+      \endverb
+    \endentry
     \entry{gabauer2022}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=71e5b330de45ad291d8f6c2f67f28271}{%
@@ -1460,6 +1715,115 @@
       \endverb
       \keyw{Contagion,Financial network,Systemic risk}
     \endentry
+    \entry{infomoney20221109}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=313b8f2b31bbc77e23e6a99534ca0911}{%
+           family={{InfoMoney}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{313b8f2b31bbc77e23e6a99534ca0911}
+      \strng{fullhash}{313b8f2b31bbc77e23e6a99534ca0911}
+      \strng{fullhashraw}{313b8f2b31bbc77e23e6a99534ca0911}
+      \strng{bibnamehash}{313b8f2b31bbc77e23e6a99534ca0911}
+      \strng{authorbibnamehash}{313b8f2b31bbc77e23e6a99534ca0911}
+      \strng{authornamehash}{313b8f2b31bbc77e23e6a99534ca0911}
+      \strng{authorfullhash}{313b8f2b31bbc77e23e6a99534ca0911}
+      \strng{authorfullhashraw}{313b8f2b31bbc77e23e6a99534ca0911}
+      \field{extraname}{1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{langid}{brazilian}
+      \field{month}{11}
+      \field{title}{Bradesco (BBDC4): maior queda diária em 24 anos e perda de mais de R\$ 30 bi; a sessão turbulenta do banco após o resultado}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.infomoney.com.br/?p=1979102
+      \endverb
+      \verb{url}
+      \verb https://www.infomoney.com.br/?p=1979102
+      \endverb
+    \endentry
+    \entry{infomoney2020cb}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=313b8f2b31bbc77e23e6a99534ca0911}{%
+           family={{InfoMoney}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{313b8f2b31bbc77e23e6a99534ca0911}
+      \strng{fullhash}{313b8f2b31bbc77e23e6a99534ca0911}
+      \strng{fullhashraw}{313b8f2b31bbc77e23e6a99534ca0911}
+      \strng{bibnamehash}{313b8f2b31bbc77e23e6a99534ca0911}
+      \strng{authorbibnamehash}{313b8f2b31bbc77e23e6a99534ca0911}
+      \strng{authornamehash}{313b8f2b31bbc77e23e6a99534ca0911}
+      \strng{authorfullhash}{313b8f2b31bbc77e23e6a99534ca0911}
+      \strng{authorfullhashraw}{313b8f2b31bbc77e23e6a99534ca0911}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{brazilian}
+      \field{title}{Os movimentos do bilionário Luiz Barsi na pandemia de coronavírus e os bastidores da Bolsa por Finkelsztain}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.infomoney.com.br/mercados/os-movimentos-do-bilionario-luiz-barsi-na-pandemia-de-coronavirus-e-os-bastidores-da-bolsa-por-finkelsztain/
+      \endverb
+      \verb{url}
+      \verb https://www.infomoney.com.br/mercados/os-movimentos-do-bilionario-luiz-barsi-na-pandemia-de-coronavirus-e-os-bastidores-da-bolsa-por-finkelsztain/
+      \endverb
+    \endentry
+    \entry{investing20260731}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4e9a83f29572b892e549380eb975d69b}{%
+           family={{Investing.com}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{4e9a83f29572b892e549380eb975d69b}
+      \strng{fullhash}{4e9a83f29572b892e549380eb975d69b}
+      \strng{fullhashraw}{4e9a83f29572b892e549380eb975d69b}
+      \strng{bibnamehash}{4e9a83f29572b892e549380eb975d69b}
+      \strng{authorbibnamehash}{4e9a83f29572b892e549380eb975d69b}
+      \strng{authornamehash}{4e9a83f29572b892e549380eb975d69b}
+      \strng{authorfullhash}{4e9a83f29572b892e549380eb975d69b}
+      \strng{authorfullhashraw}{4e9a83f29572b892e549380eb975d69b}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{langid}{brazilian}
+      \field{month}{7}
+      \field{title}{SANB11: Ações do Santander Brasil disparam 13\% com OPA da matriz espanhola}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://br.investing.com/news/stock-market-news/sanb11-acoes-do-santander-brasil-disparam-13-com-opa-da-matriz-espanhola-2022331
+      \endverb
+      \verb{url}
+      \verb https://br.investing.com/news/stock-market-news/sanb11-acoes-do-santander-brasil-disparam-13-com-opa-da-matriz-espanhola-2022331
+      \endverb
+    \endentry
     \entry{koop2013}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=d0dcf74a093eaf9aa1d1b58954d78300}{%
@@ -1566,6 +1930,355 @@
       \verb C:\Users\pc\Zotero\storage\XDJVNBKM\0304407695017534.html
       \endverb
       \keyw{Impulse response functions,Nonlinear vector autoregressions,Persistence,Threshold autoregressive models}
+    \endentry
+    \entry{moneytimes2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a51285a2464d4f881115059c2c2b5097}{%
+           family={{Money Times}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \strng{bibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorbibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{10}
+      \field{langid}{brazilian}
+      \field{month}{12}
+      \field{title}{Acionistas aprovam incorporação do Banco Pan (BPAN4) pelo BTG Pactual (BPAC11); veja como irá funcionar}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.moneytimes.com.br/acionistas-aprovam-incorporacao-do-banco-pan-bpan4-pelo-btg-pactual-bpac11-veja-como-ira-funcionar-rens/
+      \endverb
+      \verb{url}
+      \verb https://www.moneytimes.com.br/acionistas-aprovam-incorporacao-do-banco-pan-bpan4-pelo-btg-pactual-bpac11-veja-como-ira-funcionar-rens/
+      \endverb
+    \endentry
+    \entry{moneytimes20250515}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a51285a2464d4f881115059c2c2b5097}{%
+           family={{Money Times}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \strng{bibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorbibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{langid}{brazilian}
+      \field{month}{5}
+      \field{title}{Banco do Brasil (BBAS3): Lucro recua 20,7\% e vai a R\$ 7,3 bi no 1T25, bem abaixo do esperado}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.moneytimes.com.br/banco-do-brasil-bbas3-lucro-recua-20-e-vai-a-r-73-bi-bem-abaixo-do-esperado-rnda/
+      \endverb
+      \verb{url}
+      \verb https://www.moneytimes.com.br/banco-do-brasil-bbas3-lucro-recua-20-e-vai-a-r-73-bi-bem-abaixo-do-esperado-rnda/
+      \endverb
+    \endentry
+    \entry{moneytimes20250507}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a51285a2464d4f881115059c2c2b5097}{%
+           family={{Money Times}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \strng{bibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorbibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \field{extraname}{3}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{langid}{brazilian}
+      \field{month}{5}
+      \field{title}{Bradesco (BBDC4): Lucro salta 39\% no 1T25, chega a R\$ 5,9 bilhões e bate expectativas}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.moneytimes.com.br/bradesco-bbdc4-lucro-sobe-e-vai-r-no-1t25-rnda/
+      \endverb
+      \verb{url}
+      \verb https://www.moneytimes.com.br/bradesco-bbdc4-lucro-sobe-e-vai-r-no-1t25-rnda/
+      \endverb
+    \endentry
+    \entry{moneytimes20190827}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a51285a2464d4f881115059c2c2b5097}{%
+           family={{Money Times}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \strng{bibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorbibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \field{extraname}{4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{27}
+      \field{langid}{brazilian}
+      \field{month}{8}
+      \field{title}{BTG Pactual: Santander reforça recomendação de compra após turbulência}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.moneytimes.com.br/analista-mais-otimista-com-btg-reforca-compra-apos-turbulencia/
+      \endverb
+      \verb{url}
+      \verb https://www.moneytimes.com.br/analista-mais-otimista-com-btg-reforca-compra-apos-turbulencia/
+      \endverb
+    \endentry
+    \entry{moneytimes20190823}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a51285a2464d4f881115059c2c2b5097}{%
+           family={{Money Times}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \strng{bibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorbibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \field{extraname}{5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{23}
+      \field{langid}{brazilian}
+      \field{month}{8}
+      \field{title}{BTG Pactual: Units fecham em queda de 15\% após banco ser alvo da Lava Jato}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.moneytimes.com.br/btg-pactual-units-despencam-mais-de-9-apos-banco-ser-alvo-da-lava-jato/
+      \endverb
+      \verb{url}
+      \verb https://www.moneytimes.com.br/btg-pactual-units-despencam-mais-de-9-apos-banco-ser-alvo-da-lava-jato/
+      \endverb
+    \endentry
+    \entry{moneytimes20240207}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a51285a2464d4f881115059c2c2b5097}{%
+           family={{Money Times}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \strng{bibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorbibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \field{extraname}{6}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{langid}{brazilian}
+      \field{month}{2}
+      \field{title}{Ibovespa (IBOV) titubeia sob peso do Bradesco (BBDC4); ações do banco têm pior pregão desde novembro de 2022}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.moneytimes.com.br/ibovespa-hoje-fecha-queda-bradesco-bbdc3-bbdc4-07-02-2024
+      \endverb
+      \verb{url}
+      \verb https://www.moneytimes.com.br/ibovespa-hoje-fecha-queda-bradesco-bbdc3-bbdc4-07-02-2024
+      \endverb
+    \endentry
+    \entry{moneytimes20200424}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a51285a2464d4f881115059c2c2b5097}{%
+           family={{Money Times}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \strng{bibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorbibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \field{extraname}{7}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{langid}{brazilian}
+      \field{month}{4}
+      \field{title}{Ibovespa desaba 5,45\% após Moro deixar governo Bolsonaro}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.moneytimes.com.br/ibovespa-desaba-quase-6-apos-moro-se-demitir/
+      \endverb
+      \verb{url}
+      \verb https://www.moneytimes.com.br/ibovespa-desaba-quase-6-apos-moro-se-demitir/
+      \endverb
+    \endentry
+    \entry{moneytimes20200311}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a51285a2464d4f881115059c2c2b5097}{%
+           family={{Money Times}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \strng{bibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorbibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \field{extraname}{8}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{langid}{brazilian}
+      \field{month}{3}
+      \field{title}{Ibovespa desaba 7\% e tem 2º circuit breaker da semana com pandemia de coronavírus}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.moneytimes.com.br/ibovespa-desaba-e-tem-2-circuit-breaker-da-semana-com-pandemia-de-coronavirus/
+      \endverb
+      \verb{url}
+      \verb https://www.moneytimes.com.br/ibovespa-desaba-e-tem-2-circuit-breaker-da-semana-com-pandemia-de-coronavirus/
+      \endverb
+    \endentry
+    \entry{moneytimes20210222}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a51285a2464d4f881115059c2c2b5097}{%
+           family={{Money Times}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{fullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \strng{bibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorbibnamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
+      \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
+      \field{extraname}{9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{langid}{brazilian}
+      \field{month}{2}
+      \field{title}{Ingerência política contamina Banco do Brasil, que despenca 11,65\%}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.moneytimes.com.br/ingerencia-politica-contamina-banco-do-brasil-que-despenca-11/
+      \endverb
+      \verb{url}
+      \verb https://www.moneytimes.com.br/ingerencia-politica-contamina-banco-do-brasil-que-despenca-11/
+      \endverb
     \endentry
     \entry{moritz2017}{article}{}{}
       \name{author}{2}{}{%
@@ -1675,6 +2388,41 @@
       \endverb
       \keyw{Banking risk financial regulation,Banking risk-taking,Risk measures in banks,Systemic financial risk}
     \endentry
+    \entry{nord2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0e6b7063a04e0a148daf18b900de75ae}{%
+           family={{Nord Investimentos}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{0e6b7063a04e0a148daf18b900de75ae}
+      \strng{fullhash}{0e6b7063a04e0a148daf18b900de75ae}
+      \strng{fullhashraw}{0e6b7063a04e0a148daf18b900de75ae}
+      \strng{bibnamehash}{0e6b7063a04e0a148daf18b900de75ae}
+      \strng{authorbibnamehash}{0e6b7063a04e0a148daf18b900de75ae}
+      \strng{authornamehash}{0e6b7063a04e0a148daf18b900de75ae}
+      \strng{authorfullhash}{0e6b7063a04e0a148daf18b900de75ae}
+      \strng{authorfullhashraw}{0e6b7063a04e0a148daf18b900de75ae}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{brazilian}
+      \field{title}{Ação do Bradesco (BBDC4) dispara 15\% após balanço do 1º trimestre}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nordinvestimentos.com.br/blog/bradesco-bbdc4-resultado-1t25/
+      \endverb
+      \verb{url}
+      \verb https://www.nordinvestimentos.com.br/blog/bradesco-bbdc4-resultado-1t25/
+      \endverb
+    \endentry
     \entry{pesaran1998}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=487ad2e837d0d8c49704db0f8dbbc94d}{%
@@ -1726,6 +2474,43 @@
       \verb C:\Users\pc\Zotero\storage\LKY4JVGY\Pesaran e Shin - 1998 - Generalized impulse response analysis in linear multivariate models.pdf
       \endverb
     \endentry
+    \entry{poder3602023}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cc4ac52cc818e2e8b22d310ea685370e}{%
+           family={{Poder360}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc4ac52cc818e2e8b22d310ea685370e}
+      \strng{fullhash}{cc4ac52cc818e2e8b22d310ea685370e}
+      \strng{fullhashraw}{cc4ac52cc818e2e8b22d310ea685370e}
+      \strng{bibnamehash}{cc4ac52cc818e2e8b22d310ea685370e}
+      \strng{authorbibnamehash}{cc4ac52cc818e2e8b22d310ea685370e}
+      \strng{authornamehash}{cc4ac52cc818e2e8b22d310ea685370e}
+      \strng{authorfullhash}{cc4ac52cc818e2e8b22d310ea685370e}
+      \strng{authorfullhashraw}{cc4ac52cc818e2e8b22d310ea685370e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{12}
+      \field{langid}{brazilian}
+      \field{month}{1}
+      \field{title}{Ações da Americanas caem 77\% no fechamento do mercado}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.poder360.com.br/economia/acoes-da-americanas-caem-76-depois-de-rombo-nas-contas/
+      \endverb
+      \verb{url}
+      \verb https://www.poder360.com.br/economia/acoes-da-americanas-caem-76-depois-de-rombo-nas-contas/
+      \endverb
+    \endentry
     \entry{primiceri2005}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d533d65d91921db24144b1e6ebc00070}{%
@@ -1767,6 +2552,46 @@
       \range{pages}{32}
       \verb{file}
       \verb C:\Users\pc\Zotero\storage\XL6M2JG5\v72y2005i3p821-852.html
+      \endverb
+    \endentry
+    \entry{reuters2021copom}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7513717dba8b208fe06799dcc54e59e2}{%
+           family={{Reuters}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Notícias Agrícolas}%
+      }
+      \strng{namehash}{7513717dba8b208fe06799dcc54e59e2}
+      \strng{fullhash}{7513717dba8b208fe06799dcc54e59e2}
+      \strng{fullhashraw}{7513717dba8b208fe06799dcc54e59e2}
+      \strng{bibnamehash}{7513717dba8b208fe06799dcc54e59e2}
+      \strng{authorbibnamehash}{7513717dba8b208fe06799dcc54e59e2}
+      \strng{authornamehash}{7513717dba8b208fe06799dcc54e59e2}
+      \strng{authorfullhash}{7513717dba8b208fe06799dcc54e59e2}
+      \strng{authorfullhashraw}{7513717dba8b208fe06799dcc54e59e2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{17}
+      \field{langid}{brazilian}
+      \field{month}{3}
+      \field{title}{Copom eleva a taxa Selic para 2,75\% a.a.}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.noticiasagricolas.com.br/noticia/282998
+      \endverb
+      \verb{url}
+      \verb https://www.noticiasagricolas.com.br/noticia/282998
       \endverb
     \endentry
     \entry{rogers1991}{article}{}{}
@@ -1817,6 +2642,120 @@
       \range{pages}{9}
       \verb{eprint}
       \verb 2959703
+      \endverb
+    \endentry
+    \entry{seudinheiro2019pan}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d91d133ae181cbe62b12010179b0fcb0}{%
+           family={{Seu Dinheiro}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{fullhash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{fullhashraw}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{bibnamehash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{authorbibnamehash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{authornamehash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{authorfullhash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{authorfullhashraw}{d91d133ae181cbe62b12010179b0fcb0}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{brazilian}
+      \field{title}{Ações do Banco Pan disparam na B3 com promessa de ser o ``novo Inter''}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.seudinheiro.com/2019/bancos/acoes-do-banco-pan-disparam-na-b3-com-promessa-de-ser-o-novo-inter
+      \endverb
+      \verb{url}
+      \verb https://www.seudinheiro.com/2019/bancos/acoes-do-banco-pan-disparam-na-b3-com-promessa-de-ser-o-novo-inter
+      \endverb
+    \endentry
+    \entry{seudinheiro2018}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d91d133ae181cbe62b12010179b0fcb0}{%
+           family={{Seu Dinheiro}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{fullhash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{fullhashraw}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{bibnamehash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{authorbibnamehash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{authornamehash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{authorfullhash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{authorfullhashraw}{d91d133ae181cbe62b12010179b0fcb0}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{langid}{brazilian}
+      \field{month}{10}
+      \field{title}{Bolsa sobe forte e tem negociação recorde depois de ``onda Bolsonaro'' nas urnas}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.seudinheiro.com/2018/mercados/cotacao-ibovespa-dolar-08-10-2018/
+      \endverb
+      \verb{url}
+      \verb https://www.seudinheiro.com/2018/mercados/cotacao-ibovespa-dolar-08-10-2018/
+      \endverb
+    \endentry
+    \entry{seudinheiro20190826}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d91d133ae181cbe62b12010179b0fcb0}{%
+           family={{Seu Dinheiro}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{fullhash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{fullhashraw}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{bibnamehash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{authorbibnamehash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{authornamehash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{authorfullhash}{d91d133ae181cbe62b12010179b0fcb0}
+      \strng{authorfullhashraw}{d91d133ae181cbe62b12010179b0fcb0}
+      \field{extraname}{3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{langid}{brazilian}
+      \field{month}{8}
+      \field{title}{Papéis do BTG Pactual desabam 18\% com possível ligação do banco com esquema de lavagem de dinheiro}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.seudinheiro.com/2019/btg-pactual/papeis-do-btg-pactual-desabam-lavagem
+      \endverb
+      \verb{url}
+      \verb https://www.seudinheiro.com/2019/btg-pactual/papeis-do-btg-pactual-desabam-lavagem
       \endverb
     \endentry
     \entry{silva2025}{article}{}{}
@@ -1993,6 +2932,152 @@
       \verb C:\Users\pc\Zotero\storage\J3AXNQ3N\S1572308916302285.html
       \endverb
       \keyw{Bibliometry,Financial,Financial stability,Measure,Systemic risk}
+    \endentry
+    \entry{sul212024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b24c7cf60f3978126af69360f0a05b46}{%
+           family={{Sul21}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b24c7cf60f3978126af69360f0a05b46}
+      \strng{fullhash}{b24c7cf60f3978126af69360f0a05b46}
+      \strng{fullhashraw}{b24c7cf60f3978126af69360f0a05b46}
+      \strng{bibnamehash}{b24c7cf60f3978126af69360f0a05b46}
+      \strng{authorbibnamehash}{b24c7cf60f3978126af69360f0a05b46}
+      \strng{authornamehash}{b24c7cf60f3978126af69360f0a05b46}
+      \strng{authorfullhash}{b24c7cf60f3978126af69360f0a05b46}
+      \strng{authorfullhashraw}{b24c7cf60f3978126af69360f0a05b46}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{28}
+      \field{langid}{brazilian}
+      \field{month}{11}
+      \field{title}{Dólar fecha perto dos R\$ 6 e bate novo recorde após anúncio de pacote}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://sul21.com.br/?p=254565
+      \endverb
+      \verb{url}
+      \verb https://sul21.com.br/?p=254565
+      \endverb
+    \endentry
+    \entry{suno20200311}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c6be54dcac9f240ed907adb620a0d09}{%
+           family={{Suno Notícias}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c6be54dcac9f240ed907adb620a0d09}
+      \strng{fullhash}{9c6be54dcac9f240ed907adb620a0d09}
+      \strng{fullhashraw}{9c6be54dcac9f240ed907adb620a0d09}
+      \strng{bibnamehash}{9c6be54dcac9f240ed907adb620a0d09}
+      \strng{authorbibnamehash}{9c6be54dcac9f240ed907adb620a0d09}
+      \strng{authornamehash}{9c6be54dcac9f240ed907adb620a0d09}
+      \strng{authorfullhash}{9c6be54dcac9f240ed907adb620a0d09}
+      \strng{authorfullhashraw}{9c6be54dcac9f240ed907adb620a0d09}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{langid}{brazilian}
+      \field{month}{3}
+      \field{title}{Ibovespa fecha em queda de 7,64\% e aciona circuit breaker (CONFERIR título na página)}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.suno.com.br/noticias/ibovespa-queda-85-mil-pontos-11032020/amp/
+      \endverb
+      \verb{url}
+      \verb https://www.suno.com.br/noticias/ibovespa-queda-85-mil-pontos-11032020/amp/
+      \endverb
+    \endentry
+    \entry{tribunapr2018}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=78908426098a9b6fc9b4987fe6b3778e}{%
+           family={{Tribuna PR}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{78908426098a9b6fc9b4987fe6b3778e}
+      \strng{fullhash}{78908426098a9b6fc9b4987fe6b3778e}
+      \strng{fullhashraw}{78908426098a9b6fc9b4987fe6b3778e}
+      \strng{bibnamehash}{78908426098a9b6fc9b4987fe6b3778e}
+      \strng{authorbibnamehash}{78908426098a9b6fc9b4987fe6b3778e}
+      \strng{authornamehash}{78908426098a9b6fc9b4987fe6b3778e}
+      \strng{authorfullhash}{78908426098a9b6fc9b4987fe6b3778e}
+      \strng{authorfullhashraw}{78908426098a9b6fc9b4987fe6b3778e}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{brazilian}
+      \field{title}{RS cancela a venda parcial de ações do Banrisul}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.tribunapr.com.br/noticias/economia/rs-cancela-a-venda-parcial-de-acoes-do-banrisul/
+      \endverb
+      \verb{url}
+      \verb https://www.tribunapr.com.br/noticias/economia/rs-cancela-a-venda-parcial-de-acoes-do-banrisul/
+      \endverb
+    \endentry
+    \entry{who2020}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=531217507bec092b6ec36c0f78f46736}{%
+           family={{World Health Organization}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{fullhash}{531217507bec092b6ec36c0f78f46736}
+      \strng{fullhashraw}{531217507bec092b6ec36c0f78f46736}
+      \strng{bibnamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorbibnamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authornamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorfullhash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorfullhashraw}{531217507bec092b6ec36c0f78f46736}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{title}{WHO Director-General's opening remarks at the media briefing on COVID-19 - 11 March 2020}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---11-march-2020
+      \endverb
+      \verb{url}
+      \verb https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---11-march-2020
+      \endverb
     \endentry
     \entry{yang2000}{article}{}{}
       \name{author}{2}{}{%

@@ -8,20 +8,141 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Metodologia}}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Base de Dados}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Topologia de Redes via Diebold-Yilmaz}{21}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Visualização de Redes}{27}{section.3.3}%
+\contentsline {section}{\numberline {3.2}Topologia de Redes via Diebold-Yilmaz}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Visualização de Redes}{24}{section.3.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados}}{29}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Pré-tratamento dos dados}{29}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Propriedades das séries}{29}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Seleção dos fatores de esquecimento}{31}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Conectividade estática do painel principal}{31}{section.4.4}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados}}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Pré-tratamento dos dados}{25}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Propriedades das séries}{28}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Seleção dos fatores de esquecimento}{30}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Conectividade estática}{31}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Conectividade dinâmica}{32}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Regressão diádica}{34}{section.4.6}%
+\contentsline {section}{\numberline {4.7}O vínculo societário BTG--Pan}{36}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Considerações finais}{40}{section.4.8}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Janela rolante}}{34}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Janela rolante}}{42}{appendix.A}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Robustez}}{43}{appendix.B}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{35}{section*.40}%
+\contentsline {chapter}{Refer\^encias}{46}{section*.46}%
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
