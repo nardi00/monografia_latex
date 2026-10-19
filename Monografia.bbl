@@ -728,7 +728,7 @@
       \endverb
       \keyw{EMU,ERM II,Fragility hypothesis,Fragmentation,OCA}
     \endentry
-    \entry{cmn4958_2021}{misc}{}{}
+    \entry{cmn4553_2017}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ee1ca42f1440bcde7fe8362ad6eb84a6}{%
            family={{Conselho Monetário Nacional}},
@@ -749,11 +749,24 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{10}
-      \field{title}{Resolução {{CMN}} N{$^\circ$} 4.958, de 21 de Outubro de 2021}
-      \field{year}{2021}
+      \field{day}{30}
+      \field{langid}{brazilian}
+      \field{month}{1}
+      \field{title}{Resolução CMN Nº 4.553, de 30 de Janeiro de 2017}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://normativos.bcb.gov.br/Lists/Normativos/Attachments/50335/Res_4553_v1_O.pdf
+      \endverb
+      \verb{url}
+      \verb https://normativos.bcb.gov.br/Lists/Normativos/Attachments/50335/Res_4553_v1_O.pdf
+      \endverb
     \endentry
-    \entry{cmn4553_2017}{misc}{}{}
+    \entry{cmn4958_2021}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ee1ca42f1440bcde7fe8362ad6eb84a6}{%
            family={{Conselho Monetário Nacional}},
@@ -774,9 +787,9 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{1}
-      \field{title}{Resolução {{CMN}} Nº 4.553, de 30 de Janeiro de 2017}
-      \field{year}{2017}
+      \field{month}{10}
+      \field{title}{Resolução CMN Nº 4.958, de 21 de Outubro de 2021}
+      \field{year}{2021}
     \endentry
     \entry{cont2013}{incollection}{}{}
       \name{author}{3}{}{%
@@ -2368,12 +2381,10 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{This study analyzes the marginal contribution of Brazilian banks to the systemic risk. The objective is to identify whether banks that share common characteristics similarly contribute to systemic financial shocks. First, the risk assumed by a sample of listed banks is measured from the accounting, market, and regulatory perspectives. Sample banks were segregated using an unsupervised clustering model. The results were compared with the methodology currently used by the Central Bank of Brazil to segment the banking institutions. Finally, we evaluate the banking groups' marginal contribution to systemic financial risk using {$\Delta$}CoVaR. These results suggest that institutions that share similar characteristics in relation to their risk profiles behave similarly during times of greater market stress. Notably, size, geographic diversification, and liquidity were common attributes among banks contributing significantly to systemic risk during financial crises. This study advances the field of banking finance by introducing an analytical framework that goes beyond the traditional focus on bank balance sheet size, aligning with international standards for evaluating the systemic importance of financial institutions.}
       \field{eid}{101913}
       \field{journaltitle}{The Quarterly Review of Economics and Finance}
       \field{langid}{english}
-      \field{number}{C}
-      \field{title}{Brazilian Banks Risk-Taking and Systemic Risk}
+      \field{title}{Brazilian banks risk-taking and systemic risk}
       \field{urlday}{26}
       \field{urlmonth}{4}
       \field{urlyear}{2026}
@@ -2383,10 +2394,6 @@
       \verb{doi}
       \verb 10.1016/j.qref.2024.101913
       \endverb
-      \verb{file}
-      \verb C:\Users\pc\Zotero\storage\NEZWR7VK\v98y2024ics1062976924001194.html
-      \endverb
-      \keyw{Banking risk financial regulation,Banking risk-taking,Risk measures in banks,Systemic financial risk}
     \endentry
     \entry{nord2025}{online}{}{}
       \name{author}{1}{}{%
@@ -2421,6 +2428,49 @@
       \endverb
       \verb{url}
       \verb https://www.nordinvestimentos.com.br/blog/bradesco-bbdc4-resultado-1t25/
+      \endverb
+    \endentry
+    \entry{suno20200311}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d5793d5e5cc5d45c46f0bb56a54b5d46}{%
+           family={Oliveira},
+           familyi={O\bibinitperiod},
+           given={Giovanna},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Suno Notícias}%
+      }
+      \strng{namehash}{d5793d5e5cc5d45c46f0bb56a54b5d46}
+      \strng{fullhash}{d5793d5e5cc5d45c46f0bb56a54b5d46}
+      \strng{fullhashraw}{d5793d5e5cc5d45c46f0bb56a54b5d46}
+      \strng{bibnamehash}{d5793d5e5cc5d45c46f0bb56a54b5d46}
+      \strng{authorbibnamehash}{d5793d5e5cc5d45c46f0bb56a54b5d46}
+      \strng{authornamehash}{d5793d5e5cc5d45c46f0bb56a54b5d46}
+      \strng{authorfullhash}{d5793d5e5cc5d45c46f0bb56a54b5d46}
+      \strng{authorfullhashraw}{d5793d5e5cc5d45c46f0bb56a54b5d46}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{langid}{brazilian}
+      \field{month}{3}
+      \field{title}{Ibovespa encerra em queda de -7,64\%, a 85.171,13 pontos}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.suno.com.br/noticias/ibovespa-queda-85-mil-pontos-11032020/
+      \endverb
+      \verb{url}
+      \verb https://www.suno.com.br/noticias/ibovespa-queda-85-mil-pontos-11032020/
       \endverb
     \endentry
     \entry{pesaran1998}{article}{}{}
@@ -2968,43 +3018,6 @@
       \endverb
       \verb{url}
       \verb https://sul21.com.br/?p=254565
-      \endverb
-    \endentry
-    \entry{suno20200311}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9c6be54dcac9f240ed907adb620a0d09}{%
-           family={{Suno Notícias}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{9c6be54dcac9f240ed907adb620a0d09}
-      \strng{fullhash}{9c6be54dcac9f240ed907adb620a0d09}
-      \strng{fullhashraw}{9c6be54dcac9f240ed907adb620a0d09}
-      \strng{bibnamehash}{9c6be54dcac9f240ed907adb620a0d09}
-      \strng{authorbibnamehash}{9c6be54dcac9f240ed907adb620a0d09}
-      \strng{authornamehash}{9c6be54dcac9f240ed907adb620a0d09}
-      \strng{authorfullhash}{9c6be54dcac9f240ed907adb620a0d09}
-      \strng{authorfullhashraw}{9c6be54dcac9f240ed907adb620a0d09}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{11}
-      \field{langid}{brazilian}
-      \field{month}{3}
-      \field{title}{Ibovespa fecha em queda de 7,64\% e aciona circuit breaker (CONFERIR título na página)}
-      \field{urlday}{18}
-      \field{urlmonth}{10}
-      \field{urlyear}{2026}
-      \field{year}{2020}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.suno.com.br/noticias/ibovespa-queda-85-mil-pontos-11032020/amp/
-      \endverb
-      \verb{url}
-      \verb https://www.suno.com.br/noticias/ibovespa-queda-85-mil-pontos-11032020/amp/
       \endverb
     \endentry
     \entry{tribunapr2018}{online}{}{}

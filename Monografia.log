@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.26)  18 OCT 2026 23:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.26)  19 OCT 2026 11:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -475,7 +475,18 @@ Package babel Info: Configuration files are deprecated, as
 *
 (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/invalid\babel-brazil.tex)
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-english.tex) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/invalid\babel-brazil.tex)
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 4330.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 108.
+)
 
 Package babel Warning: Name 'brazil' is deprecated.
 (babel)                Use 'brazilian' instead.
@@ -554,24 +565,6 @@ Class memoir Warning: \settocpreprocessor is marked deprecated and will be
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks26
 \inpenc@posthook=\toks27
-) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
-Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
-\LTleft=\skip258
-\LTright=\skip259
-\LTpre=\skip260
-\LTpost=\skip261
-\LTchunksize=\count363
-\LTcapwidth=\dimen259
-\LT@head=\box59
-\LT@firsthead=\box60
-\LT@foot=\box61
-\LT@lastfoot=\box62
-\LT@gbox=\box63
-\LT@cols=\count364
-\LT@rows=\count365
-\c@LT@tables=\count366
-\c@LT@chunks=\count367
-\LT@p@ftn=\toks28
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty
@@ -589,70 +582,70 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen260
-\Gin@req@width=\dimen261
+\Gin@req@height=\dimen259
+\Gin@req@width=\dimen260
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
-\@mathmargin=\skip262
+\@mathmargin=\skip258
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks29
-\ex@=\dimen262
+\@emptytoks=\toks28
+\ex@=\dimen261
 )) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen263
+\pmbraise@=\dimen262
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count368
+\inf@bad=\count363
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count369
-\leftroot@=\count370
+\uproot@=\count364
+\leftroot@=\count365
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count371
-\DOTSCASE@=\count372
+\classnum@=\count366
+\DOTSCASE@=\count367
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box64
-\strutbox@=\box65
+\Mathstrutbox@=\box59
+\strutbox@=\box60
 LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen264
+\big@size=\dimen263
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count373
+\macc@depth=\count368
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count374
+\c@MaxMatrixCols=\count369
 \dotsspace@=\muskip18
-\c@parentequation=\count375
-\dspbrk@lvl=\count376
-\tag@help=\toks30
-\row@=\count377
-\column@=\count378
-\maxfields@=\count379
-\andhelp@=\toks31
-\eqnshift@=\dimen265
-\alignsep@=\dimen266
-\tagshift@=\dimen267
-\tagwidth@=\dimen268
-\totwidth@=\dimen269
-\lineht@=\dimen270
-\@envbody=\toks32
-\multlinegap=\skip263
-\multlinetaggap=\skip264
-\mathdisplay@stack=\toks33
+\c@parentequation=\count370
+\dspbrk@lvl=\count371
+\tag@help=\toks29
+\row@=\count372
+\column@=\count373
+\maxfields@=\count374
+\andhelp@=\toks30
+\eqnshift@=\dimen264
+\alignsep@=\dimen265
+\tagshift@=\dimen266
+\tagwidth@=\dimen267
+\totwidth@=\dimen268
+\lineht@=\dimen269
+\@envbody=\toks31
+\multlinegap=\skip259
+\multlinetaggap=\skip260
+\mathdisplay@stack=\toks32
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
@@ -666,41 +659,41 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks34
-\thm@bodyfont=\toks35
-\thm@headfont=\toks36
-\thm@notefont=\toks37
-\thm@headpunct=\toks38
-\thm@preskip=\skip265
-\thm@postskip=\skip266
-\thm@headsep=\skip267
-\dth@everypar=\toks39
+\thm@style=\toks33
+\thm@bodyfont=\toks34
+\thm@headfont=\toks35
+\thm@notefont=\toks36
+\thm@headpunct=\toks37
+\thm@preskip=\skip261
+\thm@postskip=\skip262
+\thm@headsep=\skip263
+\dth@everypar=\toks38
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count380
-\float@exts=\toks40
-\float@box=\box66
-\@float@everytoks=\toks41
-\@floatcapt=\box67
+\c@float@type=\count375
+\float@exts=\toks39
+\float@box=\box61
+\@float@everytoks=\toks40
+\@floatcapt=\box62
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
 Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
-\MT@toks=\toks42
-\MT@tempbox=\box68
-\MT@count=\count381
+\MT@toks=\toks41
+\MT@tempbox=\box63
+\MT@count=\count376
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
 LaTeX Info: Redefining \leftprotrusion on input line 1085.
-\MT@prot@toks=\toks43
+\MT@prot@toks=\toks42
 LaTeX Info: Redefining \rightprotrusion on input line 1104.
 LaTeX Info: Redefining \textls on input line 1449.
-\MT@outer@kern=\dimen271
+\MT@outer@kern=\dimen270
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count382
+\MT@listname@count=\count377
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdftex.def
 File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 944.
 LaTeX Info: Redefining \lslig on input line 944.
-\MT@outer@space=\skip268
+\MT@outer@space=\skip264
 )
 Package microtype Info: Loading configuration file microtype.cfg.
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
@@ -712,120 +705,133 @@ Package: geometry 2026/03/07 v6.0 Page Geometry
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count383
-\Gm@cntv=\count384
-\c@Gm@tempcnt=\count385
-\Gm@bindingoffset=\dimen272
-\Gm@wd@mp=\dimen273
-\Gm@odd@mp=\dimen274
-\Gm@even@mp=\dimen275
-\Gm@layoutwidth=\dimen276
-\Gm@layoutheight=\dimen277
-\Gm@layouthoffset=\dimen278
-\Gm@layoutvoffset=\dimen279
-\Gm@dimlist=\toks44
+\Gm@cnth=\count378
+\Gm@cntv=\count379
+\c@Gm@tempcnt=\count380
+\Gm@bindingoffset=\dimen271
+\Gm@wd@mp=\dimen272
+\Gm@odd@mp=\dimen273
+\Gm@even@mp=\dimen274
+\Gm@layoutwidth=\dimen275
+\Gm@layoutheight=\dimen276
+\Gm@layouthoffset=\dimen277
+\Gm@layoutvoffset=\dimen278
+\Gm@dimlist=\toks43
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen280
-\captionmargin=\dimen281
-\caption@leftmargin=\dimen282
-\caption@rightmargin=\dimen283
-\caption@width=\dimen284
-\caption@indent=\dimen285
-\caption@parindent=\dimen286
-\caption@hangindent=\dimen287
+\caption@tempdima=\dimen279
+\captionmargin=\dimen280
+\caption@leftmargin=\dimen281
+\caption@rightmargin=\dimen282
+\caption@width=\dimen283
+\caption@indent=\dimen284
+\caption@parindent=\dimen285
+\caption@hangindent=\dimen286
 Package caption Info: memoir document class detected.
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption-memoir.sto
 File: caption-memoir.sto 2023/09/08 v2.2c Adaption of the caption package to the memoir document class (AR)
 ))
-\c@caption@flags=\count386
-\c@continuedfloat=\count387
+\c@caption@flags=\count381
+\c@continuedfloat=\count382
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen288
-\caption@adjustwidth@linewidth=\dimen289
+\caption@adjustwidth@hsize=\dimen287
+\caption@adjustwidth@linewidth=\dimen288
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
-Package caption Info: longtable package is loaded.
- (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
-Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
-)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
 Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
-\FN@temptoken=\toks45
-\footnotemargin=\dimen290
+\FN@temptoken=\toks44
+\footnotemargin=\dimen289
 Package footmisc Info: Declaring symbol style bringhurst on input line 549.
 Package footmisc Info: Declaring symbol style chicago on input line 557.
 Package footmisc Info: Declaring symbol style wiley on input line 566.
 Package footmisc Info: Declaring symbol style lamport-robust on input line 577.
 Package footmisc Info: Declaring symbol style lamport* on input line 597.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 618.
-) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+Package: csquotes 2026-05-19 v5.2p context-sensitive quotations (JAW)
+\csq@reset=\count383
+\csq@gtype=\count384
+\csq@glevel=\count385
+\csq@qlevel=\count386
+\csq@maxlvl=\count387
+\csq@tshold=\count388
+\csq@ltx@everypar=\toks45
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
+File: csquotes.def 2026-05-19 v5.2p csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
+File: csquotes.cfg 
+)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count388
+\lrq@indent=\count389
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count389
-\c@listtotal=\count390
-\c@listcount=\count391
-\c@liststart=\count392
-\c@liststop=\count393
-\c@citecount=\count394
-\c@citetotal=\count395
-\c@multicitecount=\count396
-\c@multicitetotal=\count397
-\c@instcount=\count398
-\c@maxnames=\count399
-\c@minnames=\count400
-\c@maxitems=\count401
-\c@minitems=\count402
-\c@citecounter=\count403
-\c@maxcitecounter=\count404
-\c@savedcitecounter=\count405
-\c@uniquelist=\count406
-\c@uniquename=\count407
-\c@refsection=\count408
-\c@refsegment=\count409
-\c@maxextratitle=\count410
-\c@maxextratitleyear=\count411
-\c@maxextraname=\count412
-\c@maxextradate=\count413
-\c@maxextraalpha=\count414
-\c@abbrvpenalty=\count415
-\c@highnamepenalty=\count416
-\c@lownamepenalty=\count417
-\c@maxparens=\count418
-\c@parenlevel=\count419
-\blx@tempcnta=\count420
-\blx@tempcntb=\count421
-\blx@tempcntc=\count422
-\c@blx@maxsection=\count423
-\blx@maxsegment@0=\count424
-\blx@notetype=\count425
-\blx@parenlevel@text=\count426
-\blx@parenlevel@foot=\count427
-\blx@sectionciteorder@0=\count428
-\blx@sectionciteorderinternal@0=\count429
-\blx@entrysetcounter=\count430
-\blx@biblioinstance=\count431
-\labelnumberwidth=\skip269
-\labelalphawidth=\skip270
-\biblabelsep=\skip271
-\bibnamesep=\skip272
-\bibinitsep=\skip273
-\bibparsep=\skip274
-\bibhang=\skip275
+\c@tabx@nest=\count390
+\c@listtotal=\count391
+\c@listcount=\count392
+\c@liststart=\count393
+\c@liststop=\count394
+\c@citecount=\count395
+\c@citetotal=\count396
+\c@multicitecount=\count397
+\c@multicitetotal=\count398
+\c@instcount=\count399
+\c@maxnames=\count400
+\c@minnames=\count401
+\c@maxitems=\count402
+\c@minitems=\count403
+\c@citecounter=\count404
+\c@maxcitecounter=\count405
+\c@savedcitecounter=\count406
+\c@uniquelist=\count407
+\c@uniquename=\count408
+\c@refsection=\count409
+\c@refsegment=\count410
+\c@maxextratitle=\count411
+\c@maxextratitleyear=\count412
+\c@maxextraname=\count413
+\c@maxextradate=\count414
+\c@maxextraalpha=\count415
+\c@abbrvpenalty=\count416
+\c@highnamepenalty=\count417
+\c@lownamepenalty=\count418
+\c@maxparens=\count419
+\c@parenlevel=\count420
+\blx@tempcnta=\count421
+\blx@tempcntb=\count422
+\blx@tempcntc=\count423
+\c@blx@maxsection=\count424
+\blx@maxsegment@0=\count425
+\blx@notetype=\count426
+\blx@parenlevel@text=\count427
+\blx@parenlevel@foot=\count428
+\blx@sectionciteorder@0=\count429
+\blx@sectionciteorderinternal@0=\count430
+\blx@entrysetcounter=\count431
+\blx@biblioinstance=\count432
+\labelnumberwidth=\skip265
+\labelalphawidth=\skip266
+\biblabelsep=\skip267
+\bibnamesep=\skip268
+\bibinitsep=\skip269
+\bibparsep=\skip270
+\bibhang=\skip271
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language80
-\c@mincomprange=\count432
-\c@maxcomprange=\count433
-\c@mincompwidth=\count434
+\c@mincomprange=\count433
+\c@maxcomprange=\count434
+\c@mincompwidth=\count435
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
@@ -835,88 +841,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'abnt.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count435
-\c@savedafterword=\count436
-\c@annotator=\count437
-\c@savedannotator=\count438
-\c@author=\count439
-\c@savedauthor=\count440
-\c@bookauthor=\count441
-\c@savedbookauthor=\count442
-\c@commentator=\count443
-\c@savedcommentator=\count444
-\c@editor=\count445
-\c@savededitor=\count446
-\c@editora=\count447
-\c@savededitora=\count448
-\c@editorb=\count449
-\c@savededitorb=\count450
-\c@editorc=\count451
-\c@savededitorc=\count452
-\c@foreword=\count453
-\c@savedforeword=\count454
-\c@holder=\count455
-\c@savedholder=\count456
-\c@introduction=\count457
-\c@savedintroduction=\count458
-\c@namea=\count459
-\c@savednamea=\count460
-\c@nameb=\count461
-\c@savednameb=\count462
-\c@namec=\count463
-\c@savednamec=\count464
-\c@translator=\count465
-\c@savedtranslator=\count466
-\c@shortauthor=\count467
-\c@savedshortauthor=\count468
-\c@shorteditor=\count469
-\c@savedshorteditor=\count470
-\c@labelname=\count471
-\c@savedlabelname=\count472
-\c@institution=\count473
-\c@savedinstitution=\count474
-\c@lista=\count475
-\c@savedlista=\count476
-\c@listb=\count477
-\c@savedlistb=\count478
-\c@listc=\count479
-\c@savedlistc=\count480
-\c@listd=\count481
-\c@savedlistd=\count482
-\c@liste=\count483
-\c@savedliste=\count484
-\c@listf=\count485
-\c@savedlistf=\count486
-\c@location=\count487
-\c@savedlocation=\count488
-\c@organization=\count489
-\c@savedorganization=\count490
-\c@origlocation=\count491
-\c@savedoriglocation=\count492
-\c@origpublisher=\count493
-\c@savedorigpublisher=\count494
-\c@publisher=\count495
-\c@savedpublisher=\count496
-\c@language=\count497
-\c@savedlanguage=\count498
-\c@origlanguage=\count499
-\c@savedoriglanguage=\count500
-\c@pageref=\count501
-\c@savedpageref=\count502
-\shorthandwidth=\skip276
-\shortjournalwidth=\skip277
-\shortserieswidth=\skip278
-\shorttitlewidth=\skip279
-\shortauthorwidth=\skip280
-\shorteditorwidth=\skip281
-\locallabelnumberwidth=\skip282
-\locallabelalphawidth=\skip283
-\localshorthandwidth=\skip284
-\localshortjournalwidth=\skip285
-\localshortserieswidth=\skip286
-\localshorttitlewidth=\skip287
-\localshortauthorwidth=\skip288
-\localshorteditorwidth=\skip289
+\c@afterword=\count436
+\c@savedafterword=\count437
+\c@annotator=\count438
+\c@savedannotator=\count439
+\c@author=\count440
+\c@savedauthor=\count441
+\c@bookauthor=\count442
+\c@savedbookauthor=\count443
+\c@commentator=\count444
+\c@savedcommentator=\count445
+\c@editor=\count446
+\c@savededitor=\count447
+\c@editora=\count448
+\c@savededitora=\count449
+\c@editorb=\count450
+\c@savededitorb=\count451
+\c@editorc=\count452
+\c@savededitorc=\count453
+\c@foreword=\count454
+\c@savedforeword=\count455
+\c@holder=\count456
+\c@savedholder=\count457
+\c@introduction=\count458
+\c@savedintroduction=\count459
+\c@namea=\count460
+\c@savednamea=\count461
+\c@nameb=\count462
+\c@savednameb=\count463
+\c@namec=\count464
+\c@savednamec=\count465
+\c@translator=\count466
+\c@savedtranslator=\count467
+\c@shortauthor=\count468
+\c@savedshortauthor=\count469
+\c@shorteditor=\count470
+\c@savedshorteditor=\count471
+\c@labelname=\count472
+\c@savedlabelname=\count473
+\c@institution=\count474
+\c@savedinstitution=\count475
+\c@lista=\count476
+\c@savedlista=\count477
+\c@listb=\count478
+\c@savedlistb=\count479
+\c@listc=\count480
+\c@savedlistc=\count481
+\c@listd=\count482
+\c@savedlistd=\count483
+\c@liste=\count484
+\c@savedliste=\count485
+\c@listf=\count486
+\c@savedlistf=\count487
+\c@location=\count488
+\c@savedlocation=\count489
+\c@organization=\count490
+\c@savedorganization=\count491
+\c@origlocation=\count492
+\c@savedoriglocation=\count493
+\c@origpublisher=\count494
+\c@savedorigpublisher=\count495
+\c@publisher=\count496
+\c@savedpublisher=\count497
+\c@language=\count498
+\c@savedlanguage=\count499
+\c@origlanguage=\count500
+\c@savedoriglanguage=\count501
+\c@pageref=\count502
+\c@savedpageref=\count503
+\shorthandwidth=\skip272
+\shortjournalwidth=\skip273
+\shortserieswidth=\skip274
+\shorttitlewidth=\skip275
+\shortauthorwidth=\skip276
+\shorteditorwidth=\skip277
+\locallabelnumberwidth=\skip278
+\locallabelalphawidth=\skip279
+\localshorthandwidth=\skip280
+\localshortjournalwidth=\skip281
+\localshortserieswidth=\skip282
+\localshorttitlewidth=\skip283
+\localshortauthorwidth=\skip284
+\localshorteditorwidth=\skip285
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
@@ -926,19 +932,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count503
-\c@textcitetotal=\count504
-\c@textcitemaxnames=\count505
-\c@biburlbigbreakpenalty=\count506
-\c@biburlbreakpenalty=\count507
-\c@biburlnumpenalty=\count508
-\c@biburlucpenalty=\count509
-\c@biburllcpenalty=\count510
+\c@textcitecount=\count504
+\c@textcitetotal=\count505
+\c@textcitemaxnames=\count506
+\c@biburlbigbreakpenalty=\count507
+\c@biburlbreakpenalty=\count508
+\c@biburlnumpenalty=\count509
+\c@biburlucpenalty=\count510
+\c@biburllcpenalty=\count511
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count511
+\c@smartand=\count512
 )
 Package biblatex Info: Trying to load bibliography style 'abnt'...
 Package biblatex Info: ... file 'abnt.bbx' found.
@@ -948,8 +954,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count512
-\c@bbx:relatedtotal=\count513
+\c@bbx:relatedcount=\count513
+\c@bbx:relatedtotal=\count514
 ))
 Package biblatex Info: Trying to load citation style 'abnt'...
 Package biblatex Info: ... file 'abnt.cbx' found.
@@ -995,72 +1001,53 @@ Package biblatex Info: ... and expl3
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 72.
-
-
-Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
-(biblatex)                Loading 'csquotes' recommended.
-
-\@quotelevel=\count514
-\@quotereset=\count515
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 93.
-(C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+Package hyperref Info: Option `colorlinks' set `true' on input line 71.
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'brazil'.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 92.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (Monografia.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 12.
-
-
-LaTeX Warning: Label `ap:robustez' multiply defined.
-
-
-LaTeX Warning: Label `tab:robustez' multiply defined.
-
-
-LaTeX Warning: Label `cap:resultados' multiply defined.
-
-
-LaTeX Warning: Label `ap:janela' multiply defined.
-
-
-LaTeX Warning: Label `fig:janelas' multiply defined.
-
 )
 \openout1 = `Monografia.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-Package hyperref Info: Link coloring OFF on input line 93.
-\myptabbox=\box69
-\myptabboxwidth=\skip290
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+Package hyperref Info: Link coloring OFF on input line 92.
+\myptabbox=\box64
+\myptabboxwidth=\skip286
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count516
-\scratchdimen=\dimen291
-\scratchbox=\box70
-\nofMPsegments=\count517
-\nofMParguments=\count518
+\scratchcounter=\count515
+\scratchdimen=\dimen290
+\scratchbox=\box65
+\nofMPsegments=\count516
+\nofMParguments=\count517
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count519
-\MPscratchDim=\dimen292
-\MPnumerator=\count520
-\makeMPintoPDFobject=\count521
+\MPscratchCnt=\count518
+\MPscratchDim=\dimen291
+\MPnumerator=\count519
+\makeMPintoPDFobject=\count520
 \everyMPtoPDFconversion=\toks47
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1068,13 +1055,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 93.
-Package microtype Info: Applying patch `item' on input line 93.
-Package microtype Info: Applying patch `toc' on input line 93.
-Package microtype Info: Applying patch `eqnum' on input line 93.
-Package microtype Info: Applying patch `footnote' on input line 93.
-Package microtype Info: Applying patch `verbatim' on input line 93.
-LaTeX Info: Redefining \microtypesetup on input line 93.
+LaTeX Info: Redefining \microtypecontext on input line 92.
+Package microtype Info: Applying patch `item' on input line 92.
+Package microtype Info: Applying patch `toc' on input line 92.
+Package microtype Info: Applying patch `eqnum' on input line 92.
+Package microtype Info: Applying patch `footnote' on input line 92.
+Package microtype Info: Applying patch `verbatim' on input line 92.
+LaTeX Info: Redefining \microtypesetup on input line 92.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1185,6 +1172,25 @@ Package biblatex Info: ... file 'brazilian.lbx' found.
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazilian.lbx
 File: brazilian.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 ))))))
+Package biblatex Info: Trying to load language 'english' -> 'english-abnt'...
+Package biblatex Info: ... file 'english-abnt.lbx' found.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\english-abnt.lbx
+File: english-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+))
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1193,20 +1199,20 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Monografia.bbl' found.
  (Monografia.bbl)
-Package biblatex Info: Reference section=0 on input line 93.
-Package biblatex Info: Reference segment=0 on input line 93.
+Package biblatex Info: Reference section=0 on input line 92.
+Package biblatex Info: Reference segment=0 on input line 92.
  [1
 
 {C:/Users/pc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 105.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 104.
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 105.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 104.
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
@@ -1215,31 +1221,39 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.105 
+l.104 
        [1
 
 
 
-] (Monografia.toc) [2
+] [2
+
+] [3
+
+] (Monografia.lof) [4
+
+] (Monografia.lot) [5
+
+] (Monografia.toc) [6
 
 ]
 Cap\'{\i }tulo 1.
-[3
+[7
 
 
 ]
 Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 189.
- [4]
+(babel)             Reported on input line 249.
+ [8]
 Cap\'{\i }tulo 2.
-[5
+[9
 
-] [6] [7] [8] [9] [10]
+] [10] [11] [12] [13] [14]
 Cap\'{\i }tulo 3.
-[11
+[15
 
-] [12] [13] [14]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 732.
+] [16] [17] [18] [19]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 788.
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -1248,120 +1262,137 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (51.5559pt too wide) in paragraph at lines 732--732
+Overfull \hbox (51.5559pt too wide) in paragraph at lines 788--788
 \T1/pcr/m/n/10 fato-[]relevante-[]aprovada-[]a-[]incorporacao-[]da-[]xpart-[]pela-[]xp-[]inc-[]em-[]01-[]10-[]2021-[]814119261 .
  []
 
-[15]
-
-LaTeX Warning: Reference `tab:outliers' on page 16 undefined on input line 763.
-
-[16] [17] [18] [19]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1015.
+[20] [21] [22] [23]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1047.
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [20] [21] [22] [23] [24]
+) [24] [25] [26] [27] [28] (capitulo4_resultados.tex [29]
 Cap\'{\i }tulo 4.
-[25
+[30
 
-] [26] [27] [28] [29] [30] [31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 1644--1645
+] [31] [32] [33] [34] [35] [36]
+<figuras/rede_n7_amostra_completa.png, id=624, 794.97pt x 578.16pt>
+File: figuras/rede_n7_amostra_completa.png Graphic file (type png)
+<use figuras/rede_n7_amostra_completa.png>
+Package pdftex.def Info: figuras/rede_n7_amostra_completa.png  used on input line 338.
+(pdftex.def)             Requested size: 455.24411pt x 331.09846pt.
+ [37]
+<figuras/rede_n8_amostra_completa.png, id=629, 794.97pt x 578.16pt>
+File: figuras/rede_n8_amostra_completa.png Graphic file (type png)
+<use figuras/rede_n8_amostra_completa.png>
+Package pdftex.def Info: figuras/rede_n8_amostra_completa.png  used on input line 349.
+(pdftex.def)             Requested size: 455.24411pt x 331.09846pt.
+ [38 <./figuras/rede_n7_amostra_completa.png (PNG copy)>] [39 <./figuras/rede_n8_amostra_completa.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
 []|\T1/ptm/m/n/10.95 (+20) ([]Americanas S.A.[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1644--1645
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
 []\T1/ptm/m/n/10.95 (+20) 2023[]; []Po-der360[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1648--1649
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
 []|\T1/ptm/m/n/10.95 (+20) ([]DGABC[], []2024[];
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1652--1653
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
 []|\T1/ptm/m/n/10.95 (+20) ([]Money Ti-mes[],
  []
 
-<figuras/tci_tvpvar.png, id=572, 867.24pt x 361.35pt>
+<figuras/tci_tvpvar.png, id=659, 867.24pt x 361.35pt>
 File: figuras/tci_tvpvar.png Graphic file (type png)
 <use figuras/tci_tvpvar.png>
-Package pdftex.def Info: figuras/tci_tvpvar.png  used on input line 1664.
+Package pdftex.def Info: figuras/tci_tvpvar.png  used on input line 433.
 (pdftex.def)             Requested size: 455.24411pt x 189.68402pt.
-[33] [34 <./figuras/tci_tvpvar.png>] [35] [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1838--1838
+[40]
+<figuras/rede_n7_subperiodos.png, id=679, 867.24pt x 758.835pt>
+File: figuras/rede_n7_subperiodos.png Graphic file (type png)
+<use figuras/rede_n7_subperiodos.png>
+Package pdftex.def Info: figuras/rede_n7_subperiodos.png  used on input line 454.
+(pdftex.def)             Requested size: 455.24411pt x 398.33646pt.
+ [41 <./figuras/tci_tvpvar.png>] [42 <./figuras/rede_n7_subperiodos.png (PNG copy)>] [43] [44]
+Underfull \hbox (badness 10000) in paragraph at lines 629--629
 \T1/pcr/m/n/10 com . br / show . aspx ? idCanal = 98FuehC2XKrWRMgsqA5Tpw = = & linguagem = pt$[]\T1/ptm/m/n/10 (+20) . Acesso em:
  []
 
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 1886--1886
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 677--677
 []|\T1/ptm/m/n/10.95 (+20) Controle com-par-ti-lhado (jan/2019 a
  []
 
-<figuras/coef_btgpan_temporal.png, id=632, 650.43pt x 325.215pt>
+<figuras/coef_btgpan_temporal.png, id=723, 650.43pt x 325.215pt>
 File: figuras/coef_btgpan_temporal.png Graphic file (type png)
 <use figuras/coef_btgpan_temporal.png>
-Package pdftex.def Info: figuras/coef_btgpan_temporal.png  used on input line 1901.
+Package pdftex.def Info: figuras/coef_btgpan_temporal.png  used on input line 692.
 (pdftex.def)             Requested size: 455.24411pt x 227.62909pt.
-[38]
-<figuras/corr_bpan4_bpac11_rolling.png, id=641, 722.7pt x 361.35pt>
+[46]
+<figuras/corr_bpan4_bpac11_rolling.png, id=732, 722.7pt x 361.35pt>
 File: figuras/corr_bpan4_bpac11_rolling.png Graphic file (type png)
 <use figuras/corr_bpan4_bpac11_rolling.png>
-Package pdftex.def Info: figuras/corr_bpan4_bpac11_rolling.png  used on input line 1929.
+Package pdftex.def Info: figuras/corr_bpan4_bpac11_rolling.png  used on input line 720.
 (pdftex.def)             Requested size: 455.24411pt x 227.62413pt.
- [39 <./figuras/coef_btgpan_temporal.png>] [40 <./figuras/corr_bpan4_bpac11_rolling.png>] [41]
+ [47 <./figuras/coef_btgpan_temporal.png>] [48 <./figuras/corr_bpan4_bpac11_rolling.png>] [49]
 Ap\^endice A.
-<figuras/tci_comparacao_janelas.png, id=659, 867.24pt x 505.89pt>
+<figuras/tci_comparacao_janelas.png, id=750, 867.24pt x 505.89pt>
 File: figuras/tci_comparacao_janelas.png Graphic file (type png)
 <use figuras/tci_comparacao_janelas.png>
-Package pdftex.def Info: figuras/tci_comparacao_janelas.png  used on input line 2035.
+Package pdftex.def Info: figuras/tci_comparacao_janelas.png  used on input line 828.
 (pdftex.def)             Requested size: 455.24411pt x 265.55762pt.
-[42
+[50
 
  <./figuras/tci_comparacao_janelas.png (PNG copy)>]
 Ap\^endice B.
-[43
+[51
 
 ]
-File: figuras/tci_comparacao_janelas.png Graphic file (type png)
-<use figuras/tci_comparacao_janelas.png>
-Package pdftex.def Info: figuras/tci_comparacao_janelas.png  used on input line 2166.
-(pdftex.def)             Requested size: 455.24411pt x 265.55762pt.
- [44] [45] [46
+Ap\^endice C.
+<figuras/rede_n8_subperiodos.png, id=763, 867.24pt x 758.835pt>
+File: figuras/rede_n8_subperiodos.png Graphic file (type png)
+<use figuras/rede_n8_subperiodos.png>
+Package pdftex.def Info: figuras/rede_n8_subperiodos.png  used on input line 898.
+(pdftex.def)             Requested size: 455.24411pt x 398.33646pt.
+) [52
 
-] [47] [48] [49] [50] [51] [52]
-\tf@toc=\write5
-\openout5 = `Monografia.toc'.
+ <./figuras/rede_n8_subperiodos.png (PNG copy)>] [53
+
+] [54] [55] [56] [57] [58] [59]
+\tf@lof=\write5
+\openout5 = `Monografia.lof'.
+
+\tf@lot=\write6
+\openout6 = `Monografia.lot'.
+
+\tf@toc=\write7
+\openout7 = `Monografia.toc'.
 
  (Monografia.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package logreq Info: Writing requests to 'Monografia.run.xml'.
 \openout1 = `Monografia.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29070 strings out of 467691
- 508442 string characters out of 5416439
- 1469301 words of memory out of 5000000
- 57107 multiletter control sequences out of 15000+600000
- 707260 words of font info for 402 fonts, out of 8000000 for 9000
+ 29666 strings out of 467691
+ 520532 string characters out of 5416439
+ 1507621 words of memory out of 5000000
+ 57657 multiletter control sequences out of 15000+600000
+ 707039 words of font info for 401 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,107p,1651b,4312s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Monografia.pdf (53 pages, 758205 bytes).
+Output written on Monografia.pdf (60 pages, 1615973 bytes).
 PDF statistics:
- 983 PDF objects out of 1000 (max. 8388607)
- 208 named destinations out of 1000 (max. 500000)
- 78005 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 1092 PDF objects out of 1200 (max. 8388607)
+ 226 named destinations out of 1000 (max. 500000)
+ 78065 words of extra memory for PDF output out of 89155 (max. 10000000)
 

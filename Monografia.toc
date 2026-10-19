@@ -1,32 +1,40 @@
 \changetocdepth {4}
 \babel@toc {brazil}{}\relax 
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{3}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{7}{chapter.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Revisão Bibliográfica}}{5}{chapter.2}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Revisão Bibliográfica}}{9}{chapter.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Metodologia}}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Base de Dados}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Topologia de Redes via Diebold-Yilmaz}{18}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Visualização de Redes}{24}{section.3.3}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Metodologia}}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Base de Dados}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Topologia de Redes via Diebold-Yilmaz}{22}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Visualização de Redes}{28}{section.3.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados}}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Pré-tratamento dos dados}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Propriedades das séries}{28}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Seleção dos fatores de esquecimento}{30}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Conectividade estática}{31}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Conectividade dinâmica}{32}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Regressão diádica}{34}{section.4.6}%
-\contentsline {section}{\numberline {4.7}O vínculo societário BTG--Pan}{36}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Considerações finais}{40}{section.4.8}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados}}{30}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Pré-tratamento dos dados}{30}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Propriedades das séries}{33}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Seleção dos fatores de esquecimento}{35}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Conectividade estática}{36}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Conectividade dinâmica}{39}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Regressão diádica}{42}{section.4.6}%
+\contentsline {section}{\numberline {4.7}O vínculo societário BTG--Pan}{44}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Considerações finais}{48}{section.4.8}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Janela rolante}}{42}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Janela rolante}}{50}{appendix.A}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Robustez}}{43}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Robustez}}{51}{appendix.B}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Redes por subperíodo: painel de extensão}}{52}{appendix.C}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{46}{section*.46}%
+\contentsline {chapter}{Refer\^encias}{53}{section*.52}%
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
