@@ -766,7 +766,7 @@
       \verb https://normativos.bcb.gov.br/Lists/Normativos/Attachments/50335/Res_4553_v1_O.pdf
       \endverb
     \endentry
-    \entry{cmn4958_2021}{misc}{}{}
+    \entry{cmn4958_2021}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ee1ca42f1440bcde7fe8362ad6eb84a6}{%
            family={{Conselho Monetário Nacional}},
@@ -787,9 +787,22 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{langid}{brazilian}
       \field{month}{10}
       \field{title}{Resolução CMN Nº 4.958, de 21 de Outubro de 2021}
+      \field{urlday}{19}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
       \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o%20CMN&numero=4958
+      \endverb
+      \verb{url}
+      \verb https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o%20CMN&numero=4958
+      \endverb
     \endentry
     \entry{cont2013}{incollection}{}{}
       \name{author}{3}{}{%
@@ -1944,7 +1957,7 @@
       \endverb
       \keyw{Impulse response functions,Nonlinear vector autoregressions,Persistence,Threshold autoregressive models}
     \endentry
-    \entry{moneytimes2025}{online}{}{}
+    \entry{moneytimes20250515}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=a51285a2464d4f881115059c2c2b5097}{%
            family={{Money Times}},
@@ -1962,45 +1975,6 @@
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradate}{1}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{10}
-      \field{langid}{brazilian}
-      \field{month}{12}
-      \field{title}{Acionistas aprovam incorporação do Banco Pan (BPAN4) pelo BTG Pactual (BPAC11); veja como irá funcionar}
-      \field{urlday}{18}
-      \field{urlmonth}{10}
-      \field{urlyear}{2026}
-      \field{year}{2025}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.moneytimes.com.br/acionistas-aprovam-incorporacao-do-banco-pan-bpan4-pelo-btg-pactual-bpac11-veja-como-ira-funcionar-rens/
-      \endverb
-      \verb{url}
-      \verb https://www.moneytimes.com.br/acionistas-aprovam-incorporacao-do-banco-pan-bpan4-pelo-btg-pactual-bpac11-veja-como-ira-funcionar-rens/
-      \endverb
-    \endentry
-    \entry{moneytimes20250515}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=a51285a2464d4f881115059c2c2b5097}{%
-           family={{Money Times}},
-           familyi={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{a51285a2464d4f881115059c2c2b5097}
-      \strng{fullhash}{a51285a2464d4f881115059c2c2b5097}
-      \strng{fullhashraw}{a51285a2464d4f881115059c2c2b5097}
-      \strng{bibnamehash}{a51285a2464d4f881115059c2c2b5097}
-      \strng{authorbibnamehash}{a51285a2464d4f881115059c2c2b5097}
-      \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
-      \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
-      \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
-      \field{extraname}{2}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -2036,10 +2010,10 @@
       \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
       \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
       \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
-      \field{extraname}{3}
+      \field{extraname}{2}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradate}{3}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -2075,7 +2049,7 @@
       \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
       \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
       \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
-      \field{extraname}{4}
+      \field{extraname}{3}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradate}{1}
@@ -2114,7 +2088,7 @@
       \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
       \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
       \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
-      \field{extraname}{5}
+      \field{extraname}{4}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradate}{2}
@@ -2153,7 +2127,7 @@
       \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
       \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
       \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
-      \field{extraname}{6}
+      \field{extraname}{5}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
@@ -2191,7 +2165,7 @@
       \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
       \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
       \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
-      \field{extraname}{7}
+      \field{extraname}{6}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradate}{1}
@@ -2230,7 +2204,7 @@
       \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
       \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
       \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
-      \field{extraname}{8}
+      \field{extraname}{7}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradate}{2}
@@ -2269,7 +2243,7 @@
       \strng{authornamehash}{a51285a2464d4f881115059c2c2b5097}
       \strng{authorfullhash}{a51285a2464d4f881115059c2c2b5097}
       \strng{authorfullhashraw}{a51285a2464d4f881115059c2c2b5097}
-      \field{extraname}{9}
+      \field{extraname}{8}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}

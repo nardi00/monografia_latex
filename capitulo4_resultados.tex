@@ -26,14 +26,17 @@ datas no principal e em 20 no de extensão. Trinta e sete e 41 delas,
 respectivamente, em oito datas de março e abril de 2020 (as mesmas nos dois
 painéis), ocorrem em duas ou mais instituições no mesmo dia e são
 classificadas como eventos sistêmicos. As demais, 16 e 12, são casos isolados,
-listados nas Tabelas~\ref{tab:outliers-a} e~\ref{tab:outliers-b}. Para 17 dos 18 casos distintos há fonte datada
+listados, com data e fonte, no Apêndice ~\ref{ap:outliers}. Para 17 dos 18 casos distintos há fonte datada
 que registra o evento ou o contexto do dia e para um (BPAC11 em 23/03/2020) a causa não
 foi identificada. Nenhuma observação é removida ou winsorizada.
 
-\begin{table}[H]
+
+\begin{table}[!htbp]
 \centering
 \caption{Pré-tratamento por instituição e por painel}
 \label{tab:pretratamento}
+\footnotesize
+\renewcommand{\arraystretch}{0.9}
 \begin{tabular}{lccccc}
 \toprule
 Instituição & Abaixo do piso & Variância nula & Imputados & $|z|>5$ & Isolados \\
@@ -65,51 +68,7 @@ dois de variância nula, o pregão de 15/01/2019, filtrado por liquidez, e o
 seguinte, sem fechamento anterior.}
 \end{table}
 
-\begin{table}[H]
-\centering
-\footnotesize
-\caption{Retornos extremos isolados ($|z|>5$ em uma única instituição), 2017--2020}
-\label{tab:outliers-a}
-\begin{tabular}{llrcp{6.8cm}}
-\toprule
-Banco & Data & Retorno (\%) & Painéis & Evento (fonte) \\
-\midrule
-BRSR6 & 04/10/2017 & $-11{,}51$ & 7 & Fato relevante do governo do RS anuncia a venda de parte das ações do Banrisul; as preferenciais caem mais de 10\% no dia \parencite{extraclasse2017, tribunapr2018} \\
-BRSR6 & 08/10/2018 & $11{,}06$ & 7 & Pregão seguinte ao primeiro turno das eleições; o Ibovespa sobe 4,57\% e as estatais lideram a alta (a fonte não cita o Banrisul) \parencite{seudinheiro2018} \\
-BPAN4 & 22/05/2019 & $20{,}96$ & 8 & Anúncio de plano de conta digital e relatório da Empiricus recomendando a compra; a ação fecha em alta de 23,3\% \parencite{seudinheiro2019pan} \\
-BPAC11 & 23/08/2019 & $-16{,}48$ & 7 e 8 & Banco é alvo da 64ª fase da Lava Jato (busca e apreensão); as \textit{units} caem 15,2\% \parencite{moneytimes20190823} \\
-BPAC11 & 26/08/2019 & $-20{,}43$ & 7 e 8 & Reportagem do site O Antagonista sobre suposto esquema de lavagem de dinheiro no banco; as \textit{units} caem 18,5\% \parencite{seudinheiro20190826} \\
-BPAC11 & 27/08/2019 & $16{,}02$ & 7 e 8 & Recuperação parcial após queda de 31\% nos dois pregões anteriores \parencite{moneytimes20190827} \\
-BRSR6 & 10/03/2020 & $13{,}98$ & 7 e 8 & Recuperação do Ibovespa (+7,14\%) após a queda de 12,19\% de 09/03 \parencite{suno20200311, infomoney2020cb} \\
-BPAC11 & 11/03/2020 & $-14{,}34$ & 7 & OMS caracteriza a COVID-19 como pandemia; o Ibovespa cai 7,64\% e a B3 aciona o \textit{circuit breaker} \parencite{moneytimes20200311} \\
-BPAC11 & 23/03/2020 & $-13{,}89$ & 7 & Causa não identificada \\
-BBAS3 & 24/04/2020 & $-14{,}35$ & 7 e 8 & Demissão do ministro Sergio Moro; o Ibovespa cai 5,45\% e o BBAS3, 13,4\% \parencite{moneytimes20200424} \\
-BPAN4 & 03/06/2020 & $19{,}09$ & 8 & Comunicado de 02/06/2020: o BTG informa a compra de 4,75 milhões de preferenciais (30,35\% das PN e 41,52\% do capital total); a ação já subira 15,7\% em 02/06 \parencite{pan2020comunicado} \\
-\bottomrule
-\end{tabular}
-\legend{Fonte: elaboração própria. Retorno logarítmico diário, em pontos percentuais. Todos os casos permanecem na amostra. Um mesmo retorno pode ser sinalizado em um painel e não no outro, porque o escore $z$ usa a média e o desvio-padrão da janela de cada painel. A fonte registra o evento do dia (ou da véspera, no caso do Pan em 03/06/2020); a associação com o retorno é temporal e não foi testada. Continua na Tabela~\ref{tab:outliers-b}.}
-\end{table}
 
-\begin{table}[H]
-\centering
-\footnotesize
-\caption{Retornos extremos isolados ($|z|>5$ em uma única instituição), 2021--2026}
-\label{tab:outliers-b}
-\begin{tabular}{llrcp{6.8cm}}
-\toprule
-Banco & Data & Retorno (\%) & Painéis & Evento (fonte) \\
-\midrule
-BBAS3 & 22/02/2021 & $-12{,}38$ & 7 e 8 & A troca do comando da Petrobras pelo governo gera temor de interferência em estatais; o BBAS3 cai 11,65\% \parencite{moneytimes20210222} \\
-BBDC4 & 09/11/2022 & $-19{,}10$ & 7 e 8 & Resultado do 3T22 (lucro de R\$~5,2 bilhões, queda de 22,8\%); maior queda diária da ação em 24 anos \parencite{infomoney20221109} \\
-BBDC4 & 07/02/2024 & $-17{,}32$ & 7 e 8 & Resultado do 4T23 abaixo do esperado e \textit{guidance} de 2024; a preferencial cai 15,7\% \parencite{moneytimes20240207} \\
-BBDC4 & 08/05/2025 & $14{,}53$ & 7 e 8 & Resultado do 1T25 (lucro recorrente de R\$~5,9 bilhões, alta de 39\%); a ação sobe cerca de 15\% \parencite{moneytimes20250507, nord2025} \\
-BBAS3 & 16/05/2025 & $-13{,}57$ & 7 e 8 & Resultado do 1T25 (lucro ajustado cai 20,7\%) e suspensão de parte do \textit{guidance}; a ação cai 12,7\% \parencite{moneytimes20250515, folhape2025} \\
-BRSR6 & 14/04/2026 & $-11{,}83$ & 7 & BTG Pactual e UBS BB rebaixam a recomendação para venda; a ação cai 11,2\% \parencite{financenews20260414} \\
-SANB11 & 31/07/2026 & $12{,}53$ & 7 & O Santander Espanha anuncia oferta voluntária de permuta com prêmio de 15\%; as \textit{units} sobem cerca de 13\% \parencite{investing20260731} \\
-\bottomrule
-\end{tabular}
-\legend{Fonte: elaboração própria. Continuação da Tabela~\ref{tab:outliers-a}.}
-\end{table}
 
 % ------------------------------------------------------------------------------
 \section{Propriedades das séries}
@@ -121,11 +80,13 @@ situa-se entre 1,8 e 4,2 nos dois painéis, e o menor valor de cada série está
 no máximo, a 7,5 desvios-padrão da média no painel principal (BPAC11) e a 6,1
 no de extensão (BRSR6 e ABCB4; Tabela~\ref{tab:descritivas}).
 
-\begin{table}[H]
+
+\begin{table}[!htbp]
 \centering
 \caption{Estatísticas descritivas da log-volatilidade anualizada}
 \label{tab:descritivas}
-\small
+\footnotesize
+\renewcommand{\arraystretch}{0.9}
 \begin{tabular}{lrrrrrr}
 \toprule
 Instituição & Média & DP & Mín. & Máx. & Assimetria & Curtose \\
@@ -168,7 +129,7 @@ séries estão, portanto, na fronteira entre a memória longa estacionária
 $I(1)$. Isso reconcilia a rejeição simultânea do ADF e do KPSS e justifica a
 estimação do VAR em níveis (Capítulo~\ref{cap:metodologia}).
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Testes de estacionariedade e parâmetro de memória longa}
 \label{tab:testes}
@@ -226,7 +187,7 @@ dos coeficientes melhora, portanto, a previsão um passo à frente, ainda que
 $\kappa_1=0{,}995$ implique uma memória de cerca de 200 observações, bem mais
 lenta que a da covariância ($\kappa_2=0{,}99$, cerca de 100 observações). 
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Log-verossimilhança preditiva por par $(\kappa_1,\kappa_2)$ (painel principal)}
 \label{tab:grade-kappa}
@@ -284,7 +245,7 @@ Itaú é o maior transmissor líquido nas 13 especificações de robustez de cad
 painel, e o Banrisul, o maior receptor em 12 delas no painel principal e em 11
 no de extensão (Apêndice~\ref{ap:robustez}).
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Conectividade direcional e segmentação prudencial}
 \label{tab:dy}
@@ -320,7 +281,7 @@ nº 4.553/2017.}
 A Figura~\ref{fig:rede-n7} representa o painel principal como rede líquida: cada seta liga, em
 cada par, o banco que transmite mais ao que recebe mais, com espessura crescente em
 $|\text{NET}_{ij}|$, e o tamanho do nó cresce com o TO. Os 21 pares superam o limiar de
-visualização. A figura reproduz a leitura da Tabela~\ref{tab:dy}: o Itaú só emite setas e o
+visualização. A figura reproduz a leitura da Tabela~\ref{tab:dy}, o Itaú só emite setas e o
 Banrisul só as recebe, e as seis maiores arestas, de 3,1 a 4,5 pontos percentuais, partem do
 Itaú, do Bradesco ou do Banco do Brasil e chegam ao Banrisul, ao ABC Brasil, ao BTG ou ao
 Santander. No painel de extensão (Figura~\ref{fig:rede-n8}), 26 dos 28 pares superam o limiar
@@ -331,7 +292,7 @@ Bradesco, e a aresta do BTG para o Pan (2,2 pontos percentuais) é a décima mai
 pares. As posições dos nós vêm do algoritmo de Fruchterman-Reingold e indicam apenas
 proximidade na representação, não distância econômica.
  
-\begin{figure}[H]
+\begin{figure}[!htbp]
   \centering
   \caption{Rede líquida de conectividade, amostra completa (painel principal)}
   \label{fig:rede-n7}
@@ -342,7 +303,7 @@ proximidade na representação, não distância econômica.
   forte, que retém os 21 pares. Posição dos nós: Fruchterman-Reingold.}
 \end{figure}
  
-\begin{figure}[H]
+\begin{figure}[!htbp]
   \centering
   \caption{Rede líquida de conectividade, amostra completa (painel de extensão)}
   \label{fig:rede-n8}
@@ -389,13 +350,13 @@ percentuais, contra 30,1 da pandemia sobre o nível anterior (73,2\% contra
 43,1\%), isto é, cerca de 28\% dela, e o pico de 2026 fica 16 pontos abaixo do de
 2020. Por isso a elevação de 2026 é descrita como elevação da conectividade no
 fim da amostra, e não como um regime no mesmo plano da pandemia. A causa não foi
-identificada: não foi localizada fonte que registre, na data do degrau, evento
+identificada, não foi localizada fonte que registre, na data do degrau, evento
 que a explique. A hipótese de elevação em períodos de instabilidade se sustenta,
 assim, com clareza para a pandemia e apenas em parte para 2022--2023. A elevação
 de 2026 é menor e sem causa identificada, e a hipótese não se sustenta para o
 aperto da Selic nem para o pacote fiscal de 2024.
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Cronologia de eventos do período e nível do TCI}
 \label{tab:eventos}
@@ -411,14 +372,11 @@ Data & Evento & TCI ($-20$ / 0 / $+20$) & Fonte \\
 11/01/2023 & A Americanas divulga inconsistências contábeis estimadas em R\$~20
   bilhões; as ações caem mais de 70\% em 12/01
   & 50,7 / 50,9 / 50,5 & \parencite{americanas2023, poder3602023} \\
-27/11/2024 & O governo anuncia pacote de contenção de gastos (R\$~70 bilhões em dois
+  27/11/2024 & O governo anuncia pacote de contenção de gastos (R\$~70 bilhões em dois
   anos) e isenção do IR até R\$~5 mil; o dólar ultrapassa R\$~6,00 pela primeira
   vez em 28/11 e fecha a R\$~5,98
   & 50,4 / 47,5 / 47,0 & \parencite{dgabc2024, sul212024} \\
-13/10/2025 & O BTG Pactual divulga, à noite, fato relevante com a proposta de
-  incorporação das ações do Banco Pan & -- & \parencite{btg2025} \\
-09/12/2025 & Os acionistas do Pan aprovam a incorporação em assembleia
-  & -- & \parencite{moneytimes2025} \\
+
 \bottomrule
 \end{tabular}
 \legend{Fonte: elaboração própria. TCI do TVP-VAR do painel principal, 20 pregões
@@ -426,7 +384,7 @@ antes, na data e 20 pregões depois. A elevação de abril de 2026 não consta d
 tabela porque sua causa não foi identificada.}
 \end{table}
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
   \centering
   \caption{Índice de conectividade total: TVP-VAR (painel principal)}
   \label{fig:tci-tvpvar}
@@ -447,7 +405,7 @@ subperíodo; a evidência sobre a variação do nível de conectividade é a do 
 (Figura~\ref{fig:tci-tvpvar}). A versão do painel de extensão está no
 Apêndice~\ref{ap:redes}.
  
-\begin{figure}[H]
+\begin{figure}[!htbp]
   \centering
   \caption{Rede líquida de conectividade por subperíodo (painel principal)}
   \label{fig:rede-subperiodos}
@@ -481,7 +439,7 @@ percentuais a mais de variância do que a propensão geral de cada banco prevê
 resultado de corte único tem baixa precisão, porque cada indicadora de par se
 apoia em duas observações.
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Regressão diádica, corte único: indicadoras agregadas}
 \label{tab:diadica-agregada}
@@ -500,7 +458,7 @@ Vínculo societário (BTG e Pan) & --          & --    & 5,92 (1,17) & $<0{,}001
 erros-padrão clusterizados por par não dirigido.}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Regressão diádica, corte único: indicadoras por par específico}
 \label{tab:diadica-par}
@@ -534,7 +492,7 @@ $t$ da média, que trata os cortes como independentes, superestima a evidência 
 reportado apenas como referência. A evidência principal é a proporção de cortes com
 o mesmo sinal.
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Regressão diádica por par específico: cortes mensais do TVP-VAR}
 \label{tab:diadica-temporal}
@@ -644,7 +602,7 @@ a 3,27 no último corte, em 13/10/2025. Como a amostra termina nesse pregão, an
 na noite do mesmo dia, o fato relevante da proposta de incorporação \parencite{btg2025}, o painel
 não permite observar o que ocorre depois.
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Coeficiente BTG--Pan: média anual dos cortes mensais}
 \label{tab:btgpan-anual}
@@ -665,7 +623,7 @@ Ano & Coeficiente médio (p.p.) & Cortes \\
 de treino do filtro.}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Coeficiente BTG--Pan por regime de controle do BTG sobre o Pan}
 \label{tab:btgpan-regime}
@@ -685,7 +643,7 @@ participação da Caixa. Os 28 cortes do primeiro período incluem os nove do pe
 filtro, sem eles, a média é de 6,20 (19 cortes).}
 \end{table}
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
   \centering
   \caption{Coeficiente da regressão diádica: BTG--Pan}
   \label{fig:coef-btgpan-tempo}
@@ -713,7 +671,7 @@ deixa. A série de 30 pregões da Figura~\ref{fig:corr-btgpan} tem o mesmo compo
 pico da pandemia no Apêndice~\ref{ap:janela}. Nos últimos 10, 20, 30, 40, 50 e 60 pregões disponíveis
 (até 23/01/2026, perto da deslistagem), a correlação é de 0,96, 0,95, 0,97, 0,98, 0,98 e 0,97.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
   \centering
   \caption{Correlação móvel de retornos: BPAN4 e BPAC11}
   \label{fig:corr-btgpan}
@@ -731,11 +689,6 @@ informativa se estendida além desse ponto. Segundo, a convergência é compatí
 relação de troca fixa, que decorre dos termos da operação anunciada. Ela mostra que o mercado tratou a
 fusão como certa desde o primeiro pregão, mas não distingue o efeito do vínculo de controle do efeito
 dessa arbitragem e não resolve a variação do coeficiente ao longo do tempo, que permanece em aberto.
-
-O resultado desta seção não é levado ao painel principal de sete instituições
-porque o vínculo societário se encerrou no mundo real com a incorporação. Em
-contrapartida, é o painel principal que permite alcançar a elevação da conectividade de
-2026, fora do alcance do painel de extensão.
 
 % ------------------------------------------------------------------------------
 \section{Considerações finais}
@@ -821,7 +774,7 @@ médio de 45,1\%, 45,3\% e 46,0\%; correlações de 0,95, 0,90 e 0,96). O episó
 em 24/07/2026 com $W=200$ e de 48,1\% em 30/09/2026 com $W=250$. Por isso a janela
 rolante não é usada como especificação principal.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
   \centering
   \caption{Índice de conectividade total por janela rolante (painel principal)}
   \label{fig:janelas}
@@ -851,7 +804,7 @@ dois primeiros pares, todos os pesos são numericamente nulos. O TCI médio vari
 relação ao par selecionado, 0,9 e 0,4 ponto percentual no painel principal e 0,4 e 0,6
 no de extensão.
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{TCI por especificação}
 \label{tab:robustez}
@@ -891,7 +844,7 @@ de extensão, que inclui o Banco Pan. Os subperíodos, a estimação e o limiar 
 posições dos nós são as da rede da amostra completa do painel de extensão
 (Figura~\ref{fig:rede-n8}).
  
-\begin{figure}[H]
+\begin{figure}[!htbp]
   \centering
   \caption{Rede líquida de conectividade por subperíodo (painel de extensão)}
   \label{fig:rede-subperiodos-n8}
@@ -900,3 +853,51 @@ posições dos nós são as da rede da amostra completa do painel de extensão
   subperíodo; limiar de 5\% do par mais forte de cada subperíodo. Posições dos nós fixas, as
   da amostra completa do painel de extensão.}
 \end{figure}
+
+
+
+
+
+
+
+\chapter{Retornos extremos isolados}
+\label{ap:outliers}
+
+   {\footnotesize
+   \begin{longtable}{llrcp{7.2cm}}
+   \caption{Retornos extremos isolados ($|z|>5$ em uma única instituição)}\label{tab:outliers}\\
+   \toprule
+   Banco & Data & Retorno (\%) & Painéis & Evento (fonte) \\
+   \midrule
+   \endfirsthead
+   \toprule
+   Banco & Data & Retorno (\%) & Painéis & Evento (fonte) \\
+   \midrule
+   \endhead
+   \bottomrule
+   \endfoot
+BRSR6 & 04/10/2017 & $-11{,}51$ & 7 & Fato relevante do governo do RS anuncia a venda de parte das ações do Banrisul; as preferenciais caem mais de 10\% no dia \parencite{extraclasse2017, tribunapr2018} \\
+BRSR6 & 08/10/2018 & $11{,}06$ & 7 & Pregão seguinte ao primeiro turno das eleições; o Ibovespa sobe 4,57\% e as estatais lideram a alta (a fonte não cita o Banrisul) \parencite{seudinheiro2018} \\
+BPAN4 & 22/05/2019 & $20{,}96$ & 8 & Anúncio de plano de conta digital e relatório da Empiricus recomendando a compra; a ação fecha em alta de 23,3\% \parencite{seudinheiro2019pan} \\
+BPAC11 & 23/08/2019 & $-16{,}48$ & 7 e 8 & Banco é alvo da 64ª fase da Lava Jato (busca e apreensão); as \textit{units} caem 15,2\% \parencite{moneytimes20190823} \\
+BPAC11 & 26/08/2019 & $-20{,}43$ & 7 e 8 & Reportagem do site O Antagonista sobre suposto esquema de lavagem de dinheiro no banco; as \textit{units} caem 18,5\% \parencite{seudinheiro20190826} \\
+BPAC11 & 27/08/2019 & $16{,}02$ & 7 e 8 & Recuperação parcial após queda de 31\% nos dois pregões anteriores \parencite{moneytimes20190827} \\
+BRSR6 & 10/03/2020 & $13{,}98$ & 7 e 8 & Recuperação do Ibovespa (+7,14\%) após a queda de 12,19\% de 09/03 \parencite{suno20200311, infomoney2020cb} \\
+BPAC11 & 11/03/2020 & $-14{,}34$ & 7 & OMS caracteriza a COVID-19 como pandemia; o Ibovespa cai 7,64\% e a B3 aciona o \textit{circuit breaker} \parencite{moneytimes20200311} \\
+BPAC11 & 23/03/2020 & $-13{,}89$ & 7 & Causa não identificada \\
+BBAS3 & 24/04/2020 & $-14{,}35$ & 7 e 8 & Demissão do ministro Sergio Moro; o Ibovespa cai 5,45\% e o BBAS3, 13,4\% \parencite{moneytimes20200424} \\
+BPAN4 & 03/06/2020 & $19{,}09$ & 8 & Comunicado de 02/06/2020: o BTG informa a compra de 4,75 milhões de preferenciais (30,35\% das PN e 41,52\% do capital total); a ação já subira 15,7\% em 02/06 \parencite{pan2020comunicado} \\
+BBAS3 & 22/02/2021 & $-12{,}38$ & 7 e 8 & A troca do comando da Petrobras pelo governo gera temor de interferência em estatais; o BBAS3 cai 11,65\% \parencite{moneytimes20210222} \\
+BBDC4 & 09/11/2022 & $-19{,}10$ & 7 e 8 & Resultado do 3T22 (lucro de R\$~5,2 bilhões, queda de 22,8\%); maior queda diária da ação em 24 anos \parencite{infomoney20221109} \\
+BBDC4 & 07/02/2024 & $-17{,}32$ & 7 e 8 & Resultado do 4T23 abaixo do esperado e \textit{guidance} de 2024; a preferencial cai 15,7\% \parencite{moneytimes20240207} \\
+BBDC4 & 08/05/2025 & $14{,}53$ & 7 e 8 & Resultado do 1T25 (lucro recorrente de R\$~5,9 bilhões, alta de 39\%); a ação sobe cerca de 15\% \parencite{moneytimes20250507, nord2025} \\
+BBAS3 & 16/05/2025 & $-13{,}57$ & 7 e 8 & Resultado do 1T25 (lucro ajustado cai 20,7\%) e suspensão de parte do \textit{guidance}; a ação cai 12,7\% \parencite{moneytimes20250515, folhape2025} \\
+BRSR6 & 14/04/2026 & $-11{,}83$ & 7 & BTG Pactual e UBS BB rebaixam a recomendação para venda; a ação cai 11,2\% \parencite{financenews20260414} \\
+SANB11 & 31/07/2026 & $12{,}53$ & 7 & O Santander Espanha anuncia oferta voluntária de permuta com prêmio de 15\%; as \textit{units} sobem cerca de 13\% \parencite{investing20260731} \\
+\end{longtable}}
+\legend{Fonte: elaboração própria. Retorno logarítmico diário, em pontos percentuais. Todos os casos permanecem na amostra.
+Um mesmo retorno pode ser sinalizado em um painel e não no outro, porque o escore $z$ usa a média e o desvio-padrão da 
+janela de cada painel. A fonte registra o evento do dia (ou da véspera, no caso do Pan em 03/06/2020); a associação com o 
+retorno é temporal e não foi testada.}
+
+

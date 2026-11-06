@@ -9,6 +9,7 @@
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{booktabs}
 \usepackage{array}
+\usepackage{longtable}
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{microtype}
@@ -18,6 +19,15 @@
 \usepackage{enumitem}
 \usepackage{setspace}
 \usepackage{footmisc}
+
+\usepackage[section]{placeins}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.7}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.7}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{3}
+\setcounter{totalnumber}{5}
 
 \allowdisplaybreaks
 
@@ -584,7 +594,7 @@ O painel principal (N~=~7) exclui o Banco Pan e cobre de outubro de 2017, primei
 completo após a fronteira de liquidez do BTG Pactual, a setembro de 2026. O painel de extensão (N~=~8) inclui o Banco Pan e cobre janeiro de
 2019 a outubro de 2025.
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Painéis amostrais com fronteiras determinadas pelos dados}
 \label{tab:paineis}
@@ -659,7 +669,7 @@ salvaguarda: depois da regra de variância nula descrita a seguir, ele não é a
 transformação logarítmica aproxima a distribuição dos choques de um padrão
 gaussiano, facilitando a inferência no VAR.
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Pregões tratados como ausentes por $\hat{\sigma}^2_t < 10^{-8}$}
 \label{tab:variancia-nula}
@@ -816,7 +826,7 @@ alternativa. Como referência, 12 e 16 de março
 de 2020 (\textit{circuit breakers} da COVID-19 \parencite{infomoney2020cb}) são eventos reais e são preservados na amostra.
 Nenhum retorno sinalizado é removido ou winsorizado: todos permanecem na amostra, e a revisão
 serve apenas para documentar a origem de cada caso isolado
-(Tabelas~\ref{tab:outliers-a} e~\ref{tab:outliers-b}, Capítulo~\ref{cap:resultados}).
+(Apêndice~\ref{ap:outliers}).
 
 \subsubsection*{5.\ Estimação da volatilidade}
 
